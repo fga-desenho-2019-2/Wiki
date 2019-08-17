@@ -1,0 +1,15 @@
+sudo: required
+language: python
+services:
+- docker
+python:
+- '3.6'
+before_install:
+- chmod +x mkdocs-build.sh
+script:
+- if [ "$TRAVIS_BRANCH" == "master" ] ; then if [ $TRAVIS_PULL_REQUEST == 'false' ];  then
+  ./mkdocs-build.sh ; echo "Completed deploying documentation" ;  fi; else echo 'Skipping Deploy step'; fi
+notifications:
+  email: false
+cache:
+  pip: true

@@ -1,0 +1,23 @@
+ 
+
+site_name: Desenho - 2019.2
+site_description: Repositório da disciplina de Desenho - 2019.2
+repo_url: https://github.com/fga-desenho-2019-2/Wiki
+site_dir: site
+copyright: Copyright &copy; 2019, <a href="https://github.com/fga-desenho-2019-2/Wiki/">Desenho - 2019.2</a>.
+dev_addr: ‘0.0.0.0:8000
+theme:
+  name: 'material'
+  palette:
+    primary: 'white'
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/fga-desenho-2019-2/Wiki'
+
+plugins:
+  - search
+
+pages:
+  - Home: 'index.md'
