@@ -21,3 +21,4 @@ plugins:
 
 pages:
   - Home: 'index.md'
+  - Termo de abertura de projeto: 'tap.md'
