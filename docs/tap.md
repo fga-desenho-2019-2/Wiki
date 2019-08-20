@@ -6,6 +6,7 @@
 |-|-|-|-|
 |19/08/2019|0.1|Criação do documento, adição de Stakeholders, Descrição do Projeto, Propósito e Justificativa, Objetivos, Requisitos de Alto Nível, Riscos de Alto Nível e Estimativa de Custo| Shayane Marques|
 |20/08/2019|0.2| Adição da introdução, adição de informações no tópico de Requisitos de alto nível | Pedro Rodrigues |
+|20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco
 
 ## Stakeholders
 
@@ -38,9 +39,16 @@ O **QR Comer** tem o objetivo de diminuir o tempo que os potenciais clientes pas
 
 É comum aos consumidores se locomoverem à praças de alimentação à procura de alimentos. Portanto, na maioria do período de funcionamento destes estabelecimentos, há um acúmulo de pessoas, causando as grandes filas. O tempo que o consumidor passa em algumas filas é considerado desperdiçado, visto que ele depende da rapidez do atendimento para finalizar seu processo de compra.
 
-## Objetivos
+## Objetivos Mensuráveis do Projeto e Critérios de Sucesso Relacionados
 
-Criar uma aplicação web responsiva que conecte de maneira objetiva estabelecimentos de venda de alimentos e consumidores interessados em seus produtos, gerando maior eficiência e eficácia no processo de venda, entregando satisfação e tempo ao consumidor.
+O **QR Comer** possui como objetivo principal criar uma aplicação _web_ responsiva que conecte de maneira objetiva estabelecimentos de venda de alimentos e consumidores interessados em seus produtos, gerando maior eficiência e eficácia no processo de venda, entregando satisfação e tempo ao consumidor.
+
+Na tabela abaixo estão listados os objetivos com seus respectivos critérios de sucesso:
+
+|Objetivo|Critérios de Sucesso|
+|-|-|
+|Conectar de maneira objetiva estabelecimentos de venda de alimentos e consumidores|- Conexão, a partir da aplicação, do consumidor com um restaurante específico; <br> - Visão de cardápio, opções e preço da alimentação; <br> - Realização, confirmação e pagamento de pedidos na aplicação;|
+|Gerar maior eficiência e eficácia na venda de alimentos|- Aceleração do processo de interação entre o cliente e o restaurante ou lanchonete; <br> - Redução de filas em caixas de restaurantes e lanchonetes|
 
 ## Requisitos de Alto Nível
 
