@@ -6,6 +6,7 @@
 |-|-|-|-|
 |20/08/2019|0.1|Criação do documento, adição dos tópicos | Pedro Rodrigues |
 |20/08/2019|0.2|Adição no tópico 4 e colocação das três principais propostas| Pedro Rodrigues |
+|20/08/2019|0.3|Adição do tópico 5 de decisão de tema e Adição do tópico de Artefatos| Pedro Rodrigues |
 
 ## 1. Introdução
 
@@ -118,14 +119,54 @@ CadêGuincho: https://cadeguincho.com
 * Possibilidade de chat e visualização de informações do motorista contratado;
 * Integração com bancos e cartão de crédito.
 
-
-
-
-
-
 ## 5. Definição de Tema
+Os temas anteriormente propostas sofreram críticas e elogios pelos membros do grupo e com isso um levantamento de pontos positivos e negativos a cerca de cada proposta.
+
+### 5.1 Professores autônomos 
+##### Pontos Positivos
+* Traz suporte para um nicho de mercado. 
+* Explora área de conhecimentos nova para o grupo.
+* Permite a aplicação dos padrões de Desenho de Software.
+
+##### Pontos Negativos
+* Concorrência suficientemente expressiva.
+* Exige adesão de um público retraido com tecnologias novas.
+
+### 5.2 Restaurante com QR code
+##### Pontos Positivos
+* Inovador
+* Explora área de conhecimentos nova para o grupo.
+* Permite a aplicação dos padrões de Desenho de Software.
+* Concorrência não expressiva
+
+##### Pontos Negativos
+* Exige pesquisa sobre questões legais
+* Exige integração do sistema com o restaurante
+
+### 5.3 Uber de guincho
+##### Pontos Positivos
+* Concorrência baixa
+* Permite a aquisição de novos conhecimentos
+* Preenche uma lacuna de mercado
+
+##### Pontos Negativos
+* Assunto não conhecido amplamente pela equipe
+* Limita desenvolvimento exclusivo mobile
+
+### 5.4 Votação e escolha do Tema
+Após um período de debate entre o grupo, foi-se decidido que o tema seria escolhido a partir de uma votação pelo ferramenta **Poll Telegram**. 
+<br><br>
+##### Resultado após votação:
+
+![poll-images](images/poll_temas.png)
+
+* Como pode ser visto, o tema escolhido foi o **Restaurante QRcode.**
 
 ## 6. Artefatos
+
+### 6.1 RichPicture
+#### RichPicture - Pedido na visão do cliente (Cartão de crédito - versão 1)
+![richpicture-pedido-cartao-v1](images/richpicture-esboco-pedido-com-cartao.jpg)
 
 ## 7. Conclusão
 
