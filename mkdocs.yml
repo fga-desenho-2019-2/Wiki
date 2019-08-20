@@ -22,3 +22,4 @@ plugins:
 pages:
   - Home: 'index.md'
   - Termo de abertura de projeto: 'tap.md'
+  - Design Sprint: 'design_sprint.md'
