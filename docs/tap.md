@@ -5,6 +5,7 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |19/08/2019|0.1|Criação do documento, adição de Stakeholders, Descrição do Projeto, Propósito e Justificativa, Objetivos, Requisitos de Alto Nível, Riscos de Alto Nível e Estimativa de Custo| Shayane Marques|
+|20/08/2019|0.2| Adição da introdução, adição de informações no tópico de Requisitos de alto nível | Pedro Rodrigues |
 
 ## Stakeholders
 
@@ -25,6 +26,8 @@
 Milene Serrano
 
 ---------------------------------
+## Introdução
+Este documento tem por objetivo a apresentação do projeto **QR Comer**, abordado na disciplina Arquitetura e Desenho de Software. Ele por sua vez traz informações relevantes sobre o que se trata o projeto, riscos levantados, principais requisitos de alto nível e respectivamente uma análise do custo do projeto.
 
 ## Descrição do Projeto
 
@@ -43,9 +46,9 @@ Criar uma aplicação web responsiva que conecte de maneira objetiva estabelecim
 
 A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
-* Deverá estar disponível de forma responsiva para plataforma _Web_;
+* Deverá estar disponível de forma responsiva para plataforma _Web_ e ser acessível a partir da leitura do QR _code_ em um dos estabelecimentos;
 
-* Deverá ter um _design_ simples, que seja objetivo para que o usuário consiga realizar com rapidez o que deseja;
+* Deverá ter um _design_ simples, que seja objetivo para que o usuário consiga realizar com rapidez o que deseja e que ainda trasmita segurança e conforto para o mesmo;
 
 * Deverá ter um sistema de pagamento confiável e eficaz;
 
@@ -53,7 +56,7 @@ A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
 * Estabelecimentos poderão disponibilizar seus produtos, bem como receber pedidos;
 
-* Compradores poderão, com o QR _code_ visualizar os produtos, estabelecimentos, preços e senhas para retirada de pedidos.
+* Compradores poderão, com a leitura de um QR _code_ visualizar os produtos, estabelecimentos, preços e senhas para retirada de pedidos. Todos estes numa mesma localização.
 
 ## Riscos de Alto Nível
 
