@@ -1,5 +1,11 @@
 # Termo de abertura de projeto
 
+# Histórico de Revisão:
+
+|Data|Versão|Descrição|Autor|
+|-|-|-|-|
+|19/08/2019|0.1|Criação do documento, adição de Stakeholders, Descrição do Projeto, Propósito e Justificativa, Objetivos, Requisitos de Alto Nível, Riscos de Alto Nível e Estimativa de Custo| Shayane Marques|
+
 ## Stakeholders
 
 |Membro|E-mail|Matrícula|
@@ -22,7 +28,7 @@ Milene Serrano
 
 ## Descrição do Projeto
 
-O **QR Comer** é uma aplicação _Web_ que visa melhorar a experiência de consumidores de alimentos presentes em estabelecimentos, como praças de alimentação por meio do uso de QR _codes_ para prosseguir com o processo de compra.
+O **QR Comer** é uma aplicação _Web_ que visa melhorar a experiência de consumidores pertinente a alimentação presente em estabelecimentos como praças de alimentação, por meio do uso de QR _codes_ para prosseguir com o processo de compra.
 
 ## Propósito e Justificativa
 O **QR Comer** tem o objetivo de diminuir o tempo que os potenciais clientes passam em filas para fazer os pedidos desejados.
@@ -53,12 +59,12 @@ A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
 |   Risco	|   Impacto	|  Ação preventiva 	|   Ação corretiva  |
 |----------	|----------	|----------------	|--------------	    |
-|Defeito no Equipamento| Atraso | Manutenção periódica | Pareamento na equipe  |   	
-|Equipe não adaptada com tecnologia| Produto não ser concluído | Treinamentos| Pareamento e disposição de ajuda externa, se necessário, limitando-se apenas a encontrar a solução |   	
+|Defeito no Equipamento| Atraso | Manutenção periódica | Pareamento na equipe  |
+|Equipe não adaptada com tecnologia| Produto não ser concluído | Treinamentos| Pareamento e disposição de ajuda externa, se necessário, limitando-se apenas a encontrar a solução |
 |Abandono da disciplina por membro da equipe |  Sobrecarga da equipe  |   	        Estar sempre em comunicação ativa para que os membros se sintam motivados|   	Revisão do projeto e replanejamento da entrega|
 |Problemas de comunicação|Problemas de gerenciamento|Estar sempre alinhado à equipe quanto às atividades e dificuldades|Verificar o que causou a falha de comunicação para efetivamente integrar a equipe|
 |Produto não atende necessidade do cliente|baixa adesão de usuários|Avaliar sempre as métricas de valor para tomar decisões rapidamente|Refinar o entendimento de valor do cliente|
-|Membro faltante nas reuniões semanais|Falha de comunicação|Definir datas que a maioria dos membros estão disponíveis|Alinhar o membro sobre a reunião|   	
+|Membro faltante nas reuniões semanais|Falha de comunicação|Definir datas que a maioria dos membros estão disponíveis|Alinhar o membro sobre a reunião|
 
 ## Estimativa de Custo
 
