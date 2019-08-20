@@ -93,3 +93,6 @@ Valores fixos mensais se alongam por x meses que é o prazo do projeto.
 |Custo estimado|-|-|R$ |
 |Custo estimado + 15% de taxa de risco|-|-|R$ |
 
+## Referências
+
+[Translate-me](https://translate-me.github.io/docs/documentos/gerencia/tap/)
