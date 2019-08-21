@@ -19,6 +19,13 @@ extra:
 plugins:
   - search
 
+extra_css:
+  - css/landing-page.css
+
+lang:
+  - 'pt'
+
 pages:
-  - Home: 'index.md'
+  - Home: 'index.html'
+  - Sobre: 'sobre.md'
   - Termo de abertura de projeto: 'tap.md'
