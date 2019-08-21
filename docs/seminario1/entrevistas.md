@@ -71,6 +71,57 @@ Para que uma entrevista seja realizada de maneira efetiva, é necessário a cria
 
 [Entrevista 2: Raul Gomes](lista-entrevistas/entrevista2.md)
 
+<br>
+**Entrevistado: Augusto Tosetto**
+
+**Entrevistador: Matheus Salles Blanco**
+
+[Entrevista 3: Augusto Tosetto](lista-entrevistas/entrevista3.md)
+
+
+<br>
+**Entrevistado: Martin Raggi**
+
+**Entrevistador: Matheus Salles Blanco**
+
+[Entrevista 4: Martin Raggi](lista-entrevistas/entrevista4.md)
+
+<br>
+**Entrevistado: Matheus Furtado**
+
+**Entrevistador: Matheus Salles Blanco**
+
+[Entrevista 5: Matheus Furtado](lista-entrevistas/entrevista5.md)
+
+<br>
+**Entrevistado: Rafael Suriani**
+
+**Entrevistador: Matheus Salles Blanco**
+
+[Entrevista 6: Rafael Suriani](lista-entrevistas/entrevista6.md)
+
+<br>
+**Entrevistado: Luís Cláudio Blanco**
+
+**Entrevistador: Matheus Salles Blanco**
+
+[Entrevista 7: Luís Cláudio](lista-entrevistas/entrevista7.md)
+
+<br>
+**Entrevistado: Beatriz Blanco**
+
+**Entrevistador: Matheus Salles Blanco**
+
+[Entrevista 8: Beatriz Blanco](lista-entrevistas/entrevista8.md)
+
+### Vendedores
+
+**Entrevistado: Suzana**
+
+**Entrevistador: Matheus Salles Blanco**
+
+[Entrevista Vendedor: Suzana](lista-entrevistas/entrevista9.md)
+
 ## Referências
 
 >Técnicas para levantamento de Requisitos. Disponível em: <https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151>. Acesso em 21 de Agosto de 2019.
