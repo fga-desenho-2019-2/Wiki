@@ -6,7 +6,10 @@
 |-|-|-|-|
 |19/08/2019|0.1|Criação do documento, adição de Stakeholders, Descrição do Projeto, Propósito e Justificativa, Objetivos, Requisitos de Alto Nível, Riscos de Alto Nível e Estimativa de Custo| Shayane Marques|
 |20/08/2019|0.2| Adição da introdução, adição de informações no tópico de Requisitos de alto nível | Pedro Rodrigues |
-|20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco
+|20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco |
+|20/08/2019|0.4| Adição dos Custo de Mão de Obra, Logística e Aquisições | Saleh Kader |
+|20/08/2019|0.5| Adição Infraestrutura | Guilherme Marques |
+|21/08/2019|0.6| Refatorando Referências | Saleh Kader
 
 ## Stakeholders
 
@@ -68,9 +71,11 @@ A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
 ## Riscos de Alto Nível
 
-|   Risco	|   Impacto	|  Ação preventiva 	|   Ação corretiva  |
-|----------	|----------	|----------------	|--------------	    |
-|Defeito no Equipamento| Atraso | Manutenção periódica | Pareamento na equipe  |
+
+
+| Risco | Impacto |  Ação preventiva | Ação corretiva |
+| ---------- | ----------	| ---------------- | -------------- |
+| Defeito no Equipamento | Atraso | Manutenção periódica | Pareamento na equipe  |
 |Equipe não adaptada com tecnologia| Produto não ser concluído | Treinamentos| Pareamento e disposição de ajuda externa, se necessário, limitando-se apenas a encontrar a solução |
 |Abandono da disciplina por membro da equipe |  Sobrecarga da equipe  |   	        Estar sempre em comunicação ativa para que os membros se sintam motivados|   	Revisão do projeto e replanejamento da entrega|
 |Problemas de comunicação|Problemas de gerenciamento|Estar sempre alinhado à equipe quanto às atividades e dificuldades|Verificar o que causou a falha de comunicação para efetivamente integrar a equipe|
@@ -79,22 +84,57 @@ A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
 ## Estimativa de Custo
 
-Valores fixos mensais se alongam por x meses que é o prazo do projeto.
+Valores fixos mensais se alongam por 4 meses que é o prazo do projeto.
+
+
+### Custo de Mão de Obra
+
+Para a mão de obra foi levado em consideração as 10 pessoas que estão participando do projeto, sendo contratadas como Desenvolvedores Júnior dentro do projeto.
+Com o levantamento dentro do Site Glassdoor, chegou-se a um valor médio de R$ 2.588,00 como salário médio dessa categoria em Brasília. Foi considerado 4 meses de projeto que é o tempo que irá levar a disciplina.
+
+|Papel|Salário|Quantidade de Pessoas|Preço Total|
+|--------|--------------|----------|-----------|
+|Desenvolvedores Júnior|R$ 2.588,00 mensais| 10 |R$ 103.520,00|
+
+### Logística e Aquisições
+
+Para o levantamento de custos foram considerados computadores com a especificação de um processador i7, 2 Tb de Espaço de Armazenamento, 8 Gb de memória RAM e Windows 10, todos os notebooks da marca Dell com o custo até o dia 20/08/2019 de R$ 3.000,00. Além disso, o espaço de _Coworking_ considerado foi calculado para o uso em 86 dias úteis por 6 horas por dia de trabalho, internet e luz estão inclusos no valor da hora do uso do _Coworking_.
 
 |Recursos|Preço Unitário|Quantidade|Preço Total|
 |--------|--------------|----------|-----------|
-|Desenvolvedores Júnior|R$ mensais||R$ |
-|Equipe _Fullstack_|R$ mensais||R$ |
-|Notebooks|R$ ||R$ |
-|Espaço _Coworking_ para 10 pessoas|R$ mensal||R$ |
-|Internet Banda Larga 15mb mensal Cedida pelo _CoWorking_|-| - | --|
-|Energia mensal Cedida pelo _CoWorking_|R$ ||R$ |
+|Notebooks|R$ 3.000,00|10|R$ 30.000,00|
+|Espaço _Coworking_ para 10 pessoas|R$ 36,00 hora|6 horas por dia|R$ 18.576,00|
 |Marketing Digital|R$ ||R$ |
 |Custo estimado|-|-|R$ |
 |Custo estimado + 15% de taxa de risco|-|-|R$ |
 
+### Infraestrutura
+
+Considerando uma cultura de DevOps, popular atualmente, e tecnologias populares para *deploy* e orquestração de aplicações conteinerizadas, como o Kubernetes, faz-se necessário uma infraestrutura capaz de sustentar diferentes ambientes e que seja tolerante a falhas.
+
+Vamos considerar então três máquinas virtuais, em um serviço de computação em nuvem e com uma configuração mínima capaz de rodar serviços e conteiners *docker*. 
+
+No site da [Digital Ocean](https://www.digitalocean.com/pricing/) uma máquina com 2Gb de mémoria RAM, 1 núcleo de CPU e 50Gb de armazenamento está custando $10 dólares, considerando o dólar custando R$4,05 reais, o custo final de uma máquina seria R$ 40,50 reais.
+
+
+
+| Recursos                                         | Preço Unitário | Quantidade | Preço Total |
+| ------------------------------------------------ | -------------- | ---------- | ----------- |
+| Máquina Virtual ([DO](https://digitalocean.com)) | R$ 40,50       | 3          | R$ 121,50   |
+|                                                  |                |            |             |
+
+Obs: Todos os valores referidos aqui são referentes ao mês de Agosto de 2019
+
 ## Referências
 
-[Translate-me](https://translate-me.github.io/docs/documentos/gerencia/tap/)
+>Documentação Translate-me, 2019. Página TAP - Termo de Abertura do Projeto. Disponível em: <https://translate-me.github.io/docs/documentos/gerencia/tap/>. Acesso em 20 de Agosto de 2019.
 
-Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
+>Documentação Kalkuli, 2018. Página Termo de Abertura do Projeto. Disponível em: <https://fga-eps-mds.github.io/2018.2-Kalkuli/docs/tap>. Acesso em 20 de Agosto de 2019.
+
+>Glassdoor Company. Página Salários de Desenvolvedor Júnior em Área de Brasília. Disponível em: <https://www.glassdoor.com.br/Sal%C3%A1rios/bras%C3%ADlia-desenvolvedor-j%C3%BAnior-sal%C3%A1rio-SRCH_IL.0,8_IM1010_KO9,29.htm>. Acesso em 20 de Agosto de 2019.
+
+>Dell. Página Inspiron 15 3000. Disponível em: <https://www.dell.com/pt-br/shop/notebooks-dell/inspiron-15-3000/spd/inspiron-15-3567-laptop/ci3567w1241bf>. Acesso em 20 de Agosto de 2019.
+
+>BSB Coworking. Página Sala de Reunião. Disponível em: <https://bsbcoworking.com.br/produto/sala-de-reuniao-1-hora/>. Acesso em 20 de Agosto de 2019.
+
+>Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
