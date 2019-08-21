@@ -8,6 +8,7 @@
 |20/08/2019|0.2|Adição no tópico 4 e colocação das três principais propostas| Pedro Rodrigues |
 |20/08/2019|0.3|Adição do tópico 5 de decisão de tema e Adição do tópico de Artefatos| Pedro Rodrigues |
 |21/08/2019|0.4| Adição no tópico 3 sobre 5W2H, Questionário e Protótipo.|Shayane Alcântara|
+|21/08/2019|0.5| Adição do Richpicture Pedido no celular vs fila |Elias Bernardo|
 
 ## 1. Introdução
 
@@ -197,7 +198,10 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.1 RichPicture
 #### RichPicture - Pedido na visão do cliente (Cartão de crédito - versão 1)
-![richpicture-pedido-cartao-v1](images/richpicture-esboco-pedido-com-cartao.jpg)
+![richpicture-pedido-cartao-v1](../images/richpicture-esboco-pedido-com-cartao.jpg)
+
+#### RichPicture - Pedido no celular vs fila (versão 1)
+![richpicture-pedido-cartao-v1](../images/RP_fila_cel.png)
 
 ## 7. Conclusão
 
