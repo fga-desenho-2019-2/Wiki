@@ -69,9 +69,11 @@ A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
 ## Riscos de Alto Nível
 
-|   Risco	|   Impacto	|  Ação preventiva 	|   Ação corretiva  |
-|----------	|----------	|----------------	|--------------	    |
-|Defeito no Equipamento| Atraso | Manutenção periódica | Pareamento na equipe  |
+
+
+| Risco | Impacto |  Ação preventiva | Ação corretiva |
+| ---------- | ----------	| ---------------- | -------------- |
+| Defeito no Equipamento | Atraso | Manutenção periódica | Pareamento na equipe  |
 |Equipe não adaptada com tecnologia| Produto não ser concluído | Treinamentos| Pareamento e disposição de ajuda externa, se necessário, limitando-se apenas a encontrar a solução |
 |Abandono da disciplina por membro da equipe |  Sobrecarga da equipe  |   	        Estar sempre em comunicação ativa para que os membros se sintam motivados|   	Revisão do projeto e replanejamento da entrega|
 |Problemas de comunicação|Problemas de gerenciamento|Estar sempre alinhado à equipe quanto às atividades e dificuldades|Verificar o que causou a falha de comunicação para efetivamente integrar a equipe|
@@ -103,6 +105,23 @@ Para o levantamento de custos foram considerados computadores com a especificaç
 |Marketing Digital|R$ ||R$ |
 |Custo estimado|-|-|R$ |
 |Custo estimado + 15% de taxa de risco|-|-|R$ |
+
+### Infraestrutura
+
+Considerando uma cultura de DevOps, popular atualmente, e tecnologias populares para *deploy* e orquestração de aplicações conteinerizadas, como o Kubernetes, faz-se necessário uma infraestrutura capaz de sustentar diferentes ambientes e que seja tolerante a falhas.
+
+Vamos considerar então três máquinas virtuais, em um serviço de computação em nuvem e com uma configuração mínima capaz de rodar serviços e conteiners *docker*. 
+
+No site da [Digital Ocean](https://www.digitalocean.com/pricing/) uma máquina com 2Gb de mémoria RAM, 1 núcleo de CPU e 50Gb de armazenamento está custando $10 dólares, considerando o dólar custando R$4,05 reais, o custo final de uma máquina seria R$ 40,50 reais.
+
+
+
+| Recursos                                         | Preço Unitário | Quantidade | Preço Total |
+| ------------------------------------------------ | -------------- | ---------- | ----------- |
+| Máquina Virtual ([DO](https://digitalocean.com)) | R$ 40,50       | 3          | R$ 121,50   |
+|                                                  |                |            |             |
+
+Obs: Todos os valores referidos aqui são referentes ao mês de Agosto de 2019
 
 ## Referências
 
