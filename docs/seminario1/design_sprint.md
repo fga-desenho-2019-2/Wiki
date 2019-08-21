@@ -7,18 +7,49 @@
 |20/08/2019|0.1|Criação do documento, adição dos tópicos | Pedro Rodrigues |
 |20/08/2019|0.2|Adição no tópico 4 e colocação das três principais propostas| Pedro Rodrigues |
 |20/08/2019|0.3|Adição do tópico 5 de decisão de tema e Adição do tópico de Artefatos| Pedro Rodrigues |
+|21/08/2019|0.4| Adição no tópico 3 sobre 5W2H, Questionário e Protótipo.|Shayane Alcântara|
 
 ## 1. Introdução
 
 ## 2. Design Sprint
-### 2.1 Understand
-### 2.2 Define
-### 2.3 Sketch
-### 2.4 Decide
-### 2.5 Prototype
-### 2.6 Validate
+### 2.1 Unpack (Entenda)
+Nesta etapa, o grupo reúne informações com o objetivo de entender a proposta, elaborar hipóteses e ideias. Além disso, ter um espaço definido e adequado é importante para manter as dinâmicas eficientes.
+### 2.2 Sketch (Desenhe)
+Nesta etapa, a equipe realiza esboços das ideias, como um "mapa do desafio" e as aprimora com o auxílio dos especialistas da empresa. É interesse que no espaço definido na etapa anterior tenha meios para facilitar estas ações. 
+### 2.3 Decide (Decida)
+A partir das ideias apresentadas, esta etapa é responsável pela escolha da ideia mais adequada para a equipe. Comumente, é desenhado um storyboard como um pré-protótipo, a fim de visualizar os possíveis detalhes do plano escolhido.
+### 2.4 Prototype (Prototipe)
+Nesta etapa, é desenvolvido o protótipo baseado no storyboard da etapa anterior. É feito também um roteiro de entrevistas para preparação da validação com os potenciais clientes.
+### 2.5 Validate (Valide)
+Nesta etapa, é realizada a validação com os potenciais clientes com testes, por meio do protótipo criado na etapa anterior. Caso necessário, a ideia é aprimorada. Com essa etapa concluída, já é possível direcionar a equipe para ações mais concretas no desenvolvimento da ideia.
 
 ## 3. Artefatos Construídos
+
+### Brainstorm
+
+### Rich Picture
+
+### 5W2H
+Este método auxilia na tomada de decisão sobre os principais elementos que orientarão a implementação do plano. Quando algo deve ser implantado, entram em cena as seguintes definições:<br>
+    * O que (What) deve ser feito?<br>
+    * Por que (Why) deve ser implementado?<br>
+    * Quem (Who) é o responsável pela ação?<br>
+    * Onde (Where) deve ser executado?<br>
+    * Quando (When) deve ser implementado?<br>
+    * Como (How) deve ser conduzido?<br>
+    * Quanto (How much) vai custar a implementação?
+
+### Entrevista
+
+### Questionário
+De fundamental importância para o êxito de um projeto, o questionário vem como uma ferramenta para colher informações de um público alvo, com o objetivo de perceber necessidades e assim, propor soluções baseadas nas questões abordadas no questionário. 
+
+### NFR
+
+### Storytelling
+
+### Protótipo
+A prototipagem auxilia no entendimento do potencial cliente em relação à solução proposta a ele. Ele é a ferramenta mais concreta antes da produção do produto, sendo possível realizar diversas correções e aprimoramentos para aumentar a qualidade.
 
 ## 4. Propostas de Tema
 
@@ -171,3 +202,12 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 ## 7. Conclusão
 
 ## 8. Referências
+
+Saiba Mais. The Design Sprint. Disponível em: <https://www.gv.com/sprint/>. Acesso em: 21 de agosto de 2019.
+
+Chief of design. Design Sprint – O que é e para que serve o Design Sprint Google?. Disponível em: <https://www.chiefofdesign.com.br/design-sprint/>. Acesso em: 21 de agosto de 2019.
+
+Translate Me. Design Sprint. Disponível em: <https://translate-me.github.io/docs/def_tema/#2-design-sprint>. Acesso em: 21 de agosto de 2019.
+
+Sebrae. 5W2H. Disponível em: <https://m.sebrae.com.br/Sebrae/Portal%20Sebrae/Anexos/5W2H.pdf>. Acesso em: 21 de agosto de 2019.
+
