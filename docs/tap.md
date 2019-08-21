@@ -6,7 +6,8 @@
 |-|-|-|-|
 |19/08/2019|0.1|Criação do documento, adição de Stakeholders, Descrição do Projeto, Propósito e Justificativa, Objetivos, Requisitos de Alto Nível, Riscos de Alto Nível e Estimativa de Custo| Shayane Marques|
 |20/08/2019|0.2| Adição da introdução, adição de informações no tópico de Requisitos de alto nível | Pedro Rodrigues |
-|20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco
+|20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco |
+|20/08/2019|0.4| Adição dos Custo de Mão de Obra, Logística e Aquisições | Saleh Kader
 
 ## Stakeholders
 
@@ -79,16 +80,26 @@ A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
 ## Estimativa de Custo
 
-Valores fixos mensais se alongam por x meses que é o prazo do projeto.
+Valores fixos mensais se alongam por 4 meses que é o prazo do projeto.
+
+
+### Custo de Mão de Obra
+
+Para a mão de obra foi levado em consideração as 10 pessoas que estão participando do projeto, sendo contratadas como Desenvolvedores Júnior dentro do projeto.
+Com o levantamento dentro do Site Glassdoor, chegou-se a um valor médio de R$ 2.588,00 como salário médio dessa categoria em Brasília. Foi considerado 4 meses de projeto que é o tempo que irá levar a disciplina.
+
+|Papel|Salário|Quantidade de Pessoas|Preço Total|
+|--------|--------------|----------|-----------|
+|Desenvolvedores Júnior|R$ 2.588,00 mensais| 10 |R$ 103.520,00|
+
+### Logística e Aquisições
+
+Para o levantamento de custos foram considerados computadores com a especificação de um processador i7, 2 Tb de Espaço de Armazenamento, 8 Gb de memória RAM e Windows 10, todos os notebooks da marca Dell com o custo até o dia 20/08/2019 de R$ 3.000,00. Além disso, o espaço de _Coworking_ considerado foi calculado para o uso em 86 dias úteis por 6 horas por dia de trabalho, internet e luz estão inclusos no valor da hora do uso do _Coworking_.
 
 |Recursos|Preço Unitário|Quantidade|Preço Total|
 |--------|--------------|----------|-----------|
-|Desenvolvedores Júnior|R$ mensais||R$ |
-|Equipe _Fullstack_|R$ mensais||R$ |
-|Notebooks|R$ ||R$ |
-|Espaço _Coworking_ para 10 pessoas|R$ mensal||R$ |
-|Internet Banda Larga 15mb mensal Cedida pelo _CoWorking_|-| - | --|
-|Energia mensal Cedida pelo _CoWorking_|R$ ||R$ |
+|Notebooks|R$ 3.000,00|10|R$ 30.000,00|
+|Espaço _Coworking_ para 10 pessoas|R$ 36,00 hora|6 horas por dia|R$ 18.576,00|
 |Marketing Digital|R$ ||R$ |
 |Custo estimado|-|-|R$ |
 |Custo estimado + 15% de taxa de risco|-|-|R$ |
@@ -96,3 +107,11 @@ Valores fixos mensais se alongam por x meses que é o prazo do projeto.
 ## Referências
 
 [Translate-me](https://translate-me.github.io/docs/documentos/gerencia/tap/)
+
+[Kalkuli](https://fga-eps-mds.github.io/2018.2-Kalkuli/docs/tap)
+
+[Glassdoor](https://www.glassdoor.com.br/Sal%C3%A1rios/bras%C3%ADlia-desenvolvedor-j%C3%BAnior-sal%C3%A1rio-SRCH_IL.0,8_IM1010_KO9,29.htm)
+
+[Dell](https://www.dell.com/pt-br/shop/notebooks-dell/inspiron-15-3000/spd/inspiron-15-3567-laptop/ci3567w1241bf)
+
+[BSB Coworking](https://bsbcoworking.com.br/produto/sala-de-reuniao-1-hora/)
