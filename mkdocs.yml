@@ -19,8 +19,14 @@ extra:
 plugins:
   - search
 
+extra_css:
+  - css/landing-page.css
+
+lang:
+  - 'pt'
+
 pages:
-  - Home: 'index.md'
+  - Home: 'index.html'
   - Dinâmica e Seminário I:
       - Termo de abertura de projeto: 'seminario1/tap.md'
       - Design Sprint: 'seminario1/design_sprint.md'
