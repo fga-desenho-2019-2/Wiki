@@ -21,5 +21,6 @@ plugins:
 
 pages:
   - Home: 'index.md'
-  - Termo de abertura de projeto: 'tap.md'
-  - Design Sprint: 'design_sprint.md'
+  - Dinâmica e Seminário I:
+      - Termo de abertura de projeto: 'seminario1/tap.md'
+      - Design Sprint: 'seminario1/design_sprint.md'
