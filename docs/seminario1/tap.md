@@ -7,7 +7,9 @@
 |19/08/2019|0.1|Criação do documento, adição de Stakeholders, Descrição do Projeto, Propósito e Justificativa, Objetivos, Requisitos de Alto Nível, Riscos de Alto Nível e Estimativa de Custo| Shayane Marques|
 |20/08/2019|0.2| Adição da introdução, adição de informações no tópico de Requisitos de alto nível | Pedro Rodrigues |
 |20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco |
-|20/08/2019|0.4| Adição dos Custo de Mão de Obra, Logística e Aquisições | Saleh Kader
+|20/08/2019|0.4| Adição dos Custo de Mão de Obra, Logística e Aquisições | Saleh Kader |
+|20/08/2019|0.5| Adição Infraestrutura | Guilherme Marques |
+|21/08/2019|0.6| Refatorando Referências | Saleh Kader
 
 ## Stakeholders
 
@@ -125,14 +127,14 @@ Obs: Todos os valores referidos aqui são referentes ao mês de Agosto de 2019
 
 ## Referências
 
-[Translate-me](https://translate-me.github.io/docs/documentos/gerencia/tap/)
+>Documentação Translate-me, 2019. Página TAP - Termo de Abertura do Projeto. Disponível em: <https://translate-me.github.io/docs/documentos/gerencia/tap/>. Acesso em 20 de Agosto de 2019.
 
-[Kalkuli](https://fga-eps-mds.github.io/2018.2-Kalkuli/docs/tap)
+>Documentação Kalkuli, 2018. Página Termo de Abertura do Projeto. Disponível em: <https://fga-eps-mds.github.io/2018.2-Kalkuli/docs/tap>. Acesso em 20 de Agosto de 2019.
 
-[Glassdoor](https://www.glassdoor.com.br/Sal%C3%A1rios/bras%C3%ADlia-desenvolvedor-j%C3%BAnior-sal%C3%A1rio-SRCH_IL.0,8_IM1010_KO9,29.htm)
+>Glassdoor Company. Página Salários de Desenvolvedor Júnior em Área de Brasília. Disponível em: <https://www.glassdoor.com.br/Sal%C3%A1rios/bras%C3%ADlia-desenvolvedor-j%C3%BAnior-sal%C3%A1rio-SRCH_IL.0,8_IM1010_KO9,29.htm>. Acesso em 20 de Agosto de 2019.
 
-[Dell](https://www.dell.com/pt-br/shop/notebooks-dell/inspiron-15-3000/spd/inspiron-15-3567-laptop/ci3567w1241bf)
+>Dell. Página Inspiron 15 3000. Disponível em: <https://www.dell.com/pt-br/shop/notebooks-dell/inspiron-15-3000/spd/inspiron-15-3567-laptop/ci3567w1241bf>. Acesso em 20 de Agosto de 2019.
 
-[BSB Coworking](https://bsbcoworking.com.br/produto/sala-de-reuniao-1-hora/)
+>BSB Coworking. Página Sala de Reunião. Disponível em: <https://bsbcoworking.com.br/produto/sala-de-reuniao-1-hora/>. Acesso em 20 de Agosto de 2019.
 
-Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
+>Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
