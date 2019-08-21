@@ -7,6 +7,7 @@
 |20/08/2019|0.1|Criação do documento, adição dos tópicos | Pedro Rodrigues |
 |20/08/2019|0.2|Adição no tópico 4 e colocação das três principais propostas| Pedro Rodrigues |
 |20/08/2019|0.3|Adição do tópico 5 de decisão de tema e Adição do tópico de Artefatos| Pedro Rodrigues |
+|21/08/2019|0.4| Adição no tópico 3 sobre 5W2H, Questionário e Protótipo.|Shayane Alcântara|
 
 ## 1. Introdução
 
@@ -41,12 +42,14 @@ Este método auxilia na tomada de decisão sobre os principais elementos que ori
 ### Entrevista
 
 ### Questionário
+De fundamental importância para o êxito de um projeto, o questionário vem como uma ferramenta para colher informações de um público alvo, com o objetivo de perceber necessidades e assim, propor soluções baseadas nas questões abordadas no questionário. 
 
 ### NFR
 
 ### Storytelling
 
 ### Protótipo
+A prototipagem auxilia no entendimento do potencial cliente em relação à solução proposta a ele. Ele é a ferramenta mais concreta antes da produção do produto, sendo possível realizar diversas correções e aprimoramentos para aumentar a qualidade.
 
 ## 4. Propostas de Tema
 
