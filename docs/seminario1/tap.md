@@ -96,3 +96,5 @@ Valores fixos mensais se alongam por x meses que é o prazo do projeto.
 ## Referências
 
 [Translate-me](https://translate-me.github.io/docs/documentos/gerencia/tap/)
+
+Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
