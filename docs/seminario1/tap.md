@@ -134,3 +134,5 @@ Obs: Todos os valores referidos aqui são referentes ao mês de Agosto de 2019
 [Dell](https://www.dell.com/pt-br/shop/notebooks-dell/inspiron-15-3000/spd/inspiron-15-3567-laptop/ci3567w1241bf)
 
 [BSB Coworking](https://bsbcoworking.com.br/produto/sala-de-reuniao-1-hora/)
+
+Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
