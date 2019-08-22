@@ -1,9 +1,26 @@
-#### RichPicture 01 - Pedido na visão do cliente (Cartão de crédito)
-![richpicture-pedido-cartao-v1](../images/richpicture-esboco-pedido-com-cartao.jpg)
+#### RichPicture 01 - Pedido na visão do cliente
 
- **RP01** | **Pedido na visão do cliente (Cartão de crédito)**  |
+![richpicture-pedido-cartao-v3](../images/richpicture-pedido-v3.jpg)
+
+ **RP01** | **Pedido na visão do cliente**  |
 |--|--|
-| **Versão**| Atual: 1.0 (21/08) <br> Anterior: - | 
+| **Versão**| Atual: 3.0 (21/08) <br> Anterior: - | 
+| **Descrição** | Pedido na visão do cliente. | 
+|**Autor**| [Pedro Rodrigues Pereira](https://github.com/pedro-prp) |
+
+![richpicture-pedido-cartao-v2](../images/richpicture-pedido-v2.jpg)
+
+ **RP01** | **Pedido na visão do cliente**  |
+|--|--|
+| **Versão**| 2.0 (21/08) <br> Anterior: - | 
+| **Descrição** | Pedido na visão do cliente com o uso do cartão de crédito. | 
+|**Autor**| [Pedro Rodrigues Pereira](https://github.com/pedro-prp) |
+
+![richpicture-pedido-cartao-v1](../images/richpicture-esboco-pedido-v1.jpg)
+
+ **RP01** | **Pedido na visão do cliente**  |
+|--|--|
+| **Versão**| 1.0 (21/08) <br> Anterior: - | 
 | **Descrição** | Pedido na visão do cliente com o uso do cartão de crédito. | 
 |**Autor**| [Pedro Rodrigues Pereira](https://github.com/pedro-prp) | 
 
