@@ -9,8 +9,10 @@
 |20/08/2019|0.3|Adição do tópico 5 de decisão de tema e Adição do tópico de Artefatos| Pedro Rodrigues |
 |21/08/2019|0.4| Adição no tópico 3 sobre 5W2H, Questionário e Protótipo.|Shayane Alcântara|
 |21/08/2019|0.5| Adição do Richpicture Pedido no celular vs fila |Elias Bernardo|
+|22/08/2019|0.6| Adição do restante do tópico 3, sobre artefatos construídos.| Shayane Alcântara|
 
 ## 1. Introdução
+Há diversas técnicas que visam auxiliar no processo de criação de produtos. Uma delas é o Design Sprint. Ele é uma metodologia que visa reunir os participantes multidisciplinares da dinâmica em uma série de 5 dias para no fim ter uma ideia de um produto mais tangível. Para cumprir as etapas, o grupo produz diversos artefatos para auxiliar neste percurso.
 
 ## 2. Design Sprint
 ### 2.1 Unpack (Entenda)
@@ -27,27 +29,33 @@ Nesta etapa, é realizada a validação com os potenciais clientes com testes, p
 ## 3. Artefatos Construídos
 
 ### Brainstorm
+Esta ferramenta, conhecida como "Tempestade de ideias", tem como dinâmica a interação entre os membros do projeto e suas exposições de ideias, auxiliando a criatividade pela grande quantidade de falas organizadas com um foco em comum: encontrar uma boa ideia. Seu objetivo é que os participantes possam chegar a um consenso de uma ideia viável no momento, cada um tendo seu espaço de fala e sobre opiniões variadas. 
 
 ### Rich Picture
+Os diagramas têm uma característica muito importante quando falamos de praticidade e entender as necessidades do cliente: eles podem vir a serem fáceis de entender com o uso de figuras, atores e suas ações. Se preenchido com o cliente, é possível realizar diversos esboços com rapidez e com a facilidade de correção no mesmo momento. Desta forma, é possível deixar o fluxo de ações mais compreensível sem muito texto.
 
 ### 5W2H
-Este método auxilia na tomada de decisão sobre os principais elementos que orientarão a implementação do plano. Quando algo deve ser implantado, entram em cena as seguintes definições:<br>
-    * O que (What) deve ser feito?<br>
-    * Por que (Why) deve ser implementado?<br>
-    * Quem (Who) é o responsável pela ação?<br>
-    * Onde (Where) deve ser executado?<br>
-    * Quando (When) deve ser implementado?<br>
-    * Como (How) deve ser conduzido?<br>
-    * Quanto (How much) vai custar a implementação?
+Este método auxilia na tomada de decisão sobre os principais elementos que orientarão a implementação do plano. Quando algo deve ser implantado, entram em cena as seguintes definições:
+##### Definições:
+* O que (What) deve ser feito?
+* Por que (Why) deve ser implementado?
+* Quem (Who) é o responsável pela ação?
+* Onde (Where) deve ser executado?
+* Quando (When) deve ser implementado?
+* Como (How) deve ser conduzido?
+* Quanto (How much) vai custar a implementação?
 
 ### Entrevista
+Esta ferramenta é comumente usada como forma de contato com o cliente interessado, em uma entrevista fechada, aberta ou mista. Com essa técnica, pode ser objetivado que o cliente explique seu trabalho, suas necessidades e o que mais o entrevistador necessita para auxiliar a modelar os requisitos. Para esta técnica ser bem sucedida, o entrevistador deve ser um bom ouvinte e saber mediar o encontro.
 
 ### Questionário
 De fundamental importância para o êxito de um projeto, o questionário vem como uma ferramenta para colher informações de um público alvo, com o objetivo de perceber necessidades e assim, propor soluções baseadas nas questões abordadas no questionário. 
 
 ### NFR
+Este método busca satisfazer a modelagem de requisitos não funcionais. Os requisitos não funcionais são requisitos que especificam as características desejadas que um sistema deve fornecer, como características de qualidade, por exemplo. De acordo com Chung, o NFR Framework é uma abordagem orientada a processos, onde os requisitos não-funcionais são explícitamente representados como metas a serem obtidas”[CHUNG, 1995]. 
 
 ### Storytelling
+Como forma de complementar o brainstorm, podem-se citar a técnica de Storytelling. De acordo com um estudo feito por, a qualidade e o grau de detalhamento dos requisitos desenvolvidos, utilizando esta abordagem, foi muito maior do que os desenvolvidos usando abordagens tradicionais, tais como brainstorming. Logo, esta técnica permite que haja o detalhamento de necessidades bem detalhado, por meio da ação de "contar histórias".
 
 ### Protótipo
 A prototipagem auxilia no entendimento do potencial cliente em relação à solução proposta a ele. Ele é a ferramenta mais concreta antes da produção do produto, sendo possível realizar diversas correções e aprimoramentos para aumentar a qualidade.
@@ -203,6 +211,7 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 #### RichPicture - Pedido no celular vs fila (versão 1)
 ![richpicture-pedido-cartao-v1](../images/RP_fila_cel.png)
 
+#### 
 ## 7. Conclusão
 
 ## 8. Referências
@@ -215,3 +224,12 @@ Translate Me. Design Sprint. Disponível em: <https://translate-me.github.io/doc
 
 Sebrae. 5W2H. Disponível em: <https://m.sebrae.com.br/Sebrae/Portal%20Sebrae/Anexos/5W2H.pdf>. Acesso em: 21 de agosto de 2019.
 
+Sebrae. Brainstorm. Disponível em: <https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/bds/bds.nsf/741A876FE828908203256E7C00614A23/$File/NT00002206.pdf>. Acesso em: 22 de agosto de 2019.
+
+BELL, Simon. How people use rich pictures to help them think and act. Disponível em: <http://epubs.surrey.ac.uk/745796/1/How%20people%20use%20rich%20pictures%20to%20help%20them%20think%20and%20act%20~%20SPAR.pdf>. Acesso em: 22 de agosto de 2019.
+
+UNICAMP. Requisitos de Software. Disponível em: <http://www.ic.unicamp.br/~ariadne/mc436/1s2013/modulo2.pdf>. Acesso em 22 de agosto de 2019.
+
+BRITO, Isabel. NFR Framework. Disponível em: <http://jaejaneiro.orgfree.com/engsofnfr.pdf>. Acesso em: 22 de agosto de 2019.
+
+BARROS, Diamara. A UTILIZAÇÃO DE HISTÓRIAS EM QUADRINHOS NA ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE. Disponível em: <http://repositorio.utfpr.edu.br/jspui/bitstream/1/3224/1/CP_PPGI_M_Barros%2C%20Diomara%20Martins%20Reigato_2017.pdf>. Acesso em: 22 de agosto de 2019.
