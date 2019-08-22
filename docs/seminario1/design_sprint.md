@@ -10,6 +10,7 @@
 |21/08/2019|0.4| Adição no tópico 3 sobre 5W2H, Questionário e Protótipo.|Shayane Alcântara|
 |21/08/2019|0.5| Adição do Richpicture Pedido no celular vs fila |Elias Bernardo|
 |22/08/2019|0.6| Restruturação do tópico Artefatos(6) e algumas correções |Sara Silva|
+|22/08/2019|0.7| Adição do protótipo de baixa fidelidade |Alan Lima|
 
 ## 1. Introdução
 
@@ -205,7 +206,7 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ##### Resultado após votação:
 
-![poll-images](images/poll_temas.png)
+![poll-images](../images/poll_temas.png)
 
 * Como pode ser visto, o tema escolhido foi o **Restaurante QRcode.**
 
@@ -214,6 +215,8 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 ### 6.1 [RichPicture](./richpicture.md)
 
 ### 6.2 [5W2H](./5w2h.md)
+
+### 6.3 [Protótipos](./prototipos.md)
 
 ## 7. Conclusão
 

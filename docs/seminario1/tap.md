@@ -10,6 +10,7 @@
 |20/08/2019|0.4| Adição dos Custo de Mão de Obra, Logística e Aquisições | Saleh Kader |
 |20/08/2019|0.5| Adição Infraestrutura | Guilherme Marques |
 |21/08/2019|0.6| Refatorando Referências, Refatorando Estimativa de Custo, Adição Custos Totais, Adição Critérios de Pronto para o Projeto | Saleh Kader
+|22/08/2019|0.7| Refatorando Referências, Refatorando Estimativa de Custo, Adição Custos Totais, Adição Critérios de Pronto para o Projeto | Saleh Kader
 
 ## Stakeholders
 
