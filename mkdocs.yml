@@ -30,6 +30,7 @@ pages:
   - Dinâmica e Seminário I:
       - Termo de abertura de projeto: 'seminario1/tap.md'
       - Design Sprint: 'seminario1/design_sprint.md'
-      - 5W2H: 'seminario1/5w2h.md'
-  - Iniciativas Extra:
-      - Materiais complementares: 'iniciativas_extra/pesquisa_de_mercado.md'
+      - Entrevistas: 'seminario1/entrevistas.md'
+      - Storytelling: 'seminario1/storytelling.md'
+  - Iniciativas Extras:
+      - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
