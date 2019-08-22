@@ -12,6 +12,8 @@
 |22/08/2019|0.6| Restruturação do tópico Artefatos(6) e algumas correções |Sara Silva|
 |22/08/2019|0.7| Adição do protótipo de baixa fidelidade |Alan Lima|
 |22/08/2019|0.8| Adição no topico 3 sobre Rich Picture |Alan Lima|
+|22/08/2019|0.8| Adição no topico 3 sobre Brainstorm |Alan Lima|
+
 
 ## 1. Introdução
 
@@ -35,6 +37,7 @@ Nesta etapa, é realizada a validação com os potenciais clientes com testes, p
 ## 3. Artefatos Construídos
 
 ### Brainstorm
+Possui extrema importância para geração das idéias do projeto. Caracteriza-se por ser uma dinâmica de grupo que é capaz de juntar informações e estimular o pensamento criativo.
 
 ### Rich Picture
 
