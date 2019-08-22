@@ -11,6 +11,7 @@
 |21/08/2019|0.5| Adição do Richpicture Pedido no celular vs fila |Elias Bernardo|
 |22/08/2019|0.6| Restruturação do tópico Artefatos(6) e algumas correções |Sara Silva|
 |22/08/2019|0.7| Adição do protótipo de baixa fidelidade |Alan Lima|
+|22/08/2019|0.8| Adição no topico 3 sobre Rich Picture |Alan Lima|
 
 ## 1. Introdução
 
@@ -36,6 +37,9 @@ Nesta etapa, é realizada a validação com os potenciais clientes com testes, p
 ### Brainstorm
 
 ### Rich Picture
+
+É responsável por ilustrar os principais elementos e relacionamentos que precisam ser considerados para implementação do plano.
+Consiste em imagens, texto, símbolos e ícones que são responsáveis por facilitar o entendimento da situação de uma forma simples e rápida.
 
 ### 5W2H
 Este método auxilia na tomada de decisão sobre os principais elementos que orientarão a implementação do plano. Quando algo deve ser implantado, entram em cena as seguintes definições:<br>
