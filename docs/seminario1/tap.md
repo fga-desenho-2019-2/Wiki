@@ -9,7 +9,7 @@
 |20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco |
 |20/08/2019|0.4| Adição dos Custo de Mão de Obra, Logística e Aquisições | Saleh Kader |
 |20/08/2019|0.5| Adição Infraestrutura | Guilherme Marques |
-|21/08/2019|0.6| Refatorando Referências | Saleh Kader
+|21/08/2019|0.6| Refatorando Referências, Refatorando Estimativa de Custo, Adição Custos Totais, Adição Critérios de Pronto para o Projeto | Saleh Kader
 
 ## Stakeholders
 
@@ -98,15 +98,17 @@ Com o levantamento dentro do Site Glassdoor, chegou-se a um valor médio de R$ 2
 
 ### Logística e Aquisições
 
-Para o levantamento de custos foram considerados computadores com a especificação de um processador i7, 2 Tb de Espaço de Armazenamento, 8 Gb de memória RAM e Windows 10, todos os notebooks da marca Dell com o custo até o dia 20/08/2019 de R$ 3.000,00. Além disso, o espaço de _Coworking_ considerado foi calculado para o uso em 86 dias úteis por 6 horas por dia de trabalho, internet e luz estão inclusos no valor da hora do uso do _Coworking_.
+Para o levantamento de custos foram considerados computadores com a especificação de um processador i7, 2 Tb de Espaço de Armazenamento, 8 Gb de memória RAM e Windows 10, todos os notebooks da marca Dell com o custo até o dia 20/08/2019 de R$ 3.000,00.
+
+Além disso, o espaço de _Coworking_ considerado foi calculado para o uso em 86 dias úteis por 6 horas por dia de trabalho, internet e luz estão inclusos no valor da hora do uso do _Coworking_. 
+
+Já o _Marketing Digital_ foi levado em consideração em 4 meses, nas plataformas do Facebook, Twitter e Instagram. 
 
 |Recursos|Preço Unitário|Quantidade|Preço Total|
 |--------|--------------|----------|-----------|
 |Notebooks|R$ 3.000,00|10|R$ 30.000,00|
 |Espaço _Coworking_ para 10 pessoas|R$ 36,00 hora|6 horas por dia|R$ 18.576,00|
-|Marketing Digital|R$ ||R$ |
-|Custo estimado|-|-|R$ |
-|Custo estimado + 15% de taxa de risco|-|-|R$ |
+|Marketing Digital|R$ 441,45 mensais|4 meses|R$ 1.765,80|
 
 ### Infraestrutura
 
@@ -114,18 +116,37 @@ Considerando uma cultura de DevOps, popular atualmente, e tecnologias populares 
 
 Vamos considerar então três máquinas virtuais, em um serviço de computação em nuvem e com uma configuração mínima capaz de rodar serviços e conteiners *docker*. 
 
-No site da [Digital Ocean](https://www.digitalocean.com/pricing/) uma máquina com 2Gb de mémoria RAM, 1 núcleo de CPU e 50Gb de armazenamento está custando $10 dólares, considerando o dólar custando R$4,05 reais, o custo final de uma máquina seria R$ 40,50 reais.
+No site da Digital Ocean uma máquina com 2Gb de mémoria RAM, 1 núcleo de CPU e 50Gb de armazenamento está custando $10 dólares, considerando o dólar custando R$4,05 reais, o custo final de uma máquina seria R$ 40,50 reais.
+
+Já o Domínio arrecadado na GoDaddy com o endereço: <https://www.qrcomer.com>. Está saindo por cerca de R$ 23,99 anuais.
 
 
 
 | Recursos                                         | Preço Unitário | Quantidade | Preço Total |
 | ------------------------------------------------ | -------------- | ---------- | ----------- |
-| Máquina Virtual ([DO](https://digitalocean.com)) | R$ 40,50       | 3          | R$ 121,50   |
-|                                                  |                |            |             |
+| Máquina Virtual                                  | R$ 40,50       | 3          | R$ 121,50   |
+| Domínio                                          | R$ 23,99       | -          | R$ 23,99    |
 
-Obs: Todos os valores referidos aqui são referentes ao mês de Agosto de 2019
+Obs: Todos os valores referidos aqui são referentes ao mês de Agosto de 2019.
+
+### Custos Totais
+
+Fazendo as somas de todos os tipos de custos, chegamos aos custos de todo o projeto ao longo dos 4 meses de execução.
+
+|Tipo de Custo|Valor|
+|-------------|-----|
+|Custo de Mão de Obra|R$ 103.520,00|
+|Logística e Aquisições| R$ 50.341,00|
+|Infraestrutura| R$ 145,49|
+|**Total**| **R$ 154.008,49**|
+
+## Critérios de Pronto para o Projeto
+
+A finalização do projeto do **QR Comer** será alcançado quando todo o software estiver desenvolvido e todos os testes e documentação técnica do projeto estiver implementado dentro dos limites de prazo e custos estabelecidos nesse documento. 
 
 ## Referências
+
+>Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
 
 >Documentação Translate-me, 2019. Página TAP - Termo de Abertura do Projeto. Disponível em: <https://translate-me.github.io/docs/documentos/gerencia/tap/>. Acesso em 20 de Agosto de 2019.
 
@@ -137,4 +158,6 @@ Obs: Todos os valores referidos aqui são referentes ao mês de Agosto de 2019
 
 >BSB Coworking. Página Sala de Reunião. Disponível em: <https://bsbcoworking.com.br/produto/sala-de-reuniao-1-hora/>. Acesso em 20 de Agosto de 2019.
 
->Project Charter Template. Disponível em: <https://github.com/fga-eps-mds/A-Disciplina/blob/master/GPP_Material/04%20-%20inicializacao/Project-Charter.doc>. Acesso em 19 de agosto de 2019.
+>Digital Ocean. Página Pricing. Disponível em: <https://www.digitalocean.com/pricing/>. Acesso em 20 de Agosto de 2019.
+
+>GoDaddy. Página Domain Search. Disponível em: <https://br.godaddy.com/domainsearch/find?isc=gt02br20&checkAvail=1&tmskey=1dom_03_godaddyb&domainToCheck=qrcomer.com>. Acesso em 21 de Agosto de 2019.
