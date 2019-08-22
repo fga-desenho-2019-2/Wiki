@@ -1,0 +1,8 @@
+**1. O que mais te incomoda quando vai a um restaurante ou lanchonete?**<br>
+É a falta de atenção dos garçons.
+
+**2. Então se você pudesse entrar num restaurante e puder fazer o pedido sem um garçom, seria melhor?**<br>
+Seria mais interessante. Mas não é a presença que.., é que assim, você entra num restaurante, aí o cara prepara tudo. Só que ele vaza, e pra pescar um de volta é um problema. Tá certo que em um restaurante, o garçom atende um nº de mesas e não pode ficar a sua disposição o tempo todo né, se eu pudesse fazer o pedido teria que ter um tablet em cada mesa, que seria o cardápio. Eu peço já a bebida, a comida, uma entrada e dispara pra lá e o garçom só traz. Eu acho interessante, que seria um passo muito mais além. Porque pensa, vc chega num restaurante, e a entrada demora pq tá muito cheio, pq tem dia que não tá tão cheio. Ai vc entra e espera o cara trazer o cardápio. E depois de toda aquela demora das pessoas escolhendo, carne crua, assada, gostos. Aí o cara desaparece. Depois ele volta e aí, resolveu? E o povo não resolveu. Então eu acho que com o tablet com um programa desses, você chega lá e anota os pedidos no programa com as opções, ai fecha e dispara para central, cozinha. A cozinha prepara e puft, manda. Aí seria interessante. Com as bebidas também, tem todo o trâmite do garçom levar, buscar. Pularia um passo grande, as bebidas seriam separadas da comida, num setor diferente e isso entraria numa fila virtual, e você vai pedindo e a bebida vai sendo servida.
+
+**3. Você preferiria fazer todo o processo de pedido por um aplicativo, incluindo o pagamento, ou acha mais seguro fazer o pagamento no caixa?**<br>
+Isso é uma coisa que, eu pagaria no app tranquilamente. Botando o lado prático atual, você paga muita coisa por telefone.
