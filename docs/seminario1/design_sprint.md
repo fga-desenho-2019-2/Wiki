@@ -1,6 +1,6 @@
 # Design Sprint
 
-# Histórico de Revisão:
+## Histórico de Revisão:
 
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
@@ -9,18 +9,24 @@
 |20/08/2019|0.3|Adição do tópico 5 de decisão de tema e Adição do tópico de Artefatos| Pedro Rodrigues |
 |21/08/2019|0.4| Adição no tópico 3 sobre 5W2H, Questionário e Protótipo.|Shayane Alcântara|
 |21/08/2019|0.5| Adição do Richpicture Pedido no celular vs fila |Elias Bernardo|
+|22/08/2019|0.6| Restruturação do tópico Artefatos(6) e algumas correções |Sara Silva|
 
 ## 1. Introdução
 
 ## 2. Design Sprint
+
 ### 2.1 Unpack (Entenda)
 Nesta etapa, o grupo reúne informações com o objetivo de entender a proposta, elaborar hipóteses e ideias. Além disso, ter um espaço definido e adequado é importante para manter as dinâmicas eficientes.
+
 ### 2.2 Sketch (Desenhe)
 Nesta etapa, a equipe realiza esboços das ideias, como um "mapa do desafio" e as aprimora com o auxílio dos especialistas da empresa. É interesse que no espaço definido na etapa anterior tenha meios para facilitar estas ações. 
+
 ### 2.3 Decide (Decida)
 A partir das ideias apresentadas, esta etapa é responsável pela escolha da ideia mais adequada para a equipe. Comumente, é desenhado um storyboard como um pré-protótipo, a fim de visualizar os possíveis detalhes do plano escolhido.
+
 ### 2.4 Prototype (Prototipe)
 Nesta etapa, é desenvolvido o protótipo baseado no storyboard da etapa anterior. É feito também um roteiro de entrevistas para preparação da validação com os potenciais clientes.
+
 ### 2.5 Validate (Valide)
 Nesta etapa, é realizada a validação com os potenciais clientes com testes, por meio do protótipo criado na etapa anterior. Caso necessário, a ideia é aprimorada. Com essa etapa concluída, já é possível direcionar a equipe para ações mais concretas no desenvolvimento da ideia.
 
@@ -32,13 +38,14 @@ Nesta etapa, é realizada a validação com os potenciais clientes com testes, p
 
 ### 5W2H
 Este método auxilia na tomada de decisão sobre os principais elementos que orientarão a implementação do plano. Quando algo deve ser implantado, entram em cena as seguintes definições:<br>
-    * O que (What) deve ser feito?<br>
-    * Por que (Why) deve ser implementado?<br>
-    * Quem (Who) é o responsável pela ação?<br>
-    * Onde (Where) deve ser executado?<br>
-    * Quando (When) deve ser implementado?<br>
-    * Como (How) deve ser conduzido?<br>
-    * Quanto (How much) vai custar a implementação?
+
+* O que (What) deve ser feito?<br>
+* Por que (Why) deve ser implementado?<br>
+* Quem (Who) é o responsável pela ação?<br>
+* Onde (Where) deve ser executado?<br>
+* Quando (When) deve ser implementado?<br>
+* Como (How) deve ser conduzido?<br>
+* Quanto (How much) vai custar a implementação?
 
 ### Entrevista
 
@@ -59,16 +66,20 @@ Neste tópico está contido todos os temas levantados pelo grupo, tendo eles com
 Os temas são bastante diversos e a maioria dos mesmos foi desenvolvido de forma individual, detonando um grupo bem heterogêneo, já que cada indivíduo expressa uma visão pessoal diferente sobre um assunto.
 
 ### 4.1 Professores autônomos
+
 #### **Situação Problema**
 Professores autônomos possuem dificuldade para gerenciar alunos ou fazem o controle de forma manual.
+
 #### **Solução**
 Um software que facilite a gerência de alunos e permita a adição de tarefas, dentre outras features. (Para professores do 6º ao 3º ano do ensino médio).
+
 #### **Principais funcionalidades**
 * Cadastro de alunos por professor (o professor se cadastra e  posteriormente cadastra seus alunos na plataforma, fornecendo para eles os dados de login gerados);
 * Grade horária;
 * Inserção de atividades e compartilhamento colaborativo (um professor poderá acessar a atividade de outro desde que compartilhe as suas);
 * Desempenho dos alunos;
 * Cálculo financeiro;
+
 #### **Tecnologias e padrões**
 API: NodeJS (Express)
 Front: Vue
@@ -155,6 +166,7 @@ CadêGuincho: https://cadeguincho.com
 Os temas anteriormente propostas sofreram críticas e elogios pelos membros do grupo e com isso um levantamento de pontos positivos e negativos a cerca de cada proposta.
 
 ### 5.1 Professores autônomos 
+
 ##### Pontos Positivos
 * Traz suporte para um nicho de mercado. 
 * Explora área de conhecimentos nova para o grupo.
@@ -165,6 +177,7 @@ Os temas anteriormente propostas sofreram críticas e elogios pelos membros do g
 * Exige adesão de um público retraido com tecnologias novas.
 
 ### 5.2 Restaurante com QR code
+
 ##### Pontos Positivos
 * Inovador
 * Explora área de conhecimentos nova para o grupo.
@@ -176,6 +189,7 @@ Os temas anteriormente propostas sofreram críticas e elogios pelos membros do g
 * Exige integração do sistema com o restaurante
 
 ### 5.3 Uber de guincho
+
 ##### Pontos Positivos
 * Concorrência baixa
 * Permite a aquisição de novos conhecimentos
@@ -188,6 +202,7 @@ Os temas anteriormente propostas sofreram críticas e elogios pelos membros do g
 ### 5.4 Votação e escolha do Tema
 Após um período de debate entre o grupo, foi-se decidido que o tema seria escolhido a partir de uma votação pelo ferramenta **Poll Telegram**. 
 <br><br>
+
 ##### Resultado após votação:
 
 ![poll-images](images/poll_temas.png)
@@ -196,12 +211,9 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ## 6. Artefatos
 
-### 6.1 RichPicture
-#### RichPicture - Pedido na visão do cliente (Cartão de crédito - versão 1)
-![richpicture-pedido-cartao-v1](../images/richpicture-esboco-pedido-com-cartao.jpg)
+### 6.1 [RichPicture](./richpicture.md)
 
-#### RichPicture - Pedido no celular vs fila (versão 1)
-![richpicture-pedido-cartao-v1](../images/RP_fila_cel.png)
+### 6.2 [5W2H](./5w2h.md)
 
 ## 7. Conclusão
 
