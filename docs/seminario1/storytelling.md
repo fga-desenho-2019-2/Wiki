@@ -33,3 +33,7 @@ Tecnologia é uma coisa que, ao mesmo tempo, pode ser muito boa é muito estranh
 
 Uma dessas novidades que realmente me chamou a atenção é um pequeno App usado na China. Ele se chama WeChat, e aparentemente vem pré-instalado em todos os smartphones de lá. Aparentemente, o WeChat é um App de bate-papo, como o nosso famoso WhatsApp, entretanto embutido com um monte de funcionalidades diferentes. Uma dessas funcionalidades é um serviço de pagamento chamado WeChat Pay. Tipo o nosso PicPay embutido no WhatsApp, formando um daqueles chamados SuperApps.
 <a href="storytellings/Storytelling - Vendedor.pdf" download>[mais]</a>
+
+## Referências
+
+SANTOS, Venícios Gustavo. **UTILIZAÇÃO DE STORYTELLING COMO FERRAMENTA DE AQUISIÇÃO DE REQUISITOS EM PROCESSO DE DESENVOLVIMENTO DE SOFTWARE APOIADOS EM MODELOS ÁGEIS: O USO APOIADO NO EXTREME PROGRAMMING**. E-tec, Belo Horizonte, v.1, n.1, nov 2008 , [S. l.], 1 nov. 2008. Disponível em: <https://revistas.unibh.br/dtec/article/view/440/238>. Acesso em: 22 ago. 2019.
