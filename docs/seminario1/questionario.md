@@ -1,4 +1,4 @@
-# Questionário 
+# Questionário
   
 ## Histórico de Revisão:
 
@@ -8,14 +8,14 @@
 
 ## 1. Introdução
 
-Questionário é uma técnica inflexível de elicitação de requisitos, pois impossibilita análises subjetivas, mas é bastante útil porque é capaz de ser aplicada a várias pessoas. Neste trabalho, um questionário foi desenvolvido a fim de elicitar e priorizar requisitos do aplictivo Guiabolso.
+Questionário é uma técnica inflexível de elicitação de requisitos, pois impossibilita análises subjetivas, mas é bastante útil porque é capaz de ser aplicada a várias pessoas. Neste trabalho, um questionário foi desenvolvido a fim de elicitar e priorizar requisitos do aplictivo QRComer.
 
 ## 2. Metodologia
 
 O questionário possui perguntas que tem por ojetivo entender melhor os incômodos de pessoas que frequentam praças de alimentações e se elas gostariam que alguns dos problemas fossem resolvidos através do celular, por meio da aplicação proposta pelo grupo.
 O questionário foi divulgado em grupos da faculdade e de familiares dos integrantes do grupo e até o momento, 27 pessoas responderam.
 
-## 3. Perguntas 
+## 3. Perguntas
 
 Abaixo estão as perguntas e estatísticas das respostas:
 
@@ -61,27 +61,26 @@ Abaixo estão as perguntas e estatísticas das respostas:
 
 | Código | Descrição | Prioridade |
 |--|--|--|
-| Q01 ||| 
-| Q02 ||| 
-| Q03 ||| 
-| Q04 ||| 
-| Q05 ||| 
-| Q06 ||| 
-| Q07 ||| 
-| Q08 ||| 
-| Q09 ||| 
-| Q10 ||| 
-| Q11 ||| 
-| Q12 ||| 
-| Q13 ||| 
+| Q01 |||
+| Q02 |||
+| Q03 |||
+| Q04 |||
+| Q05 |||
+| Q06 |||
+| Q07 |||
+| Q08 |||
+| Q09 |||
+| Q10 |||
+| Q11 |||
+| Q12 |||
+| Q13 |||
 | Q14 |||
 | Q15 |||
 | Q16 |||
-| Q17 ||| 
-| Q18 ||| 
-| Q19 ||| 
+| Q17 |||
+| Q18 |||
+| Q19 |||
 
 ## 6. Referências
 
 SEQ18RRANO, Maurício; SERRANO, Milene. Requisitos - Aula 07. 1º/2019. 50 slides. Material apresentado para a disciplina de Requisitos de Software no curso de Engenharia de Software da UnB, FGA.
-
