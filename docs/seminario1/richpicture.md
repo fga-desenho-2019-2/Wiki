@@ -21,12 +21,12 @@
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) | 
 
 ### RichPicture 03 - Sistema de segurança básico da aplicação
-![richpicture-seguranca-v1](../images/richpicture-esboco-seguranca-v1.jpg)
+![richpicture-seguranca-v1](../images/richpicture-esboco-seguranca-v2.jpg)
 
  **RP03** | **Sistema de segurança básico da aplicação**  |
 |--|--|
-| **Versão**| Atual: 1.0 (21/08) <br> Anterior: - | 
-| **Descrição** | Sistema de segurança básica da aplicação. | 
+| **Versão**| Atual: 2.0 (22/08) <br> Anterior: [1.0](#richpicture-03-sistema-de-seguranca-basico-da-aplicacao) | 
+| **Descrição** | Sistema de segurança básico da aplicação. | 
 |**Autor**| [Shayane Marques Alcântara](https://github.com/shayanealcantara) | 
 
 ### RichPicture 04 - Visão do Restaurante sem QR Comer
@@ -76,9 +76,18 @@
 | **Descrição** | Pedido na visão do cliente com o uso do cartão de crédito. | 
 |**Autor**| [Pedro Rodrigues Pereira](https://github.com/pedro-prp) | 
 
-![richpicture-sem-qr-v1](../images/rp_feo/SemQrV1.jpg)
+### RichPicture 03 - Sistema de segurança básico da aplicação
+![richpicture-seguranca-v1](../images/richpicture-esboco-seguranca-v1.jpg)
+
+ **RP03** | **Sistema de segurança básico da aplicação**  |
+|--|--|
+| **Versão**| Atual: 1.0 (21/08) <br> Anterior: - | 
+| **Descrição** | Sistema de segurança básico da aplicação. | 
+|**Autor**| [Shayane Marques Alcântara](https://github.com/shayanealcantara) | 
 
 #### RichPicture 04 - Visão do Restaurante sem QR Comer
+
+![richpicture-sem-qr-v1](../images/rp_feo/SemQrV1.jpg)
 
  **RP04** | **Restaurante sem QR Comer**  |
 |--|--|
@@ -86,9 +95,10 @@
 | **Descrição** | Visão do Restaurante sem QR Comer | 
 |**Autor**| [Pedro Féo](https://github.com/Phe0) | 
 
-![richpicture-com-qr-v1](../images/rp_feo/ComQRV1.jpg)
 
 #### RichPicture 05 - Visão do Restaurante com QR Comer
+
+![richpicture-com-qr-v1](../images/rp_feo/ComQRV1.jpg)
 
  **RP05** | **Restaurante com QR Comer**  |
 |--|--|
@@ -96,12 +106,12 @@
 | **Descrição** | Visão do Restaurante com QR Comer | 
 |**Autor**| [Pedro Féo](https://github.com/Phe0) | 
 
-#### Visão geral do Restaurante
+#### RichPicture 06 - Visão geral do Restaurante
 
 ![richpicture-restaurante-geral-v1](../images/rp_feo/RestauranteV1.jpg)
 
- **---** | **Restaurante Geral**  |
+ **RP06** | **Restaurante Geral**  |
 |--|--|
 | **Versão**| Atual: 1.0 (20/08) <br> Anterior: - | 
 | **Descrição** | Visão geral do Restaurante | 
-|**Autor**| [Pedro Féo](https://github.com/Phe0) | 
+|**Autor**| [Pedro Féo](https://github.com/Phe0) |
