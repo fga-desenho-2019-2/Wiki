@@ -5,6 +5,8 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |21/08/2019|0.1|Adição de Introdução e entrevistas realizadas|Matheus Blanco|
+|22/08/2019|0.2|Adição de entrevistas|Pedro Rodrigues|
+
 
 ## Introdução
 
@@ -113,6 +115,20 @@ Para que uma entrevista seja realizada de maneira efetiva, é necessário a cria
 **Entrevistador: Matheus Salles Blanco**
 
 [Entrevista 8: Beatriz Blanco](lista-entrevistas/entrevista8.md)
+
+<br>
+**Entrevistado: Isadora Borges**
+
+**Entrevistador: Pedro Rodrigues Pereira**
+
+[Entrevista 9: Isadora Borges](lista-entrevistas/entrevista10.md)
+
+<br>
+**Entrevistado: Renan Schadt**
+
+**Entrevistador: Pedro Rodrigues Pereira**
+
+[Entrevista 10: Renan Schadt](lista-entrevistas/entrevista11.md)
 
 ### Vendedores
 
