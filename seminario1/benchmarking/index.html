@@ -1,0 +1,687 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Repositório da disciplina de QR Comer">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Benchmarking - QR Comer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/landing-page.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#estudo-de-benchmarking" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="QR Comer" class="md-header-nav__button md-logo">
+          
+            <img src="../../favicon.ico" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                QR Comer
+              </span>
+              <span class="md-header-nav__topic">
+                Benchmarking
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/fga-desenho-2019-2/Wiki/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="QR Comer" class="md-nav__button md-logo">
+      
+        <img src="../../favicon.ico" width="48" height="48">
+      
+    </a>
+    QR Comer
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/fga-desenho-2019-2/Wiki/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Dinâmica e Seminário I
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Dinâmica e Seminário I
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tap/" title="Termo de abertura de projeto" class="md-nav__link">
+      Termo de abertura de projeto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../design_sprint/" title="Design Sprint" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Iniciativas Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Iniciativas Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/pesquisa_de_mercado/" title="Materiais complementares" class="md-nav__link">
+      Materiais complementares
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/identidade_visual/" title="Identidade Visual" class="md-nav__link">
+      Identidade Visual
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estudo-de-benchmarking" title="Estudo de Benchmarking" class="md-nav__link">
+    Estudo de Benchmarking
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onyo" title="Onyo" class="md-nav__link">
+    Onyo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burguer-king" title="Burguer King" class="md-nav__link">
+    Burguer King
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voceqpad" title="VocêQPad" class="md-nav__link">
+    VocêQPad
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlin" title="Getlin" class="md-nav__link">
+    Getlin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suplicy-cafes" title="Suplicy Cafés" class="md-nav__link">
+    Suplicy Cafés
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/fga-desenho-2019-2/Wiki/edit/master/docs/seminario1/benchmarking.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Benchmarking</h1>
+                
+                <h2 id="estudo-de-benchmarking">Estudo de Benchmarking</h2>
+<h3 id="onyo">Onyo</h3>
+<p>O app tem o objetivo de acabar com as filas em praças de alimentação e restaurantes, possui como foco apenas o atendimento em balcão. O usuário pode fazer seu pedido pelo celular, escolhendo restaurante e visualizando os pratos e podendo pagar pelo próprio app.
+O app também mostra ao usuário o tempo estimado para o prato ficar pronto.
+Apresenta descontos e cupons exclusivos do app.</p>
+<p>Opções de pagamento: cartão de crédito, Ticket, VR Refeição ou Alelo e sodexo</p>
+<p>Disponível em:</p>
+<ul>
+<li>Shopping JK Iguatemi</li>
+<li>Shopping Pátio Paulista</li>
+<li>Shopping Center 3</li>
+<li>Shopping Eldorado</li>
+<li>Shopping Market Plac</li>
+<li>Shopping Jardim Sul</li>
+<li>Shopping West Plaza</li>
+<li>Shopping Villa Lobos</li>
+<li>Shopping Vila Olímpia</li>
+<li>Shopping Iguatemi São Paulo</li>
+<li>Shopping Cidade São Paulo</li>
+<li>Top Center</li>
+<li>Shopping Iguatemi Alphaville</li>
+<li>Shopping Tamboré</li>
+<li>Morumbi Shopping</li>
+<li>Restaurante Piadina Vila Olímpia (Av. Dr. Cardoso de Melo)</li>
+<li>Restaurante Arábia do Hospital Sírio Libanês</li>
+<li>Insper </li>
+</ul>
+<p>Modelo de negócio: os restaurante pagam à startup uma taxa de sucesso por transação.</p>
+<p>Reclamações: </p>
+<ul>
+<li>Falta de restaurantes que usem o app.</li>
+<li>Falta de área de suporte.</li>
+<li>Não há pagamento em dinheiro.</li>
+<li>Demora pra instalar o app.</li>
+<li>Falta de campo de observação no pedido.</li>
+<li>Pedidos feitos pelo app demoram mais do que os pedidos feitos no balcão ( possível uso de sistemas paralelos para gerenciamento de pedidos via app e via balcão)</li>
+<li>Não existe a possibilidade de se cancelar o pedido.</li>
+<li>Não aceita débito</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>App</strong></th>
+<th><strong>Onyo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Féo</a></td>
+</tr>
+<tr>
+<td><strong>Fontes</strong></td>
+<td><a href="https://play.google.com/store/apps/details?id=com.onyo&amp;hl=pt_BR">Play Store</a>, <a href="https://www.site.onyo.com/en">Site Onyo</a>, <a href="https://projetodraft.com/onyo-um-app-que-adianta-pedidos-de-restaurantes-em-pracas-de-alimentacao/">ProjetoDraft</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="burguer-king">Burguer King</h3>
+<p>1.Faça seu cadastro.
+2.Escolha a loja na qual você vai retirar o seu pedido.
+3.Faça seu pedido e pague pelo APP.
+4.Na loja escolhida, procure a comunicação com o QRCode e o escaneie pelo APP para seu pedido ser enviado para a cozinha.
+5.Agora é só esperar seu nome ser chamado para retirar o pedido.</p>
+<p>Possui cupons exclusivos</p>
+<p>Reclamações:</p>
+<ul>
+<li>nem toda loja apresenta qr code </li>
+<li>muitos pedidos cancelados</li>
+<li>nem toda loja aceita os cupons</li>
+<li>muitos problemas na aplicação(não abre, crédito duplicado, débito mas com pedido cancelado)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>App</strong></th>
+<th><strong>Burguer King</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Féo</a></td>
+</tr>
+<tr>
+<td><strong>Fontes</strong></td>
+<td><a href="https://play.google.com/store/apps/details?id=burgerking.com.br.appandroid&amp;hl=pt_BR">Play Store</a>, <a href="https://cupons.burgerking.com.br/">Site Burguer King</a>, <a href="https://apps.apple.com/br/app/burger-king-brasil/id1295116265">App Store</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="voceqpad">VocêQPad</h3>
+<p>Tem o objetivo de acabar com as filas para comer de forma mais ágil, tem acesso ao cardápio com foto dos pratos</p>
+<p>Integrado ao sistema do estabelecimento</p>
+<p>Possui opção de atendimento em balcão</p>
+<ul>
+<li>pede e paga pelo app</li>
+<li>aguarde ser chamado</li>
+<li>retire no balcão</li>
+<li>
+<p>Possui opção de atendimento na mesa</p>
+</li>
+<li>
+<p>leia o qr code da mesa</p>
+</li>
+<li>faça o pedido </li>
+<li>acompanhe e pague a conta</li>
+</ul>
+<p>Formas de pagamento:  Cartão de Crédito, Ticket Restaurante e PayPal</p>
+<p>Modelo de negócio: os restaurante pagam 199 por mes</p>
+<p>Reclamações:</p>
+<ul>
+<li>apenas alguns restaurantes em são paulo </li>
+<li>usuário precisa baixar o app</li>
+<li>falhas na aplicaçação</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>App</strong></th>
+<th><strong>VocêQPad</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Féo</a></td>
+</tr>
+<tr>
+<td><strong>Fontes</strong></td>
+<td><a href="http://app.voceqpad.com.br/">Site VocêQPad</a>, <a href="https://www.facebook.com/voceqpad/">Página do Facebook</a>, <a href="https://play.google.com/store/apps/details?id=br.com.voceqpad.voceqpadsmartphone&amp;hl=pt_BR&amp;showAllReviews=true">Play Store</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="getlin">Getlin</h3>
+<p>App para gestão de filas e reservas. Permite fazer uma reserva em um restaurante pelo celular, não sendo necessário ligar ou ir pessoalmente no restaurante para fazê-la.</p>
+<p>O foco maior é nas empresas que irão utilizar o aplicativo, mas os usuários dos restaurantes também entram no rol do negócio.</p>
+<p>Features: </p>
+<ul>
+<li>Gestão da fila de espera</li>
+<li>Gestão de reservas</li>
+<li>Cardápio online</li>
+</ul>
+<p>Modelo de negócio: a precificação é feita de maneira personalizada pela equipe do app.</p>
+<p>Reclamações:</p>
+<ul>
+<li>Taxa de 7.90 para entrar na fila remotamente;</li>
+<li>Pouca oferta de restaurantes; </li>
+<li>Crashes e tamanho do app;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>App</strong></th>
+<th><strong>Getlin</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/ebmm01">Elias Bernardo</a></td>
+</tr>
+<tr>
+<td><strong>Fontes</strong></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="suplicy-cafes">Suplicy Cafés</h3>
+<p>Basicamente igual o do BK, permitindo fazer o pedido e pagar pelo app, porém feito exclusivamente para o restaurante de mesmo nome (Suplicy Cafés).</p>
+<p>Modelo de negócio: por ser um app exclusivo, não há como definir.</p>
+<p>Reclamações:</p>
+<ul>
+<li>(O app possui poucas avaliações na playstore, sendo a maioria enviesada.)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>App</strong></th>
+<th><strong>Suplicy Cafés</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/ebmm01">Elias Bernardo</a></td>
+</tr>
+<tr>
+<td><strong>Fontes</strong></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019, <a href="https://github.com/fga-desenho-2019-2/Wiki/">QR Comer</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/fga-desenho-2019-2/Wiki" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

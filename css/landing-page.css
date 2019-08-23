@@ -1,0 +1,182 @@
+body {
+    background-color: #efefef;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.section {
+    display: flex;
+    justify-content:space-around;
+    width: 75vw;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.section2 {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    width: 75vw;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    color: #EF596B;
+}
+
+.link-handler {
+    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #EF596B;
+}
+
+.card {
+    background-color: #efefef;
+    width: 20em;
+    height: 20em;
+    cursor: pointer;
+    border-radius: 0 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s;
+    border: 4px solid #EF596B;
+}
+
+.card:hover {
+    box-shadow: 0 15px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: translate(0, -10px);
+}
+
+.imgs {
+    width: 5em;
+    margin-bottom: 2em;
+}
+
+h2 {
+    margin: 0;
+    width: auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.round-card {
+    border-radius: 0 20px;
+    width: 12em;
+    height: 12em;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: relative;
+    transition: all 0.3s;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+    border: 4px solid #EF596B;
+    color: #EF596B;
+}
+
+.member-photo {
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1f1f1f99;
+    text-decoration: underline;
+}
+
+.round-card:hover .overlay {
+    opacity: 1;
+}
+
+.round-card:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.line {
+    margin-top: 0;
+    width: 0px;
+    border: 2px solid #EF596B;
+    transition: all 0.5s;
+}
+
+.round-card:hover .line {
+    width: 100%;
+}
+
+.text {
+    color: #efefef;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 1s;
+    font-weight: bold;
+  }
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.landing-section {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to bottom right, #EB4476, #E18855);
+    margin: 0;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 15vw;
+    z-index: 0;
+    position: fixed;
+}
+
+.footer {
+    height: 20vh;
+    background-image: linear-gradient(to bottom right, #EB4476, #E18855);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+div {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+}
