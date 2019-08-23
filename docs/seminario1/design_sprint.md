@@ -237,6 +237,10 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.6 [Questionário](./questionario.md)
 
+### 6.7 [Entrevistas](./entrevistas.md)
+
+### 6.8 [Storytelling](./storytelling.md)
+
 ## 7. Conclusão
 
 ## 8. Referências
