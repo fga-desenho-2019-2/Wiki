@@ -232,8 +232,6 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.3 [Protótipos](./prototipos.md)
 
-<<<<<<< HEAD
-=======
 ### 6.4 [Diagrama de Ishikawa](./ishikawa.md)
 
 ### 6.5 [Estudo de Benchmarking](./benchmarking.md)
@@ -244,9 +242,6 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.8 [Storytelling](./storytelling.md)
 
-## 7. Conclusão
-
->>>>>>> 2b8da3fef8d2a8da5911c2fac4dc58848d1f6471
 ## 8. Referências
 
 Saiba Mais. The Design Sprint. Disponível em: <https://www.gv.com/sprint/>. Acesso em: 21 de agosto de 2019.
