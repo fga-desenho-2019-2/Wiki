@@ -21,12 +21,12 @@
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) | 
 
 ### RichPicture 03 - Sistema de segurança básico da aplicação
-![richpicture-seguranca-v1](../images/richpicture-esboco-seguranca-v1.jpg)
+![richpicture-seguranca-v1](../images/richpicture-esboco-seguranca-v2.jpg)
 
  **RP03** | **Sistema de segurança básico da aplicação**  |
 |--|--|
-| **Versão**| Atual: 1.0 (21/08) <br> Anterior: - | 
-| **Descrição** | Sistema de segurança básica da aplicação. | 
+| **Versão**| Atual: 2.0 (22/08) <br> Anterior: [1.0](#richpicture-03-sistema-de-seguranca-basico-da-aplicacao) | 
+| **Descrição** | Sistema de segurança básico da aplicação. | 
 |**Autor**| [Shayane Marques Alcântara](https://github.com/shayanealcantara) | 
 
 ### Versões anteriores
@@ -48,3 +48,12 @@
 | **Versão**| 1.0 (21/08) <br> Anterior: - | 
 | **Descrição** | Pedido na visão do cliente com o uso do cartão de crédito. | 
 |**Autor**| [Pedro Rodrigues Pereira](https://github.com/pedro-prp) | 
+
+### RichPicture 03 - Sistema de segurança básico da aplicação
+![richpicture-seguranca-v1](../images/richpicture-esboco-seguranca-v1.jpg)
+
+ **RP03** | **Sistema de segurança básico da aplicação**  |
+|--|--|
+| **Versão**| Atual: 1.0 (21/08) <br> Anterior: - | 
+| **Descrição** | Sistema de segurança básico da aplicação. | 
+|**Autor**| [Shayane Marques Alcântara](https://github.com/shayanealcantara) | 
