@@ -1,8 +1,12 @@
 ## Pesquisa de mercado
 
+|Data|Versão|Descrição|Autor|
+|-|-|-|-|
+|21/08/2019|0.1|Adição da pesquisa de mercado|Shayane Alcântara|
+
 Realizar pedidos de comidas pelo celular são cada vez mais comuns. Isso deve-se ao fato que as pessoas ficam menos tempo em casa e não querem ou não tem muita disposição para cozinhar. Aliado a este fato, há shoppings com suas praças de alimentação, que servem como ponto de referência para pessoas que buscam uma grande variedade de alimentos para consumir quando assim desejarem.
 
-É de conhecimento de todos que a maioria dos horários de funcionamento das praças de alimentação, mesmo com a variedade de produtos, são muito movimentados, tendendo a uma grande quantidade de filas. Estas filas são recorrentes como fonte de reclamação em centros comerciais como esses. [citar-resultado-questionario].
+É de conhecimento de todos que a maioria dos horários de funcionamento das praças de alimentação, mesmo com a variedade de produtos, são muito movimentados, tendendo a uma grande quantidade de filas. Estas filas são recorrentes como fonte de incômodo em centros comerciais como esses, de acordo com o que foi levantado no [questionário](../questionario.md).
 
 Para solucionar este problema e melhorar a experiência do cliente, vários aplicativos foram desenvolvidos para que o consumidor pudesse realizar seu pedido de onde estivesse. No Brasil, temos referências como o iFood, UberEats e Rappi, que propõem a entrega de alimentos, mas o país referência do ramo de praças de alimentação é a China. 
 

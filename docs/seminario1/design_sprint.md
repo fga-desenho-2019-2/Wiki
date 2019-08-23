@@ -231,9 +231,6 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.3 [Protótipos](./prototipos.md)
 
-#### 
-## 7. Conclusão
-
 ## 8. Referências
 
 Saiba Mais. The Design Sprint. Disponível em: <https://www.gv.com/sprint/>. Acesso em: 21 de agosto de 2019.
