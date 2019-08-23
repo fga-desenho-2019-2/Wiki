@@ -47,6 +47,15 @@
 | **Descrição** | Visão do Restaurante com QR Comer | 
 |**Autor**| [Pedro Féo](https://github.com/Phe0) | 
 
+### RichPicture 06 - Visão do Restaurante (Simplificado)
+![richpicture-com-qr-v2](../images/visao_restaurante.png)
+
+ **RP06** | **Visão do Rstaurante**  |
+|--|--|
+| **Versão**| Atual: 1.0 (22/08) | 
+| **Descrição** | Visão do Restaurante (Simplificado) | 
+|**Autor**| [Guilherme Marques](https://github.com/guilhesme23) | 
+
 ### Versões anteriores
 
 #### RichPicture 01 - Pedido na visão do cliente
