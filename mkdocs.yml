@@ -8,6 +8,8 @@ copyright: Copyright &copy; 2019, <a href="https://github.com/fga-desenho-2019-2
 dev_addr: ‘0.0.0.0:8000
 theme:
   name: 'material'
+  logo: favicon.ico
+  favicon: favicon.ico
   palette:
     primary: 'white'
 
