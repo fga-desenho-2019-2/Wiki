@@ -36,3 +36,5 @@ pages:
   - Iniciativas Extras:
       - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
       - Identidade Visual: 'iniciativas_extras/identidade_visual.md'
+      - Kaban: 
+        - Empresas que usam Kaban: 'iniciativas_extras/kanban/estudo_de_casos.md'

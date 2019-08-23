@@ -66,6 +66,6 @@ Para isso, a proposta é incluir um cardápio com os produtos no celular, o que 
 
 Por fim, a maior parte do público alvo, com 89,3% já utilizou algum aplicativo de delivery de alimentos, ou seja, há uma familiaridade com este tipo de aplicação e de como suas informações são dispostas na tela, como uma espécie de cardápio virtual e sistema de pagamento. Todos estes fatos podem validar algumas informações e aprimorar outras, portanto, as respostas foram coincidentes com grande parte das hipóteses geradas nas etapas do Design Sprint.
 
-## 6. Referências
+## 5. Referências
 
 SEQ18RRANO, Maurício; SERRANO, Milene. Requisitos - Aula 07. 1º/2019. 50 slides. Material apresentado para a disciplina de Requisitos de Software no curso de Engenharia de Software da UnB, FGA.
