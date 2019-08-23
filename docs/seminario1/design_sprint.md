@@ -233,6 +233,8 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.4 [Diagrama de Ishikawa](./ishikawa.md)
 
+### 6.5 [Estudo de Benchmarking](./benchmarking.md)
+
 #### 
 ## 7. Conclusão
 
