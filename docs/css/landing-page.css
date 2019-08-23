@@ -168,3 +168,15 @@ h1 {
     height: 20vh;
     background-image: linear-gradient(to bottom right, #EB4476, #E18855);
 }
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+div {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+}
