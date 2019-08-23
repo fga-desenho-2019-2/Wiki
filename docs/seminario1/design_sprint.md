@@ -235,7 +235,8 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.5 [Estudo de Benchmarking](./benchmarking.md)
 
-#### 
+### 6.6 [Questionário](./questionario.md)
+
 ## 7. Conclusão
 
 ## 8. Referências
