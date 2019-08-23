@@ -21,7 +21,8 @@ plugins:
 
 extra_css:
   - css/landing-page.css
-
+  - css/extra.css
+  
 lang:
   - 'pt'
 
