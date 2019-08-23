@@ -77,7 +77,7 @@ A prototipagem auxilia no entendimento do potencial cliente em relação à solu
 
 Neste tópico está contido todos os temas levantados pelo grupo, tendo eles como objetivo aplicar os padrões de Arquitetura e Desenho de software em um projeto real.
 
-Os temas são bastante diversos e a maioria dos mesmos foi desenvolvido de forma individual, detonando um grupo bem heterogêneo, já que cada indivíduo expressa uma visão pessoal diferente sobre um assunto.
+Os temas são bastante diversos e a maioria dos mesmos foi desenvolvido de forma individual, denotando um grupo bem heterogêneo, já que cada indivíduo expressa uma visão pessoal diferente sobre um assunto.
 
 ### 4.1 Professores autônomos
 
@@ -230,6 +230,8 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 ### 6.2 [5W2H](./5w2h.md)
 
 ### 6.3 [Protótipos](./prototipos.md)
+
+### 6.4 [Diagrama de Ishikawa](./ishikawa.md)
 
 #### 
 ## 7. Conclusão
