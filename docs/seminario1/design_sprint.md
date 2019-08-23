@@ -14,6 +14,7 @@
 |22/08/2019|0.8| Adição no topico 3 sobre Rich Picture e Brainstorm |Alan Lima|
 |22/08/2019|0.9| Adição do restante do tópico 3, sobre artefatos construídos.| Shayane Alcântara|
 |22/08/2019|0.10| Adição de Richpictures.| Pedro Rodrigues|
+|22/08/2019|0.11| Adição de Richpictures.| Guilherme Marques |
 
 
 ## 1. Introdução
