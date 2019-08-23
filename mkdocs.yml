@@ -1,10 +1,10 @@
  
 
-site_name: Desenho - 2019.2
-site_description: Repositório da disciplina de Desenho - 2019.2
+site_name: QR Comer
+site_description: Repositório da disciplina de QR Comer
 repo_url: https://github.com/fga-desenho-2019-2/Wiki
 site_dir: site
-copyright: Copyright &copy; 2019, <a href="https://github.com/fga-desenho-2019-2/Wiki/">Desenho - 2019.2</a>.
+copyright: Copyright &copy; 2019, <a href="https://github.com/fga-desenho-2019-2/Wiki/">QR Comer</a>.
 dev_addr: ‘0.0.0.0:8000
 theme:
   name: 'material'
@@ -33,8 +33,6 @@ pages:
   - Dinâmica e Seminário I:
       - Termo de abertura de projeto: 'seminario1/tap.md'
       - Design Sprint: 'seminario1/design_sprint.md'
-      - Entrevistas: 'seminario1/entrevistas.md'
-      - Storytelling: 'seminario1/storytelling.md'
   - Iniciativas Extras:
       - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
       - Identidade Visual: 'iniciativas_extras/identidade_visual.md'

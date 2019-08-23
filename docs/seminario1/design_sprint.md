@@ -14,6 +14,7 @@
 |22/08/2019|0.8| Adição no topico 3 sobre Rich Picture e Brainstorm |Alan Lima|
 |22/08/2019|0.9| Adição do restante do tópico 3, sobre artefatos construídos.| Shayane Alcântara|
 |22/08/2019|0.10| Adição de Richpictures.| Pedro Rodrigues|
+|22/08/2019|0.11| Adição de Richpictures.| Guilherme Marques |
 
 
 ## 1. Introdução
@@ -235,7 +236,14 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.5 [Estudo de Benchmarking](./benchmarking.md)
 
-#### 
+### 6.6 [Questionário](./questionario.md)
+
+### 6.7 [Entrevistas](./entrevistas.md)
+
+### 6.8 [Storytelling](./storytelling.md)
+
+### 6.9 [NFR](./NFR.md)
+
 ## 7. Conclusão
 
 ## 8. Referências

@@ -2,7 +2,7 @@
 
 ![ishikawaV1](../images/ishikawaV1.png)
 
- **RP01** | **Pedido na visão do cliente**  |
+ **I01** | **Experiência ruim com atendimento em balcão**  |
 |--|--|
 | **Versão**| Atual: 1.0 (21/08) <br> Anterior: - | 
 | **Descrição** | Diagrama de causa e feito, descrevendo possíveis causas de uma experiência ruim com atendimento em balcão | 
