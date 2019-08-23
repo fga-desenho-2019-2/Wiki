@@ -14,6 +14,7 @@
 |22/08/2019|0.8| Adição no topico 3 sobre Rich Picture e Brainstorm |Alan Lima|
 |22/08/2019|0.9| Adição do restante do tópico 3, sobre artefatos construídos.| Shayane Alcântara|
 |22/08/2019|0.10| Adição de Richpictures.| Pedro Rodrigues|
+|22/08/2019|0.11| Adição de Richpictures.| Guilherme Marques |
 
 
 ## 1. Introdução
@@ -77,7 +78,7 @@ A prototipagem auxilia no entendimento do potencial cliente em relação à solu
 
 Neste tópico está contido todos os temas levantados pelo grupo, tendo eles como objetivo aplicar os padrões de Arquitetura e Desenho de software em um projeto real.
 
-Os temas são bastante diversos e a maioria dos mesmos foi desenvolvido de forma individual, detonando um grupo bem heterogêneo, já que cada indivíduo expressa uma visão pessoal diferente sobre um assunto.
+Os temas são bastante diversos e a maioria dos mesmos foi desenvolvido de forma individual, denotando um grupo bem heterogêneo, já que cada indivíduo expressa uma visão pessoal diferente sobre um assunto.
 
 ### 4.1 Professores autônomos
 
@@ -231,6 +232,21 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.3 [Protótipos](./prototipos.md)
 
+<<<<<<< HEAD
+=======
+### 6.4 [Diagrama de Ishikawa](./ishikawa.md)
+
+### 6.5 [Estudo de Benchmarking](./benchmarking.md)
+
+### 6.6 [Questionário](./questionario.md)
+
+### 6.7 [Entrevistas](./entrevistas.md)
+
+### 6.8 [Storytelling](./storytelling.md)
+
+## 7. Conclusão
+
+>>>>>>> 2b8da3fef8d2a8da5911c2fac4dc58848d1f6471
 ## 8. Referências
 
 Saiba Mais. The Design Sprint. Disponível em: <https://www.gv.com/sprint/>. Acesso em: 21 de agosto de 2019.
