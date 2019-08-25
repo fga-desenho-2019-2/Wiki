@@ -4,6 +4,7 @@
 |-|-|-|-|
 |25/08/2019|0.1| Abertura do documento e escrita dos tópicos 1 e 2 |Pedro Rodrigues|
 |25/08/2019|0.2| Adição do tópico 3 e cheat sheet do scrum vs kanban |Pedro Rodrigues|
+|25/08/2019|1.0| Adição no tópico 3.2 |Pedro Rodrigues|
 
 ## 1. Introdução
 Este documento visa explanar as diferenças do sistema Kanban e vantagens e desvantagens do mesmo perante outras ferramentas de gerenciamento ágil.
@@ -27,11 +28,13 @@ Essa vantagem também requer um "pulso firme" e maturidade da equipe, sem um con
 </object>
 
 ### 3.2 Diferenças
+* O Scrum possui uma divisão de períodos chamados de sprint para desenvolvimento, enquanto o kanban possui uma abordagem de trabalho contínuo.
+
 * O kanban possui uma abordagem direta no momento de realizar tarefas, enquanto o Scrum possui um sprint planning definindo o trabalho que será realizado durante aquela sprint.
 
-### 3.3 Semelhanças
+* O scrum possui uma retrospectiva que anseia encontrar erros na sprint e planejar de forma a evitar eles na proxima sprint, enquanto o kanban graças ao seu fluxo contínuo, possui um feedback quase instantâneo.
 
-### 3.4 Conclusão
+### 3.3 Conclusão
 Ainda que ambos possuam diferenças e semelhanças, seus correspondentes são bem claros. O kanban não possui sprint planning, mas suas diretivas exigem que seja aplicado um limite para o WIP, o que cumpre um propósito do planejamento.
 
 O Scrum destrinche as suas tarefas ao pé de que qualquer iniciante possa participar do processo. Já o kanban exige uma postura mais rigida para sua efetividade, e com isso resultados também superiores.
