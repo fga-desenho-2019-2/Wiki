@@ -49,7 +49,7 @@ body {
     border-radius: 0 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s;
-    border: 4px solid #EF596B;
+    border: 3px solid #EF596B;
 }
 
 .card:hover {
@@ -84,7 +84,7 @@ h1 {
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: 4em;
-    border: 4px solid #EF596B;
+    border: 3px solid #EF596B;
     color: #EF596B;
 }
 
