@@ -244,6 +244,8 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ### 6.9 [NFR](./NFR.md)
 
+### 6.9 [Brainstorming](./brainstorming.md)
+
 ## 7. Conclusão
 
 ## 8. Referências
