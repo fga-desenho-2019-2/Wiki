@@ -42,3 +42,4 @@ pages:
         - Comparativo entre ferramentas: 'iniciativas_extras/kanban/comparativo.md'
         - Melhorias: 'iniciativas_extras/kanban/melhorias.md'
         - Apresentação: 'iniciativas_extras/kanban/apresentacao.md'
+      - Modelo de dados: 'iniciativas_extras/modelo_dados.md'
