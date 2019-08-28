@@ -1,11 +1,5 @@
 # Requisitos elicitados referentes as Entrevistas
 
-## Histórico de Revisão:
-
-|Data|Versão|Descrição|Autor|
-|-|-|-|-|
-|20/08/2019|0.1|Criação do documento e extração dos principais requisitos | Matheus Blanco e Pedro Rodrigues |
-
 ## Introdução
 
 A partir das entrevistas realizadas pela equipe para validar e aprimorar ideias sobre o produto proposto, foi possível elicitar os requisitos documentados na tabela a seguir. 
@@ -37,11 +31,14 @@ Em seguida, foi realizada a priorização no método MoSCOW, que busca auxiliar 
 |Q20|Possuir categoria de pratos|Could have||
 |Q21|Cadastrar restaurantes|Must have||
 
-
 <br>
 
-| **Q** | **Requisitos elicitados referentes as entrevistas [[1](../../seminario1/entrevistas.md)]**  |
+| **E** | **Requisitos elicitados referentes às entrevistas [[1](../../seminario1/entrevistas.md)]**  |
 |--|--|
 | **Versão**| Atual: 1.0 (28/08/19) <br> Anterior: - | 
 | **Descrição** | Requisitos elicitados referentes as entrevistas [[1](../../seminario1/entrevistas.md)] | 
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco) e [Pedro Rodrigues](https://github.com/pedro-prp)  
+
+<br>
+
+## Versôes anteriores
