@@ -40,6 +40,7 @@ pages:
         - Síntese dos requisitos selecionados: 'iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos.md'
         - Questionário: 'iniciativas_extras/elicitacao_de_requisitos/req_questionario.md'
         - Entrevistas: 'iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md'
+        - Storytelling: 'iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md'
       - Kanban:
         - 5W2H Kanban: 'iniciativas_extras/kanban/5w2h.md'
         - Empresas que usam Kaban: 'iniciativas_extras/kanban/estudo_de_casos.md'
