@@ -1,6 +1,4 @@
-# Entrevista
-
-# Histórico de Revisão
+## Histórico de Revisão
 
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|

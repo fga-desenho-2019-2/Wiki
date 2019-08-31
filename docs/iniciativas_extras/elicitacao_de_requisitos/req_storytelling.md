@@ -1,4 +1,4 @@
-# Requisitos elicitados referentes a storytelling [[1](../../seminario1/storytelling.md)]
+# Requisitos elicitados referentes a storytelling [[1]](../../seminario1/storytelling.md)
 
 ## Introdução
 
@@ -36,10 +36,10 @@ Em seguida, foi realizada a priorização no método MoSCOW, que busca auxiliar 
 
 <br>
 
-| **Q**         | **Requisitos elicitados referentes ao artefato Storytelling [[1](../../seminario1/storytelling.md)]** |
+| **Q**         | **Requisitos elicitados referentes ao artefato Storytelling [[1]](../../seminario1/storytelling.md)** |
 |---------------|-------------------------------------------------------------------------------------------------------|
 | **Versão**    | Atual: 1.0 (28/08/19) <br> Anterior: -                                                                |
-| **Descrição** | Requisitos elicitados referentes ao artefato Storytelling [[1](../../seminario1/storytelling.md)]     |
+| **Descrição** | Requisitos elicitados referentes ao artefato Storytelling [[1]](../../seminario1/storytelling.md)     |
 | **Autor**     | [Leonardo Barreiros](https://github.com/leossb36) e [Saleh Kader](https://github.com/devsalula)       |
 <br>
 

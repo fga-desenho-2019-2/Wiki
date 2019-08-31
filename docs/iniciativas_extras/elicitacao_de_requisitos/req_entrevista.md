@@ -33,10 +33,10 @@ Em seguida, foi realizada a priorização no método MoSCOW, que busca auxiliar 
 
 <br>
 
-| **E** | **Requisitos elicitados referentes às entrevistas [[1](../../seminario1/entrevistas.md)]**  |
+| **E** | **Requisitos elicitados referentes às entrevistas [[1]](../../seminario1/entrevistas.md)**  |
 |--|--|
 | **Versão**| Atual: 1.0 (28/08/19) <br> Anterior: - | 
-| **Descrição** | Requisitos elicitados referentes as entrevistas [[1](../../seminario1/entrevistas.md)] | 
+| **Descrição** | Requisitos elicitados referentes as entrevistas [[1]](../../seminario1/entrevistas.md) | 
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco) e [Pedro Rodrigues](https://github.com/pedro-prp)  
 
 <br>

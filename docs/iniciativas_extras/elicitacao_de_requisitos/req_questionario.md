@@ -1,4 +1,4 @@
-# Requisitos elicitados referentes ao questionário [[1](../../seminario1/questionario.md)]
+# Requisitos elicitados referentes ao questionário [[1]](../../seminario1/questionario.md)
 
 ## Introdução
 
@@ -21,9 +21,9 @@ Em seguida, foi realizada a priorização no método MoSCOW, que busca auxiliar 
 | Q10 | No fluxo de pedido pela aplicação o usuário não precisará interagir com atendentes  | Could have |[Pergunta 12](../../seminario1/questionario.md)|
 
 
-| **Q** | **Requisitos elicitados referentes ao questionário [[1](../../seminario1/questionario.md)]**  |
+| **Q** | **Requisitos elicitados referentes ao questionário [[1]](../../seminario1/questionario.md)**  |
 |--|--|
 | **Versão**| Atual: 1.0 (28/08/19) <br> Anterior: - | 
-| **Descrição** | Requisitos elicitados referentes ao questionário [[1](../../seminario1/questionario.md)] | 
+| **Descrição** | Requisitos elicitados referentes ao questionário [[1]](../../seminario1/questionario.md) | 
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Sara Silva](https://github.com/sarasilva)  
 

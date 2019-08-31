@@ -1,6 +1,4 @@
-# Termo de abertura de projeto
-
-# Histórico de Revisão:
+## Histórico de Revisão:
 
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
@@ -71,7 +69,6 @@ A solução, em alto nível, deverá seguir as seguintes diretrizes:
 * Compradores poderão, com a leitura de um QR _code_ visualizar os produtos, estabelecimentos, preços e senhas para retirada de pedidos. Todos estes numa mesma localização.
 
 ## Riscos de Alto Nível
-
 
 
 | Risco | Impacto |  Ação preventiva | Ação corretiva |
