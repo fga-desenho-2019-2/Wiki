@@ -17,14 +17,17 @@ Em seguida, foi realizada a priorização no método MoSCOW, que busca auxiliar 
 | BENCH05 | A aplicação deve ser acessível via browser, não sendo necessária instalação | Must have  | [VoceQPad](../../seminario1/benchmarking/#voceqpad) |
 | BENCH06 | A precificação deve ser feita de forma a não assutar o cliente de imediato (por exemplo, cobrar uma taxa fixa alta) | Must have  | [Getin](../../seminario1/benchmarking/#getin)|
 | BENCH07 | O app deve exibir uma previsão de tempo do pedido | Must have  | [Onyo](../../seminario1/benchmarking/#onyo) |
+| BENCH08 | O app deve permitir o pagamento em dinheiro | Want to have  | [Onyo](../../seminario1/benchmarking/#onyo) |
+| BENCH09 | O tempo para se acessar o app deve ser breve | Must have  | [Onyo](../../seminario1/benchmarking/#onyo) |
+| BENCH10 | O app deve permitir o cancelamento do pedido | Want to have  | [Onyo](../../seminario1/benchmarking/#onyo) |
+| BENCH11 | O app deve permitir pagamento em débito | Could have  | [Onyo](../../seminario1/benchmarking/#onyo) |
+
 
 
 | **-** | **Requisitos elicitados referentes ao Benchmarking [[1]](../../seminario1/benchmarking.md)** |
 |--|--|
 | **Versão** | Atual: 1.0 (28/08/19) <br> Anterior: - |
 | **Descrição** | Requisitos elicitados referentes ao Benchmarking [[1]](../../seminario1/benchmarking.md)  |
-| **Autor** | [Elias Bernardo](https://github.com/ebmm01)  |
+| **Autor** | [Elias Bernardo](https://github.com/ebmm01), [Pedro Féo](https://github.com/Phe0)  |
 
-
-## Versôes anteriores
 
