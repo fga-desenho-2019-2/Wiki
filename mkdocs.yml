@@ -41,6 +41,8 @@ pages:
   - Dinâmica e Seminário I:
       - Termo de abertura de projeto: 'seminario1/tap.md'
       - Design Sprint: 'seminario1/design_sprint.md'
+  - Dinâmica e Seminário II:
+      - Metodologia: 'seminario2/metodologia.md'
   - Iniciativas Extras:
       - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
       - Identidade Visual: 'iniciativas_extras/identidade_visual.md'
@@ -60,3 +62,4 @@ pages:
         - Melhorias: 'iniciativas_extras/kanban/melhorias.md'
         - Apresentação: 'iniciativas_extras/kanban/apresentacao.md'
       - Modelo de dados: 'iniciativas_extras/modelo_dados.md'
+  
