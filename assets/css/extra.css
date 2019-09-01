@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:400,500,600,700&display=swap');
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Palanquin Dark', Roboto;
+}
+
+.md-typeset__table {
+    width: 100%;
+}
+td, th {
+    background: white;
+}
+
+p, h2 {
+    text-align: justify
+}
+p {
+    text-indent: 30px;
+}
+
+li p {
+    text-indent: 0;
+}
+
+body {
+    color: rgba(0, 0, 0, 1);
+    font-family: "Lexend Deca", "Roboto";
+}
+
+.md-header {
+    background: linear-gradient(90deg, #eb4476, #e18855);
+    color: white !important;
+}
+
+.hoverable {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease-out;
+}
+
+
+.hoverable:hover {
+    box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
+    cursor: move;
+}
+
+::placeholder {
+    color: white !important; 
+} 
+
+.md-container {
+    background: white;
+}
+
+.md-typeset table thead tr {
+    background: linear-gradient(90deg, #eb4476, #e18855);
+    color: white;
+}
+
+
+.md-typeset table thead th {
+    background-color: transparent !important;
+    color: white;
+}
