@@ -13,6 +13,7 @@ theme:
   palette:
     primary: 'white'
 
+    
 extra:
   social:
     - type: 'github'
@@ -22,9 +23,16 @@ plugins:
   - search
 
 extra_css:
-  - css/landing-page.css
-  - css/extra.css
-  
+  - assets/css/landing-page.css
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/jquery.min.js  
+  - assets/js/jquery.zoom.min.js  
+  - assets/js/extra.js  
+
+
+
 lang:
   - 'pt'
 
