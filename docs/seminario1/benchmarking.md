@@ -126,7 +126,7 @@ Reclamações:
 **App** | **Getlin**  |
 |--|--| 
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) |
-|**Fontes**| - |
+|**Fontes**| [Site GetIn](https://www.getinapp.com.br/), [Playstore](https://play.google.com/store/apps/details?id=com.tyll.getin&hl=pt_BR) |
 
 ### Suplicy Cafés
 
@@ -141,4 +141,4 @@ Reclamações:
 **App** | **Suplicy Cafés**  |
 |--|--| 
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) |
-|**Fontes**| - |
+|**Fontes**| [Site Suplicy Cafés](http://www.suplicycafes.com.br/), [Playstore](https://play.google.com/store/apps/details?id=suplicy.voceqpad.com.br.suplicy&hl=pt_BR) |

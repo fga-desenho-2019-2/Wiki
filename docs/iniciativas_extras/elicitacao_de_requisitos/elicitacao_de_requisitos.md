@@ -1,0 +1,1 @@
+# Síntese e seleção dos requisitos elicitados
