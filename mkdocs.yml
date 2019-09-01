@@ -42,6 +42,7 @@ pages:
         - Entrevistas: 'iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md'
         - Storytelling: 'iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md'
         - Benchmarking: 'iniciativas_extras/elicitacao_de_requisitos/req_benchmark.md'
+        - Brainstorming: 'iniciativas_extras/elicitacao_de_requisitos/req_brainstorm.md'
       - Kanban:
         - 5W2H Kanban: 'iniciativas_extras/kanban/5w2h.md'
         - Empresas que usam Kaban: 'iniciativas_extras/kanban/estudo_de_casos.md'
