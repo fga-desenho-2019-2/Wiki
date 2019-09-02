@@ -10,29 +10,29 @@ Em seguida, foi realizada a priorização no método MoSCOW, que busca auxiliar 
 
 | Código | Descrição                                                                                      | Prioridade  | Rastro                                                              |
 |--------|------------------------------------------------------------------------------------------------|-------------|---------------------------------------------------------------------|
-| Q01    | O sistema deve ser inovador                                                                    | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q02    | As mesas dos shoppings devem conter _QRCodes_                                                  | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q03    | O sistema deve escanear o _QRCode_                                                             | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q04    | O sistema deve ser _Web_                                                                       | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q05    | O _QRCode_ lideo deve direcionar o usuário para o QRComer                                      | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q06    | O sistema deve possuir uma área de cadastro do usuário                                         | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q07    | O sistema deve possuir integração com outras API's de cadastro                                 | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q08    | O sistema deve obrigar o usuário a cadastrar o cartão de crédito                               | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q09    | O sistema deve possuir uma tela de carregamento como _feedback_ para o usuário                 | Could have  | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q10    | O sistema deve informar o shopping onde o usuário está localizado                              | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q11    | O sistema deve demonstrar a lista de restaurantes do shopping                                  | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q12    | O sistema deve permitir a escolha de um restaurante pelo usuário                               | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q13    | O sistema deve informar os itens do cardápio do restaurante                                    | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q14    | O sistema deve permitir que o usuário escolha itens do cardápio do restaurante                 | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q15    | O sistema deve conter um campo de observações para o usuário detalhar o pedido                 | Could have  | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q16    | O sistema deve permitir a finalização do pedido                                                | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q17    | O sistema deve permitir a escolha do sistema de pagamento, seja no cartão ou no dinheiro       | Could have  | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q18    | O sistema deve conter um elemento de segurança para permitir a transação por cartão de crédito | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q19    | O sistema deve gerar uma senha do pedido do usuário                                            | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q20    | O sistema deve notificar o usuário de que seu pedido está pronto                               | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
-| Q21    | O sistema deve evitar extinguir filas                                                          | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
-| Q22    | O sistema deve possuir uma área de cadastro do restaurante                                     | Must Have   | [Storytelling 2](../../seminario1/storytelling.md)                  |
-| Q23    | O sistema deve possuir uma tela de cadastro dos produtos do cardápio do restaurante            | Must Have   | [Storytelling 2](../../seminario1/storytelling.md)                  |
+| ST01    | O sistema deve ser inovador                                                                    | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST02    | As mesas dos shoppings devem conter _QRCodes_                                                  | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST03    | O sistema deve escanear o _QRCode_                                                             | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST04    | O sistema deve ser _Web_                                                                       | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST05    | O _QRCode_ lideo deve direcionar o usuário para o QRComer                                      | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST06    | O sistema deve possuir uma área de cadastro do usuário                                         | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST07    | O sistema deve possuir integração com outras API's de cadastro                                 | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST08    | O sistema deve obrigar o usuário a cadastrar o cartão de crédito                               | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST09    | O sistema deve possuir uma tela de carregamento como _feedback_ para o usuário                 | Could have  | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST10    | O sistema deve informar o shopping onde o usuário está localizado                              | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST11    | O sistema deve demonstrar a lista de restaurantes do shopping                                  | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST12    | O sistema deve permitir a escolha de um restaurante pelo usuário                               | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST13    | O sistema deve informar os itens do cardápio do restaurante                                    | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST14    | O sistema deve permitir que o usuário escolha itens do cardápio do restaurante                 | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST15    | O sistema deve conter um campo de observações para o usuário detalhar o pedido                 | Could have  | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST16    | O sistema deve permitir a finalização do pedido                                                | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST17    | O sistema deve permitir a escolha do sistema de pagamento, seja no cartão ou no dinheiro       | Could have  | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST18    | O sistema deve conter um elemento de segurança para permitir a transação por cartão de crédito | Must have   | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST19    | O sistema deve gerar uma senha do pedido do usuário                                            | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST20    | O sistema deve notificar o usuário de que seu pedido está pronto                               | Should have | [Storytelling 1](../../seminario1/storytelling.md)                  |
+| ST21    | O sistema deve evitar extinguir filas                                                          | Must have   | [Storytelling 1 - Storytelling 2](../../seminario1/storytelling.md) |
+| ST22    | O sistema deve possuir uma área de cadastro do restaurante                                     | Must Have   | [Storytelling 2](../../seminario1/storytelling.md)                  |
+| ST23    | O sistema deve possuir uma tela de cadastro dos produtos do cardápio do restaurante            | Must Have   | [Storytelling 2](../../seminario1/storytelling.md)                  |
 
 <br>
 
