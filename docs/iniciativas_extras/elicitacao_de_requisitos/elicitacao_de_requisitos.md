@@ -1,5 +1,8 @@
 # Síntese e seleção dos requisitos elicitados
 
+## Metodologia
+Para a seleção dos requisitos elicitados na tabela a seguir, foi realizada uma discussão acerca de todos os requisitos elicitados em cada método de obtenção dos mesmos, como o [Brainstorm](../../iniciativas_extras/elicitacao_de_requisitos/req_brainstorm.md) e o [Protótipo](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md). Todos os métodos tiveram grande importância para validar e aprimorar as ideias propostas pela equipe. Após seleção dos requisitos mais viáveis de acordo com o contexto da disciplina e o Time to market, foram escolhidos os seguintes requisitos.
+
 | Código | Descrição | Prioridade | Rastro |
 |--|--|--|--|
 | BS01 | O Sistema deve diferenciar perfis de cliente e restaurante | Must have | [BS01](../../iniciativas_extras/elicitacao_de_requisitos/req_brainstorm.md) |
@@ -56,3 +59,10 @@
 | E08 | Possibilitar pagamento por dinheiro no caixa | Would have | [E08](../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md) |
 | E11 | Autenticação dupla | Would have | [E11](../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md) |
 | E19 | Receber notificação sobre a completude do pedido | Would have | [E19](../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md) |
+
+
+| | **Síntese e seleção dos requisitos elicitados**  |
+|--|--|
+| **Versão**| Atual: 1.0 (03/09/19) <br> Anterior: - | 
+| **Descrição** | Síntese e seleção dos requisitos elicitados, utilizando o método MosCow para priorização | 
+|**Autor**| [Alan](https://github.com/alanrslima), [Guilherme](https://github.com/guilhesme23), [Leonardo](https://github.com/leossb36), [Pedro](https://github.com/pedro-prp), [Saleh](https://github.com/devsalula), [Sara](https://github.com/silvasara) e [Shayane](https://github.com/shayanealcantara).
