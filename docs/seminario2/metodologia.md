@@ -13,17 +13,27 @@
 
 ## Diagramas
 
-### Diagrama BPM - Decisão do tema
+### 1 - Diagrama BPM - Decisão do tema
 
-![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema.jpg)
+![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v2.jpg)
+
+ **DG01** | **Decisão do tema**  |
+|--|--|
+| **Versão**| Atual: 1.1 (04/09) <br> Anterior: [1.0](#1-diagrama-bpm-decisao-do-tema_1) | 
+| **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
+
+
+## Versões anteriores
+
+### 1 - Diagrama BPM - Decisão do tema
+![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v1.jpg)
 
  **DG01** | **Decisão do tema**  |
 |--|--|
 | **Versão**| Atual: 1.0 (01/09) <br> Anterior: - | 
 | **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
-
-## Versões anteriores
 
 ## Referências
 
