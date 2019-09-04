@@ -7,34 +7,54 @@
 
 ## Introdução
 
+Este documento tem como objetivo descrever a metodologia a ser utilizada pelo grupo e como se deu o processo de decisão, além de diagramas que demonstram de forma visual alguns processos da metodologia.
+
+
 ## Metodologias 
 
-## Adaptação das metodologias
+### Kanban
 
-## Diagramas
-
-### 1 - Diagrama BPM - Decisão do tema
-
-![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v2.jpg)
-
- **DG01** | **Decisão do tema**  |
+| Kanban |  |
 |--|--|
-| **Versão**| Atual: 1.1 (04/09) <br> Anterior: [1.0](#1-diagrama-bpm-decisao-do-tema_1) | 
-| **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
-|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
+|Sobre|--|
+|Pontos positivos|--|
+|Adaptação ao projeto|--|
+|Possíveis problemas|--|
 
+### XP
 
-## Versões anteriores
-
-### 1 - Diagrama BPM - Decisão do tema
-![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v1.jpg)
-
- **DG01** | **Decisão do tema**  |
+| XP |  |
 |--|--|
-| **Versão**| Atual: 1.0 (01/09) <br> Anterior: - | 
-| **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
-|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
+|Sobre|--|
+|Pontos positivos|--|
+|Adaptação ao projeto|--|
+|Possíveis problemas|--|
 
-## Referências
+### Scrum
 
-Secretaria de Estado de Gestão e Planejamento. Manual de Modelagem de Processos Usando Bizagi. Disponível em: <http://www.sgc.goias.gov.br/upload/arquivos/2017-04/manual-de-modelagem-de-processos-usando-bizagi.pdf>. Acesso em: 01 de setembro de 2019.
+| Scrum |  |
+|--|--|
+|Sobre|--|
+|Pontos positivos|--|
+|Adaptação ao projeto|--|
+|Possíveis problemas|--|
+
+### Lean
+
+| Lean |  |
+|--|--|
+|Sobre|--|
+|Pontos positivos|--|
+|Adaptação ao projeto|--|
+|Possíveis problemas|--|
+
+
+## Padronizações
+
+### Git flow & Branches
+
+### Pull requests
+
+### Commits
+
+### Issues (& métricas de pontuação)
