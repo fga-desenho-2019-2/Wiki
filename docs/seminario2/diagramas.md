@@ -23,6 +23,36 @@
 | **Descrição** | Diagrama para ilustrar o processo de movimentação das issues utilizando o Zenhub. | 
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) |
 
+### DG03 - Elicitação de Requisitos
+
+![movimentacao-no-zenhub](../images/diagramas-bpm/sintese-requisitos.png)
+
+|**DG03** | **Elicitação de Requisitos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (05/09) <br> Anterior: -- | 
+| **Descrição** | Diagrama para ilustrar o processo de elicitação de requisitos, bem como sua síntese. | 
+|**Autores**| [Matheus Blanco](https://github.com/MatheusBlanco), [Pedro Feo](https://github.com/Phe0), [Saleh Kader](https://github.com/devsalula) |
+
+#### DG03.1 - Elicitação de Requisitos: Elicitação
+
+![movimentacao-no-zenhub](../images/diagramas-bpm/subprocesso1-sintese.png)
+
+|**DG03.1** | **Elicitação de Requisitos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (05/09) <br> Anterior: -- | 
+| **Descrição** | Diagrama para ilustrar o subprocesso de elicitação de requisitos. |
+|**Autores**| [Matheus Blanco](https://github.com/MatheusBlanco), [Pedro Feo](https://github.com/Phe0), [Saleh Kader](https://github.com/devsalula) |
+
+#### DG03.2 - Elicitação de Requisitos: Síntese
+
+![movimentacao-no-zenhub](../images/diagramas-bpm/subprocesso2-sintese.png)
+
+|**DG03.2** | **Elicitação de Requisitos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (05/09) <br> Anterior: -- | 
+| **Descrição** | Diagrama para ilustrar o subprocesso de síntese dos requisitos elicitados. |
+|**Autores**| [Matheus Blanco](https://github.com/MatheusBlanco), [Pedro Feo](https://github.com/Phe0), [Saleh Kader](https://github.com/devsalula) |
+
 
 ## Versões anteriores
 
