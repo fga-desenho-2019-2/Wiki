@@ -30,7 +30,7 @@ O Extreme Programming é um modelo de desenvolvimento de software, criado em 199
 |--|--|
 |__Pontos positivos__| > Ao ter como "métafora" uma de suas práticas, permite que tanto o cliente quanto o(s) desenvolvedor(es) do projeto possam conversar num mesmo nível de linguagem, facilitando tanto reunioes quanto o desenvolvimento do produto em si. <br> <br> >As práticas que se voltam para o time, como _pair programming_, posse coletiva do software, time coeso e ritmo sustentável fazem que a equipe se sinta mais icentivada e em sintonia com o projeto, reduzindo atritos e riscos de desembramento do time.|
 |__Adaptação ao projeto__| 1) A equipe optou por não fazer reuniões em pé (dailys irão ocorrer conforme documentado em [Daily meeting]()). <br> <br> 2)__Pair programming:__ apesar de seguirmos essa prática, nem sempre será possível parear fisicamente. A adaptação fica por conta da possibilidade de pareamentos remotos ou, em raros casos, tasks individuais. <br> <br> 3) Não iremos usar __TDD__. Faremos testes unitários, inclusive com [regras de aceitação de um Pull Request]() com porcentagem mínima de corbertura definida pelo grupo, porém não desenvolveremos seguindo __TDD__. <br> <br> 4) A [comunicação com o cliente]() será um pouco mais indireta, visto num primeiro momento não teremos um "cliente fixo". |
-|__Possíveis problemas__| 1)  Pelo fato de não haver um cliente em específico (pessoa), não haverá uma comunicação frequente e direta.Isso por si só vai contra alguns princípios do XP, e pode prejudicar o desenvolvimento do projeto como um todo. <br> > __Solução:__ Buscar um cliente cujas necessidades sejam atendidas pelo QRComer, mantendo a ideia do aplicação abrangente ao mesmo tempo. Isso possibilitará um feedback real do cliente, uma comunicação eficiente e a redução de retrabalhos por features que talvez possam vir a ser inúteis.|
+|__Possíveis problemas__| 1) __Pelo fato de não haver um cliente em específico (pessoa), não haverá uma comunicação frequente e direta.Isso por si só vai contra alguns princípios do XP, e pode prejudicar o desenvolvimento do projeto como um todo.__ <br> > __Solução:__ Buscar um cliente cujas necessidades sejam atendidas pelo QRComer, mantendo a ideia do aplicação abrangente ao mesmo tempo. Isso possibilitará um feedback real do cliente, uma comunicação eficiente e a redução de retrabalhos por features que talvez possam vir a ser inúteis.|
 
 ### Scrum
 
@@ -40,7 +40,7 @@ O Scrum é um framework dentro do qual pessoas podem tratar e resolver problemas
 |--|--|
 |__Pontos positivos__| > Permite que a equipe se adapte a enventuais alterações no backlog <br> > As entregas pequenas permitem que o produto seja desenvolvido de forma gradual, e que a cada ponto de entrega os feedbacks possam evoluir o projeto, trando possíveis alterações que irão agregar ainda mais valor ao produto final <br> > As reuniões e definições do backlog (sprint backlog) tornam o desenvolvimento e o progresso da equipe transparente, mitigando eventuais falhas e desentendimentos entre os membros. <br> > Incentiva os membros a buscarem melhoria contínua|
 |__Adaptação ao projeto__| 1) Os __papeis principais__ (scrum master & PO, por exemplo) serão enxugados, e as pessoas nesses papeis irão ser alteradas no inicio de cada sprint. <br> <br> 2) As __sprints__ terão duração de uma semana, indo de segunda a segunda, tendo seu "fim real" no domingo. <br><br> 3) As __Daily meetings__ não serão sequidas à risca. As reuniões serão feitas às terças, quintas e sábados, via Bot no Telegram. os resultados das dailys serão compilados e adicionados à wiki, para fins de acompanhamento e versionamento.|
-|__Possíveis problemas__| 1) __O fato de não definirmos explicitamente os papeis principais pode gerar diversos problemas, dentre os quais: variação na produtividade da equipe, dificuldade na gerencia da equipe e problemas de comunicação com o cliente.__ <br> > __Solução:__ Manter a variação na equipe de gerência dentro de um grupo específico, que acabaria se tornando "especializado". 2) _Ao não fazermos daily meetings diariamente, abrimos margem para um buraco no acompanhamento do projeto, visto que durante alguns dias ninguém saberá o que os membros da equipe estará fazendo._ <br> > __Solução:__ Por ser no telegram, as dailys poderiam ser, no mínimo, todos os dias úteis. |
+|__Possíveis problemas__| 1) __O fato de não definirmos explicitamente os papeis principais pode gerar diversos problemas, dentre os quais: variação na produtividade da equipe, dificuldade na gerencia da equipe e problemas de comunicação com o cliente.__ <br> > __Solução:__ Manter a variação na equipe de gerência dentro de um grupo específico, que acabaria se tornando "especializado".<br> <br> 2) __Ao não fazermos daily meetings diariamente, abrimos margem para um buraco no acompanhamento do projeto, visto que durante alguns dias ninguém saberá o que os membros da equipe estará fazendo.__ <br> > __Solução:__ Por ser no telegram, as dailys poderiam ser, no mínimo, todos os dias úteis. |
 
 ### Lean
 
@@ -51,7 +51,7 @@ O Scrum é um framework dentro do qual pessoas podem tratar e resolver problemas
 |__Adaptação ao projeto__|--|
 |__Possíveis problemas__|--|
 
-### Nossa aplicação
+### Nossa metodologia
 
 ...
 
