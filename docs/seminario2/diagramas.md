@@ -3,7 +3,7 @@
 
 ## Diagramas
 
-### 1 - Diagrama BPM - Decisão do tema
+### DG01 -  Decisão do tema
 
 ![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v2.jpg)
 
@@ -12,6 +12,16 @@
 | **Versão**| Atual: 1.1 (04/09) <br> Anterior: [1.0](#1-diagrama-bpm-decisao-do-tema_1) | 
 | **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
+
+### DG02 -  Movimentação no Zenhub
+
+![movimentacao-no-zenhub](../images/diagramas-bpm/zenhub.png)
+
+|**DG02** | **Movimentação no Zenhub**  |
+|--|--|
+| **Versão**| Atual: 1.0 (04/09) <br> Anterior: -- | 
+| **Descrição** | Diagrama para ilustrar o processo de movimentação das issues utilizando o Zenhub. | 
+|**Autor**| [Elias Bernardo](https://github.com/ebmm01) |
 
 
 ## Versões anteriores
