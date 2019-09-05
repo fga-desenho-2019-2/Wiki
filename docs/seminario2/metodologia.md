@@ -16,10 +16,6 @@ Este documento tem como objetivo descrever a metodologia a ser utilizada pelo gr
 
 [Kanban](../../iniciativas_extras/kanban/5w2h) é um termo de origem Japonesa, que significa “cartão” ou “sinalização”. É um conceito relacionado com a utilização de cartões (post-it e outros) para indicar o andamento dos fluxos de produção em empresas de fabricação em série. Ele está estreitamente ligado ao conceito de _just in time_ (“momento certo” em tradução livre). Ele surge na década de 1960 nas mãos da empresa Toyota, sendo ainda hoje o sistema utilizado frequentemente por diversas empresas. Sua utilização se dá por meio do uso de cartões num quadro dividido em colunas que variam dependendo do tipo de kanban (de produção ou movimentação, por exemplo). Cada cartão é movimentado de acordo com as necessidades e objetivos da empresa, além do significado de cada coluna.
 
-#### Adpatações ao projeto
-
-
-
 | Kanban |  |
 |--|--|
 |__Pontos positivos__| > Permite uma fácil gerência das issues/US's e tasks, pois traballha com ferramentas visuais. <br> <br> > Ao limitar a quantidade de trabalho em andamento, o risco de débitos técnicos será reduzido <br> <br> > É possível coletar métricas e obter indicadores de problemas futuros. |
@@ -38,12 +34,13 @@ O Extreme Programming é um modelo de desenvolvimento de software, criado em 199
 
 ### Scrum
 
+O Scrum é um framework dentro do qual pessoas podem tratar e resolver problemas complexos e adaptativos, enquanto produtiva e criativamente entregam produtos com o mais alto valor possível. Scrum não é um processo ou uma técnica para construir produtos, em vez disso, é um framework dentro do pode-se empregar vários processos ou técnicas. O Scrum deixa claro a eficácia relativa das práticas de gerenciamento e desenvolvimento de produtos, de modo que você possa melhorá-las.Possui seu foco no gerenciamento e projeto da organização onde é difícil planejar à frente. [[2]](#referencias)
+
 | Scrum |  |
 |--|--|
-|Sobre|--|
-|__Pontos positivos__|--|
-|__Adaptação ao projeto__|--|
-|__Possíveis problemas__|--|
+|__Pontos positivos__| > Permite que a equipe se adapte a enventuais alterações no backlog <br> > As entregas pequenas permitem que o produto seja desenvolvido de forma gradual, e que a cada ponto de entrega os feedbacks possam evoluir o projeto, trando possíveis alterações que irão agregar ainda mais valor ao produto final <br> > As reuniões e definições do backlog (sprint backlog) tornam o desenvolvimento e o progresso da equipe transparente, mitigando eventuais falhas e desentendimentos entre os membros. <br> > Incentiva os membros a buscarem melhoria contínua|
+|__Adaptação ao projeto__| 1) Os __papeis principais__ (scrum master & PO, por exemplo) serão enxugados, e as pessoas nesses papeis irão ser alteradas no inicio de cada sprint. <br> <br> 2) As __sprints__ terão duração de uma semana, indo de segunda a segunda, tendo seu "fim real" no domingo. <br><br> 3) As __Daily meetings__ não serão sequidas à risca. As reuniões serão feitas às terças, quintas e sábados, via Bot no Telegram. os resultados das dailys serão compilados e adicionados à wiki, para fins de acompanhamento e versionamento.|
+|__Possíveis problemas__| 1) __O fato de não definirmos explicitamente os papeis principais pode gerar diversos problemas, dentre os quais: variação na produtividade da equipe, dificuldade na gerencia da equipe e problemas de comunicação com o cliente.__ <br> > __Solução:__ Manter a variação na equipe de gerência dentro de um grupo específico, que acabaria se tornando "especializado". 2) _Ao não fazermos daily meetings diariamente, abrimos margem para um buraco no acompanhamento do projeto, visto que durante alguns dias ninguém saberá o que os membros da equipe estará fazendo._ <br> > __Solução:__ Por ser no telegram, as dailys poderiam ser, no mínimo, todos os dias úteis. |
 
 ### Lean
 
@@ -54,17 +51,12 @@ O Extreme Programming é um modelo de desenvolvimento de software, criado em 199
 |__Adaptação ao projeto__|--|
 |__Possíveis problemas__|--|
 
+### Nossa aplicação
 
-## Padronizações
+...
 
-### Git flow & Branches
-
-### Pull requests
-
-### Commits
-
-### Issues (& métricas de pontuação)
-
-## Referências 
+## Referencias
 
 [1] MÉTODO ÁGIL XP (EXTREME PROGRAMMING) -  Luciano Malaquias de Souza**
+
+[2]  Schwaber, Ken. Agile Project Management with Scrum. 
