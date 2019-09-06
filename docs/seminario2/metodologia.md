@@ -3,6 +3,7 @@
 ## Histórico de Revisão:
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
+|05/09/2019|0.4|Adição do resumo da metodologia híbrida definida pelos membros| [Shayane Alcântara](https://github.com/shayanealcantara)|
 |05/09/2019|0.3|Adição das metodologias kanban, scrum e XP  | [Elias Bernardo](https://github.com/ebmm01)|
 |03/09/2019|0.2|Adição dos templates de metodologias e padronizações  | [Elias Bernardo](https://github.com/ebmm01)|
 |01/09/2019|0.1|Criação do documento, adição do diagrama de definição do tema a ser trabalhado durante o semestre | [Shayane Alcântara](https://github.com/shayanealcantara)|
@@ -54,10 +55,51 @@ O Scrum é um framework dentro do qual pessoas podem tratar e resolver problemas
 
 ### Nossa metodologia
 
-...
+Unindo vários aspectos das metodologias acima descritas, Scrum, XP, Lean e Kanban foi formulada uma metodologia híbrida para atender às necessidades do projeto e o contexto do cotidiano dos integrantes do grupo. Esta ação parte do princípio de que uma metodologia definida e clara para todos os membros contribui fortemente para melhoria da qualidade do produto proposto.
+
+As metodologias acima descritas foram escolhidas por diversos motivos, como tempo disponível dos integrantes e familiaridade com alguns aspectos. É definida híbrida por misturar diversas rotinas específicas destas 3 metodologias, de acordo com a necessidade do grupo e por uma só não se mostrar suficiente para cobrí-la.
+
+Nos sub-tópicos abaixo mostramos quais elementos das metodologias definidas acima foram aplicados no projeto.
+
+#### Elementos SCRUM
+
+As seguintes rotinas que auxiliarão na organização do projeto são:
+
+- Sprints com 1 semana de duração.
+- Reunião de Planejamento da Sprint, realizada nas segundas-feiras.
+- Reunião de Review da Sprint, realizada no domingo.
+- Reunião de Retrospectiva da Sprint, realizada no domingo.
+- Dailies remotas realizadas na terça, quinta e sexta.
+- Product Backlog
+- Sprint Backlog
+- Documento de Planejamento da Sprint, realizado na segunda-feira semanalmente.
+- Documento de Revisão da Sprint, realizado após review de cada sprint.
+- Critérios de aceitação para uma tarefa concluída.
+- Pequenas entregas.
+
+#### Elementos XP
+
+Em relação à metodologia XP, as seguintes rotinas serão adotadas.
+
+- Programação por Pares.
+- Comunicação com os potenciais clientes de forma indireta, visto que não há um cliente fixo.
+- Integração Contínua.
+- Refatoramento, quando necessário.
+- Feedback constante.
+
+#### Elementos Kanban
+
+A seguir são citadas rotinas relacionadas ao Kanban: 
+
+- Utilização do E-Kanban Zenhub para gerenciamento das issues.
+- Delimitação de responsáveis pelas issues de forma a eles receberem notificações e possíveis comentários.
+- Limitação da quantidade de trabalho limite para cada dupla.
+- Coleta de métricas de produtividade e consequente gerencimento de riscos e melhoria contínua.
+- Criação de colunas padrão como "To do", "Doing", "Review" e "Done".
+- Comunicação complementar pelas issues.
 
 ## Referencias
 
 [1] MÉTODO ÁGIL XP (EXTREME PROGRAMMING) -  Luciano Malaquias de Souza**
 
-[2]  Schwaber, Ken. Agile Project Management with Scrum. 
+[2] Schwaber, Ken. Agile Project Management with Scrum. 
