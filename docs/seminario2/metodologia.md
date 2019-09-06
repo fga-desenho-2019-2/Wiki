@@ -44,15 +44,6 @@ O Scrum é um framework dentro do qual pessoas podem tratar e resolver problemas
 |__Adaptação ao projeto__| 1) Os __papeis principais__ (scrum master & PO, por exemplo) serão enxugados, e as pessoas nesses papeis irão ser alteradas no inicio de cada sprint. <br> <br> 2) As __sprints__ terão duração de uma semana, indo de segunda a segunda, tendo seu "fim real" no domingo. <br><br> 3) As __Daily meetings__ não serão sequidas à risca. As reuniões serão feitas às terças, quintas e sábados, via Bot no Telegram. os resultados das dailys serão compilados e adicionados à wiki, para fins de acompanhamento e versionamento.|
 |__Possíveis problemas__| 1) __O fato de não definirmos explicitamente os papeis principais pode gerar diversos problemas, dentre os quais: variação na produtividade da equipe, dificuldade na gerencia da equipe e problemas de comunicação com o cliente.__ <br> > __Solução:__ Manter a variação na equipe de gerência dentro de um grupo específico, que acabaria se tornando "especializado".<br> <br> 2) __Ao não fazermos daily meetings diariamente, abrimos margem para um buraco no acompanhamento do projeto, visto que durante alguns dias ninguém saberá o que os membros da equipe estará fazendo.__ <br> > __Solução:__ Por ser no telegram, as dailys poderiam ser, no mínimo, todos os dias úteis. |
 
-<!-- ### Lean
-
-| Lean |  |
-|--|--|
-|Sobre|--|
-|__Pontos positivos__|--|
-|__Adaptação ao projeto__|--|
-|__Possíveis problemas__|--| -->
-
 ### Nossa metodologia
 
 Unindo vários aspectos das metodologias acima descritas, Scrum, XP, Lean e Kanban foi formulada uma metodologia híbrida para atender às necessidades do projeto e o contexto do cotidiano dos integrantes do grupo. Esta ação parte do princípio de que uma metodologia definida e clara para todos os membros contribui fortemente para melhoria da qualidade do produto proposto.

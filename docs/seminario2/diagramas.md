@@ -64,7 +64,7 @@
 
 ### DG05 -  Git Flow
 
-![gitflow](../images/diagramas-bpm/gitflow-v2.jpg)
+![gitflow](../images/diagramas-bpm/gitflow-3.jpg)
 
 |**DG05** | **Git Flow**  |
 |--|--|
