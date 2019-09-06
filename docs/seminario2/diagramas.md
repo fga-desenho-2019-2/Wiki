@@ -15,11 +15,11 @@
 
 ### DG02 -  Movimentação no Zenhub
 
-![movimentacao-no-zenhub](../images/diagramas-bpm/zenhub.png)
+![movimentacao-no-zenhub](../images/diagramas-bpm/zenhub2.png)
 
 |**DG02** | **Movimentação no Zenhub**  |
 |--|--|
-| **Versão**| Atual: 1.0 (04/09) <br> Anterior: -- | 
+| **Versão**| Atual: 1.1  <br> Anterior: [1.0](#dg02-movimentacao-no-zenhub_1) (04/09) | 
 | **Descrição** | Diagrama para ilustrar o processo de movimentação das issues utilizando o Zenhub. | 
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) |
 
@@ -55,6 +55,16 @@
 
 
 ## Versões anteriores
+
+### DG02 -  Movimentação no Zenhub
+
+![movimentacao-no-zenhub](../images/diagramas-bpm/zenhub.png)
+
+|**DG02** | **Movimentação no Zenhub**  |
+|--|--|
+| **Versão**| Atual: 1.0 (04/09) <br> Anterior: -- | 
+| **Descrição** | Diagrama para ilustrar o processo de movimentação das issues utilizando o Zenhub. | 
+|**Autor**| [Elias Bernardo](https://github.com/ebmm01) |
 
 ### 1 - Diagrama BPM - Decisão do tema
 ![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v1.jpg)
