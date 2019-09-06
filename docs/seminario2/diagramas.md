@@ -3,7 +3,7 @@
 
 ## Diagramas
 
-### DG01 -  Decisão do tema
+### DG01 - Decisão do tema
 
 ![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v2.jpg)
 
@@ -13,7 +13,7 @@
 | **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
 
-### DG02 -  Movimentação no Zenhub
+### DG02 - Movimentação no Zenhub
 
 ![movimentacao-no-zenhub](../images/diagramas-bpm/zenhub2.png)
 
@@ -25,7 +25,7 @@
 
 ### DG03 - Elicitação de Requisitos
 
-![movimentacao-no-zenhub](../images/diagramas-bpm/sintese-requisitos.png)
+![elicitacao-de-requisitos](../images/diagramas-bpm/sintese-requisitos.png)
 
 |**DG03** | **Elicitação de Requisitos**  |
 |--|--|
@@ -35,7 +35,7 @@
 
 #### DG03.1 - Elicitação de Requisitos: Elicitação
 
-![movimentacao-no-zenhub](../images/diagramas-bpm/subprocesso1-sintese.png)
+![elicitacao-de-requisitos-elicitacao](../images/diagramas-bpm/subprocesso1-sintese.png)
 
 |**DG03.1** | **Elicitação de Requisitos**  |
 |--|--|
@@ -45,7 +45,7 @@
 
 #### DG03.2 - Elicitação de Requisitos: Síntese
 
-![movimentacao-no-zenhub](../images/diagramas-bpm/subprocesso2-sintese.png)
+![elicitacao-de-requisitos-sintese](../images/diagramas-bpm/subprocesso2-sintese.png)
 
 |**DG03.2** | **Elicitação de Requisitos**  |
 |--|--|
@@ -54,9 +54,9 @@
 |**Autores**| [Matheus Blanco](https://github.com/MatheusBlanco), [Pedro Feo](https://github.com/Phe0), [Saleh Kader](https://github.com/devsalula) |
 
 
-### DG04 -  Processo de Trabalho
+### DG04 - Processo de Trabalho
 
-![decisao-do-tema](../images/diagramas-bpm/processo-de-trabalho.png)
+![processo-de-trabalho](../images/diagramas-bpm/processo-de-trabalho.png)
 
 |**DG04** | **Processo de Trabalho**  |
 |--|--|
@@ -64,15 +64,27 @@
 | **Descrição** | Diagrama para ilustrar o processo de trabalho da equipe | 
 |**Autor**| [Sara Silva](https://github.com/silvasara) |
 
+
 ### DG05 -  Git Flow
 
 ![gitflow](../images/diagramas-bpm/gitflow.jpg)
 
-|**DG04** | **Git Flow**  |
+|**DG05** | **Git Flow**  |
 |--|--|
 | **Versão**| Atual: 1.0 (05/09) <br> Anterior: - | 
 | **Descrição** | Diagrama para ilustrar o processo de git flow empregado pela equipe | 
 |**Autor**| [Pedro Rodrigues](https://github.com/pedro-prp) |
+
+### DG06 - Processo de Sprint
+
+![processo-de-sprint](../images/diagramas-bpm/processo-sprint.png)
+
+|**DG06** | **Processo de Trabalho**  |
+|--|--|
+| **Versão**| Atual: 1.1 (05/09) <br> Anterior: - | 
+| **Descrição** | Diagrama para ilustrar o processo de elaboração e desenvolvimento de sprint |
+|**Autor**| [Leonardo Barreiros](https://github.com/leossb36) |
+
 
 ## Versões anteriores
 
