@@ -92,6 +92,16 @@
 | **Descrição** | Diagrama para ilustrar o processo de arquitetura |
 |**Autor**| [Alan Lima](https://github.com/alanrslima) |
 
+### DG08 - CI/CD
+
+![pipeline](../images/diagramas-bpm/pipeline.png)
+
+|**DG08** | **Pipeline**  |
+|--|--|
+| **Versão**| Atual: 1.0(05/09) <br> Anterior: - | 
+| **Descrição** | Diagrama que ilustra o comportamento da pipeline de integração contínua |
+|**Autor**| [Guilherme Marques](https://github.com/guilhesme23) |
+
 ## Versões anteriores
 
 ### DG01 - Diagrama BPM - Decisão do tema
