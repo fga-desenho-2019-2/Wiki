@@ -85,6 +85,15 @@
 | **Descrição** | Diagrama para ilustrar o processo de elaboração e desenvolvimento de sprint |
 |**Autor**| [Leonardo Barreiros](https://github.com/leossb36) |
 
+### DG07 - Arquitetura
+
+![arquitetura](../images/diagramas-bpm/arquitetura.png)
+
+|**DG07** | **Arquitetura**  |
+|--|--|
+| **Versão**| Atual: 1.0(05/09) <br> Anterior: - | 
+| **Descrição** | Diagrama para ilustrar o processo de arquitetura |
+|**Autor**| [Alan Lima](https://github.com/alanrslima) |
 
 ## Versões anteriores
 
