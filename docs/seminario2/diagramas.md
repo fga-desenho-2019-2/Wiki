@@ -64,6 +64,16 @@
 | **Descrição** | Diagrama para ilustrar o processo de trabalho da equipe | 
 |**Autor**| [Sara Silva](https://github.com/silvasara) |
 
+### DG05 -  Git Flow
+
+![gitflow](../images/diagramas-bpm/gitflow.jpg)
+
+|**DG04** | **Git Flow**  |
+|--|--|
+| **Versão**| Atual: 1.0 (05/09) <br> Anterior: - | 
+| **Descrição** | Diagrama para ilustrar o processo de git flow empregado pela equipe | 
+|**Autor**| [Pedro Rodrigues](https://github.com/pedro-prp) |
+
 ## Versões anteriores
 
 ### DG02 -  Movimentação no Zenhub
