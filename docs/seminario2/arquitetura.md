@@ -3,7 +3,7 @@
 ## Histórico de Revisão:
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
-|05/09/2019|0.2| Criação do documento, adição dos tópicos | [Alan Lima](https://github.com/alanrslima)|
+|05/09/2019|0.1| Criação do documento, adição dos tópicos | [Alan Lima](https://github.com/alanrslima)|
 
 ## Introdução
 
@@ -30,6 +30,30 @@ Conceitualmente falando, o modelo REST representa nada mais que uma possibilidad
 - O recurso, por sua vez, é indicado na URL da requisição; Parâmetros podem ser passados na própria URL e/ou no corpo na requisição;
 - Os tipos de dados utilizados na requisição e na resposta devem ser acordados entre o servidor e o(s) cliente(s). JSON e XML estão entre os tipos mais utilizados.
 
+## Arquitetura dos Serviços
+
+### Visão Geral
+
+![Architecture](https://i.imgur.com/dIbIXo3.png)
+
+### Microserviços e camadas
+A arquitetura e sua versão atual está particionada em:
+
+**1 - Front-End (Usuário)**
+
+- Esta fronteira é responsável por permitir a interação do usuário com sistema, é por ela que são feitos os pedidos nos restaurantes cadastrados.
+
+**2 - Front-End (Restaurante)**
+
+- Esta fronteira é responsável por permitir o cadastro dos restaurantes por parte dos donos de estabelicementos que irão fazer usa do sistema, assim como os seus respectivos cardápios, valores, etc.
+
+**3 - Gateway**
+
+- Responsável por realizar a comunicação entre os micro serviços e o Front-End. Ele irá controlar todo o fluxo de dados e dimensionar para seus respectivos locais de persistência.
+
+**4 - Costumer, Restaurant, Order e Payment Service**
+
+- Micro serviços responsáveis pela função de DW (Data warehouse), depósito onde se é persistido e mantido os dados relevantes para o sistema. Através de uma API, disponibilizam os dados para a o gateway.
 
 ## Referências
 
