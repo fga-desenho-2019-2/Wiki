@@ -54,6 +54,16 @@
 |**Autores**| [Matheus Blanco](https://github.com/MatheusBlanco), [Pedro Feo](https://github.com/Phe0), [Saleh Kader](https://github.com/devsalula) |
 
 
+### DG04 -  Processo de Trabalho
+
+![decisao-do-tema](../images/diagramas-bpm/processo-de-trabalho.png)
+
+|**DG04** | **Processo de Trabalho**  |
+|--|--|
+| **Versão**| Atual: 1.1 (05/09) <br> Anterior: - | 
+| **Descrição** | Diagrama para ilustrar o processo de trabalho da equipe | 
+|**Autor**| [Sara Silva](https://github.com/silvasara) |
+
 ## Versões anteriores
 
 ### DG02 -  Movimentação no Zenhub
