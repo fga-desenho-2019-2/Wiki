@@ -43,6 +43,7 @@ pages:
       - Design Sprint: 'seminario1/design_sprint.md'
   - Dinâmica e Seminário II:
       - Metodologia: 'seminario2/metodologia.md'
+      - Metodologia - Elicitação de Requisitos: 'seminario2/metodologia-elicitacao.md'
       - Padronizações e Processos: 'seminario2/padroes_processos.md'
       - Diagramas: 'seminario2/diagramas.md'
   - Iniciativas Extras:
