@@ -76,6 +76,7 @@ As seguintes rotinas que auxiliarão na organização do projeto são:
 - Documento de Revisão da Sprint, realizado após review de cada sprint.
 - Critérios de aceitação para uma tarefa concluída.
 - Pequenas entregas.
+- Quadro de conhecimento preenchido pelo par de pareamento.
 
 #### Elementos XP
 

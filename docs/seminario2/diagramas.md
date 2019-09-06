@@ -1,6 +1,3 @@
-
-## Introdução
-
 ## Diagramas
 
 ### DG01 -  Decisão do tema
@@ -9,7 +6,7 @@
 
 |**DG01** | **Decisão do tema**  |
 |--|--|
-| **Versão**| Atual: 1.1 (04/09) <br> Anterior: [1.0](#1-diagrama-bpm-decisao-do-tema_1) | 
+| **Versão**| Atual: 1.1 (04/09) <br> Anterior: [1.0](#dg01-diagrama-bpm-decisao-do-tema_1) | 
 | **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
 
@@ -66,15 +63,24 @@
 
 ### DG05 -  Git Flow
 
-![gitflow](../images/diagramas-bpm/gitflow.jpg)
+![gitflow](../images/diagramas-bpm/gitflow-v2.jpg)
 
-|**DG04** | **Git Flow**  |
+|**DG05** | **Git Flow**  |
 |--|--|
-| **Versão**| Atual: 1.0 (05/09) <br> Anterior: - | 
+| **Versão**| Atual: 1.0 (05/09) <br> Anterior: [1.0](#dg05-git-flow_1) | 
 | **Descrição** | Diagrama para ilustrar o processo de git flow empregado pela equipe | 
 |**Autor**| [Pedro Rodrigues](https://github.com/pedro-prp) |
 
 ## Versões anteriores
+
+### DG01 - Diagrama BPM - Decisão do tema
+![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v1.jpg)
+
+ **DG01** | **Decisão do tema**  |
+|--|--|
+| **Versão**| Atual: 1.0 (01/09) <br> Anterior: - | 
+| **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
 
 ### DG02 -  Movimentação no Zenhub
 
@@ -86,14 +92,15 @@
 | **Descrição** | Diagrama para ilustrar o processo de movimentação das issues utilizando o Zenhub. | 
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) |
 
-### 1 - Diagrama BPM - Decisão do tema
-![decisao-do-tema](../images/diagramas-bpm/decisao-do-tema-v1.jpg)
+### DG05 -  Git Flow
 
- **DG01** | **Decisão do tema**  |
+![gitflow](../images/diagramas-bpm/gitflow-v1.jpg)
+
+|**DG04** | **Git Flow**  |
 |--|--|
-| **Versão**| Atual: 1.0 (01/09) <br> Anterior: - | 
-| **Descrição** | Diagrama para ilustrar o processo de decisão do tema a ser trabalhado durante a disciplina. | 
-|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
+| **Versão**| Atual: 1.0 (05/09) <br> Anterior: - | 
+| **Descrição** | Diagrama para ilustrar o processo de git flow empregado pela equipe | 
+|**Autor**| [Pedro Rodrigues](https://github.com/pedro-prp) |
 
 ## Referências
 
