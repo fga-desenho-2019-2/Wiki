@@ -72,4 +72,11 @@ pages:
         - Melhorias: 'iniciativas_extras/kanban/melhorias.md'
         - Apresentação: 'iniciativas_extras/kanban/apresentacao.md'
       - Modelo de dados: 'iniciativas_extras/modelo_dados.md'
+      - Sprints:
+        - Sprint 0:
+          - Planejamento: 'iniciativas_extras/sprints/sprint0/planejamento.md'
+          - Resultados: 'iniciativas_extras/sprints/sprint0/resultados.md'
+        - Sprint 1:
+          - Planejamento: 'iniciativas_extras/sprints/sprint1/planejamento.md'
+          - Resultados: 'iniciativas_extras/sprints/sprint1/resultados.md'
   
