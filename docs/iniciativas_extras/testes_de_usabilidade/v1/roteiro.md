@@ -22,7 +22,7 @@ Você está no seu horário de almoço e foi ao shopping almoçar com seus coleg
  - Como você ainda está na dúvida de onde comer, deseja visualizar que tipos de comida tem no shopping
  - Você decidiu que deseja comer um hambúrguer, selecione um restaurante para fazer seu pedido
  - Faça o seu pedido usando cartão de crédito
- - O restaurante que você pediu disponibiliza uma senha, descubra qual é ela
+ - Encontre a notinha e cheque número do pedido 
  - Agora que você já fez seu pedido você deseja ver seus pedidos anteriores
  - Agora cadastre um novo cartão na aplicação
  - Escreva uma dúvida para que a equipe do QR Comer possa te responder
