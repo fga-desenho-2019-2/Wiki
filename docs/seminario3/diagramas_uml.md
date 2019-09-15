@@ -41,16 +41,24 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 
 ![classes-usuario](../images/diagramas-uml/class_diagram_user_v1.jpg)
 
-
 |**DC01** | **Diagrama de classes de usuário**  |
 |--|--|
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de usuário |
 |**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
 
-### 4.2 Diagrama do banco de dados
+### 4.2  Diagrama de classes do microserviço de Restaurante
+
+O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
+
+![classes-restaurante](../images/diagramas-uml/class_diagram_restaurant_v1.jpg)
+
+|**DC02** | **Diagrama de classes de usuário**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML das classes do microserviço de restaurante |
+|**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
 
 ## 5 Diagrama de componentes
-
 
 ## Versões anteriores
