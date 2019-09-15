@@ -3,6 +3,7 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |12/09/2019|0.1|Criação do documento, e adição da estrutura e diagramas de pacote|[Shayane Alcântara](https://github.com/shayanealcantara)|
+|15/09/2019|0.2|Adição da 1 versão do caso de uso sobre a aplicação|[Shayane Alcântara](https://github.com/shayanealcantara)|
 
 ## 1. Introdução
 
@@ -23,8 +24,11 @@
 ## 4. Visão de Casos de Uso
 [Esta seção lista as especificações centrais e significantes para a arquitetura do sistema em relação aos atores da aplicação.]
 
-### 4.1 Casos de Uso significantes para a arquitetura
-[Desenhar o diagrama de caso de uso relevante, consultar bibliografia sobre casos de uso.]
+### 4.1 Caso de Uso sobre a aplicação com requisitos de priorização Must have)
+
+O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](../iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos.md) realizada pela equipe. Este diagrama busca ilustrar os requisitos e suas relações, em específico os que foram priorizados com o nível **MUST HAVE**.
+
+![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v1.jpg)
 
 ## 5. Visão Lógica
 [Descrever uma visão lógica da arquitetura. Descrever as classes mais importantes, sua organização em pacotes de serviços e subsistemas. Diagramas de classes e sequência devem ser incluídos para ilustrar os relacionamentos entre as classes significativas na arquitetura, subsistemas, pacotes e camadas. Descrever também a relação de Vue.js com Django Rest no contexto do projeto e descrição breve dos pacotes.]
