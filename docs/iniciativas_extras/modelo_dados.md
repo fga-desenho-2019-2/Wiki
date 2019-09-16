@@ -1,20 +1,56 @@
-### MER
-![mer](https://i.imgur.com/t8GjGTu.png)
+## Introdução
 
-| **MD01** | **MER**  |
+Os modelos de dados a seguir servem para descrever como será projetado a arquitetura do banco de dados do aplicativo QR Comer. A fim de estabelecer estratégias para desenvolvimento, a modelagem faz-se necessário para manipulação dos dados do sistema, tornando pragmático a visibilidade dos objetos e relacionamentos do sistema.
+
+### Modelo Entidade Relacionamento
+
+| **Entidade** | **Atributo**|
+|:--:|:--:|
+| SHOPPING | <u>cnpj</u><br>nomeShopping<br>telefone(multivalorado)<br>endereco(composto)|
+| CATEGORIARESTAURANTE | <u>idCategoria</u><br>nomeCategoria<br>descricao |
+| RESTAURANTE | <u>cnpjRestaurante</u><br>nomeRestaurante<br>numero<br>bloco<br>descricao<br>idCategoria |
+| USUARIO | <u>cpf</u><br>nomeUsuario<br>email<br>senha |
+| CARDAPIO | <u>idCardapio</u><br>nomeCardapio<br>descricao<br>cnpjRestaurante |
+| CARTAO | <u>numero</u><br>nomeTitular<br>validade<br>cvv |
+| CATEGORIAITEM | <u>idCategoriaItem</u><br>nomeCategoriaItem<br>descricao |
+| ITEM | <u>idItem</u><br>nomeItem<br>descricao<br>valorUnitario<br>quantidade<br>idCategoriaItem<br>cnpjRestaurante<br>idCardapio |
+| PEDIDO | <u>codigo</u><br>dataHoraRealizado<br>valorTotal<br>statusPedido<br>cpf<br>cnpjShopping<br>cnpjRestaurante |
+
+| **Entidade** | **relação** | **Entidade**| **Descrição** | **Cardinalidade**|
+|:--:|:--:|:--:|:--:|:--:|
+| **SHOPPING** | possui | **RESTAURANTE** |Um shopping possui um ou mais restaurantes cadastrados. Um restaurante pode estar associado a um ou mais shoppings | **N:M** |
+| **RESTAURANTE** | possui | **CATEGORIARESTAURANTE** | Um restaurante possui uma ou mais categorias. Uma categoria pode estar associada a um ou mais restaurantes. | **N:M** |
+| **RESTAURANTE** | possui | **CARDAPIO** | Um restaurante possui um ou mais cardapios. Um cardapio pode estar associada a um ou mais restaurante. | **N:M** |
+| **RESTAURANTE** | possui | **ITEM** | Um restaurante possui um ou mais itens. Um item pode estar associada a um ou mais restaurantes. | **N:M** |
+| **CARDAPIO** | possui | **ITEM** | Um cardapio possui um ou mais itens. Um item pode estar associada a um ou mais cardapios. | **N:M** |
+| **ITEM** | possui | **CATEGORIAITEM** | Um item possui um ou mais categorias. Uma categoria pode estar associada a um ou mais itens. | **N:M** |
+| **USUARIO** | realiza | **PEDIDO** | Um usuario realiza um ou mais pedidos. Um pedido pode estar associada a um ou mais usuarios. | **N:M** |
+| **PEDIDO** | possui | **ITEM** | Um pedido possui um ou mais itens. Um item pode estar associado a um ou mais pedidos. | **N:M** |
+
+| **MER01** | **MER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Modelo Entidade Relacionamento | 
+|**Autor**| [Leonardo Barreiros](https://github.com/leossb36) | 
+
+### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/t8GjGTu.png)
+
+| **DER01** | **DER**  |
 |--|--|
 | **Versão**| Atual: 1.0 (26/08) <br> Anterior: - | 
-| **Descrição** | Modelo inicial de dados para a aplicação | 
+| **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
 |**Autor**| [Alan Lima](https://github.com/alanrslima) | 
 
-### DL
+### Diagrama Lógico
 
 ![dl](../images/modelagem-dados/Diagrama_Lógico.png)
 
-| **MD01** | **DL**  |
+| **DL01** | **DL**  |
 |--|--|
 | **Versão**| Atual: 1.0 (26/08) <br> Anterior: - | 
-| **Descrição** | Diagrama Lógico baseado no modelo inicial de dados | 
+| **Descrição** | Diagrama Lógico baseado no Diagrama Entidade Relacionamento inicial de dados | 
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco) |
 
 ### Dicionário de dados
