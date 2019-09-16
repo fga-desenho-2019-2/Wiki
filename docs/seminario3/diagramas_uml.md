@@ -26,6 +26,42 @@ O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](..
 | **Descrição** | Caso de uso dos requisitos. |
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
 
+### 2.2 Caso de Uso sobre o Restaurente
+
+O diagrama a seguir foi construído visando demonstrar a visão do Restaurante e as ações do mesmo na aplicação.
+
+![caso-de-uso-restaurante](../images/diagramas-uml/restaurant_use_case.jpeg)
+
+#### Atores
+    
+* Restaurante  
+* Cliente  
+
+#### Fluxo básico
+* Restaurante se cadastra
+* Restaurante é divulgado pro cliente
+
+#### Fluxos Alternativos
+##### FA1 - Restaurante cadastra itens novos
+1) Restaurante se cadastra  
+2) Restaurante acessa a API  
+3) Restaurante altera a API  
+4) Restaurante cadastra seus itens no cardápio
+
+#### Pré-condições
+* Restaurante realizar cadastro na aplicação
+* Restaurante possuir itens a cadastrar
+
+#### Pós-condições
+* Usuário tem acesso ao restaurante
+* Restaurante cadastrado na aplicação
+
+|**UC02** | **Caso de Uso do Restaurante**  |
+|--|--|
+| **Versão**| Atual: 1.0 (15/09) <br> Anterior: - |
+| **Descrição** | Caso de uso do Restaurante. |
+|**Autores**| [Pedro Rodrigues](https://github.com/pedro-prp), [Matheus Blanco](https://github.com/MatheusBlanco) |
+
 
 ## 3. Diagrama de pacotes
 
