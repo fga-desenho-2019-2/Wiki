@@ -93,6 +93,29 @@ Após um planejamento do grupo e analisado as vantagens e desvantagens das poss�
 | **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
 |**Autor**| [Alan Lima](https://github.com/alanrslima) | 
 
+### Payment Service
+
+#### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/TYYl8hQ.png)
+
+| **DER04** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (18/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pagamento | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Diagrama Lógico
+
+![DL](https://i.imgur.com/TfL8du7.png)
+
+| **DL04** | **DL**  |
+|--|--|
+| **Versão**| Atual: 1.0 (18/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pagamento | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+---
 
 ## Versão 1.0
 
