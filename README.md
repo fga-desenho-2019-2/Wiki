@@ -9,6 +9,9 @@
 <p align="justify">O QR Comer é um sistema que busca eliminar as filas em praças de alimentação, por meio de pedidos e pagamentos feitos direto pelo celular, tornando as refeições mais rápidas e agradáveis.</p>
  
 
+<div align="center">
+<br></br>
+
 ## Equipe
 
 |Membro|E-mail|Matrícula|
@@ -23,6 +26,8 @@
 |[Saleh Nazih Abdel Kader](https://github.com/devsalula)|saleh.nazih.dev@gmail.com|16/0144485|
 |[Sara Conceição de Sousa Araújo Silva](https://github.com/silvasara)|saracsas2@gmail.com|16/0144752|
 |[Shayane Marques Alcântara](https://github.com/shayanealcantara)|shayanealcantaraa@gmail.com|16/0144949|
+
+</div>
 
 
 

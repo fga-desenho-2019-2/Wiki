@@ -47,10 +47,19 @@ pages:
       - Padronizações e Processos: 'seminario2/padroes_processos.md'
       - Diagramas: 'seminario2/diagramas.md'
       - Arquitetura: 'seminario2/arquitetura.md'
+  - Dinâmica e Seminário III:
+      - Diagramas estáticos: 'seminario3/diagramas_estaticos.md'
+      - Diagramas dinâmicos: 'seminario3/diagramas_dinamicos.md'
   - Iniciativas Extras:
       - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
       - Identidade Visual: 'iniciativas_extras/identidade_visual.md'
       - Protótipo de Alta Fidelidade: 'iniciativas_extras/prototipo.md'
+      - Testes de Usabilidade:
+        - V1: 
+          - Roteiro: 'iniciativas_extras/testes_de_usabilidade/v1/roteiro.md'
+          - Análise: 'iniciativas_extras/testes_de_usabilidade/v1/analise.md'
+        - V2: 
+          - Roteiro: 'iniciativas_extras/testes_de_usabilidade/v2/roteiro.md'
       - Elicitação de requisitos:
         - Síntese dos requisitos selecionados: 'iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos.md'
         - Questionário: 'iniciativas_extras/elicitacao_de_requisitos/req_questionario.md'
@@ -66,4 +75,5 @@ pages:
         - Melhorias: 'iniciativas_extras/kanban/melhorias.md'
         - Apresentação: 'iniciativas_extras/kanban/apresentacao.md'
       - Modelo de dados: 'iniciativas_extras/modelo_dados.md'
+      - Backlog: 'iniciativas_extras/backlog.md'
   

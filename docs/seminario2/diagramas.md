@@ -68,7 +68,7 @@
 
 |**DG05** | **Git Flow**  |
 |--|--|
-| **Versão**| Atual: 1.0 (05/09) <br> Anterior: [1.0](#dg05-git-flow_1) | 
+| **Versão**| Atual: 1.1 (05/09) <br> Anterior: [1.0](#dg05-git-flow_1) | 
 | **Descrição** | Diagrama para ilustrar o processo de git flow empregado pela equipe | 
 |**Autor**| [Pedro Rodrigues](https://github.com/pedro-prp) |
 
