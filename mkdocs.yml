@@ -48,7 +48,7 @@ pages:
       - Diagramas: 'seminario2/diagramas.md'
       - Arquitetura: 'seminario2/arquitetura.md'
   - Dinâmica e Seminário III:
-      - Diagramas UML: 'seminario3/diagramas_uml.md'
+      - Diagramas estáticos: 'seminario3/diagramas_estaticos.md'
   - Iniciativas Extras:
       - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
       - Identidade Visual: 'iniciativas_extras/identidade_visual.md'

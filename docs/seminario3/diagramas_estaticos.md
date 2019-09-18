@@ -96,13 +96,13 @@ O diagrama a seguir foi construído tomando como base o modelo de pacotes adotad
 
 O diagrama a seguir usa a notação UML para descrever as classes do microserviço de usuário.
 
-![classes-usuario](../images/diagramas-uml/class_diagram_user_v1.jpg)
+![classes-usuario](../images/diagramas-uml/class_diagram_user_v2.jpg)
 
 |**DC01** | **Diagrama de classes de usuário**  |
 |--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
+| **Versão**| Atual: 2.0 (18/09) <br> Anterior: [1.0](#dc01-diagrama-de-classes-de-usuario) |
 | **Descrição** | Diagrama UML das classes do microserviço de usuário |
-|**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
+|**Autor**| [Sara Silva](https://github.com/silvasara)|
 
 ### 4.2  Diagrama de classes do microsserviço de Restaurante
 
@@ -110,7 +110,7 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 
 ![classes-restaurante](../images/diagramas-uml/class_diagram_restaurant_v1.jpg)
 
-|**DC02** | **Diagrama de classes de usuário**  |
+|**DC02** | **Diagrama de classes de pedido**  |
 |--|--|
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de restaurante |
@@ -190,3 +190,14 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 | **Versão**| Atual: 1.0 (12/09) <br> Anterior: - |
 | **Descrição** | Diagrama de Pacotes para o Front End |
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara)|
+
+
+### DC01 Diagrama de classes de usuário
+
+![classes-usuario](../images/diagramas-uml/class_diagram_user_v1.jpg)
+
+|**DC01** | **Diagrama de classes de usuário**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML das classes do microserviço de usuário |
+|**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
