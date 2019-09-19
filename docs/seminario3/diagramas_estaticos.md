@@ -92,31 +92,31 @@ O diagrama a seguir foi construído tomando como base o modelo de pacotes adotad
 
 ## 4 Diagrama de classes e microserviços
 
-### 4.1  Diagrama de classes do microserviço de usuário
+### 4.1  Diagrama de classes do microsserviço de usuário
 
 O diagrama a seguir usa a notação UML para descrever as classes do microserviço de usuário.
 
-![classes-usuario](../images/diagramas-uml/class_diagram_user_v1.jpg)
+![classes-usuario](../images/diagramas-uml/class_diagram_user_v2.jpg)
 
 |**DC01** | **Diagrama de classes de usuário**  |
 |--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
+| **Versão**| Atual: 2.0 (18/09) <br> Anterior: [1.0](#dc01-diagrama-de-classes-de-usuario) |
 | **Descrição** | Diagrama UML das classes do microserviço de usuário |
-|**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
+|**Autor**| [Sara Silva](https://github.com/silvasara)|
 
-### 4.2  Diagrama de classes do microserviço de Restaurante
+### 4.2  Diagrama de classes do microsserviço de Restaurante
 
 O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
 
 ![classes-restaurante](../images/diagramas-uml/class_diagram_restaurant_v1.jpg)
 
-|**DC02** | **Diagrama de classes de usuário**  |
+|**DC02** | **Diagrama de classes de pedido**  |
 |--|--|
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de restaurante |
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
 
-### 4.3 Diaframa de classes do microserviço de Pedidos
+### 4.3 Diagrama de classes do microsserviço de Pedidos
 
 O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
 
@@ -127,6 +127,45 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 | **Versão**| Atual: 1.0 (13/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de pedidos |
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+### 4.4 Diagrama sequêncial do microsserviço de pedidos
+
+#### 4.4.1 Fazer pedidos
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de requerimento e pagamento de um pedido.
+
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
+
+|**DS01** | **Diagrama de sequência de realização de pedidos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de pedidos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+#### 4.4.2 Checar pedidos antigos
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
+
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png)
+
+|**DS01** | **Diagrama de sequência de checagem de pedidos antigos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos antigos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+#### 4.4.3 Checar pedidos ativos
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
+
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
+
+|**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
 
 ## 5 Diagrama de componentes
 
@@ -151,3 +190,14 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 | **Versão**| Atual: 1.0 (12/09) <br> Anterior: - |
 | **Descrição** | Diagrama de Pacotes para o Front End |
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara)|
+
+
+### DC01 Diagrama de classes de usuário
+
+![classes-usuario](../images/diagramas-uml/class_diagram_user_v1.jpg)
+
+|**DC01** | **Diagrama de classes de usuário**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML das classes do microserviço de usuário |
+|**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|

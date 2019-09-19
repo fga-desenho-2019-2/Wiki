@@ -2,6 +2,121 @@
 
 Os modelos de dados a seguir servem para descrever como será projetado a arquitetura do banco de dados do aplicativo QR Comer. A fim de estabelecer estratégias para desenvolvimento, a modelagem faz-se necessário para manipulação dos dados do sistema, tornando pragmático a visibilidade dos objetos e relacionamentos do sistema.
 
+## Versão 2.0
+
+Após um planejamento do grupo e analisado as vantagens e desvantagens das possíveis arquiteturas, foi acordado que o modelo de microserviços seria utilizado para o desenvolvimento do backend da aplicação QR Comer. Portanto o modelo de dados foi fragmentado e será apresentado abaixo fazendo referência ao seu microserviço correspondente.
+
+### Costumer Service
+
+#### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/pHCnCJ3.png)
+
+| **DER01** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de usuário | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Diagrama Lógico
+
+![DL](https://i.imgur.com/iUJ6b6Z.png)
+
+| **DL01** | **DL**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+### Restaurant Service
+
+#### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/7G1Ac9T.png)
+
+
+| **DER02** | **DER**  |
+|--|--|
+| **Versão**| Atual: 2.0 (17/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+---
+
+![DER](https://i.imgur.com/KN39OdO.png)
+
+| **DER02** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Diagrama Lógico
+
+![DL](https://i.imgur.com/LIjWBZd.png)
+
+| **DL02** | **DL**  |
+|--|--|
+| **Versão**| Atual: 2.0 (17/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+---
+
+![DL](https://i.imgur.com/Zz4Zh73.png)
+
+| **DL02** | **DL**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+### Order Service
+
+#### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/30hWV8J.png)
+
+| **DER03** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Diagrama Lógico
+
+![DL](https://i.imgur.com/klZUAmI.png)
+
+| **DL03** | **DL**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+### Payment Service
+
+#### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/TYYl8hQ.png)
+
+| **DER04** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (18/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pagamento | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Diagrama Lógico
+
+![DL](https://i.imgur.com/TfL8du7.png)
+
+| **DL04** | **DL**  |
+|--|--|
+| **Versão**| Atual: 1.0 (18/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pagamento | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+---
+
 ## Versão 1.0
 
 ### Modelo Entidade Relacionamento
@@ -341,73 +456,3 @@ Os modelos de dados a seguir servem para descrever como será projetado a arquit
 |latitude|chave estrangeira obrigatória|bigint|16|Latitude da localização do endereço|
 |longitude|chave estrangeira obrigatória|bigint|16|Longitude da localização do endereço|
 |bairro|obrigatória|varchar|20|Bairro onde o shopping se localiza|
-
-## Versão 2.0
-
-Após um planejamento do grupo e analisado as vantagens e desvantagens das possíveis arquiteturas, foi acordado que o modelo de microserviços seria utilizado para o desenvolvimento do backend da aplicação QR Comer. Portanto o modelo de dados foi fragmentado e será apresentado abaixo fazendo referência ao seu microserviço correspondente.
-
-### Costumer Service
-
-#### Diagrama Entidade Relacionamento
-
-![DER](https://i.imgur.com/pHCnCJ3.png)
-
-| **DER01** | **DER**  |
-|--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
-| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de usuário | 
-|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
-
-#### Diagrama Lógico
-
-![DL](https://i.imgur.com/iUJ6b6Z.png)
-
-| **DL01** | **DL**  |
-|--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
-| **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
-|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
-
-### Restaurant Service
-
-![DER](https://i.imgur.com/KN39OdO.png)
-
-#### Diagrama Entidade Relacionamento
-
-| **DER01** | **DER**  |
-|--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
-| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
-|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
-
-#### Diagrama Lógico
-
-![DL](https://i.imgur.com/Zz4Zh73.png)
-
-| **DL01** | **DL**  |
-|--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
-| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
-|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
-
-### Order Service
-
-#### Diagrama Entidade Relacionamento
-
-![DER](https://i.imgur.com/30hWV8J.png)
-
-| **DER01** | **DER**  |
-|--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
-| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
-|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
-
-#### Diagrama Lógico
-
-![DL](https://i.imgur.com/klZUAmI.png)
-
-| **DL01** | **DL**  |
-|--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
-| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
-|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
