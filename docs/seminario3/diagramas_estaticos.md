@@ -7,6 +7,7 @@
 |15/09/2019|0.3|Adição da 1ª versão do diagrama de classe do microserviço de usuário |[Sara Silva](https://github.com/silvasara)|
 |15/09/2019|0.4|Adição do Diagrama de Pacotes do Front e do Back End e Adição do Diagrama de Classe de Pedidos|[Saleh Kader](https://github.com/devsalula)|
 |19/09/2019|0.5|Revisão do diagrama de caso de uso sobre a aplicação | [Shayane Alcântara](https://github.com/shayanealcantara)|
+|19/09/2019|0.5|Adição do diagrama de componentes do frontend | [Guilherme Marques](https://github.com/guilhesme23)|
 
 
 ## 1. Introdução
@@ -130,8 +131,17 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
 
 
-## 4 Diagrama de componentes
+## 5 Diagrama de componentes
 
+O diagrama a seguir descreve os componentes e comunicação entre diferentes componentes no Frontend.
+
+![diagrama de componentes](../images/diagramas-uml/diagrama_componentes.jpg)
+
+|**DC03** | **Diagrama de classes de pedidos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (13/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML das classes do microserviço de pedidos |
+|**Autor**| [Guilherme Marques](https://github.com/guilhesme23) e [Pedro Féo](https://github.com/Phe0) |
 
 ## Versões anteriores
 
