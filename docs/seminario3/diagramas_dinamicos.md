@@ -5,6 +5,7 @@
 |12/09/2019|0.1|Criação do documento, adição da estrutura e diagramas de estado do Pedido|[Elias Bernardo](https://github.com/ebmm01)|
 |19/09/2019|0.2| Adição do diagrama de colaboração referente a realização de pedido.| [Shayane Alcântara](https://github.com/shayanealcantara)|
 |19/09/2019|0.3| Adição do diagrama de sequencia referente ao cadastro do usuário, do diagrama de sequencia referente ao login de usuário.| [Saleh Kader](https://github.com/devsalula)|
+|19/09/2019|0.4| Adição do diagrama de colaboração referente a autenticação do usuário e do cadastro de cartões de credito.| [Guilherme Marques](https://github.com/guilhesme23)|
 
 
 
@@ -54,7 +55,26 @@ Os diagramas a seguir ilustram a relação do microsserviço de usuário com alg
 | **Descrição** | Diagrama UML de colaboração do microsserviço de Usuário - Realizar pedido |
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Guilherme Marques](https://github.com/guilhesme23)|
 
-#### 2.3.2 
+#### 2.3.2 Realizar autenticação
+
+![colaboracao-realizar-pedido](../images/diagramas-uml/colaboracao_auth.jpg)
+
+|**DC04** | **Diagrama de colaboração do microsserviço de Usuário - Realizar autenticação**  |
+|--|--|
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML de colaboração do microsserviço de Usuário - Realizar autenticação |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Guilherme Marques](https://github.com/guilhesme23)|
+
+
+#### 2.3.4 Cadastrar Cartão de Crédito
+
+![colaboracao-realizar-pedido](../images/diagramas-uml/colaboracao_cartao.jpg)
+
+|**DC05** | **Diagrama de colaboração do microsserviço de Usuário - Cadastrar cartão de crédito**  |
+|--|--|
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML de colaboração do microsserviço de Usuário - Cadastrar Cartão de crédito |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Guilherme Marques](https://github.com/guilhesme23)|
 
 ## 3. Diagrama de estado
 
