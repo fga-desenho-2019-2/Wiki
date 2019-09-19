@@ -4,6 +4,8 @@
 |-|-|-|-|
 |12/09/2019|0.1|Criação do documento, adição da estrutura e diagramas de estado do Pedido|[Elias Bernardo](https://github.com/ebmm01)|
 |19/09/2019|0.2| Adição do diagrama de colaboração referente a realização de pedido.| [Shayane Alcântara](https://github.com/shayanealcantara)|
+|19/09/2019|0.3| Adição do diagrama de sequencia referente ao cadastro do usuário, do diagrama de sequencia referente ao login de usuário.| [Saleh Kader](https://github.com/devsalula)|
+
 
 
 ## 1. Introdução
@@ -115,6 +117,33 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 | **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
 |**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+### 4.2 Diagrama sequêncial do microsserviço de usuários
+
+#### 4.2.1 Cadastro de usuário
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de cadastro do usuários.
+
+![classes-usuarios](../images/diagramas-uml/Sequencia_cadastrar_usuário_v1.png)
+
+|**DS02** | **Diagrama de sequência de cadastro de usuário**  |
+|--|--|
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do cadastro de usuários |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Saleh Kader](https://github.com/devsalula)|
+
+#### 4.2.1 Login de Usuário
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de login de usuários.
+
+![classes-usuarios](../images/diagramas-uml/Sequencia_login_usuario_v1.png)
+
+|**DS02** | **Diagrama de sequência de login de usuário**  |
+|--|--|
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência de login de usuários |
+|**Autor**| [Saleh Kader](https://github.com/devsalula)|
+
 
 ## Referências
 
