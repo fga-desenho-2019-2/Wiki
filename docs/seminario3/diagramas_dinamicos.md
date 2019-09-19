@@ -23,6 +23,18 @@ O diagrama a seguir usa a notação UML de colaboração para descrever o fluxo 
 | **Descrição** | Diagrama UML de colaboração do microsserviço de pedidos |
 |**Autor**| [Saleh Kader](https://github.com/devsalula), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
+### 2.2 Microsserviço de Restaurante
+
+O diagrama a seguir usa a notação UML de colaboração para descrever o fluxo de funcionamento do cadastro de um cardápio.
+
+![colaboracao-restaurant](../images/diagramas-uml/colaboracao_restaurant_actions.jpg)
+
+|**DC02** | **Diagrama de colaboração do microsserviço de Restaurante**  |
+|--|--|
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML de colaboração do microsserviço de restaurante |
+|**Autor**| [Pedro Rodrigues](https://github.com/pedro-prp), [Sara Silva](https://github.com/silvasara)|
+
 ## 3. Diagrama de estado
 
 ### 3.1 Pedidos
