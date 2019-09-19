@@ -30,7 +30,7 @@ O diagrama a seguir usa a notação UML de colaboração para descrever o fluxo 
 |**Autor**| [Saleh Kader](https://github.com/devsalula), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
 ### 2.2 Microsserviço de Restaurante
-
+z
 O diagrama a seguir usa a notação UML de colaboração para descrever o fluxo de funcionamento do cadastro de um cardápio.
 
 ![colaboracao-restaurant](../images/diagramas-uml/colaboracao_restaurant_actions.jpg)
@@ -106,11 +106,11 @@ Os diagramas a seguir ilustram a relação do microsserviço de usuário com alg
 
 O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de requerimento e pagamento de um pedido.
 
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos-2.png)
 
 |**DS01** | **Diagrama de sequência de realização de pedidos**  |
 |--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Versão**| Atual: 1.1 (19/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos.png) |
 | **Descrição** | Diagrama UML da sequência do microsserviço de pedidos |
 |**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
@@ -130,11 +130,11 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 
 O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
 
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos-2.png)
 
 |**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
 |--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png) |
 | **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
 |**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
@@ -171,4 +171,22 @@ Diagramas de Colaboração. Disponível em: <https://www.uml-diagrams.org/commun
 
 ## Versões anteriores
 
+### DS01 Diagrama de Sequência Microsserviço de pedidos
 
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
+
+|**DS01** | **Diagrama de sequência de realização de pedidos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de pedidos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+### DS02 Diagrama de Sequência Microsserviço de pedidos ativos
+
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
+
+|**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
