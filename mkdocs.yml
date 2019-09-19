@@ -47,6 +47,8 @@ pages:
       - Padronizações e Processos: 'seminario2/padroes_processos.md'
       - Diagramas: 'seminario2/diagramas.md'
       - Arquitetura: 'seminario2/arquitetura.md'
+  - Dinâmica e Seminário III:
+      - Diagramas UML: 'seminario3/diagramas_uml.md'
   - Iniciativas Extras:
       - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
       - Identidade Visual: 'iniciativas_extras/identidade_visual.md'
@@ -79,4 +81,5 @@ pages:
         - Sprint 1:
           - Planejamento: 'iniciativas_extras/sprints/sprint1/planejamento.md'
           - Resultados: 'iniciativas_extras/sprints/sprint1/resultados.md'
+      - Backlog: 'iniciativas_extras/backlog.md'
   
