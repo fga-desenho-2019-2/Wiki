@@ -23,6 +23,16 @@ Este documento tem por objetivo mostrar os seguintes diagramas dinâmicos: de __
 | **Descrição** | Diagrama de estado que exibe todos os possíveis estados para um pedido. |
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
 
+### 3.2 Instância VUE
+
+![diagrama_estado_vue.png](../images/diagramas-uml/diagrama_estado_vue.png)
+
+|**DE02** | **Diagrama de estado - Instância VUE**  |
+|--|--|
+| **Versão**| Atual: 1.0 (18/09) <br> Anterior: - |
+| **Descrição** | Diagrama de estado que exibe o ciclo de vida de uma instância VUE. |
+|**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
+
 ## 3. Diagrama de sequência
 
 
