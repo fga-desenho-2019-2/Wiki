@@ -110,7 +110,7 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 
 |**DS01** | **Diagrama de sequência de realização de pedidos**  |
 |--|--|
-| **Versão**| Atual: 1.1 (19/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos.png) |
+| **Versão**| Atual: 2.0 (19/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos.png) |
 | **Descrição** | Diagrama UML da sequência do microsserviço de pedidos |
 |**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
@@ -134,7 +134,7 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 
 |**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
 |--|--|
-| **Versão**| Atual: 1.0 (19/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png) |
+| **Versão**| Atual: 2.0 (19/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png) |
 | **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
 |**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
@@ -168,6 +168,8 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de lo
 ## Referências
 
 Diagramas de Colaboração. Disponível em: <https://www.uml-diagrams.org/communication-diagrams.html>. Acesso em: 19 de setembro de 2019.
+
+VENTURA, Plínio. Entendendo o Diagrama de Sequência da UML: Entenda como especificar as interações entre as funcionalidades de um software. [S. l.], 10 fev. 2019. Disponível em: <https://www.ateomomento.com.br/diagrama-de-sequencia-uml/>. Acesso em: 17 set. 2019.
 
 ## Versões anteriores
 

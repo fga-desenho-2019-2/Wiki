@@ -122,11 +122,11 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 
 O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
 
-![classes-pedidos](../images/diagramas-uml/class_diagram_order_v1.jpg)
+![classes-pedidos](../images/diagramas-uml/class_diagram_order_v2.jpg)
 
 |**DC03** | **Diagrama de classes de pedidos**  |
 |--|--|
-| **Versão**| Atual: 1.0 (13/09) <br> Anterior: - |
+| **Versão**| Atual: 2.0 (13/09) <br> Anterior: [1.0]() |
 | **Descrição** | Diagrama UML das classes do microserviço de pedidos |
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
 
@@ -175,6 +175,16 @@ O diagrama a seguir descreve os componentes e comunicação entre diferentes com
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de usuário |
 |**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
+
+### DC02 Diagrama de classe de pedidos
+
+![classes-pedidos](../images/diagramas-uml/class_diagram_order_v1.jpg)
+
+|**DC03** | **Diagrama de classes de pedidos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (13/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML das classes do microserviço de pedidos |
+|**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
 
 ### UC01 Diagrama de caso de uso dos requisitos
 
