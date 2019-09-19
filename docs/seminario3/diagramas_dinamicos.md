@@ -3,6 +3,7 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |12/09/2019|0.1|Criação do documento, adição da estrutura e diagramas de estado do Pedido|[Elias Bernardo](https://github.com/ebmm01)|
+|19/09/2019|0.2| Adição do diagrama de colaboração referente a realização de pedido.| [Shayane Alcântara](https://github.com/shayanealcantara)|
 
 
 ## 1. Introdução
@@ -10,6 +11,8 @@
 Este documento tem por objetivo mostrar os seguintes diagramas dinâmicos: de __colaboração__, de __estado__ e de __sequência__
 
 ## 2. Diagrama de colaboração
+
+Os diagramas a seguir de comunicação (chamado diagrama de colaboração na UML 1.x) é um tipo de diagrama de interação UML que mostra interações entre objetos e / ou partes (representadas como linhas de vida ) usando mensagens sequenciadas em um arranjo de forma livre [[1]](#referencias).
 
 ### 2.1 Microsserviço de Pedidos
 
@@ -34,6 +37,22 @@ O diagrama a seguir usa a notação UML de colaboração para descrever o fluxo 
 | **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML de colaboração do microsserviço de restaurante |
 |**Autor**| [Pedro Rodrigues](https://github.com/pedro-prp), [Sara Silva](https://github.com/silvasara)|
+
+### 2.3 Microsserviço de Usuário
+
+Os diagramas a seguir ilustram a relação do microsserviço de usuário com alguns cenários de uso.
+
+#### 2.3.1 Realizar pedido
+
+![colaboracao-realizar-pedido](../images/diagramas-uml/diagrama_colaboracao_user_actions-v1.jpg)
+
+|**DC03** | **Diagrama de colaboração do microsserviço de Usuário - Realizar pedido**  |
+|--|--|
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML de colaboração do microsserviço de Usuário - Realizar pedido |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Guilherme Marques](https://github.com/guilhesme23)|
+
+#### 2.3.2 
 
 ## 3. Diagrama de estado
 
@@ -96,6 +115,10 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 | **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
 |**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+## Referências
+
+Diagramas de Colaboração. Disponível em: <https://www.uml-diagrams.org/communication-diagrams.html>. Acesso em: 19 de setembro de 2019.
 
 ## Versões anteriores
 
