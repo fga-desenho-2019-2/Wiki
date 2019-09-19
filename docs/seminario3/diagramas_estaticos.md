@@ -6,6 +6,7 @@
 |15/09/2019|0.2|Adição da 1ª versão do caso de uso sobre a aplicação|[Shayane Alcântara](https://github.com/shayanealcantara)|
 |15/09/2019|0.3|Adição da 1ª versão do diagrama de classe do microserviço de usuário |[Sara Silva](https://github.com/silvasara)|
 |15/09/2019|0.4|Adição do Diagrama de Pacotes do Front e do Back End e Adição do Diagrama de Classe de Pedidos|[Saleh Kader](https://github.com/devsalula)|
+|19/09/2019|0.5|Revisão do diagrama de caso de uso sobre a aplicação | [Shayane Alcântara](https://github.com/shayanealcantara)|
 
 
 ## 1. Introdução
@@ -14,15 +15,15 @@
 
 ## 2. Diagrama de Casos de Uso
 
-### 2.1 Caso de Uso sobre a aplicação com requisitos de priorização Must have)
+### 2.1 Caso de Uso sobre a aplicação com requisitos de priorização Must have
 
 O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](../iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos.md) realizada pela equipe. Este diagrama busca ilustrar os requisitos e suas relações, em específico os que foram priorizados com o nível **MUST HAVE**.
 
-![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v1.jpg)
+![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v2.jpg)
 
 |**UC01** | **Caso de Uso dos Requisitos**  |
 |--|--|
-| **Versão**| Atual: 1.0 (15/09) <br> Anterior: - |
+| **Versão**| Atual: 1.1 (19/09) <br> Anterior: [1.0](#21-caso-de-uso-sobre-a-aplicacao-com-requisitos-de-priorizacao-must-have_1) |
 | **Descrição** | Caso de uso dos requisitos. |
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
 
@@ -129,8 +130,8 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
 
 
-
 ## 4 Diagrama de componentes
+
 
 ## Versões anteriores
 
@@ -164,3 +165,13 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de usuário |
 |**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
+
+### UC01 Diagrama de caso de uso dos requisitos
+
+![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v1.jpg)
+
+|**UC01** | **Caso de Uso dos Requisitos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (15/09) <br> Anterior: - |
+| **Descrição** | Caso de uso dos requisitos. |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
