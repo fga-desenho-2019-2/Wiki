@@ -11,6 +11,18 @@ Este documento tem por objetivo mostrar os seguintes diagramas dinâmicos: de __
 
 ## 2. Diagrama de colaboração
 
+### 2.1 Microsserviço de Pedidos
+
+O diagrama a seguir usa a notação UML de colaboração para descrever o fluxo de funcionamento de realização de um pedido.
+
+![classes-pedidos](../images/diagramas-uml/diagrama_colaboracao_pedidos.png)
+
+|**DS01** | **Diagrama de colaboração do microsserviço de pedidos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML de colaboração do microsserviço de pedidos |
+|**Autor**| [Saleh Kader](https://github.com/devsalula), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
 ## 3. Diagrama de estado
 
 ### 3.1 Pedidos
@@ -33,7 +45,46 @@ Este documento tem por objetivo mostrar os seguintes diagramas dinâmicos: de __
 | **Descrição** | Diagrama de estado que exibe o ciclo de vida de uma instância VUE. |
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
 
-## 3. Diagrama de sequência
+## 4. Diagrama de sequência
 
+### 4.1 Diagrama sequêncial do microsserviço de pedidos
+
+#### 4.1.1 Fazer pedidos
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de requerimento e pagamento de um pedido.
+
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
+
+|**DS01** | **Diagrama de sequência de realização de pedidos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de pedidos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+#### 4.1.2 Checar pedidos antigos
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
+
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png)
+
+|**DS01** | **Diagrama de sequência de checagem de pedidos antigos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos antigos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+#### 4.1.3 Checar pedidos ativos
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
+
+![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
+
+|**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
+|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
 ## Versões anteriores
+
+

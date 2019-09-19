@@ -128,46 +128,9 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 | **Descrição** | Diagrama UML das classes do microserviço de pedidos |
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
 
-### 4.4 Diagrama sequêncial do microsserviço de pedidos
-
-#### 4.4.1 Fazer pedidos
-
-O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de requerimento e pagamento de um pedido.
-
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
-
-|**DS01** | **Diagrama de sequência de realização de pedidos**  |
-|--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
-| **Descrição** | Diagrama UML da sequência do microsserviço de pedidos |
-|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
-
-#### 4.4.2 Checar pedidos antigos
-
-O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
-
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png)
-
-|**DS01** | **Diagrama de sequência de checagem de pedidos antigos**  |
-|--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
-| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos antigos |
-|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
-
-#### 4.4.3 Checar pedidos ativos
-
-O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
-
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
-
-|**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
-|--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
-| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
-|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
 
 
-## 5 Diagrama de componentes
+## 4 Diagrama de componentes
 
 ## Versões anteriores
 
