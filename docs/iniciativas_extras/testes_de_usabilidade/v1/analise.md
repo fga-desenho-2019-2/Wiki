@@ -2,9 +2,8 @@
 
 Para facilitar a visulização da avaliação dos testadores, foi feito um mapa de cores para facilitar a identificação de possíveis problemas na aplicação, a escala é a seguinte:
 
-<div align="center">
-    <img src="/../../../images/testes_usabilidade/escala.jpg">
-</div>
+
+![escala-cores](../../../images/testes_usabilidade/escala.jpg)
 
 A nota 0 foi utilizada pra representar tarefas que não foram realizadas, seja por falta de entendimento da tarefa ou por conta de dificuldade em se realizar a tarefa.
 
@@ -12,9 +11,7 @@ As notas de 1 a 5 estão representadas em vermelho, por serem possíveis riscos 
 
 ### Simplicidade
 
-<div align="center">
-    <img src="/../../../images/testes_usabilidade/simplicidade-v1.jpg">
-</div>
+![simplicidade](../../../images/testes_usabilidade/simplicidade-v1.jpg)
 
 Os principais pontos de destaque em relação à aplicação estão relacionadas às etapas de Fazer cadastro e Cadastrar Cartão. Notou-se que a etapa de cadastro era muito extensa e que a aba para cadastro de cartões era difícil de ser encontrado.
 
@@ -22,17 +19,13 @@ Além disso houve uma certa dificuldade em se entender as etapas de Encontrar no
 
 ### Usabilidade
 
-<div align="center">
-    <img src="/../../../images/testes_usabilidade/usabilidade-v1.jpg">
-</div>
+![usabilidade](../../../images/testes_usabilidade/usabilidade-v1.jpg)
 
 Os pontos de destaque relacionados à Usabilidade estão em Fazer Cadastro, Cadastrar Novo Cartão e Checar Perfil. Na etapa de cadastro os testadores demonstraram não querer adicionar suas informações sobre o cartão na etapa de cadastro. Já a etapa de cadastro de cartão dentro do app apresentou as mesmas reclamações evidenciadas no tópico de simplicidade, houve dificuldade para se encontrar essa parte do app. A etapa de Checar Perfil apresenta o mesmo problema, dificuldade de acesso.
 
 ### Design
 
-<div align="center">
-    <img src="/../../../images/testes_usabilidade/design-v1.jpg">
-</div>
+![design](../../../images/testes_usabilidade/design-v1.jpg)
 
 A aplicação foi muito elogiada em relação ao design e alguns aspectos de layout já foram evidenciados pelos outros tópicos da análise.
 
