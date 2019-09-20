@@ -70,3 +70,7 @@ body {
     background-color: transparent !important;
     color: white;
 }
+
+img[role="presentation"] {
+    background: white;
+}
