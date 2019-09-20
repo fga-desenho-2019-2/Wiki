@@ -106,7 +106,7 @@ Os diagramas a seguir ilustram a relação do microsserviço de usuário com alg
 
 O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de requerimento e pagamento de um pedido.
 
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos-2.png)
+![sequencia_realizar_pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos-2.png)
 
 |**DS01** | **Diagrama de sequência de realização de pedidos**  |
 |--|--|
@@ -118,7 +118,7 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 
 O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
 
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png)
+![sequencia_checar_pedidos_antigos](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png)
 
 |**DS01** | **Diagrama de sequência de checagem de pedidos antigos**  |
 |--|--|
@@ -130,7 +130,7 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 
 O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
 
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos-2.png)
+![sequencia_checar_pedidos_ativos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos-2.png)
 
 |**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
 |--|--|
@@ -144,7 +144,7 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 
 O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de cadastro do usuários.
 
-![classes-usuarios](../images/diagramas-uml/Sequencia_cadastrar_usuário_v1.png)
+![sequencia_cadastro_usuario](../images/diagramas-uml/Sequencia_cadastrar_usuário_v1.png)
 
 |**DS02** | **Diagrama de sequência de cadastro de usuário**  |
 |--|--|
@@ -156,13 +156,26 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 
 O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de login de usuários.
 
-![classes-usuarios](../images/diagramas-uml/Sequencia_login_usuario_v1.png)
+![sequencia_login](../images/diagramas-uml/Sequencia_login_usuario_v1.png)
 
 |**DS02** | **Diagrama de sequência de login de usuário**  |
 |--|--|
 | **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML da sequência de login de usuários |
 |**Autor**| [Saleh Kader](https://github.com/devsalula)|
+
+
+#### 4.2.3 Cadastro de cartão
+
+O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de cadastro de cartões.
+
+![sequencia_cadastro_cartão](../images/diagramas-uml/Sequencia_cadastrar_cartao_v1.png)
+
+|**DS02** | **Diagrama de sequência de cadastro de cartão**  |
+|--|--|
+| **Versão**| Atual: 1.0 (19/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML da sequência do cadastro de cartão |
+|**Autor**| [Pedro Feo](https://github.com/Phe0) |
 
 
 ## Referências
@@ -175,7 +188,7 @@ VENTURA, Plínio. Entendendo o Diagrama de Sequência da UML: Entenda como espec
 
 ### DS01 Diagrama de Sequência Microsserviço de pedidos
 
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
+![sequencia_pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
 
 |**DS01** | **Diagrama de sequência de realização de pedidos**  |
 |--|--|
@@ -185,7 +198,7 @@ VENTURA, Plínio. Entendendo o Diagrama de Sequência da UML: Entenda como espec
 
 ### DS02 Diagrama de Sequência Microsserviço de pedidos ativos
 
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
+![sequencia_pedidos_ativos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
 
 |**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
 |--|--|
