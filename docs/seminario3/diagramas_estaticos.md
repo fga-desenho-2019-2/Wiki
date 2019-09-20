@@ -8,6 +8,8 @@
 |15/09/2019|0.4|Adição do Diagrama de Pacotes do Front e do Back End e Adição do Diagrama de Classe de Pedidos|[Saleh Kader](https://github.com/devsalula)|
 |19/09/2019|0.5|Revisão do diagrama de caso de uso sobre a aplicação | [Shayane Alcântara](https://github.com/shayanealcantara)|
 |19/09/2019|0.5|Adição do diagrama de componentes do frontend | [Guilherme Marques](https://github.com/guilhesme23)|
+|19/09/2019|0.5|Adição do diagrama de componentes do frontend | [Guilherme Marques](https://github.com/guilhesme23)|
+|19/09/2019|0.6| Correção no cado de uso UC01 | [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
 
 
 ## 1. Introdução
@@ -20,13 +22,13 @@
 
 O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](../iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos.md) realizada pela equipe. Este diagrama busca ilustrar os requisitos e suas relações, em específico os que foram priorizados com o nível **MUST HAVE**.
 
-![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v2.jpg)
+![caso-de-uso-aplicacao](../images/diagramas-uml/caso_de_uso_aplicacao_2.png)
 
 |**UC01** | **Caso de Uso dos Requisitos**  |
 |--|--|
-| **Versão**| Atual: 1.1 (19/09) <br> Anterior: [1.0](#21-caso-de-uso-sobre-a-aplicacao-com-requisitos-de-priorizacao-must-have_1) |
+| **Versão**| Atual: 1.1 (19/09) <br> Anterior: [1.0](#uc01-caso-de-uso-sobre-a-aplicacao-com-requisitos-de-priorizacao-must-have) |
 | **Descrição** | Caso de uso dos requisitos. |
-|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara), [Elias Bernardo](), [Leonardo]() |
 
 ### 2.2 Caso de Uso sobre o Restaurente
 
@@ -144,6 +146,18 @@ O diagrama a seguir descreve os componentes e comunicação entre diferentes com
 |**Autor**| [Guilherme Marques](https://github.com/guilhesme23) e [Pedro Féo](https://github.com/Phe0) |
 
 ## Versões anteriores
+
+### UC01 - Caso de Uso sobre a aplicação com requisitos de priorização Must have)
+
+O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](../iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos.md) realizada pela equipe. Este diagrama busca ilustrar os requisitos e suas relações, em específico os que foram priorizados com o nível **MUST HAVE**.
+
+![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v1.jpg)
+
+|**UC01** | **Caso de Uso dos Requisitos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (15/09) <br> Anterior: - |
+| **Descrição** | Caso de uso dos requisitos. |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
 
 ### DP01 Diagrama de Pacotes Back End
 
