@@ -110,11 +110,11 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 
 O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
 
-![classes-restaurante](../images/diagramas-uml/class_diagram_restaurant_v1.jpg)
+![classes-restaurante](../images/diagramas-uml/class_diagram_restaurant_v2.jpg)
 
-|**DC02** | **Diagrama de classes de pedido**  |
+|**DC02** | **Diagrama de classes de restaurante**  |
 |--|--|
-| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
+| **Versão**| Atual: 2.0 (19/09) <br> Anterior: [1.0](#dc02-diagrama-de-classes-de-restaurante) |
 | **Descrição** | Diagrama UML das classes do microserviço de restaurante |
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
 
@@ -126,7 +126,7 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 
 |**DC03** | **Diagrama de classes de pedidos**  |
 |--|--|
-| **Versão**| Atual: 2.0 (13/09) <br> Anterior: [1.0]() |
+| **Versão**| Atual: 2.0 (13/09) <br> Anterior: [1.0](#dc03-diagrama-de-classes-de-pedidos) |
 | **Descrição** | Diagrama UML das classes do microserviço de pedidos |
 |**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
 
@@ -176,7 +176,19 @@ O diagrama a seguir descreve os componentes e comunicação entre diferentes com
 | **Descrição** | Diagrama UML das classes do microserviço de usuário |
 |**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
 
-### DC02 Diagrama de classe de pedidos
+### DC02 Diagrama de classes de restaurante
+
+O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
+
+![classes-restaurante](../images/diagramas-uml/class_diagram_restaurant_v1.jpg)
+
+|**DC02** | **Diagrama de classes de restaurante**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML das classes do microserviço de restaurante |
+|**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
+
+### DC03 Diagrama de classe de pedidos
 
 ![classes-pedidos](../images/diagramas-uml/class_diagram_order_v1.jpg)
 
