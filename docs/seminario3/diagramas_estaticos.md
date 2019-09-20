@@ -10,6 +10,7 @@
 |19/09/2019|0.5|Adição do diagrama de componentes do frontend | [Guilherme Marques](https://github.com/guilhesme23)|
 |19/09/2019|0.5|Adição do diagrama de componentes do frontend | [Guilherme Marques](https://github.com/guilhesme23)|
 |19/09/2019|0.6| Correção no cado de uso UC01 | [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
+|19/09/2019|0.7| Correção nos Diagramas de Pacote | [Saleh Kader](https://github.com/devsalula)|
 
 
 ## 1. Introdução
@@ -73,11 +74,11 @@ O diagrama a seguir foi construído visando demonstrar a visão do Restaurante e
 
 O diagrama a seguir foi construído tomando como base o modelo de pacotes adotados, normalmente para projetos em Django Rest Framework.
 
-![diagrama-pacotes-back](../images/diagramas-uml/package_diagram_backend-v1_1.jpg)
+![diagrama-pacotes-back](../images/diagramas-uml/package_diagram_backend_v3.png)
 
 |**DP01** | **Diagrama de pacotes do Back End**  |
 |--|--|
-| **Versão**| Atual: 1.1 (13/09) <br> Anterior: [1.0](#dp01-diagrama-de-pacotes-back-end) |
+| **Versão**| Atual: 2.0 (19/09) <br> Anterior: [1.1](#dp01-diagrama-de-pacotes-back-end) |
 | **Descrição** | Diagrama de Pacotes para os Microserviços do Back End |
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Saleh Kader](https://github.com/devsalula)|
 
@@ -86,13 +87,13 @@ O diagrama a seguir foi construído tomando como base o modelo de pacotes adotad
 
 O diagrama a seguir foi construído tomando como base o modelo de pacotes adotados, normalmente para projetos em VueJs.
 
-![diagrama-pacotes-front](../images/diagramas-uml/package_diagram_front-v1_1.jpg)
+![diagrama-pacotes-front](../images/diagramas-uml/package_diagram_front_v3.png)
 
 |**DP02** | **Diagrama de pacotes do Front End**  |
 |--|--|
-| **Versão**| Atual: 1.1 (13/09) <br> Anterior: [1.0](#dp02-diagrama-de-pacotes-front-end) |
+| **Versão**| Atual: 2.0 (19/09) <br> Anterior: [1.1](#dp02-diagrama-de-pacotes-front-end) |
 | **Descrição** | Diagrama de Pacotes para o Front End |
-|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara)|
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Saleh Kader](https://github.com/devsalula)|
 
 ## 4 Diagrama de classes e microserviços
 
@@ -139,10 +140,10 @@ O diagrama a seguir descreve os componentes e comunicação entre diferentes com
 
 ![diagrama de componentes](../images/diagramas-uml/diagrama_componentes.jpg)
 
-|**DC03** | **Diagrama de classes de pedidos**  |
+|**DC03** | **Diagrama de Componentes**  |
 |--|--|
 | **Versão**| Atual: 1.0 (13/09) <br> Anterior: - |
-| **Descrição** | Diagrama UML das classes do microserviço de pedidos |
+| **Descrição** | Diagrama UML de componentes do front |
 |**Autor**| [Guilherme Marques](https://github.com/guilhesme23) e [Pedro Féo](https://github.com/Phe0) |
 
 ## Versões anteriores
@@ -161,6 +162,14 @@ O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](..
 
 ### DP01 Diagrama de Pacotes Back End
 
+![diagrama-pacotes-back](../images/diagramas-uml/package_diagram_backend-v1_1.jpg)
+
+|**DP01** | **Diagrama de pacotes do Back End**  |
+|--|--|
+| **Versão**| Atual: 1.1 (13/09) <br> Anterior: [1.0](#dp01-diagrama-de-pacotes-back-end) |
+| **Descrição** | Diagrama de Pacotes para os Microserviços do Back End |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) e [Saleh Kader](https://github.com/devsalula)|
+
 ![diagrama-pacotes-back](../images/diagramas-uml/package_diagram_backend-v1.jpg)
 
 |**DP01** | **Diagrama de pacotes do Back End**  |
@@ -170,6 +179,14 @@ O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](..
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara)|
 
 ### DP02 Diagrama de Pacotes Front End
+
+![diagrama-pacotes-front](../images/diagramas-uml/package_diagram_front-v1_1.jpg)
+
+|**DP02** | **Diagrama de pacotes do Front End**  |
+|--|--|
+| **Versão**| Atual: 1.1 (13/09) <br> Anterior: [1.0](#dp02-diagrama-de-pacotes-front-end) |
+| **Descrição** | Diagrama de Pacotes para o Front End |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara)|
 
 ![diagrama-pacotes-front](../images/diagramas-uml/package_diagram_front-v1.jpg)
 
