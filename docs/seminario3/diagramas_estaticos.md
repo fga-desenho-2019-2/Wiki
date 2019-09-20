@@ -6,6 +6,8 @@
 |15/09/2019|0.2|Adição da 1ª versão do caso de uso sobre a aplicação|[Shayane Alcântara](https://github.com/shayanealcantara)|
 |15/09/2019|0.3|Adição da 1ª versão do diagrama de classe do microserviço de usuário |[Sara Silva](https://github.com/silvasara)|
 |15/09/2019|0.4|Adição do Diagrama de Pacotes do Front e do Back End e Adição do Diagrama de Classe de Pedidos|[Saleh Kader](https://github.com/devsalula)|
+|19/09/2019|0.5|Revisão do diagrama de caso de uso sobre a aplicação | [Shayane Alcântara](https://github.com/shayanealcantara)|
+|19/09/2019|0.5|Adição do diagrama de componentes do frontend | [Guilherme Marques](https://github.com/guilhesme23)|
 
 
 ## 1. Introdução
@@ -14,15 +16,15 @@
 
 ## 2. Diagrama de Casos de Uso
 
-### 2.1 Caso de Uso sobre a aplicação com requisitos de priorização Must have)
+### 2.1 Caso de Uso sobre a aplicação com requisitos de priorização Must have
 
 O diagrama a seguir foi realizado baseando-se na [elicitação de requisitos](../iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos.md) realizada pela equipe. Este diagrama busca ilustrar os requisitos e suas relações, em específico os que foram priorizados com o nível **MUST HAVE**.
 
-![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v1.jpg)
+![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v2.jpg)
 
 |**UC01** | **Caso de Uso dos Requisitos**  |
 |--|--|
-| **Versão**| Atual: 1.0 (15/09) <br> Anterior: - |
+| **Versão**| Atual: 1.1 (19/09) <br> Anterior: [1.0](#21-caso-de-uso-sobre-a-aplicacao-com-requisitos-de-priorizacao-must-have_1) |
 | **Descrição** | Caso de uso dos requisitos. |
 |**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
 
@@ -120,54 +122,26 @@ O diagrama a seguir usa a notação UML para descrever as classes do microservi�
 
 O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
 
-![classes-pedidos](../images/diagramas-uml/class_diagram_order_v1.jpg)
+![classes-pedidos](../images/diagramas-uml/class_diagram_order_v2.jpg)
+
+|**DC03** | **Diagrama de classes de pedidos**  |
+|--|--|
+| **Versão**| Atual: 2.0 (13/09) <br> Anterior: [1.0]() |
+| **Descrição** | Diagrama UML das classes do microserviço de pedidos |
+|**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+
+## 5 Diagrama de componentes
+
+O diagrama a seguir descreve os componentes e comunicação entre diferentes componentes no Frontend.
+
+![diagrama de componentes](../images/diagramas-uml/diagrama_componentes.jpg)
 
 |**DC03** | **Diagrama de classes de pedidos**  |
 |--|--|
 | **Versão**| Atual: 1.0 (13/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de pedidos |
-|**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
-
-### 4.4 Diagrama sequêncial do microsserviço de pedidos
-
-#### 4.4.1 Fazer pedidos
-
-O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de requerimento e pagamento de um pedido.
-
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos.png)
-
-|**DS01** | **Diagrama de sequência de realização de pedidos**  |
-|--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
-| **Descrição** | Diagrama UML da sequência do microsserviço de pedidos |
-|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
-
-#### 4.4.2 Checar pedidos antigos
-
-O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
-
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png)
-
-|**DS01** | **Diagrama de sequência de checagem de pedidos antigos**  |
-|--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
-| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos antigos |
-|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
-
-#### 4.4.3 Checar pedidos ativos
-
-O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de funcionamento de checagem de um pedido antigo.
-
-![classes-pedidos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos.png)
-
-|**DS01** | **Diagrama de sequência de checagem de pedidos ativos**  |
-|--|--|
-| **Versão**| Atual: 1.0 (17/09) <br> Anterior: - |
-| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos |
-|**Autor**| [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)|
-
-
-## 5 Diagrama de componentes
+|**Autor**| [Guilherme Marques](https://github.com/guilhesme23) e [Pedro Féo](https://github.com/Phe0) |
 
 ## Versões anteriores
 
@@ -201,3 +175,23 @@ O diagrama a seguir usa a notação UML sequêncial para descrever o fluxo de fu
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - |
 | **Descrição** | Diagrama UML das classes do microserviço de usuário |
 |**Autor**| [Sara Silva](https://github.com/silvasara) e [Pedro Rodrigues](https://github.com/pedro-prp)|
+
+### DC02 Diagrama de classe de pedidos
+
+![classes-pedidos](../images/diagramas-uml/class_diagram_order_v1.jpg)
+
+|**DC03** | **Diagrama de classes de pedidos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (13/09) <br> Anterior: - |
+| **Descrição** | Diagrama UML das classes do microserviço de pedidos |
+|**Autor**| [Matheus Blanco](https://github.com/MatheusBlanco)|
+
+### UC01 Diagrama de caso de uso dos requisitos
+
+![caso-de-uso-aplicacao](../images/diagramas-uml/application_use_case_v1.jpg)
+
+|**UC01** | **Caso de Uso dos Requisitos**  |
+|--|--|
+| **Versão**| Atual: 1.0 (15/09) <br> Anterior: - |
+| **Descrição** | Caso de uso dos requisitos. |
+|**Autor**| [Shayane Alcântara](https://github.com/shayanealcantara) |
