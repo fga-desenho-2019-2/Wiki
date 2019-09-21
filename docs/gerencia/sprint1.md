@@ -5,12 +5,14 @@
 | Alan  |
 | Guilherme |
 | Leonardo  |
+| Matheus |
+| Pedro Féo |
 | Pedro Rodrigues|
 | Saleh  |
 | Sara  |
 | Shayane|
 
-__Faltantes:__ Elias, Pedro Féo e Matheus.
+__Faltantes:__ Elias
 
 ## Dados gerais
 
