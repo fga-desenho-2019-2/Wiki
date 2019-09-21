@@ -5,21 +5,24 @@
 | Alan  |
 | Guilherme |
 | Leonardo  |
-| Pedro Rodrigues |
+| Pedro Rodrigues (Scrum master)|
 | Pedro Féo |
 | Saleh  |
 | Sara  |
-| Shayane |
+| Shayane (Product Owner) |
 
 __Faltantes:__ Elias
 
 ## Dados gerais
 
 **Data de início:** 09/09/2019
+
 **Data de término:** 15/19/2019
 
 **Pontos Planejados:** Não se aplica no momento
+
 **Pontos Adicionados:** Não se aplica no momento
+
 **Pontos totais:** Não se aplica no momento
 
 ## Pareamentos e issues correspondentes
@@ -53,4 +56,4 @@ Não foram entregues dívidas.
 
 ## Retrospectiva da Sprint
 
-![../gerencia/img/retrospectiva2.png](../gerencia/img/retrospectiva2.jpg)
+![../gerencia/img/retrospectiva1.png](../gerencia/img/retrospectiva1.jpg)
