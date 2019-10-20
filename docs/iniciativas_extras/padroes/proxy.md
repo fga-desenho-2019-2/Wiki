@@ -48,9 +48,13 @@ Essa capacidade de controlar o acesso a um objeto pode ser necessária por vári
 
 Linguagens com um pé em programação orientada a objetos, como Java por exemplo.
 
-### 2.5 How?
+### 2.5 Where?
 
-[Exemplo de código](https://github.com/fga-desenho-2019-2/design_patterns/tree/master/proxy/exemplo%201)
+<!-- Faz sentido colocar aonde? -->
+
+### 2.6 How?
+
+[Exemplo de código]()
 
 ## Referências
 
