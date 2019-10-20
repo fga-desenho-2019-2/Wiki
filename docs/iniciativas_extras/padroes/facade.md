@@ -2,7 +2,7 @@
 
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
-|25/08/2019|0.1| Abertura do documento |Elias Bernardo|
+|19/10/2019|0.1| Abertura do documento |Elias Bernardo|
 
 ## 1 - Introdução
 

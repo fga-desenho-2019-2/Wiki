@@ -2,7 +2,7 @@
 
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
-|25/08/2019|0.1| Abertura do documento |Elias Bernardo|
+|19/10/2019|0.1| Abertura do documento |Elias Bernardo|
 
 ## 1 - Introdução
 
@@ -33,7 +33,7 @@ O Proxy é utilizado principalmente quando:
 - Funcionalidades adicionais devem ser fornecidas ao acessar um objeto (__Smart References__).
 - Você precisa implementar objetos que precisam de muitos recursos, mas você não quer instanciar tais objetos a menos/até que eles sejam requisitados pelo cliente (__Virtual Proxies__).
 
-Podemos citar ainda os __Remote Proxies__ e as __Smart References__, que são implementações do proxy que buscam resolver alguns outros problemas como __fornecer uma representação local para um objeto que esteja em um espaço de endereço diferente__ e __fornecer um acesso sofisticado a determinados objetos__.
+Podemos citar ainda os __Remote Proxies__ e as __Smart References__, que são implementações do proxy que buscam resolver alguns outros problemas como __fornecer uma representação local__ para um objeto que esteja em um __espaço de endereço diferente__ e __fornecer um acesso sofisticado a determinados objetos__, respectivamente.
 
 ### 2.3 Why?
 
@@ -48,13 +48,9 @@ Essa capacidade de controlar o acesso a um objeto pode ser necessária por vári
 
 Linguagens com um pé em programação orientada a objetos, como Java por exemplo.
 
-### 2.5 Where?
+### 2.5 How?
 
-<!-- Faz sentido colocar aonde? -->
-
-### 2.6 How?
-
-[Exemplo de código]()
+[Exemplo de código](https://github.com/fga-desenho-2019-2/design_patterns/tree/master/proxy/exemplo%201)
 
 ## Referências
 
