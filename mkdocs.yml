@@ -76,6 +76,8 @@ pages:
         - Apresentação: 'iniciativas_extras/kanban/apresentacao.md'
       - Modelo de dados: 'iniciativas_extras/modelo_dados.md'
       - Backlog: 'iniciativas_extras/backlog.md'
+      - Padrões: 
+        - Proxy: 'iniciativas_extras/padroes/proxy.md'
   - Gerência:
     - Sprint 0: 'gerencia/sprint0.md'
     - Sprint 1: 'gerencia/sprint1.md'
