@@ -51,7 +51,9 @@ Linguagens com um pé em programação orientada a objetos, como Java por exempl
 
 ### 2.5 How?
 
-[Exemplo de código]()
+![](https://github.com/fga-desenho-2019-2/design_patterns/blob/master/facade/exemplo%201/facade_diagram.png?raw=true)
+
+[Exemplo de código](https://github.com/fga-desenho-2019-2/design_patterns/tree/master/facade/exemplo%201)
 
 ## Referências
 
