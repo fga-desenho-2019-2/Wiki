@@ -50,6 +50,12 @@ pages:
   - Dinâmica e Seminário III:
       - Diagramas estáticos: 'seminario3/diagramas_estaticos.md'
       - Diagramas dinâmicos: 'seminario3/diagramas_dinamicos.md'
+  - Dinâmica e Seminário IV:
+      - GoF's: 
+        - Criacionais: 'seminario4/criacionais.md'
+        - Estruturais: 'seminario4/estruturais.md'
+        - Comportamentais: 'seminario4/comportamentais.md'
+      - Emergentes & Consumidos: 'seminario4/emergentes.md'
   - Iniciativas Extras:
       - Materiais complementares: 'iniciativas_extras/pesquisa_de_mercado.md'
       - Identidade Visual: 'iniciativas_extras/identidade_visual.md'
