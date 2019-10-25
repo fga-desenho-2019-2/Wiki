@@ -3,7 +3,7 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |23/10/2019|0.1|Criação do documento|[Elias Bernardo](https://github.com/ebmm01)|
-|24/10/2019|0.2|Adição do padrão de Factory Method|[Shayane Alcantara](https://github.com/shayanealcantara)|
+|24/10/2019|0.2|Adição do padrão de Factory Method|[Shayane Alcantara](https://github.com/shayanealcantara) e [Sara Silva](https://github.com/sarasilva)|
 
 ## Introdução
 
@@ -28,7 +28,7 @@ Ao utilizarmos os signals, podemos fazer um sistema de subscrição de e-mails p
 
 ## Template Method
 
-Template Method é um padrão de design __comportamental__ que define o "esqueleto" de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura [3](https://refactoring.guru/design-patterns/template-method).
+Template Method é um padrão de design __comportamental__ que define o "esqueleto" de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura [[3]](https://refactoring.guru/design-patterns/template-method).
 
 ### Como foi utilizado no projeto
 
@@ -37,7 +37,13 @@ O padrão foi selecionado para auxiliar no aproveitamento de linhas de código, 
 ![](https://raw.githubusercontent.com/fga-desenho-2019-2/Wiki/develop/docs/images/diagramas-uml/class_diagram_restaurant_v2.jpg)
 
 ### Objetivo & problema sanado
+O principal problema observado no código implementado foi a duplicação de diversas linhas de código. Com a adaptação do padrão, foi possível reduzir esse fator e assim, permitir uma melhor legibilidade do código em questão. A seguir segue a adaptação da implementação de uma parte das regras de serviço.
 
+![restaurant_1](../images/patterns/restaurante_1.png)
+
+![restaurant_2](../images/patterns/restaurant_2.png)
+
+![restaurant_3](../images/patterns/restaurant_3.png)
 
 ## Referências
 

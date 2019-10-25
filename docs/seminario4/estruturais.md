@@ -37,7 +37,7 @@ O padrão composite faz parte da arquitetura padrão do Vue, onde componentes po
 
 ### Objetivo & problema sanado
 
-O uso de composite na arquitetura padrão do vue se deve a facilidade de reutilização de componentes, componentes individuais passam a poder ser utilizados em diverças partes do código, evitando reutilização de código.
+O uso de composite na arquitetura padrão do vue se deve a facilidade de reutilização de componentes, componentes individuais passam a poder ser utilizados em diversas partes do código, evitando reutilização de código.
 
 ## Flyweight
 
