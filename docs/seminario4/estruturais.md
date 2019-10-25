@@ -51,6 +51,20 @@ O uso desse padrão tem como objetivo diminuir a quantidade de informação salv
 
 ![](../../images/patterns/props.png)
 
+## Decorator
+
+O Decorator é um padrão de projeto __estrutural__, que permite acrescentar novos comportamentos a métodos de forma dinâmica. Os decoratos permitem estender o funcionamento de um método.
+
+## Como foi utilizado no projeto
+
+O Decorator foi utilizado pensando nos verbos de requisições do protocólo HTTP. Estendendo os métodos criados, para permitir a flexibilidade dos métodos de acordo com o tipo de requisição solicitada.
+
+![](../../images/patterns/restaurant_decorator.png)
+
+### Objetivo & problema sanado
+
+O uso desse padrão permite o controle do tipo de requisição dentro dos métodos, garantindo a sua segurança e impedindo, por exemplo, que uma requisição do tipo 'DELETE' seja tratada por uma função concebida para o tratamento do tipo 'POST'.
+
 ## Referências
 
 [1] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994). Design Patterns: Elements of Reusable Object-Oriented Software
