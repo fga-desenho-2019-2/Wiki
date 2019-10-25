@@ -2,7 +2,7 @@
 
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
-|24/10/2019|0.1|Tópico Facade|[Pedro Féo](https://github.com/phe0)|
+|24/10/2019|0.1|Tópicos Facade, Composite e Flyweight|[Pedro Féo](https://github.com/phe0)|
 
 
 ## Facade
@@ -24,3 +24,34 @@ O __Facade__ foi utilizado para facilitar o processo de comunicação com os ser
 Passa a ser:
 
 ![](../../images/patterns/serviceCall.png)
+
+## Composite
+
+Esse padrão permite a composição de objetos em uma estrutura de árvore, depois utilizando essas estruturas como objetos individuais.
+
+### Como foi utilizado no projeto
+
+O padrão composite faz parte da arquitetura padrão do Vue, onde componentes possuem uma estrutura de árvore, em que um componente é capaz de conter diversos outros.
+
+### Objetivo & problema sanado
+
+O uso de composite na arquitetura padrão do vue se deve a facilidade de reutilização de componentes, componentes individuais passam a poder ser utilizados em diverças partes do código, evitando reutilização de código.
+
+## Flyweight
+
+Esse padrão visa a performance do seu software, ele estabelece que informações podem ser compartilhadas entre objetos, em vez de fazer com que cada objeto precise inicializar esse dado.
+
+### Como foi utilizado no projeto
+
+O Flyweight, assim como o Composite faz parte da arquitetura padrão do Vue. O Vue utiliza o que chama de props para que possa passar informações pela sua estrutura de árvore, então um dado pode percorrer toda a árvore, assim uma mudança da informação no começo da árvore consegue afetar o seu restante. 
+
+### Objetivo & problema sanado
+
+O uso desse padrão tem como objetivo diminuir a quantidade de informação salva na aplicação, fazendo com que um dado seja compartilhado em diversos componentes.
+
+![](../../images/patterns/props.png)
+
+## Referências
+
+[1] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994). Design Patterns: Elements of Reusable Object-Oriented Software
+

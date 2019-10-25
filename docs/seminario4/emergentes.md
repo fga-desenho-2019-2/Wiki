@@ -56,3 +56,8 @@ A descrição das rotas passa a ser:
 ![](../../images/patterns/routeDefinition.png)
 
 então o HOCComponent recebe o __Container__ que deverá inicializar e um array de informações que são necessárias para a inicialização do __container__.
+
+## Referências
+
+[1] Paul Halliday (2018). Vue.js 2 Design Patterns and Best Pactices
+[2] Vue Patterns. Disponível em: https://learn-vuejs.github.io/vue-patterns/patterns/
