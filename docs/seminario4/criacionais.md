@@ -35,3 +35,7 @@ Passa a ser:
 ![](../../images/patterns/factory3.svg)
 
 E caso eu precise de personas diferentes eu não preciso ficar criando vários datas, mas sim alterar determinado atributo da persona.
+
+## Referências
+
+[1] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994). Design Patterns: Elements of Reusable Object-Oriented Software
