@@ -1,15 +1,14 @@
 ## Histórico de Revisão
 
-|Data|Versão|Descrição|Autor|
-|-|-|-|-|
-|23/10/2019|0.1|Criação do documento|[Elias Bernardo](https://github.com/ebmm01)|
-|24/10/2019|0.2|Singleton e Multiton|[Pedro Féo](https://github.com/phe0)|
-|24/10/2019|0.3|Inclusão do prototype|[Leonardo Barreiros](https://github.com/leossb36)|
-
+| Data       | Versão | Descrição             | Autor                                             |
+| ---------- | ------ | --------------------- | ------------------------------------------------- |
+| 23/10/2019 | 0.1    | Criação do documento  | [Elias Bernardo](https://github.com/ebmm01)       |
+| 24/10/2019 | 0.2    | Singleton e Multiton  | [Pedro Féo](https://github.com/phe0)              |
+| 24/10/2019 | 0.3    | Inclusão do prototype | [Leonardo Barreiros](https://github.com/leossb36) |
 
 ## Introdução
 
-Estes padrões lidam com o processo de criação de novos objetos de uma forma que ele pode ser desacoplado do seu sistema de implementação. Isso fornece mais flexibilidade em decidir quais objetos precisam ser criados para um determinado  caso ou cenário
+Estes padrões lidam com o processo de criação de novos objetos de uma forma que ele pode ser desacoplado do seu sistema de implementação. Isso fornece mais flexibilidade em decidir quais objetos precisam ser criados para um determinado caso ou cenário
 
 Nesse documento iremos abordar os padrões que grupo utilizou, explicando como foi utilizado, o por quê e qual problema foi solucionado com a implementação.
 
@@ -29,7 +28,7 @@ Foi criado uma factory de usuários utilizando a biblioteca [Factory boy](https:
 
 ### Objetivo & problema sanado
 
-O __Factory method__ foi utilizado nos testes, para evitar duplicação de código e facilitar a criação de personas de testes. Por exemplo,
+O **Factory method** foi utilizado nos testes, para evitar duplicação de código e facilitar a criação de personas de testes. Por exemplo,
 
 ![](../../images/patterns/factory2.svg)
 
@@ -37,7 +36,21 @@ Passa a ser:
 
 ![](../../images/patterns/factory3.svg)
 
-E caso eu precise de personas diferentes eu não preciso ficar criando vários datas, mas sim alterar determinado atributo da persona.
+E caso se precise de personas diferentes, não é preciso ficar criando vários datas, mas sim alterar determinado atributo da persona.
+
+## Abstract Factory
+
+O padrão fábrica abstrata é um padrão **criacional** que permite criar familias de objetos relacionados sem a necessidade de se especificar suas classes concretas.
+
+### Como foi utilizado no projeto
+
+O Abstract factory foi utilizado no projeto a partir da utilização de componentes dinâmicamente criados no **Front-end**. A partir de um componente próprio do **Vue.js**, `<component :is>`, foi possível utilizar dos componentes criados anteriormente sem necessariamente referenciá-los nos templates do Vue, o que permite maior facilidade de entendimento de código e renderização dinâmica. Ou seja, caso se mostre necessário, dois componentes podem ser intercalados de acordo com as necessidades do usuário.
+
+![Abstract Factory](../images/patterns/abstractfactory.png)
+
+### Objetivos & problemas sanados
+
+O objetivo da utilização deste padrão era o de se poder criar componentes dinamicamente renderizados, sendo que agora também é possível fornecer dois componentes em um mesmo espaço, permitindo que sejam usados de acordo com as necessidades do usuário.
 
 ## Prototype method
 
@@ -68,7 +81,7 @@ Já o Vuex é usado para a comunicação entre componentes de difícil comunica�
 
 ## Multiton
 
-Esse padrão é uma generalização do Singleton, enquanto o singleton só permite a utilização de uma instância, o multiton permite a construção controlada de multiplas instâncias. 
+Esse padrão é uma generalização do Singleton, enquanto o singleton só permite a utilização de uma instância, o multiton permite a construção controlada de multiplas instâncias.
 
 ### Como foi utilizado no projeto
 
@@ -83,4 +96,3 @@ O multiton permite a criação de diversos componentes iguais, que contenham inf
 ## Referências
 
 [1] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994). Design Patterns: Elements of Reusable Object-Oriented Software
-
