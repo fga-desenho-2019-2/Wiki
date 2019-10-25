@@ -4,6 +4,7 @@
 |-|-|-|-|
 |23/10/2019|0.1|Criação do documento|[Elias Bernardo](https://github.com/ebmm01)|
 |24/10/2019|0.2|Singleton e Multiton|[Pedro Féo](https://github.com/phe0)|
+|24/10/2019|0.3|Inclusão do prototype|[Leonardo Barreiros](https://github.com/leossb36)|
 
 
 ## Introdução
@@ -38,6 +39,20 @@ Passa a ser:
 
 E caso eu precise de personas diferentes eu não preciso ficar criando vários datas, mas sim alterar determinado atributo da persona.
 
+## Prototype method
+
+O padrão prototype tem a finalidade de criar novos objetos a partir de um que já tenha sido registrado anteriormente. Deste modo evita-se a necessidade de estar criando toda vez que for necessário. Em outras palavras realiza uma copia do objeto original, preservando sua identidade e podendo também ser realizado a sobrescrita nas filhas.
+
+![](../../images/patterns/prototype.png)
+
+### Como foi utilizado no projeto
+
+Para o serviço restaurantes este padrão se adequa muito bem, pois exite uma relação de muitos para muitos em relação ao item do cardápio com restaurante. Exemplo: arroz. Arroz é um objeto comum entre os restaurantes, portanto, para evitar o custo de cadastrar um registro por cada restaurante que possui arroz como item do cardápio é feito a copia do primeiro objeto para o restante.
+
+### Objetivo & problema sanado
+
+O django possui funções próprias para criar relacionamentos, portanto evitando o custo de ter que criar uma função que realize a copia do objeto. Para sanar este problema é utilizado as funções many to one ou many to many. Porém isto ocorre de maneira genérica, ou seja, será feito para todos. Deste modo, para poder restringir itens a um determido cardápio é necessario que seja realizado uma cópia.
+
 ## Singleton
 
 Esse padrão tem a função de prover um ponto de acesso global para toda a aplicação, que tenha uma instancia única.
@@ -68,3 +83,4 @@ O multiton permite a criação de diversos componentes iguais, que contenham inf
 ## Referências
 
 [1] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994). Design Patterns: Elements of Reusable Object-Oriented Software
+
