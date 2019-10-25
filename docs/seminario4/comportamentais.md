@@ -3,7 +3,8 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |23/10/2019|0.1|Criação do documento|[Elias Bernardo](https://github.com/ebmm01)|
-|24/10/2019|0.2|Strategy| [Guilherme Marques](https://github.com/guilhesme23) [Saleh Kader](https://github.com/devsalula)|
+|24/10/2019|0.2|Adição do Strategy| [Guilherme Marques](https://github.com/guilhesme23) [Saleh Kader](https://github.com/devsalula)|
+|24/10/2019|0.2|Adição do padrão de Factory Method|[Shayane Alcantara](https://github.com/shayanealcantara) e [Sara Silva](https://github.com/sarasilva)|
 
 ## Introdução
 
@@ -37,8 +38,29 @@ O Padrão tem como plano a utilização de diferentes classes para diferentes co
 A implementação não deu certo, por conta do objetivo do produto. O QRComer, leva em conta que o usuário pague por imediato a sua refeição, o que inviabilizaria a implementação de um tipo de pagamento como o de Boleto, onde o usuário só conseguiria receber a sua refeição após a confirmação desse pagamento, que normalmente demora bastante.
 
 
+## Template Method
+
+Template Method é um padrão de design __comportamental__ que define o "esqueleto" de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura [[3]](https://refactoring.guru/design-patterns/template-method).
+
+### Como foi utilizado no projeto
+
+O padrão foi selecionado para auxiliar no aproveitamento de linhas de código, por tratar-se de dados semelhantes nas classes definidas, podendo ser reaproveitado quando e o que for necessário. Ou seja, ele permite a delimitação de passos na ordem a serem executados e de que forma eles serão executados a depender da condição.
+
+![](https://raw.githubusercontent.com/fga-desenho-2019-2/Wiki/develop/docs/images/diagramas-uml/class_diagram_restaurant_v2.jpg)
+
+### Objetivo & problema sanado
+O principal problema observado no código implementado foi a duplicação de diversas linhas de código. Com a adaptação do padrão, foi possível reduzir esse fator e assim, permitir uma melhor legibilidade do código em questão. A seguir segue a adaptação da implementação de uma parte das regras de serviço.
+
+![restaurant_1](../images/patterns/restaurante_1.png)
+
+![restaurant_2](../images/patterns/restaurant_2.png)
+
+![restaurant_3](../images/patterns/restaurant_3.png)
+
 ## Referências
 
 [1] https://docs.djangoproject.com/en/2.2/topics/signals/
 
 [2] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994). Design Patterns: Elements of Reusable Object-Oriented Software 
+
+[3] https://refactoring.guru/design-patterns/template-method

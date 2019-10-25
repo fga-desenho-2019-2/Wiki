@@ -3,6 +3,9 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |24/10/2019|0.1|Tópicos Facade, Composite e Flyweight|[Pedro Féo](https://github.com/phe0)|
+|24/10/2019|0.1|Adição do Adapter |[Pedro Rodrigues](https://github.com/pedro-prp)|
+|24/10/2019|0.2|Adição do Decorator| [Guilherme Marques](https://github.com/guilhesme23) [Saleh Kader](https://github.com/devsalula)|
+
 
 
 ## Facade
@@ -35,7 +38,7 @@ O padrão composite faz parte da arquitetura padrão do Vue, onde componentes po
 
 ### Objetivo & problema sanado
 
-O uso de composite na arquitetura padrão do vue se deve a facilidade de reutilização de componentes, componentes individuais passam a poder ser utilizados em diverças partes do código, evitando reutilização de código.
+O uso de composite na arquitetura padrão do vue se deve a facilidade de reutilização de componentes, componentes individuais passam a poder ser utilizados em diversas partes do código, evitando reutilização de código.
 
 ## Flyweight
 
@@ -64,6 +67,17 @@ O Decorator foi utilizado pensando nos verbos de requisições do protocólo HTT
 ### Objetivo & problema sanado
 
 O uso desse padrão permite o controle do tipo de requisição dentro dos métodos, garantindo a sua segurança e impedindo, por exemplo, que uma requisição do tipo 'DELETE' seja tratada por uma função concebida para o tratamento do tipo 'POST'.
+## Adapter
+Esse padrão como o próprio nome sugere se trata de um adaptador de um objeto para uma interface a qual ele seria incompatível. Ou seja ele tem como objetivo alterar um objeto até ele possa interagir com o subsequente desejado.
+
+### Como foi utilizado no projeto
+Ao utlizar Django Rest, ele proporciona os serializers, os quais transformam objetos *json* em objetos do tipo *Model Django*. No projeto é visto que os serviços possuem classes com seus atríbutos os quais são definidos em uma Model, assim sendo os serializer se fazem necessário uma vez que se deseje a adequação dos dados a um formato *json*.
+
+### Objetivo & problema sanado
+Essa funcionalidade é vista em praticamente todos os serviços. Já que eles demandam dados e uma modelagem dos mesmos em Models. Utilizando o padrão já oferecido pelo Django é possível enxergar o **adapter**. 
+
+![serializer-adapter](../../images/patterns/adapter.svg)
+
 
 ## Referências
 
