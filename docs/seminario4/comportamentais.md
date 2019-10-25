@@ -3,6 +3,7 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |23/10/2019|0.1|Criação do documento|[Elias Bernardo](https://github.com/ebmm01)|
+|24/10/2019|0.2|Adição do padrão de Factory Method|[Shayane Alcantara](https://github.com/shayanealcantara)|
 
 ## Introdução
 
@@ -24,8 +25,24 @@ __The Django way!__ O Django implementa [signals](https://docs.djangoproject.com
 
 Ao utilizarmos os signals, podemos fazer um sistema de subscrição de e-mails para que os usuários interessados em receber novidades possam ser notificados via e-mail. Somente irão receber as mensagens os usuários que vonluntariamente se cadastrarem no  sistema de subscrição.
 
+
+## Template Method
+
+Template Method é um padrão de design __comportamental__ que define o "esqueleto" de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura [3](https://refactoring.guru/design-patterns/template-method).
+
+### Como foi utilizado no projeto
+
+O padrão foi selecionado para auxiliar no aproveitamento de linhas de código, por tratar-se de dados semelhantes nas classes definidas, podendo ser reaproveitado quando e o que for necessário. Ou seja, ele permite a delimitação de passos na ordem a serem executados e de que forma eles serão executados a depender da condição.
+
+![](https://raw.githubusercontent.com/fga-desenho-2019-2/Wiki/develop/docs/images/diagramas-uml/class_diagram_restaurant_v2.jpg)
+
+### Objetivo & problema sanado
+
+
 ## Referências
 
 [1] https://docs.djangoproject.com/en/2.2/topics/signals/
 
 [2] Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (1994). Design Patterns: Elements of Reusable Object-Oriented Software 
+
+[3] https://refactoring.guru/design-patterns/template-method
