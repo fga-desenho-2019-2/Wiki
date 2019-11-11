@@ -25,7 +25,7 @@ A partir da existência de um sistema de autênticação e login, foi possível 
 
 ### Objetivo & problema sanado
 
-A implementação ainda não foi possível de ser realizada, embora esteja nos planos realizar a codificação completa da mesma. Entretanto, apesar da falta de uma implementação direta, pode-se notar que o objetivo principal do padrão foi atingido, a partir do restringimento da realização do pedido por parte de um usuário não cadastrado.
+A implementação não foi possível de ser realizada, embora esteja nos planos realizar a codificação completa da mesma. Pode-se notar que o objetivo principal do padrão foi atingido, a partir do restringimento da realização do pedido por parte de um usuário não cadastrado, porém a implementação não pôde ser realizada em sua completude pelo fato da mesma necessitar de uma quantidade considerável de componentes realizando a mesma ou parecidas atividades/funções.
 
 ## Observer
 
@@ -74,6 +74,38 @@ O principal problema observado no código implementado foi a duplicação de div
 ![restaurant_2](../images/patterns/restaurant_2.png)
 
 ![restaurant_3](../images/patterns/restaurant_3.png)
+
+## Command
+
+O padrão de projeto comportamental Command é um padrão focado na transformação de um request em um objeto por si só, podendo facilitar a reutilização de funções sem a duplicação de código, além de limpar um determinado arquivo ao desacoplar as funções existentes num componente.
+
+### Como foi utilizado no projeto
+
+O padrão Command foi utilizado a partir da criação do arquivo **_Context.js_**, o qual tem como único objetivo importar e exportar todas as funções que sofreram alterações do padrão Command.
+
+![Context](../images/patterns/Context.png)
+
+As funções importadas no _**Context.js**_ se encontram separadas em arquivos JavaScript's, funcionais.
+
+![Command](../images/patterns/handleAmmountCommand.png)
+
+![Command](../images/patterns/handleQtdCommand.png)
+
+![Command](../images/patterns/loginCommand.png)
+
+![Command](../images/patterns/loginUserComnand.png)
+
+![Command](../images/patterns/RegisterUserCommand.png)
+
+![Command](../images/patterns/routeToCommand.png)
+
+A partir disso, nos arquivos **_.vue_** que receberiam as funções definidas no **_Context.js_**, o único arquivo poderia ser importado e as funções declaradas e utilizadas, sem a necessidade de passar qualquer parâmetro ou valor, como mostrado no exemplo abaixo, no arquivo Vue de autenticação de usuário.
+
+![ExCommand](../images/patterns/commandVueEx.png)
+
+### Objetivos e problemas sanados
+
+O objetivo da utilização do padrão Command, a partir do desacoplamento de funções, permite a reutilização da mesma função em uma quantidade de botões ou componentes clicáveis, sem a necessidade de duplicação de código, o que permitiu a diminuição da complexidade dos componentes e páginas criadas para o projeto. Além disso, o Command também permite que se diminua as chances de sobrescrição ou confusão na chamada de funções, devido ao código duplicado.
 
 ## Referências
 
