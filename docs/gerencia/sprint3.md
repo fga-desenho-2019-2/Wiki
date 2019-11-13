@@ -40,3 +40,7 @@
 [#65](https://github.com/fga-desenho-2019-2/Wiki/issues/65) e [#56](https://github.com/fga-desenho-2019-2/Wiki/issues/56).
 
 # Resultados 
+
+## Análise 
+
+Foram planejadas 11 novas issues e a realização de 2 dívidas técnicas, totalizando 13 issues. 3 das novas issues não foram terminadas, gerando dívidas técnicas.
