@@ -51,6 +51,9 @@ pages:
           - Estruturais: "seminario4/estruturais.md"
           - Comportamentais: "seminario4/comportamentais.md"
       - Emergentes & Consumidos: "seminario4/emergentes.md"
+  - Seminário V:
+      - Documento de Arquitetura: "seminario5/arquitetura.md"
+      - Verificação de Requisitos: "seminario5/checklist.md"
   - Iniciativas Extras:
       - Materiais complementares: "iniciativas_extras/pesquisa_de_mercado.md"
       - Identidade Visual: "iniciativas_extras/identidade_visual.md"
