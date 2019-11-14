@@ -145,9 +145,96 @@ tentar explicar a estrutura do projeto de uma forma lógica
 
 ## 6 Visão de Processo
 
-tentar explicar o funcionamento do sistema em forma de processos, como será a interação, que etapas serão feitas pra se realizar atividades
+### 6.1 Processo de cadastro de usuário:
 
-diagramas de sequencias e outros q possam dar uma ideia de processo
+![cadastro de usuário](/images/diagramas-uml/Sequencia_cadastrar_usuário_v1.png)
+
+| **DS02**      | **Diagrama de sequência de cadastro de usuário**                                  |
+| ------------- | --------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 1.0 (19/09) <br> Anterior: -                                               |
+| **Descrição** | Diagrama UML da sequência do cadastro de usuários                                 |
+| **Autor**     | [Pedro Feo](https://github.com/Phe0), [Saleh Kader](https://github.com/devsalula) |
+
+- O usuário acessa a plataforma;
+- O usuário abre a página de cadastro;
+- O usuário insere as informações de cadastro;
+- O microsserviço de usuários realiza um POST para guardar as informações no banco;
+- O microsserviço de usuários valida as informações com o banco de dados;
+- O microsserviço de usuários cria o usuário com as informações salvas no banco;
+- O usuário é redirecionado à página principal.
+
+### 6.2 Processo de login de usuário:
+
+![login de usuário](/images/diagramas-uml/Sequencia_login_usuario_v1.png)
+
+| **DS02**      | **Diagrama de sequência de login de usuário**  |
+| ------------- | ---------------------------------------------- |
+| **Versão**    | Atual: 1.0 (19/09) <br> Anterior: -            |
+| **Descrição** | Diagrama UML da sequência de login de usuários |
+| **Autor**     | [Saleh Kader](https://github.com/devsalula)    |
+
+- O usuário acessa a plataforma;
+- O usuário abre a página de login;
+- O usuário insere o e-mail e senha e aperta o botão de login;
+- O microsserviço de usuário realiza um POST para verificar a existência do usuário no banco de dados;
+- Se:
+  - O usuário existir, com e-mail e senha corretos, o login é realizado;
+  - O usuário não existir, ou e-mail ou senha errados, o login não é realizado;
+- O usuário é redirecionado à página principal.
+
+### 6.3 Processo de realização de pedido
+
+![microsserviço de pedido](../images/diagramas-uml/diagrama_sequencia_pedidos-2.png)
+
+| **DS01**      | **Diagrama de sequência de realização de pedidos**                                              |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 2.0 (19/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos.png) |
+| **Descrição** | Diagrama UML da sequência do microsserviço de pedidos                                           |
+| **Autor**     | [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)        |
+
+- O usuário acessa a plataforma;
+- O usuário abre a página de login;
+- O usuário realiza o login e é redirecionado à página principal;
+- O usuário acessa a página de shopping;
+- O usuário seleciona um restaurante e abre sua página;
+- O usuário escolhe e seleciona um item dentro do restaurante;
+- O usuário adiciona o item escolhido à sua sacola;
+- O usuário confirma o pedido e o mesmo é criado no microsserviço de pedidos;
+- A aplicação chama o serviço de pagamento simulado;
+- O serviço de pagamento simula um pagamento real, a partir dos dados.
+
+### 6.4 Processo de cadastro de cartão
+
+![cadastro de cartão](/images/diagramas-uml/Sequencia_cadastrar_cartao_v1.png)
+
+| **DS02**      | **Diagrama de sequência de cadastro de cartão** |
+| ------------- | ----------------------------------------------- |
+| **Versão**    | Atual: 1.0 (19/09) <br> Anterior: -             |
+| **Descrição** | Diagrama UML da sequência do cadastro de cartão |
+| **Autor**     | [Pedro Feo](https://github.com/Phe0)            |
+
+- O usuário acessa a plataforma;
+- O usuário abre a página de login;
+- O usuário realiza o login e é redirecionado à página principal;
+- O usuário acessa a página de cartão;
+- O usuário clica no botão de adicionar cartão;
+- O usuário insere as informações do cartão;
+- O microsserviço de usuário realiza um POST para salvar os dados no banco de dados;
+- O banco de dados cria um cartão a partir dos dados salvos.
+
+### 6.5 Processo de cadastro de restaurante no back-end
+
+![colaboracao-restaurant](../images/diagramas-uml/colaboracao_restaurant_actions.jpg)
+
+| **DC02**      | **Diagrama de colaboração do microsserviço de Restaurante**                                 |
+| ------------- | ------------------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 1.0 (19/09) <br> Anterior: -                                                         |
+| **Descrição** | Diagrama UML de colaboração do microsserviço de restaurante                                 |
+| **Autor**     | [Pedro Rodrigues](https://github.com/pedro-prp), [Sara Silva](https://github.com/silvasara) |
+
+<!-- tentar explicar o funcionamento do sistema em forma de processos, como será a interação, que etapas serão feitas pra se realizar atividades
+
+diagramas de sequencias e outros q possam dar uma ideia de processo -->
 
 ## 7 Visão da Implantação
 
