@@ -232,6 +232,12 @@ tentar explicar a estrutura do projeto de uma forma lógica
 | **Descrição** | Diagrama UML de colaboração do microsserviço de restaurante                                 |
 | **Autor**     | [Pedro Rodrigues](https://github.com/pedro-prp), [Sara Silva](https://github.com/silvasara) |
 
+- O restaurante deve acessar o serviço back-end de CRUD de restaurante;
+- O restaurante cria um texto em JSON com as informações do restaurante, incluindo informações jurídicas e nome fantasia;
+- O restaurante então cria um texto em JSON para cadastrar uma categoria;
+- O restaurante então cria um texto em JSON para cadastrar um item de seu menu;
+- O restaurante repete as duas últimas ações para criar a quantidade necessária de categorias e de itens do menu.
+
 <!-- tentar explicar o funcionamento do sistema em forma de processos, como será a interação, que etapas serão feitas pra se realizar atividades
 
 diagramas de sequencias e outros q possam dar uma ideia de processo -->
@@ -256,11 +262,14 @@ Mostrar e explicar modelo de dados
 
 Mostrar formas de medir qualidade do código e do produto, cobertura de testes por exemplo
 
-## Tamanho e Desempenho
+## 11 Tamanho e Desempenho
 
-Mostrar volume de dados do sistema, tamanho do projeto, explicar e determinar normas de desempenho
+O WebApp QRComer possui um tamanho médio de 200MB. O mesmo foi desenvolvido para funcionar em navegadores tanto em formato desktop quanto formato mobile, com foco maior em mobile. Pelo fato de ser um site acessível a partir de navegadores, não existe a necessidade de instalação de nenhum serviço, sejam eles o front-end ou as APIs dos microsserviços.
 
-## 11 Modelos/Padrões Arquiteturais
+Sendo assim, o mesmo não ocupa espaço físico nos aparelhos dos usuários, restringindo-se apenas a memória temporária e CACHE. O sistema funciona a partir de requisições feitas entre as APIS e o front-end, todas realizadas pela internet. Sendo assim, espera-se que o tamanho físico do projeto não seja um diferencial significativo nos aparelhos de seus consumidores, nem que o desempenho seja comprometido por questões parecidas.
+<!-- Mostrar volume de dados do sistema, tamanho do projeto, explicar e determinar normas de desempenho -->
+
+## 12 Modelos/Padrões Arquiteturais
 
 explicar modelos/padrões arquiteturais utilizados no projeto
 monolitico ou distribuido? pq?
