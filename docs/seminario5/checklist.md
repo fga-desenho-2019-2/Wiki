@@ -22,7 +22,7 @@
 ## Cortes de Escopo
 
 | Código      | Descrição |Prioridade         | Rastro      |
-| ---------- | ------ | --------------------- | ------------|----------------|
+| ---------- | ------ | --------------------- | ------------|
 | PRO07  | O app deve conseguir recuperar sua senha caso a esqueça | Must Have | [PRO07](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/)|
 | ST09 | O sistema deve possuir uma tela de carregamento como feedback para o usuário | Should Have | [ST09](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_storytelling/)|
 | E07 | Criptografar os dados de cartão | Should Have | [E07](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_entrevista/)|
