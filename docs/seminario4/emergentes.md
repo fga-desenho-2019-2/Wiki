@@ -3,6 +3,7 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |24/10/2019|0.1|Tópicos HOC e Container/Presentional components|[Pedro Féo](https://github.com/phe0)|
+|15/11/2019|0.1|Adicionar links do código em HOC e Container/Presentional|[Pedro Féo](https://github.com/phe0)|
 
 
 ## Container/Presentional components
@@ -35,6 +36,8 @@ A descrição das rotas passa a ser:
 
 então o HOCComponent recebe o __Container__ que deverá inicializar e um array de informações que são necessárias para a inicialização do __container__.
 
+Foi utilizado em todo o código do front-end, um exemplo é a [página da sacola](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/views/OrderBag/orderBagPage.vue) e seus [items](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/views/OrderBag/BagItem.vue)
+
 ## HOC
 
 __High Order Component__ ou HOC é um padrão de projeto aplicável em projetos com estrutura baseada em componentes. Um HOC é basicamente uma função em que suas entradas e saídas são componentes. Então a função "transforma" o antigo componente em um novo componente.
@@ -56,6 +59,8 @@ A descrição das rotas passa a ser:
 ![](../../images/patterns/routeDefinition.png)
 
 então o HOCComponent recebe o __Container__ que deverá inicializar e um array de informações que são necessárias para a inicialização do __container__.
+
+HOC pode ser encontrado no [front-end](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/components/HocComponent.js)
 
 ## Referências
 

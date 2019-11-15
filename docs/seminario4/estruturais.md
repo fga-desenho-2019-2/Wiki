@@ -5,6 +5,7 @@
 |24/10/2019|0.1|Tópicos Facade, Composite e Flyweight|[Pedro Féo](https://github.com/phe0)|
 |24/10/2019|0.1|Adição do Adapter |[Pedro Rodrigues](https://github.com/pedro-prp)|
 |24/10/2019|0.2|Adição do Decorator| [Guilherme Marques](https://github.com/guilhesme23) [Saleh Kader](https://github.com/devsalula)|
+|15/11/2019|0.5|Adicionar link ao código do Facade|[Pedro Féo](https://github.com/phe0)|
 
 
 
@@ -27,6 +28,8 @@ O __Facade__ foi utilizado para facilitar o processo de comunicação com os ser
 Passa a ser:
 
 ![](../../images/patterns/serviceCall.png)
+
+Encontrado no [front-end](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/ServicesFacade.js)
 
 ## Composite
 
