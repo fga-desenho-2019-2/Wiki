@@ -3,7 +3,8 @@
 | Data       | Versão | Descrição             | Autor                                             |
 | ---------- | ------ | --------------------- | ------------------------------------------------- |
 | 13/11/2019 | 0.1    | Estrutura do Documento| [Pedro Féo](https://github.com/phe0)              |
-| 14/11/2019 | 0.2    | Adição de novos requisitos | [Pedro Rodrigues](https://github.com/pedro-prp)              |
+| 14/11/2019 | 0.2    | Adição de novos requisitos | [Pedro Rodrigues](https://github.com/pedro-prp)
+| 15/11/2019 | 0.3    | Adição dos cortes de escopo| [Pedro Féo](https://github.com/phe0)              |              |
 
 ## Verificação de Requisitos
 
@@ -17,3 +18,23 @@
 | PRO03 | O app deve possuir uma sessão de login| Must Have | [PRO03](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/)| [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/9) |
 | PRO04 |	O app deve possuir uma página falando sobre a aplicação | Want to Have | [PRO04](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/) |[qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/5) |
 | PRO05 |	O app deve possuir uma página falando sobre o time de desenvolvimento | Want to Have | [PRO05](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/) | [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/5) |
+
+## Cortes de Escopo
+
+| Código      | Descrição |Prioridade         | Rastro      |
+| ---------- | ------ | --------------------- | ------------|----------------|
+| PRO07  | O app deve conseguir recuperar sua senha caso a esqueça | Must Have | [PRO07](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/)|
+| ST09 | O sistema deve possuir uma tela de carregamento como feedback para o usuário | Should Have | [ST09](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_storytelling/)|
+| E07 | Criptografar os dados de cartão | Should Have | [E07](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_entrevista/)|
+| BS11 | O Sistema deve validar as franquias cadastradas por meio do CNPJ | Could Have | [BS11](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_brainstorm/)|
+| BS14 | O Sistema deve possuir uma forma de prevenir da desistência de pedidos | Could Have | [BS14](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_brainstorm/)|
+| BENCH10 | O app deve permitir o cancelamento do pedido | Could Have | [BENCH10](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_benchmarking/)|
+| PRO06 | O app deve possuir uma página falando sobre os parceiros que já utilizam o QR Comer | Could Have | [PRO06](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/)|
+| PRO24 | O usuário deve ser capaz de avaliar o restaurante onde já fez seu pedido | Could Have | [PRO24](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/)|
+| ST07 | O sistema deve possuir integração com outras API's de cadastro | Could Have | [ST07](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_storytelling/)|
+| RNFE10 | Portabilidade | Could Have | [RNFE10](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_entrevista/)|
+| BENCH01 e PRO29 | O app deve ter uma página de suporte | Would Have | [BENCH01](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_benchmarking/) e [PRO29](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/)|
+| PRO27 | O usuário deve ser capaz de visualizar os termos de uso e as políticas de privacidade | Would Have | [PRO27](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_prototipo/)|
+| E08 | Possibilitar pagamento por dinheiro no caixa | Would Have | [E08](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_entrevista/)|
+| E11 | Autenticação dupla | Would Have | [E11](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_entrevista/)|
+| E19 | Receber notificação sobre a completude do pedido | Would Have | [E19](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_entrevista/)|
