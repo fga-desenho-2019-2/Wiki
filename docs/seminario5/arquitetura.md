@@ -2,7 +2,7 @@
 
 | Data       | Versão | Descrição                          | Autor                                              |
 | ---------- | ------ | ---------------------------------- | -------------------------------------------------- |
-| 13/11/2019 | 0.1    | Estrutura do Documento, Introdução | [Pedro Féo](https://github.com/phe0)               |
+| 13/11/2019 | 0.1    | Estrutura do Documento, Introdução e Representação Arquitetural | [Pedro Féo](https://github.com/phe0)               |
 | 14/11/2019 | 0.2    | Casos de uso                       | [Matheus Blanco](https://github.com/MatheusBlanco) |
 
 ## 1 Introdução
