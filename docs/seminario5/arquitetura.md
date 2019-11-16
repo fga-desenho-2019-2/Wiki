@@ -4,7 +4,8 @@
 | ---------- | ------ | --------------------------------------------------------------- | -------------------------------------------------- |
 | 13/11/2019 | 0.1    | Estrutura do Documento, Introdução e Representação Arquitetural | [Pedro Féo](https://github.com/phe0)               |
 | 14/11/2019 | 0.2    | Casos de uso, visão de processo e visão de tamanho e desempenho | [Matheus Blanco](https://github.com/MatheusBlanco) |
-| 15/11/2019 | 0.3s   | Refatorando diagramas e adicionando mais visões de processo     | [Matheus Blanco](https://github.com/MatheusBlanco) |
+| 15/11/2019 | 0.3    | Refatorando diagramas e adicionando mais visões de processo     | [Matheus Blanco](https://github.com/MatheusBlanco) |
+| 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais                           |
 
 ## 1 Introdução
 
@@ -75,7 +76,15 @@ A comunicação entre os serviços será realizada através da API Gateway, resp
 
 **Obs.**: Foi realizada uma mudança na arquitetura original do projeto, sendo removidas o Frontend de interação com o restaurante, sendo substituído por um acesso especializado ao backend do sistema, para que o QRComer possa ser facilmente integrado à sistemas já existentes. Além disso foi removido o serviço de pagamento, tendo em vista que para o escopo da disciplina o serviço se mostrou muito complexo.
 
-## 3 Objetivos e Restrições Arquiteturais
+## 3 Requisitos e Restrições Arquiteturais
+
+| Requisito    | Solução                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Linguagem    | O front-end será feito em _JavaScript_, e o back-end em _Python_                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Plataforma   | O front-end será feito na plataforma _VueJS_ e o back-end será feito na plataforma _DjangoREST_                                                                                                                                                                                                                                                                                                                                                                           |
+| Segurança    | Será implementado um sistema de token para que os dados sensíveis do usuário, shopping e restaurantes posssam permanecer seguros.                                                                                                                                                                                                                                                                                                                                         |
+| Persistência | O sistema funcionará a partir de uma grande quantidade de transações entre o back-end e o front-end, onde dados de shoppings, restaurantes e pedidos serão a todo momento manipulados. Com foco nos dados relativos a pedidos, os quais serão continuamente criados ou deletados. Sendo assim, será utilizado um banco de dados relacional _PostgreSQL_, além de dados temporários _localstorage_ dos navegadores, para permitir uma utilização mais fluida e persistente |
+| Arquitetura  | Será implementada uma arquitetura e microsserviços, para que os serviços separados possam se comunicar um com o outro de maneira simples e sem demanda de várias quantidades de memória e processamento, graças à sua natureza desacoplada.                                                                                                                                                                                                                               |
 
 ## 4 Visão de Caso de Uso
 
