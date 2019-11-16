@@ -1,9 +1,10 @@
 ## Histórico de Revisão
 
-| Data       | Versão | Descrição                          | Autor                                              |
-| ---------- | ------ | ---------------------------------- | -------------------------------------------------- |
+| Data       | Versão | Descrição                                                       | Autor                                              |
+| ---------- | ------ | --------------------------------------------------------------- | -------------------------------------------------- |
 | 13/11/2019 | 0.1    | Estrutura do Documento, Introdução e Representação Arquitetural | [Pedro Féo](https://github.com/phe0)               |
-| 14/11/2019 | 0.2    | Casos de uso                       | [Matheus Blanco](https://github.com/MatheusBlanco) |
+| 14/11/2019 | 0.2    | Casos de uso, visão de processo e visão de tamanho e desempenho | [Matheus Blanco](https://github.com/MatheusBlanco) |
+| 15/11/2019 | 0.3s   | Refatorando diagramas e adicionando mais visões de processo     | [Matheus Blanco](https://github.com/MatheusBlanco) |
 
 ## 1 Introdução
 
@@ -101,41 +102,37 @@ Provindo da documentação referente ao [seminário 3](/../Wiki/docs/seminario3/
 
 #### 4.1.2 Descrição dos Casos de Uso
 
-| Casos de Uso                                           | Descrição dos Casos de Uso                                                                          |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| UC01 - Cadastrar                                       | O usuário realiza o cadastro na aplicação                                                           |
-| UC02 - Preencher Formulário                            | O usuário insere as informações necessárias                                                         |
-| UC03 - Fazer Login                                     | O usuário acessa a aplicação                                                                        |
-| UC04 - Alterar senha                                   | O usuário requisita uma alteração de senha                                                          |
-| UC05 - Gerar QR-Code                                   | O gerador de QR-Code cria um link de acesso para o shopping                                         |
-| UC06 - Ler QR Code no shopping                         | O usuário acessa o shopping a partir do link contido no QR-Code                                     |
-| UC07 - Acessar a aplicação web                         | O gerador de QR-Code acessa a aplicação a partir da identificação do shopping                       |
-| UC08 - Identificar shopping pelo QR-Code               | O gerador de QR-Code gera um código diferente para cada shopping, tornando o link seu identificador |
-| UC09 - Ver lista de restaurantes                       | O usuário vê, na página do shopping, todos os restaurantes existentes no mesmo                      |
-| UC10 - Selecionar restaurante                          | O usuário escolhe e abre um restaurante a partir da lista                                           |
-| UC11 - Selecionar produto                              | O usuário escolhe e seleciona o produto na página de restaurante                                    |
-| UC12 - Adicionar produto à sacola                      | O usuário confirma a seleção do produto e o mesmo é adicionado à sacola de pedidos                  |
-| UC13 - Editar produtos da sacola                       | O usuário regula a quantidade de produtos na sacola                                                 |
-| UC14 - Visualizar itens da sacola                      | O usuário pode ver, na sacola, todos os itens escolhidos                                            |
-| UC15 - Finalizar pedido                                | O usuário confirma os itens na sacola e finaliza o pedido                                           |
-| UC16 - Inserir forma de pagamento e adicionar CPF      | O usuário escolhe o cartão que deseja usar e adiciona o CPF para nota fiscal, na sacola             |
-| UC17 - Cadastrar cartões                               | O usuário cadastra os seus cartões de crédito na conta da aplicação                                 |
-| UC18 - Visualizar cartões cadastrados                  | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
-| UC19 - Remover cartões cadastrados                     | O usuário pode remover todos os cartões cadastrados em sua conta                                    |
-| UC20 - Visualizar cartões cadastrados                  | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
-| UC21 - Efetuar pagamento                               | O usuário confirma o pedido e o serviço de pagamento debita o valor de seu cartão escolhido         |
-| UC22 - Cancelar produto                                | O usuário deleta um ou todos os itens da sacola                                                     |
-| UC23 - Integrar com API de pagamento                   | O serviço de pagamento simula uma API real de pagamento                                             |
-| UC24 - Acessar o back-end para cadastro de dados       | O restaurante acessa o serviço de cadastro de informações do back-end                               |
-| UC25 - Cadastrar restaurante                           | O restaurante adiciona as informações jurídicas necessárias para cadastrar o restaurante            |
-| UC26 - Adicionar cardápio do estabelecimento           | O restaurante adiciona os itens ao seu cardápio, com valores, descrição e imagens                   |
-| UC27 - Receber pedido                                  | O restaurante recebe o pedido criado pelo usuário, para preparação do alimento                      |
-| UC28 - Gerar senha                                     | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
-| UC29 - Receber senha para retirada do pedido           | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
-| UC30 - Receber feedback da compra                      | O usuário deixa um feedback do produto para o restaurante                                           |
-| UC31 - Receber feedback positivo                       | O restaurante recebe um feedback positivo                                                           |
-| UC32 - Receber feedback negativo                       | O restaurante recebe um feedback negativo                                                           |
-| UC33 - Visualizar mensagem de erro e retornar à sacola | (?)                                                                                                 |
+| Casos de Uso                                      | Descrição dos Casos de Uso                                                                          |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| UC01 - Cadastrar                                  | O usuário realiza o cadastro na aplicação                                                           |
+| UC02 - Preencher Formulário                       | O usuário insere as informações necessárias                                                         |
+| UC03 - Fazer Login                                | O usuário acessa a aplicação                                                                        |
+| UC04 - Alterar senha                              | O usuário requisita uma alteração de senha                                                          |
+| UC05 - Gerar QR-Code                              | O gerador de QR-Code cria um link de acesso para o shopping                                         |
+| UC06 - Ler QR Code no shopping                    | O usuário acessa o shopping a partir do link contido no QR-Code                                     |
+| UC07 - Acessar a aplicação web                    | O gerador de QR-Code acessa a aplicação a partir da identificação do shopping                       |
+| UC08 - Identificar shopping pelo QR-Code          | O gerador de QR-Code gera um código diferente para cada shopping, tornando o link seu identificador |
+| UC09 - Ver lista de restaurantes                  | O usuário vê, na página do shopping, todos os restaurantes existentes no mesmo                      |
+| UC10 - Selecionar restaurante                     | O usuário escolhe e abre um restaurante a partir da lista                                           |
+| UC11 - Selecionar produto                         | O usuário escolhe e seleciona o produto na página de restaurante                                    |
+| UC12 - Adicionar produto à sacola                 | O usuário confirma a seleção do produto e o mesmo é adicionado à sacola de pedidos                  |
+| UC13 - Editar produtos da sacola                  | O usuário regula a quantidade de produtos na sacola                                                 |
+| UC14 - Visualizar itens da sacola                 | O usuário pode ver, na sacola, todos os itens escolhidos                                            |
+| UC15 - Finalizar pedido                           | O usuário confirma os itens na sacola e finaliza o pedido                                           |
+| UC16 - Inserir forma de pagamento e adicionar CPF | O usuário escolhe o cartão que deseja usar e adiciona o CPF para nota fiscal, na sacola             |
+| UC17 - Cadastrar cartões                          | O usuário cadastra os seus cartões de crédito na conta da aplicação                                 |
+| UC18 - Visualizar cartões cadastrados             | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
+| UC19 - Remover cartões cadastrados                | O usuário pode remover todos os cartões cadastrados em sua conta                                    |
+| UC20 - Visualizar cartões cadastrados             | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
+| UC21 - Efetuar pagamento                          | O usuário confirma o pedido e o serviço de pagamento debita o valor de seu cartão escolhido         |
+| UC22 - Cancelar produto                           | O usuário deleta um ou todos os itens da sacola                                                     |
+| UC23 - Integrar com API de pagamento              | O serviço de pagamento simula uma API real de pagamento                                             |
+| UC24 - Acessar o back-end para cadastro de dados  | O restaurante acessa o serviço de cadastro de informações do back-end                               |
+| UC25 - Cadastrar restaurante                      | O restaurante adiciona as informações jurídicas necessárias para cadastrar o restaurante            |
+| UC26 - Adicionar cardápio do estabelecimento      | O restaurante adiciona os itens ao seu cardápio, com valores, descrição e imagens                   |
+| UC27 - Receber pedido                             | O restaurante recebe o pedido criado pelo usuário, para preparação do alimento                      |
+| UC28 - Gerar senha                                | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
+| UC29 - Receber senha para retirada do pedido      | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
 
 ## 5 Visão Lógica
 
@@ -238,9 +235,43 @@ tentar explicar a estrutura do projeto de uma forma lógica
 - O restaurante então cria um texto em JSON para cadastrar um item de seu menu;
 - O restaurante repete as duas últimas ações para criar a quantidade necessária de categorias e de itens do menu.
 
-<!-- tentar explicar o funcionamento do sistema em forma de processos, como será a interação, que etapas serão feitas pra se realizar atividades
+### 6.6 Processo de checagem de pedidos antigos
 
-diagramas de sequencias e outros q possam dar uma ideia de processo -->
+![sequencia_checar_pedidos_antigos](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos-2.png)
+
+| **DS01**      | **Diagrama de sequência de checagem de pedidos antigos**                                                |
+| ------------- | ------------------------------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 2.0 (17/09) <br> Anterior: [1.0](../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png) |
+| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos antigos                               |
+| **Autor**     | [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)                |
+
+- O usuário acessa a plataforma;
+- O usuário abre a página de login;
+- O usuário realiza o login e é redirecionado à página principal;
+- O usuário acessa a página de histórico de pedidos;
+- O front-end realiza uma requisição ao serviço de pedidos;
+- O serviço de pedidos busca no banco de dados os pedidos anteriormente realizados;
+- Os pedidos são enviados e renderizados no front-end;
+- O front-end mostra para o usuário os pedidos anteriormente realizados.
+
+### 6.7 Processo de checagem de pedidos ativos
+
+![sequencia_checar_pedidos_ativos](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos-3.png)
+
+| **DS01**      | **Diagrama de sequência de checagem de pedidos ativos**                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 3.0 (15/11) <br> Anterior: [2.0](../images/diagramas-uml/diagrama_sequencia_pedidos_ativos-2.png) |
+| **Descrição** | Diagrama UML da sequência do microsserviço de checagem de pedidos ativos                                 |
+| **Autor**     | [Pedro Feo](https://github.com/Phe0), [Matheus Blanco](https://github.com/MatheusBlanco)                 |
+
+- O usuário acessa a plataforma;
+- O usuário abre a página de login;
+- O usuário realiza o login e é redirecionado à página principal;
+- O usuário acessa a página de histórico de pedidos;
+- O front-end realiza uma requisição ao serviço de pedidos;
+- O serviço de pedidos busca no banco de dados os pedidos que estão ativos;
+- Os pedidos são enviados e renderizados no front-end;
+- O front-end mostra para o usuário os pedidos ativos.
 
 ## 7 Visão da Implantação
 
@@ -267,6 +298,7 @@ Mostrar formas de medir qualidade do código e do produto, cobertura de testes p
 O WebApp QRComer possui um tamanho médio de 200MB. O mesmo foi desenvolvido para funcionar em navegadores tanto em formato desktop quanto formato mobile, com foco maior em mobile. Pelo fato de ser um site acessível a partir de navegadores, não existe a necessidade de instalação de nenhum serviço, sejam eles o front-end ou as APIs dos microsserviços.
 
 Sendo assim, o mesmo não ocupa espaço físico nos aparelhos dos usuários, restringindo-se apenas a memória temporária e CACHE. O sistema funciona a partir de requisições feitas entre as APIS e o front-end, todas realizadas pela internet. Sendo assim, espera-se que o tamanho físico do projeto não seja um diferencial significativo nos aparelhos de seus consumidores, nem que o desempenho seja comprometido por questões parecidas.
+
 <!-- Mostrar volume de dados do sistema, tamanho do projeto, explicar e determinar normas de desempenho -->
 
 ## 12 Modelos/Padrões Arquiteturais
