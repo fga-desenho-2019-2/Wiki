@@ -1,11 +1,11 @@
 ## Histórico de Revisão
 
-| Data       | Versão | Descrição                                                       | Autor                                              |
-| ---------- | ------ | --------------------------------------------------------------- | -------------------------------------------------- |
-| 13/11/2019 | 0.1    | Estrutura do Documento, Introdução e Representação Arquitetural | [Pedro Féo](https://github.com/phe0)               |
-| 14/11/2019 | 0.2    | Casos de uso, visão de processo e visão de tamanho e desempenho | [Matheus Blanco](https://github.com/MatheusBlanco) |
-| 15/11/2019 | 0.3    | Refatorando diagramas e adicionando mais visões de processo     | [Matheus Blanco](https://github.com/MatheusBlanco) |
-| 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais                           |
+| Data       | Versão | Descrição                                                               | Autor                                              |
+| ---------- | ------ | ----------------------------------------------------------------------- | -------------------------------------------------- |
+| 13/11/2019 | 0.1    | Estrutura do Documento, Introdução e Representação Arquitetural         | [Pedro Féo](https://github.com/phe0)               |
+| 14/11/2019 | 0.2    | Casos de uso, visão de processo e visão de tamanho e desempenho         | [Matheus Blanco](https://github.com/MatheusBlanco) |
+| 15/11/2019 | 0.3    | Refatorando diagramas e adicionando mais visões de processo             | [Matheus Blanco](https://github.com/MatheusBlanco) |
+| 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais, visão geral de classes e pacotes |
 
 ## 1 Introdução
 
@@ -144,6 +144,83 @@ Provindo da documentação referente ao [seminário 3](/../Wiki/docs/seminario3/
 | UC29 - Receber senha para retirada do pedido      | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
 
 ## 5 Visão Lógica
+
+Modelagens em padrão UML, que representam os aspectos arquiteturais do sistema.
+
+### 5.1 Diagramas de Pacotes
+
+#### 5.1.1 _Back-End_
+
+![diagrama-pacotes-back](../images/diagramas-uml/package_diagram_backend_v3.png)
+
+| **DP01**      | **Diagrama de pacotes do Back End**                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------ |
+| **Versão**    | Atual: 2.0 (19/09) <br> Anterior: [1.1](#dp01-diagrama-de-pacotes-back-end)                            |
+| **Descrição** | Diagrama de Pacotes para os Microserviços do Back End                                                  |
+| **Autor**     | [Shayane Alcântara](https://github.com/shayanealcantara) e [Saleh Kader](https://github.com/devsalula) |
+
+A API é dividida nas seguintes implementações:
+
+- Models, que contém as declarações dos dados a serem utilizados;
+- Serializer, que receberá os dados das models e permitirá a sua gravação nos bancos de dados;
+- Views, que receberá dos serializers a lógica de gravação e permitirá a implementação de lógicas complementares de dados, além de definir quais ações _POST_, _GET_, _DELETE_ e _PATCH_ serão utilizadas;
+- Urls, que irá declarar as rotas a serem acessadas tanto pelo microsserviço quanto pelo _front-end_;
+- Test, onde se encontram os testes unitários das models e das views;
+- Settings, que define a criação da aplicação, _hosts_ e outras dependências.
+
+#### 5.1.2 _Front-end_
+
+![diagrama-pacotes-front](../images/diagramas-uml/package_diagram_front_v4.png)
+
+| **DP02**      | **Diagrama de pacotes do Front End**                                                                   |
+| ------------- | ------------------------------------------------------------------------------------------------------ |
+| **Versão**    | Atual: 3.0 (19/09) <br> Anterior: [2.0](../images/diagramas-uml/package_diagram_front_v3.png)          |
+| **Descrição** | Diagrama de Pacotes para o Front End                                                                   |
+| **Autor**     | [Shayane Alcântara](https://github.com/shayanealcantara) e [Saleh Kader](https://github.com/devsalula) |
+
+A pasta principal _src_ contém as subpastas:
+
+- assets, que contem imagens e css adicionados para ajustar a estética da User Interface para os padrões do protótipo;
+- services, onde estão contidos alguns arquivos _.js_ que realizam certas funções e trabalhos repetitivos;
+- utils, onde está contida a lógica de autenticação de usuário;
+- screens, onde estão contidos:
+  - os componentes principais, a serem reutilizados pelas várias telas do projeto;
+  - as views, onde se encontram as implementações das telas, as quais fazem uso dos componentes;
+  - o router, onde se encontram todas as rotas para as telas existentes.
+
+### 5.2 Diagrama de classes e microserviços
+
+#### 5.2.1 Diagrama de classes do microsserviço de usuário
+
+![classes-usuario](../images/diagramas-uml/class_diagram_user_v2.jpg)
+
+| **DC01**      | **Diagrama de classes de usuário**                                            |
+| ------------- | ----------------------------------------------------------------------------- |
+| **Versão**    | Atual: 2.0 (18/09) <br> Anterior: [1.0](#dc01-diagrama-de-classes-de-usuario) |
+| **Descrição** | Diagrama UML das classes do microserviço de usuário                           |
+| **Autor**     | [Sara Silva](https://github.com/silvasara)                                    |
+
+#### 5.2.2 Diagrama de classes do microsserviço de Restaurante
+
+![classes-restaurante](../images/diagramas-uml/class_diagram_restaurant_v2.jpg)
+
+| **DC02**      | **Diagrama de classes de restaurante**                                                          |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 2.0 (19/09) <br> Anterior: [1.0](#dc02-diagrama-de-classes-de-restaurante)               |
+| **Descrição** | Diagrama UML das classes do microserviço de restaurante                                         |
+| **Autor**     | [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36) |
+
+### 5.2.3 Diagrama de classes do microsserviço de Pedidos
+
+O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.
+
+![classes-pedidos](../images/diagramas-uml/class_diagram_order_v2.jpg)
+
+| **DC03**      | **Diagrama de classes de pedidos**                                            |
+| ------------- | ----------------------------------------------------------------------------- |
+| **Versão**    | Atual: 2.0 (13/09) <br> Anterior: [1.0](#dc03-diagrama-de-classes-de-pedidos) |
+| **Descrição** | Diagrama UML das classes do microserviço de pedidos                           |
+| **Autor**     | [Matheus Blanco](https://github.com/MatheusBlanco)                            |
 
 diagramas de classe, diagramas de pacote, diagramas de de colaboração
 
