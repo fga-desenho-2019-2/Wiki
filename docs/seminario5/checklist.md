@@ -3,8 +3,9 @@
 | Data       | Versão | Descrição             | Autor                                             |
 | ---------- | ------ | --------------------- | ------------------------------------------------- |
 | 13/11/2019 | 0.1    | Estrutura do Documento| [Pedro Féo](https://github.com/phe0)              |
-| 14/11/2019 | 0.2    | Adição de novos requisitos | [Pedro Rodrigues](https://github.com/pedro-prp)
-| 15/11/2019 | 0.3    | Adição dos cortes de escopo e listar todos requisitos| [Pedro Féo](https://github.com/phe0)              |              |
+| 14/11/2019 | 0.2    | Adição de novos requisitos | [Pedro Rodrigues](https://github.com/pedro-prp) |
+| 15/11/2019 | 0.3    | Adição dos cortes de escopo e listar todos requisitos| [Pedro Féo](https://github.com/phe0) |         
+| 16/11/2019 | 0.4    | Adição de PRs relacionados a requisitos cumpridos | [Pedro Rodrigues](https://github.com/pedro-prp) |
 
 ## Verificação de Requisitos
 
@@ -17,16 +18,16 @@
 | Q07 | A aplicação deverá apresentar as informações de forma clara e organizada | Must have | [Q07](../../iniciativas_extras/elicitacao_de_requisitos/req_questionario.md) |    |
 | Q09 | No fluxo de pedido pela aplicação não deve haver filas para o usuário | Must have | [Q09](../../iniciativas_extras/elicitacao_de_requisitos/req_questionario.md) |    |
 | Q10 | No fluxo de pedido pela aplicação o usuário não precisará interagir com atendentes | Must have | [Q10](../../iniciativas_extras/elicitacao_de_requisitos/req_questionario.md) |    |
-| PRO17 | O usuário deve ser capaz de adicionar um pedido à sacola | Must have | [PRO17](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
-| PRO18 | Na sacola o usuário deve ser capaz de editar os itens que estão nela | Must have | [PRO18](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
-| PRO19 | A sacola deve apresentar um resumo dos itens que o usuário está pedindo | Must have | [PRO19](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
-| PRO20 | A sacola deve permitir que o usuário escolha sua forma de pagamento e adicione CPF | Must have | [PRO20](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
-| PRO21 | A sacola deve permitir que o usuário finalize seu pedido | Must have | [PRO21](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
+| PRO17 | O usuário deve ser capaz de adicionar um pedido à sacola | Must have | [PRO17](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) | |
+| PRO18 | Na sacola o usuário deve ser capaz de editar os itens que estão nela | Must have | [PRO18](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |  [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/10), [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/15)  |
+| PRO19 | A sacola deve apresentar um resumo dos itens que o usuário está pedindo | Must have | [PRO19](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |  [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/10)  |
+| PRO20 | A sacola deve permitir que o usuário escolha sua forma de pagamento e adicione CPF | Must have | [PRO20](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |  [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/10)  |
+| PRO21 | A sacola deve permitir que o usuário finalize seu pedido | Must have | [PRO21](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |   [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/14), [api-gateway](https://github.com/fga-desenho-2019-2/api-gateway/pull/4), [order-service](https://github.com/fga-desenho-2019-2/order-service/pull/5) |
 | PRO28 | O usuário deve ser capaz de visualizar seus cartões cadastrados | Must have | [PRO28](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
-| ST02 | As mesas dos shoppings devem conter QRCodes | Must have | [ST02](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
+| ST02 | As mesas dos shoppings devem conter QRCodes | Must have | [ST02](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) | [restaurant-service](https://github.com/fga-desenho-2019-2/restaurant-service/pull/4) |
 | ST04 | O sistema deve ser Web | Must have | [ST04](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
-| ST05 | O QRCode deve direcionar o usuário para o QRComer | Must have | [ST05](../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md) |    |
-| ST06 | O sistema deve possuir uma área de cadastro do usuário | Must have | [ST06](../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md) |    |
+| ST05 | O QRCode deve direcionar o usuário para o QRComer | Must have | [ST05](../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md) |  [restaurant-service](https://github.com/fga-desenho-2019-2/restaurant-service/pull/4)  |
+| ST06 | O sistema deve possuir uma área de cadastro do usuário | Must have | [ST06](../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md) |   [qrcomer-front](https://github.com/fga-desenho-2019-2/qrcomer-front/pull/9) |
 | ST10 | O sistema deve informar o shopping onde o usuário está localizado | Must have | [ST10](../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md) |    |
 | ST11 | O sistema deve demonstrar a lista de restaurantes do shopping | Must have | [ST11](../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md) |    |
 | ST12 | O sistema deve permitir a escolha de um restaurante pelo usuário | Must have | [ST12](../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling.md) |    |
@@ -48,7 +49,7 @@
 | E16 | Possuir descricao dos itens | Should have | [E16](../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md) |    |
 | E20 | Possuir categoria de pratos | Should have | [E20](../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md) |    |
 | BENCH04 | A aplicação poderá cobrir falhas e possuir boa performance | Could have | [BENCH04](../../iniciativas_extras/elicitacao_de_requisitos/req_benchmarking.md) |    |
-| PRO13 e E17 | O app deve apresentar os pedidos em andamento do usuário | Could have | [PRO13](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) e [E17](../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md) |    |
+| PRO13 e E17 | O app deve apresentar os pedidos em andamento do usuário | Could have | [PRO13](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) e [E17](../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista.md) |  |
 | BENCH01 e PRO29 | O app deve ter uma página de suporte | Would have | [BENCH01](../../iniciativas_extras/elicitacao_de_requisitos/req_benchmarking.md) e [PRO29](../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo.md) |    |
 
 <!-- | BS01  | O Sistema deve diferenciar perfis de cliente e restaurante | Must Have | [BS01](https://fga-desenho-2019-2.github.io/Wiki/iniciativas_extras/elicitacao_de_requisitos/req_brainstorm/)|    |
