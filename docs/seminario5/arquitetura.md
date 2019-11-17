@@ -7,6 +7,7 @@
 | 15/11/2019 | 0.3    | Refatorando diagramas e adicionando mais visões de processo             | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais, visão geral de classes e pacotes |
 | 16/11/2019 | 0.5    | Modelos/Padrões Arquiteturais                                           | [Saleh Kader](https://github.com/devsalula)        |
+| 16/11/2019 | 0.6    | Qualidade                                                               | [Saleh Kader](https://github.com/devsalula)        |
 
 ## 1 Introdução
 
@@ -380,7 +381,9 @@ Mostrar e explicar modelo de dados
 
 ## 10 Qualidade
 
-Mostrar formas de medir qualidade do código e do produto, cobertura de testes por exemplo
+No padrão de qualidade da arquitetura, o modelo arquitetural escolhido para o projeto facilita na escalabilidade da aplicação. A arquitetura de microsserviços por atuar de forma desacoplada ela distribui as responsabilidades da aplicação em pequenos serviços, descomplicando o desenvolvimento. O desacoplamento também contribui para a manutenabilidade da aplicação. Por fim, o padrão de microsserviços possui uma boa Reliabilidade, por permitir que caso um dos pequenos serviços que esteja atuando sofra algum problema, ele não prejudica todo o resto da aplicação, permitindo que outros microsserviços funcionem de maneira independente. 
+
+<!-- Mostrar formas de medir qualidade do código e do produto, cobertura de testes por exemplo -->
 
 ## 11 Tamanho e Desempenho
 
