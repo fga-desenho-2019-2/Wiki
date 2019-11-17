@@ -5,8 +5,9 @@
 | 13/11/2019 | 0.1    | Estrutura do Documento, Introdução e Representação Arquitetural         | [Pedro Féo](https://github.com/phe0)               |
 | 14/11/2019 | 0.2    | Casos de uso, visão de processo e visão de tamanho e desempenho         | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 15/11/2019 | 0.3    | Refatorando diagramas e adicionando mais visões de processo             | [Matheus Blanco](https://github.com/MatheusBlanco) |
-| 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais, visão geral de classes e pacotes |
+| 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais, visão geral de classes e pacotes | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 16/11/2019 | 0.5    | Modelos/Padrões Arquiteturais                                           | [Saleh Kader](https://github.com/devsalula)        |
+|17/11/2019|0.6|Visão de dados|[Matheus Blanco](https://github.com/MatheusBlanco)
 
 ## 1 Introdução
 
@@ -114,37 +115,41 @@ Provindo da documentação referente ao [seminário 3](/../Wiki/docs/seminario3/
 
 #### 4.1.2 Descrição dos Casos de Uso
 
-| Casos de Uso                                      | Descrição dos Casos de Uso                                                                          |
-| ------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| UC01 - Cadastrar                                  | O usuário realiza o cadastro na aplicação                                                           |
-| UC02 - Preencher Formulário                       | O usuário insere as informações necessárias                                                         |
-| UC03 - Fazer Login                                | O usuário acessa a aplicação                                                                        |
-| UC04 - Alterar senha                              | O usuário requisita uma alteração de senha                                                          |
-| UC05 - Gerar QR-Code                              | O gerador de QR-Code cria um link de acesso para o shopping                                         |
-| UC06 - Ler QR Code no shopping                    | O usuário acessa o shopping a partir do link contido no QR-Code                                     |
-| UC07 - Acessar a aplicação web                    | O gerador de QR-Code acessa a aplicação a partir da identificação do shopping                       |
-| UC08 - Identificar shopping pelo QR-Code          | O gerador de QR-Code gera um código diferente para cada shopping, tornando o link seu identificador |
-| UC09 - Ver lista de restaurantes                  | O usuário vê, na página do shopping, todos os restaurantes existentes no mesmo                      |
-| UC10 - Selecionar restaurante                     | O usuário escolhe e abre um restaurante a partir da lista                                           |
-| UC11 - Selecionar produto                         | O usuário escolhe e seleciona o produto na página de restaurante                                    |
-| UC12 - Adicionar produto à sacola                 | O usuário confirma a seleção do produto e o mesmo é adicionado à sacola de pedidos                  |
-| UC13 - Editar produtos da sacola                  | O usuário regula a quantidade de produtos na sacola                                                 |
-| UC14 - Visualizar itens da sacola                 | O usuário pode ver, na sacola, todos os itens escolhidos                                            |
-| UC15 - Finalizar pedido                           | O usuário confirma os itens na sacola e finaliza o pedido                                           |
-| UC16 - Inserir forma de pagamento e adicionar CPF | O usuário escolhe o cartão que deseja usar e adiciona o CPF para nota fiscal, na sacola             |
-| UC17 - Cadastrar cartões                          | O usuário cadastra os seus cartões de crédito na conta da aplicação                                 |
-| UC18 - Visualizar cartões cadastrados             | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
-| UC19 - Remover cartões cadastrados                | O usuário pode remover todos os cartões cadastrados em sua conta                                    |
-| UC20 - Visualizar cartões cadastrados             | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
-| UC21 - Efetuar pagamento                          | O usuário confirma o pedido e o serviço de pagamento debita o valor de seu cartão escolhido         |
-| UC22 - Cancelar produto                           | O usuário deleta um ou todos os itens da sacola                                                     |
-| UC23 - Integrar com API de pagamento              | O serviço de pagamento simula uma API real de pagamento                                             |
-| UC24 - Acessar o back-end para cadastro de dados  | O restaurante acessa o serviço de cadastro de informações do back-end                               |
-| UC25 - Cadastrar restaurante                      | O restaurante adiciona as informações jurídicas necessárias para cadastrar o restaurante            |
-| UC26 - Adicionar cardápio do estabelecimento      | O restaurante adiciona os itens ao seu cardápio, com valores, descrição e imagens                   |
-| UC27 - Receber pedido                             | O restaurante recebe o pedido criado pelo usuário, para preparação do alimento                      |
-| UC28 - Gerar senha                                | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
-| UC29 - Receber senha para retirada do pedido      | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
+| Casos de Uso                                           | Descrição dos Casos de Uso                                                                          |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| UC01 - Cadastrar                                       | O usuário realiza o cadastro na aplicação                                                           |
+| UC02 - Preencher Formulário                            | O usuário insere as informações necessárias                                                         |
+| UC03 - Fazer Login                                     | O usuário acessa a aplicação                                                                        |
+| UC04 - Alterar senha                                   | O usuário requisita uma alteração de senha                                                          |
+| UC05 - Gerar QR-Code                                   | O gerador de QR-Code cria um link de acesso para o shopping                                         |
+| UC06 - Ler QR Code no shopping                         | O usuário acessa o shopping a partir do link contido no QR-Code                                     |
+| UC07 - Acessar a aplicação web                         | O gerador de QR-Code acessa a aplicação a partir da identificação do shopping                       |
+| UC08 - Identificar shopping pelo QR-Code               | O gerador de QR-Code gera um código diferente para cada shopping, tornando o link seu identificador |
+| UC09 - Ver lista de restaurantes                       | O usuário vê, na página do shopping, todos os restaurantes existentes no mesmo                      |
+| UC10 - Selecionar restaurante                          | O usuário escolhe e abre um restaurante a partir da lista                                           |
+| UC11 - Selecionar produto                              | O usuário escolhe e seleciona o produto na página de restaurante                                    |
+| UC12 - Adicionar produto à sacola                      | O usuário confirma a seleção do produto e o mesmo é adicionado à sacola de pedidos                  |
+| UC13 - Editar produtos da sacola                       | O usuário regula a quantidade de produtos na sacola                                                 |
+| UC14 - Visualizar itens da sacola                      | O usuário pode ver, na sacola, todos os itens escolhidos                                            |
+| UC15 - Finalizar pedido                                | O usuário confirma os itens na sacola e finaliza o pedido                                           |
+| UC16 - Inserir forma de pagamento e adicionar CPF      | O usuário escolhe o cartão que deseja usar e adiciona o CPF para nota fiscal, na sacola             |
+| UC17 - Cadastrar cartões                               | O usuário cadastra os seus cartões de crédito na conta da aplicação                                 |
+| UC18 - Visualizar cartões cadastrados                  | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
+| UC19 - Remover cartões cadastrados                     | O usuário pode remover todos os cartões cadastrados em sua conta                                    |
+| UC20 - Visualizar cartões cadastrados                  | O usuário pode visualizar todos os cartões cadastrados em sua conta                                 |
+| UC21 - Efetuar pagamento                               | O usuário confirma o pedido e o serviço de pagamento debita o valor de seu cartão escolhido         |
+| UC22 - Cancelar produto                                | O usuário deleta um ou todos os itens da sacola                                                     |
+| UC23 - Integrar com API de pagamento                   | O serviço de pagamento simula uma API real de pagamento                                             |
+| UC24 - Acessar o back-end para cadastro de dados       | O restaurante acessa o serviço de cadastro de informações do back-end                               |
+| UC25 - Cadastrar restaurante                           | O restaurante adiciona as informações jurídicas necessárias para cadastrar o restaurante            |
+| UC26 - Adicionar cardápio do estabelecimento           | O restaurante adiciona os itens ao seu cardápio, com valores, descrição e imagens                   |
+| UC27 - Receber pedido                                  | O restaurante recebe o pedido criado pelo usuário, para preparação do alimento                      |
+| UC28 - Gerar senha                                     | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
+| UC29 - Receber senha para retirada do pedido           | O usuário e o restaurante recebem uma senha gerada pela aplicação                                   |
+| UC30 - Receber feedback da compra                      | O usuário deixa um feedback do produto para o restaurante                                           |
+| UC31 - Receber feedback positivo                       | O restaurante recebe um feedback positivo                                                           |
+| UC32 - Receber feedback negativo                       | O restaurante recebe um feedback negativo                                                           |
+| UC33 - Visualizar mensagem de erro e retornar à sacola | O restaurante envia uma mensagem de erro caso o pedido não possa ser completado                     |
 
 ## 5 Visão Lógica
 
@@ -376,7 +381,404 @@ não possuímos nada desse aspecto, ver se é relevante construir esse tipo de d
 
 ## 9 Visão de Dados
 
-Mostrar e explicar modelo de dados
+### 9.1 Diagramas
+
+### 9.1.1 Costumer Service
+
+Diagrama que representa o microsserviço de usuário, suas entidades, **usuário** e **cartão**, e seu respectivo relacionamento. No caso, um **usuário** pode conter um ou mais cartões, sendo que um cartão só póde ser utilizado por um usuário. O **cartão** recebe do **usuário** a chave primária CPF, a qual restringe e identifica o **usuário** cadastrado na aplicação, e os cartões que o mesmo possui.
+
+O **usuário** possui como atributos cpf como chave primária, e-mail, nome e senha, sendo que estes últimos são necessários para a realização do cadastro na aplicação e todos, menos e-mail e cpf, podem ser alterados.
+
+#### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/pHCnCJ3.png)
+
+| **DER01** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de usuário | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+
+### 9.1.2 Restaurant Service
+
+O microsserviço de restaurante faz uso de uma série de entidades e relacionamentos, pelo fato de necessitar de uma quantidade maior de dados para que seu funcionamento seja otimizado. A entidade **restaurante** possui **horários de funcionamento**, **categorias** e **cardápios**, além de estar inserida dentro de um **shopping**. Ela recebe a chave primária CNPJ do **shopping** para utilizar como identificador, além de ter seu próprio CNPJ, que transmite para outras entidades. As entidades **horário de funcionamento**, **categoria** e **cardápio** possuem seus identificadores próprios, além de **nome/descrição/horaFinal** e **horaInicial** para utilização nos modelos de dados. 
+
+A entidade **cardápio** possui dentro de sim uma série de **itens**, que possuem seus próprios atributos de identificação. Diferentemente das outras entidades, **itens** também possui o atributo valor, o qual irá definir os preços dos **itens** específicos. **Itens** pode ser classificado, ainda, em **categorias de itens**, as quais irão filtrar ainda mais a entidade.
+
+Em relação a funcionamento, **shopping** possui **restaurantes** cadastrados em seu banco de dados, o qual tem **horarios de funcionamento** e é filtrado por **categorias**. O **restaurante** possui um **cardápio** de **itens**, cada qual contendo sua própria **categoria**, valores, descrição e tempo de preparo. O usuário é capaz de interagir com a plataforma graças a este banco de dados, em sua maior parte. O fluxo de interação com o serviço de restaurante se inicia após o login/cadastro, quando o usuário consegue acessar o shopping e seus respectivos restaurantes. Quando em um restaurante, o usuário escolhe um item e o adiciona à sacola de pedidos.
+
+#### Diagrama Entidade Relacionamento
+
+#### Versão 1.0
+![DER](https://i.imgur.com/7G1Ac9T.png)
+
+
+| **DER02** | **DER**  |
+|--|--|
+| **Versão**| Atual: 2.0 (17/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Versão 2.0
+
+![DER](https://i.imgur.com/KN39OdO.png)
+
+| **DER02** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de restaurante | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+
+
+### 9.1.3 Order Service
+
+O microsserviço de pedidos é o microsserviço que compôe a interação final do usuário com a aplicação. O modelo de dados do mesmo gira em torno da entidade **pedidos**, a qual possui identificador, hora da realização, cnpj do restaurante, cpf do comprador, preço entre outros. Um **pedido** possui os seus **itens** que o compôem, e os mesmos são derivados dos itens existentes no cardápio do restaurante. Um **pedido** também possuirá uma **senha**, a qual é responsável por identificar se o pedido está sendo preparado, foi entregue e demais ações que dependem da interação entre o usuário e o restaurante.
+
+Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma todos os itens que deseja comprar. Ele também é capaz de escolher o cartão de crédito que será utilizado no pagamento do mesmo, além de poder adicionar um CPF na nota. Ao confirmar o pedido, o banco de dados o microsserviço receberá uma nova tupla com as informações a serem passadas para o restaurante em questão. Posteriormente, o pedido e o restaurante poderão ser avaliados pelo comprador.
+
+#### Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/30hWV8J.png)
+
+| **DER03** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+### 9.2 Diagrama geral
+
+#### 9.2.1 Modelo Entidade Relacionamento
+
+| **Entidade** | **Atributo**|
+|:--:|:--:|
+| SHOPPING | <u>cnpj</u><br>nomeShopping<br>telefone(multivalorado)<br>endereco(composto)|
+| CATEGORIARESTAURANTE | <u>idCategoria</u><br>nomeCategoria<br>descricao |
+| RESTAURANTE | <u>cnpjRestaurante</u><br>nomeRestaurante<br>numero<br>bloco<br>descricao<br>idCategoria |
+| USUARIO | <u>cpf</u><br>nomeUsuario<br>email<br>senha |
+| CARDAPIO | <u>idCardapio</u><br>nomeCardapio<br>descricao<br>cnpjRestaurante |
+| CARTAO | <u>numero</u><br>nomeTitular<br>validade<br>cvv |
+| CATEGORIAITEM | <u>idCategoriaItem</u><br>nomeCategoriaItem<br>descricao |
+| ITEM | <u>idItem</u><br>nomeItem<br>descricao<br>valorUnitario<br>quantidade<br>idCategoriaItem<br>cnpjRestaurante<br>idCardapio |
+| PEDIDO | <u>codigo</u><br>dataHoraRealizado<br>valorTotal<br>statusPedido<br>cpf<br>cnpjShopping<br>cnpjRestaurante |
+
+| **Entidade** | **relação** | **Entidade**| **Descrição** | **Cardinalidade**|
+|:--:|:--:|:--:|:--:|:--:|
+| **SHOPPING** | possui | **RESTAURANTE** |Um shopping possui um ou mais restaurantes cadastrados. Um restaurante pode estar associado a um ou mais shoppings | **N:M** |
+| **RESTAURANTE** | possui | **CATEGORIARESTAURANTE** | Um restaurante possui uma ou mais categorias. Uma categoria pode estar associada a um ou mais restaurantes. | **N:M** |
+| **RESTAURANTE** | possui | **CARDAPIO** | Um restaurante possui um ou mais cardapios. Um cardapio pode estar associada a um ou mais restaurante. | **N:M** |
+| **RESTAURANTE** | possui | **ITEM** | Um restaurante possui um ou mais itens. Um item pode estar associada a um ou mais restaurantes. | **N:M** |
+| **CARDAPIO** | possui | **ITEM** | Um cardapio possui um ou mais itens. Um item pode estar associada a um ou mais cardapios. | **N:M** |
+| **ITEM** | possui | **CATEGORIAITEM** | Um item possui um ou mais categorias. Uma categoria pode estar associada a um ou mais itens. | **N:M** |
+| **USUARIO** | realiza | **PEDIDO** | Um usuario realiza um ou mais pedidos. Um pedido pode estar associada a um ou mais usuarios. | **N:M** |
+| **PEDIDO** | possui | **ITEM** | Um pedido possui um ou mais itens. Um item pode estar associado a um ou mais pedidos. | **N:M** |
+
+| **MER01** | **MER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
+| **Descrição** | Modelo Entidade Relacionamento | 
+|**Autor**| [Leonardo Barreiros](https://github.com/leossb36) | 
+
+#### 9.2.2 Diagrama Entidade Relacionamento
+
+![DER](https://i.imgur.com/t8GjGTu.png)
+
+| **DER01** | **DER**  |
+|--|--|
+| **Versão**| Atual: 1.0 (26/08) <br> Anterior: - | 
+| **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+
+
+### 9.3 Dicionário de dados
+
+#### 9.3.1 Entidade: Cartão
+
+**Descrição**: Modo de pagamento utilizado pelo cliente
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|numero|chave primária obrigatória|bigint|16|Número da frente do cartão|
+|cpfcnpj|obrigatória|bigint|20|Dados jurídicos do dono|
+|validade|obrigatória|date||Validade do cartão|
+|cvv|obrigatória|int||Código de segurança|
+|nomeTitular|obrigatória||varchar|50|Nome do titular da conta do cartão|
+|email|chave estrangeira obrigatória|varchar|50|E-mail do usuário|
+
+#### 9.3.2 Entidade: Usuário
+
+**Descrição**: Usuário da aplicação, público-alvo
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|nome|obrigatória|varchar|50|Nome do Usuário|
+|email|chave primária obrigatória|varchar|50|E-mail do Usuário|
+|senha|obrigatória|varchar|20|Senha do Usuário na aplicação|
+
+#### 9.3.3 Entidade: Avaliação_Pedido
+
+**Descrição**: Momento de visualização do pedido pelo restaurante
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave primária obrigatória|bigint|16|Identificação do pedido|
+|nota|obrigatória|varchar|200|Nota fiscal|
+|descricao|obrigatória|varchar|200|Descrição do pedido|
+|dataHora|obrigatória|date time||Hora e dia do registro do pedido|
+|numero|obrigatória|int||Número do pedido a ser chamado|
+|horaRealizado|obrigatória|time||Hora da montagem do pedido|
+|formaPagamento|obrigatória|enum('Debito', 'Credito', 'Dinheiro')||Forma na qual o pedido foi pago|
+|email|chave estrangeira obrigatória|varchar|50|E-mail do usuário|
+
+#### 9.3.4 Relacionamento: possui
+
+**Descrição**: Possessão de status de pedido
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave estrangeira obrigatória|int|3|Identificação do status do pedido|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do pedido|
+
+
+#### 9.3.5 Entidade: StatusPedido
+
+**Descrição**: Status de um pedido
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave primária obrigatória|int|3|Identificação do status do pedido|
+|descricao|obrigatória|varchar|200|Descrição do status|
+
+#### 9.3.6 Relacionamento: possui
+
+**Descrição**: Possessão de item no cardápio referente ao pedido
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do item no cardápio|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do pedido|
+
+#### 9.3.7 Entidade: ItemCardapio
+
+**Descrição**: Representa um item contido no cardápio
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave primária obrigatória|bigint|16|Identificação do item no cardápio|
+|nome|obrigatória|varchar|50|Nome do item|
+|valor|obrigatória|float||Preço do item|
+|descricao|obrigatória|varchar|200|Descrição do item|
+|observação|obrigatória|varchar|200|Observação em referência ao item pedido|
+
+#### 9.3.8 Relacionamento: possui
+
+**Descrição**: Possessão de categoria referente a cardápios
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do item no cardápio|
+|id|chave estrangeira obrigatória|bigint|16|Identificação da categoria de cardápio|
+
+#### 9.3.9 Entidade: CategoriaCardapio
+
+**Descrição**: Representa uma categoria que identifica o cardápio
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave primária obrigatória|bigint|16|Identificação da categoria de cardápio|
+|descricao|obrigatória|varchar|200|Descrição da categoria do cardápio|
+
+#### 9.3.10 Relacionamento: possui
+
+**Descrição**: Possessão de cardápios referente a categorias
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do cardápio em questão|
+|id|chave estrangeira obrigatória|bigint|16|Identificação da categoria de cardápio|
+
+#### 9.3.11 Entidade: Cardapio
+
+**Descrição**: Representa um cardápio de determinado restaurante
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|numero|obrigatória|int||Número id do restaurante|
+|descricao|obrigatória|varchar|200|Descrição do cardápio e seus itens|
+|id|chave primária obrigatória|bigint|16|Identificação do cardápio em questão|
+
+#### 9.3.12 Relacionamento: possui
+
+**Descrição**: Possessão de cardápios referente a estabelecimentos
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|cnpj|chave estrangeira obrigatória|bigint|20|CNPJ do estabelecimento|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do cardápio em questão|
+
+#### 9.3.13 Entidade: Estabelecimento
+
+**Descrição**: Representa um estabelecimento restaurante
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|cnpj|chave primária obrigatória|bigint|20|CNPJ do estabelecimento|
+|nome|obrigatória|varchar|50|Nome do estabelecimento|
+|numero|obrigatória|int||Número da loja, em questão de endereço|
+|descricao|obrigatória|varchar|200|Descrição do estabelecimento e seus alimentos|
+|tempoPreparo|obrigatória|time||Tempo necessário para se preparar um alimento|
+
+#### 9.3.14 Relacionamento: possui
+
+**Descrição**: Possessão de estabelecimentos em relação a categorias
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|cnpj|chave estrangeira obrigatória|bigint|20|CNPJ do estabelecimento|
+|id|chave estrangeira obrigatória|bigint|16|Identificação da categoria|
+
+#### 9.3.15 Entidade: CategoriaEstabelecimento
+
+**Descrição**: Representa a categoria de um estabelecimento
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave primária obrigatória|bigint|16|Identificação da categoria|
+|descricao|obrigatória|varchar|200|Descrição da categoria do estabelecimento|
+
+#### 9.3.16 Relacionamento: realiza
+
+**Descrição**: Realização de pedidos
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|email|chave estrangeira obrigatória|varchar|50|E-mail do Usuário|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do pedido|
+
+#### 9.3.17 Relacionamento: em
+
+**Descrição**: Possessão de local de realização de pedidos
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|cnpj|chave estrangeira obrigatória|bigint|20|CNPJ do estabelecimento|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do pedido|
+
+#### 9.3.18 Relacionamento: possui
+
+**Descrição**: Possessão de categoria de itens
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do item no cardápio|
+|id|chave estrangeira obrigatória|bigint|16|Identificação da categoria do item|
+
+#### 9.3.19 Entidade: CategoriaItem
+
+**Descrição**: Representa a categoria de um item
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|titulo|obrigatória|varchar|50|Título da categoria do item|
+|descricao|obrigatória|varchar|200|Descrição da categoria do item|
+|statusObrigatório|obrigatória|enum('S','N')||?|
+|id|chave primária obrigatória|bigint|16|Identificação da categoria do item|
+
+#### 9.3.20 Relacionamento: tem
+
+**Descrição**: Possessão de item por categoria
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|id|chave estrangeira obrigatória|bigint|16|Identificação da categoria do item|
+|id|chave estrangeira obrigatória|bigint|16|Identificação do item da categoria|
+
+#### 9.3.21 Entidade: ItemCategoria
+
+**Descrição**: Representa o item de uma categoria
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|titulo|obrigatória|varchar|50|Título do item da categoria|
+|descricao|obrigatória|varchar|200|Descrição do item da categoria|
+|valor|obrigatória|float||Preço do item da categoria|
+|id|chave primária obrigatória|bigint|16|Identificação do item da categoria|
+
+#### 9.3.22 Relacionamento: possui
+
+**Descrição**: Possessão de horários
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|diaSemana|chave estrangeira obrigatória|varchar|16|Dias da semana que o estabelecimento funciona|
+|cnpj|chave estrangeira obrigatória|bigint|20|CNPJ do estabelecimento|
+
+#### 9.3.23 Entidade: HorarioFuncionamento
+
+**Descrição**: Representa o horário de funcionamento de um estabelecimento
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|diaSemana|chave primária obrigatória|varchar|16|Dias da semana que o estabelecimento funciona|
+|horaInicial|obrigatória|time||Hora de abertura|
+|horaFinal|obrigatória|time||Hora de fechamento|
+
+#### 9.3.24 Relacionamento: possui
+
+**Descrição**: Possessão de horários por parte do Shopping
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|diaSemana|chave estrangeira obrigatória|varchar|16|Dias da semana que o Shopping funciona|
+|cnpj|chave estrangeira obrigatória|bigint|20|CNPJ do Shopping|
+
+#### 9.3.25 Entidade: Shopping
+
+**Descrição**: Representa o shopping que abriga um estabelecimento
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|nome|obrigatória|varchar|50|Nome do shopping|
+|cnpj|chave primária obrigatória|bigint|20|CNPJ do Shopping|
+|telefone|chave estrangeira obrigatória|varchar|30|Identificação do telefone do shopping|
+
+#### 9.3.26 Entidade: telefone
+
+**Descrição**: Representa o telefone de um shopping
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|telefone|chave primária obrigatória|varchar|30|Identificação do telefone do shopping|
+|telefone|obrigatória|varchar|30|Identificação do telefone do shopping|
+
+#### 9.3.27 Relacionamento: possui
+
+**Descrição**: Possessão de endereço por parte do Shopping
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|cnpj|chave estrangeira obrigatória|bigint|20|CNPJ do Shopping|
+|latitude|chave estrangeira obrigatória|bigint|16|Latitude da localização do endereço|
+|longitude|chave estrangeira obrigatória|bigint|16|Longitude da localização do endereço|
+
+#### 9.3.28 Entidade: Endereço
+
+**Descrição**: Representa o endereço de um shopping
+
+|Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
+|-|-|-|-|-|
+|rua|obrigatória|varchar|20|Rua do shopping|
+|numero|obrigatória|int||Número do shopping|
+|logradouro|obrigatória|varchar|20|Logradouro do shopping|
+|cidade|obrigatória|varchar|20|Cidade onde o shopping se localiza|
+|estado|obrigatória|varchar|20|Estado onde o shopping se localiza|
+|pais|obrigatória|varchar|20|Pais onde o shopping se localiza|
+|latitude|chave estrangeira obrigatória|bigint|16|Latitude da localização do endereço|
+|longitude|chave estrangeira obrigatória|bigint|16|Longitude da localização do endereço|
+|bairro|obrigatória|varchar|20|Bairro onde o shopping se localiza|
 
 ## 10 Qualidade
 
@@ -406,4 +808,4 @@ Além do Django Rest, o grupo optou por utilizar do Flask, outro framework Pytho
 
 ### Padrão Arquitetural no Front
 
-No front a opção foi feita pelo VueJS, framework javascript, com uma arquitetura orientada a componentes. A Arquitetura de Componentes está baseada em pequenos objetos da interface, que são reutilizáveis e independentes, otimizando o processo de desenvolvimento da aplicação. 
+No front a opção foi feita pelo VueJS, framework javascript, com uma arquitetura orientada a componentes. A Arquitetura de Componentes está baseada em pequenos objetos da interface, que são reutilizáveis e independentes, otimizando o processo de desenvolvimento da aplicação.
