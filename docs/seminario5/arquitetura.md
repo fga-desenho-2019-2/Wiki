@@ -6,6 +6,7 @@
 | 14/11/2019 | 0.2    | Casos de uso, visão de processo e visão de tamanho e desempenho         | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 15/11/2019 | 0.3    | Refatorando diagramas e adicionando mais visões de processo             | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais, visão geral de classes e pacotes |
+| 16/11/2019 | 0.5    | Modelos/Padrões Arquiteturais                                           | [Saleh Kader](https://github.com/devsalula)        |
 
 ## 1 Introdução
 
@@ -34,6 +35,8 @@ Este Documento de Arquitetura de Software se aplica ao Sistema QRComer. Desenvol
 - [Kalkuli](https://fga-eps-mds.github.io/2018.2-Kalkuli/docs/docArquitetura)
 - [https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm](https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm)
 - [https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm](https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm)
+- [Redhat](https://www.redhat.com/pt-br/topics/microservices/what-are-microservices)
+- [Movile](https://movile.blog/large-scale-javascript-arquitetura-de-componentes/)
 
 ## 2 Representação da Arquitetura
 
@@ -389,8 +392,18 @@ Sendo assim, o mesmo não ocupa espaço físico nos aparelhos dos usuários, res
 
 ## 12 Modelos/Padrões Arquiteturais
 
-explicar modelos/padrões arquiteturais utilizados no projeto
-monolitico ou distribuido? pq?
-mvc no django?
-cliente servidor
-etc
+### Microsserviços
+
+A arquitetura escolhida pelo grupo foi a arquitetura de microsserviços. Com essa arquitetura, a aplicação do QrComer foi desmembrada em pequenos componentes responsáveis por executar uma função diferente da aplicação. Os microsserviços podem criados e implantados de maneira independentes, assim caso um dos microsserviços seja comprometido, os microsserviços remanescentes continuarão funcionando normalmente e a aplicação não ficará tão prejudicada.
+
+O grupo escolheu a arquitetura de microsserviços pela facilidade de desenvolvimento. Além disso, essa arquitetura permite que o desenvolvimento possa ser simultâneo, diminuindo o tempo de entrega e tornando a aplicação facilmente escalável.
+
+### Padrão Arquitetural no Back
+
+A tecnologia utilizada na construção dos microsserviços foi o Django Rest Framework, que é um framework Python, muito utilizado para criar Rest APIS de maneira rápida e prática. O Django Rest é orientado a MVT (Model, View, Template), padrão semelhante ao MVC (Model, View, Controller). No caso de nossa utilização, foi removido o Template do padrão, por ser justamente, uma camada de visualização o que não será necessário, já que o framework está sendo utilizado no backend.
+
+Além do Django Rest, o grupo optou por utilizar do Flask, outro framework Python, para a construção do Gateway. O Gateway é responsável por atuar como um ponto de comunicação do back com o front, gerenciando as requisições da aplicação por meio de métodos do protocolo HTTP. A opção pelo Flask, foi feito por ser um microframework, diminuindo a necessidade de realizar tanta configurações que muitas vezes não serão utilizadas.
+
+### Padrão Arquitetural no Front
+
+No front a opção foi feita pelo VueJS, framework javascript, com uma arquitetura orientada a componentes. A Arquitetura de Componentes está baseada em pequenos objetos da interface, que são reutilizáveis e independentes, otimizando o processo de desenvolvimento da aplicação. 
