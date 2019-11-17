@@ -7,7 +7,8 @@
 | 15/11/2019 | 0.3    | Refatorando diagramas e adicionando mais visões de processo             | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 15/11/2019 | 0.4    | Requisitos e restrições arquiteturais, visão geral de classes e pacotes | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 16/11/2019 | 0.5    | Modelos/Padrões Arquiteturais                                           | [Saleh Kader](https://github.com/devsalula)        |
-|17/11/2019|0.6|Visão de dados|[Matheus Blanco](https://github.com/MatheusBlanco)
+| 17/11/2019 | 0.6    | Visão de dados                                                          | [Matheus Blanco](https://github.com/MatheusBlanco) |
+| 17/11/2019 | 0.7    | Visão de implementação                                                  | [Pedro Féo](https://github.com/phe0)               |
 
 ## 1 Introdução
 
@@ -373,11 +374,18 @@ explicar parte de devops, ci, cd, pipeline
 
 ## 8 Visão da Implementação
 
-explicar a implantação física dos processos e componentes, mostrar processamento de nós, configuração física, servidores
+A implementação do sistema é composto de 6 componentes externos, sendo eles servidores e o smartphone do usuário.
+Cada um dos microserviços apresenta um servidor próprio, onde se encontra sua rest API e seu banco de dados. Enquanto isso o servidor do frontend apresenta apenas um componente, sendo ele o próprio frontend em Vue, já que não necessita de um banco de dados.
+Toda comunicação entre servidores é feita através protocolo http, enquanto a comunicação entre api e banco de dados é realizada via tcp/ip.
 
-diagrama de implantação
+![diagrama-implementacao](../assets/images/../../images/doc-arquitetura/implementacao.png)
 
-não possuímos nada desse aspecto, ver se é relevante construir esse tipo de diagrama
+| **DI01**      | **Diagrama de implementação**                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 1.0 (17/11)  |
+| **Descrição** | Diagrama UML representando os componentes do sistema e sua comunicação                             |
+| **Autor**     | [Pedro Feo](https://github.com/Phe0)                |
+
 
 ## 9 Visão de Dados
 
