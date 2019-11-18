@@ -10,6 +10,7 @@
 | 17/11/2019 | 0.6    | Visão de dados                                                          | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 17/11/2019 | 0.7    | Visão de implementação                                                  | [Pedro Féo](https://github.com/phe0)               |
 | 17/11/2019 | 0.8    | Qualidade                                                               | [Saleh Kader](https://github.com/devsalula)        |
+|17/11/2019|0.9|Visão de Implantação|[Matheus Blanco](https://github.com/MatheusBlanco)
 
 ## 1 Introdução
 
@@ -371,7 +372,16 @@ tentar explicar a estrutura do projeto de uma forma lógica
 
 ## 7 Visão da Implantação
 
-explicar parte de devops, ci, cd, pipeline
+A implantação do sistema será realizada a partir do seguimento das seguintes etapas. Ela terá como objetivo garantir que as funcionalidades entregues para o produto sejam da melhor possível qualidade.
+
+![implantação](/images/doc-arquitetura/implantacao-1.png)
+
+| **DIA01**      | **Diagrama de implantação**                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------- |
+| **Versão**    | Atual: 1.0 (17/11)  |
+| **Descrição** | Diagrama representando as fases de implantação do sistema                             |
+| **Autor**     | [Matheus Blanco](https://github.com/MatheusBlanco)                |
+
 
 ## 8 Visão da Implementação
 
