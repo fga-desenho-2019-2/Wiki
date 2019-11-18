@@ -48,6 +48,8 @@ O Abstract factory foi utilizado no projeto a partir da utilização de componen
 
 ![Abstract Factory](../images/patterns/abstractfactory.png)
 
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/views/MenuPage/RestaurantMenu.vue)
+
 ### Objetivos & problemas sanados
 
 O objetivo da utilização deste padrão era o de se poder criar componentes dinamicamente renderizados, sendo que agora também é possível fornecer dois componentes em um mesmo espaço, permitindo que sejam usados de acordo com as necessidades do usuário.

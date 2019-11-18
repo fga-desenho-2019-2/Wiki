@@ -85,23 +85,39 @@ O padrão Command foi utilizado a partir da criação do arquivo **_Context.js_*
 
 ![Context](../images/patterns/Context.png)
 
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/context.js)
+
 As funções importadas no _**Context.js**_ se encontram separadas em arquivos JavaScript's, funcionais.
 
 ![Command](../images/patterns/handleAmmountCommand.png)
 
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleAmmount.js)
+
 ![Command](../images/patterns/handleQtdCommand.png)
+
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleQtd.js)
 
 ![Command](../images/patterns/loginCommand.png)
 
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/login.js)
+
 ![Command](../images/patterns/loginUserComnand.png)
+
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/loginUser.js)
 
 ![Command](../images/patterns/RegisterUserCommand.png)
 
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/registerUser.js)
+
 ![Command](../images/patterns/routeToCommand.png)
+
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/routeTo.js)
 
 A partir disso, nos arquivos **_.vue_** que receberiam as funções definidas no **_Context.js_**, o único arquivo poderia ser importado e as funções declaradas e utilizadas, sem a necessidade de passar qualquer parâmetro ou valor, como mostrado no exemplo abaixo, no arquivo Vue de autenticação de usuário.
 
 ![ExCommand](../images/patterns/commandVueEx.png)
+
+[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/views/Authentication/Auth.vue)
 
 ### Objetivos e problemas sanados
 
