@@ -4,8 +4,9 @@
 | ---------- | ------ | ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | 23/10/2019 | 0.1    | Criação do documento                     | [Elias Bernardo](https://github.com/ebmm01)                                                           |
 | 24/10/2019 | 0.2    | Adição do Strategy                       | [Guilherme Marques](https://github.com/guilhesme23) [Saleh Kader](https://github.com/devsalula)       |
-| 24/10/2019 | 0.3    | Adição do padrão de Factory Method       | [Shayane Alcantara](https://github.com/shayanealcantara) e [Sara Silva](https://github.com/sarasilva) |
+| 24/10/2019 | 0.3    | Adição do padrão de Factory Method       | [Shayane Alcantara](https://github.com/shayanealcantara) e [Sara Silva](https://github.com/silvasara) |
 | 25/10/2019 | 0.4    | Adição do padrão Chain of Responsibility | [Matheus Blanco](https://github.com/MatheusBlanco)                                                    |
+| 17/11/2019 | 0.5    |  Revisão e atualização do documento      | [Sara Silva](https://github.com/silvasara) |
 
 ## Introdução
 
@@ -61,19 +62,22 @@ Template Method é um padrão de design **comportamental** que define o "esquele
 
 ### Como foi utilizado no projeto
 
-O padrão foi selecionado para auxiliar no aproveitamento de linhas de código, por tratar-se de dados semelhantes nas classes definidas, podendo ser reaproveitado quando e o que for necessário. Ou seja, ele permite a delimitação de passos na ordem a serem executados e de que forma eles serão executados a depender da condição.
+O padrão foi selecionado para auxiliar no aproveitamento de linhas de código e no tratamento semelhante de dados nas classes de *views* no serviço de restaurante. O template pode ser reaproveitado quando e o que for necessário. Ele permite a delimitação de passos nos tratamentos das requisições do serviço: a ordem em que os passos serão executados e de que forma eles serão executados, a depender da condição.
 
-![](https://raw.githubusercontent.com/fga-desenho-2019-2/Wiki/develop/docs/images/diagramas-uml/class_diagram_restaurant_v2.jpg)
+Abaixo há algumas imagens da implementação do Template Method usado nas views do serviço de restaurante.
 
-### Objetivo & problema sanado
-
-O principal problema observado no código implementado foi a duplicação de diversas linhas de código. Com a adaptação do padrão, foi possível reduzir esse fator e assim, permitir uma melhor legibilidade do código em questão. A seguir segue a adaptação da implementação de uma parte das regras de serviço.
+Os códigos na íntegra, podem ser visualizados nos seguintes links: [Views](https://github.com/fga-desenho-2019-2/restaurant-service/blob/develop/restaurant_service/api/views.py) e [Image Views](https://github.com/fga-desenho-2019-2/restaurant-service/blob/develop/restaurant_service/api/image_views.py)
 
 ![restaurant_1](../images/patterns/restaurante_1.png)
 
 ![restaurant_2](../images/patterns/restaurant_2.png)
 
 ![restaurant_3](../images/patterns/restaurant_3.png)
+
+### Objetivo & problema sanado
+
+O principal problema observado no código implementado foi a repetição de diversas linhas de código. Com o uso do padrão, foi possível reduzir esse fator e assim, permitir uma melhor legibilidade do código em questão e evitar divergências entre tratamento de requisições, já que agora os tratamentos para todas as requisições seguem um template de passos. 
+
 
 ## Command
 
@@ -85,39 +89,39 @@ O padrão Command foi utilizado a partir da criação do arquivo **_Context.js_*
 
 ![Context](../images/patterns/Context.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/context.js)
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/context.js)
 
 As funções importadas no _**Context.js**_ se encontram separadas em arquivos JavaScript's, funcionais.
 
 ![Command](../images/patterns/handleAmmountCommand.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleAmmount.js)
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleAmmount.js)
 
 ![Command](../images/patterns/handleQtdCommand.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleQtd.js)
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleQtd.js)
 
 ![Command](../images/patterns/loginCommand.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/login.js)
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/login.js)
 
 ![Command](../images/patterns/loginUserComnand.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/loginUser.js)
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/loginUser.js)
 
 ![Command](../images/patterns/RegisterUserCommand.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/registerUser.js)
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/registerUser.js)
 
 ![Command](../images/patterns/routeToCommand.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/routeTo.js)
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/routeTo.js)
 
 A partir disso, nos arquivos **_.vue_** que receberiam as funções definidas no **_Context.js_**, o único arquivo poderia ser importado e as funções declaradas e utilizadas, sem a necessidade de passar qualquer parâmetro ou valor, como mostrado no exemplo abaixo, no arquivo Vue de autenticação de usuário.
 
 ![ExCommand](../images/patterns/commandVueEx.png)
 
-[O código](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/views/Authentication/Auth.vue)
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/views/Authentication/Auth.vue)
 
 ### Objetivos e problemas sanados
 
