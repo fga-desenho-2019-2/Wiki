@@ -15,7 +15,7 @@
 |22/08/2019|0.9| Adição do restante do tópico 3, sobre artefatos construídos.| Shayane Alcântara|
 |22/08/2019|0.10| Adição de Richpictures.| Pedro Rodrigues|
 |22/08/2019|0.11| Adição de Richpictures.| Guilherme Marques |
-
+|17/11/2019|1.0| Adição de conclusão e ajuste nas funcionalidades do tema escolhido | Shayane Alcântara |
 
 ## 1. Introdução
 Há diversas técnicas que visam auxiliar no processo de criação de produtos. Uma delas é o Design Sprint. Ele é uma metodologia que visa reunir os participantes multidisciplinares da dinâmica em uma série de 5 dias para no fim ter uma ideia de um produto mais tangível. Para cumprir as etapas, o grupo produz diversos artefatos para auxiliar neste percurso.
@@ -130,18 +130,16 @@ Aplicativo apresenta alguns bugs. E tem um banco de restaurantes bem limitados, 
 
 * Cadastro e Login
 * Integração com banco de dados de informações dos clientes
-* Notificação de pedido do cliente
+* Geração de senha para notificar o cliente
 * Integração com o sistema de pagamento
-* Mapa de mesas do restaurante
-* Chat de comunicação com o cliente
 
 ##### Web do cliente: 
 
 * Cadastro e Login
 * Tela com os restaurantes
 * Tela com o cardápio dos restaurantes
-* Chat de comunicação com o restaurante
 * Integração com sistemas de pagamentos
+* Notificação de pedido pronto na forma de uma senha
 * Perfil de usuário
 
 ### 4.3 Uber de guincho
@@ -222,7 +220,7 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ![poll-images](../images/poll_temas.png)
 
-* Como pode ser visto, o tema escolhido foi o **Restaurante QRcode.**
+* De acordo com a votação anônima, o tema escolhido para desenvolvimento durante o semestre na disciplina foi o **Restaurante QRcode.**
 
 ## 6. Artefatos
 
@@ -248,6 +246,8 @@ Após um período de debate entre o grupo, foi-se decidido que o tema seria esco
 
 ## 7. Conclusão
 
+A técnica de Design Sprint pode acrescentar na organização de propostas, visto que seguindo esta metodologia, adaptando ao nosso contexto, foi possível visualizá-las de uma forma organizada e com os pontos para verificar previamente sua viabilidade. A técnica mostra-se efetiva em empresas que buscam um produto ou serviço comercial e viável.
+
 ## 8. Referências
 
 Saiba Mais. The Design Sprint. Disponível em: <https://www.gv.com/sprint/>. Acesso em: 21 de agosto de 2019.
@@ -266,4 +266,4 @@ UNICAMP. Requisitos de Software. Disponível em: <http://www.ic.unicamp.br/~aria
 
 BRITO, Isabel. NFR Framework. Disponível em: <http://jaejaneiro.orgfree.com/engsofnfr.pdf>. Acesso em: 22 de agosto de 2019.
 
-BARROS, Diamara. A UTILIZAÇÃO DE HISTÓRIAS EM QUADRINHOS NA ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE. Disponível em: <http://repositorio.utfpr.edu.br/jspui/bitstream/1/3224/1/CP_PPGI_M_Barros%2C%20Diomara%20Martins%20Reigato_2017.pdf>. Acesso em: 22 de agosto de 2019.
+BARROS, Diamara. A utilização de histórias em quadrinhos na especificação de requisitos de software. Disponível em: <http://repositorio.utfpr.edu.br/jspui/bitstream/1/3224/1/CP_PPGI_M_Barros%2C%20Diomara%20Martins%20Reigato_2017.pdf>. Acesso em: 22 de agosto de 2019.
