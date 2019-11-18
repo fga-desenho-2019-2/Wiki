@@ -459,6 +459,7 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 
 #### Diagrama Entidade Relacionamento
 
+#### Versão 1.0
 ![DER](https://i.imgur.com/30hWV8J.png)
 
 | **DER03** | **DER**  |
@@ -466,6 +467,16 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
 | **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
 |**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Versão 2.0
+![DER](/images/modelagem-dados/conceitual_order-2.png)
+
+| **DER03** | **DER**  |
+|--|--|
+| **Versão**| Atual: 2.0 (16/09) <br> Anterior: [1.0](https://i.imgur.com/30hWV8J.png) | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima), [Matheus Blanco](https://github.com/MatheusBlanco) | 
+
 
 ### 9.2 Diagrama geral
 
@@ -502,6 +513,8 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 
 #### 9.2.2 Diagrama Entidade Relacionamento
 
+#### Versão 1.0
+
 ![DER](https://i.imgur.com/t8GjGTu.png)
 
 | **DER01** | **DER**  |
@@ -510,7 +523,15 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 | **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
 |**Autor**| [Alan Lima](https://github.com/alanrslima) | 
 
+#### Versão 2.0
 
+![DER](/images/modelagem-dados/Conceitual-2.png)
+
+| **DER01** | **DER**  |
+|--|--|
+| **Versão**| Atual: 2.0 (26/08) <br> Anterior: [1.0](https://i.imgur.com/t8GjGTu.png) | 
+| **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima), [Matheus Blanco](https://github.com/MatheusBlanco)| 
 
 ### 9.3 Dicionário de dados
 
@@ -562,14 +583,13 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 |id|chave estrangeira obrigatória|bigint|16|Identificação do pedido|
 
 
-#### 9.3.5 Entidade: StatusPedido
+#### 9.3.5 Entidade: Senha
 
-**Descrição**: Status de um pedido
+**Descrição**: Senha de um pedido
 
 |Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
 |-|-|-|-|-|
-|id|chave primária obrigatória|int|3|Identificação do status do pedido|
-|descricao|obrigatória|varchar|200|Descrição do status|
+|id|chave primária obrigatória|int|3|Identificação da senha do pedido|
 
 #### 9.3.6 Relacionamento: possui
 
@@ -798,6 +818,7 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 |latitude|chave estrangeira obrigatória|bigint|16|Latitude da localização do endereço|
 |longitude|chave estrangeira obrigatória|bigint|16|Longitude da localização do endereço|
 |bairro|obrigatória|varchar|20|Bairro onde o shopping se localiza|
+
 
 ## 10 Qualidade
 
