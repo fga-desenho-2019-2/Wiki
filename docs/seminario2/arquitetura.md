@@ -4,6 +4,7 @@
 |Data|Versão|Descrição|Autor|
 |-|-|-|-|
 |05/09/2019|0.1| Criação do documento, adição dos tópicos | [Alan Lima](https://github.com/alanrslima)|
+|17/11/2019|0.2| Revisão e atualização do documento | [Shayane Alcantara](https://github.com/shayanealcantara)
 
 ## Introdução
 
@@ -39,19 +40,19 @@ Conceitualmente falando, o modelo REST representa nada mais que uma possibilidad
 ### Microserviços e camadas
 A arquitetura e sua versão atual está particionada em:
 
-**1 - Front-End (Usuário)**
+**1 - Front-End (User)**
 
 - Esta fronteira é responsável por permitir a interação do usuário com sistema, é por ela que são feitos os pedidos nos restaurantes cadastrados.
 
-**2 - Front-End (Restaurante)**
+**2 - Front-End (Restaurant)**
 
-- Esta fronteira é responsável por permitir o cadastro dos restaurantes por parte dos donos de estabelicementos que irão fazer usa do sistema, assim como os seus respectivos cardápios, valores, etc.
+- Esta fronteira é responsável por permitir o cadastro dos restaurantes por parte dos donos de estabelecimentos que irão fazer uso do sistema, assim como os seus respectivos cardápios, valores, etc.
 
 **3 - Gateway**
 
 - Responsável por realizar a comunicação entre os micro serviços e o Front-End. Ele irá controlar todo o fluxo de dados e dimensionar para seus respectivos locais de persistência.
 
-**4 - Costumer, Restaurant, Order e Payment Service**
+**4 - Restaurant e Order**
 
 - Micro serviços responsáveis pela função de DW (Data warehouse), depósito onde se é persistido e mantido os dados relevantes para o sistema. Através de uma API, disponibilizam os dados para a o gateway.
 

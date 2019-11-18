@@ -88,7 +88,7 @@ Os diagramas a seguir ilustram a relação do microsserviço de usuário com alg
 | **Descrição** | Diagrama de estado que exibe todos os possíveis estados para um pedido. |
 |**Autor**| [Elias Bernardo](https://github.com/ebmm01) e [Leonardo Barreiros](https://github.com/leossb36)|
 
-### 3.2 Instância VUE
+### 3.2 Instância Vue.js
 
 ![diagrama_estado_vue.png](../images/diagramas-uml/diagrama_estado_vue.png)
 

@@ -11,10 +11,6 @@ A técnica de Storytelling é utilizada para a elicitação de requisitos de sof
 
 ## Storytelling 1 - Visão de Usuário
 
-**Autor: Matheus Salles Blanco**
-
-**Revisão: Saleh Kader**
-
 Sabe aquele amigo que todo mundo tem, que come que nem um condenado e não engorda um mísero quilo? Que você olha e pensa: que inveja lascada.
 
 Pois é. Eu sou esse tipo de amigo. E não aquele tipo que come muitas comidas em geral, balanceadas e tal, eu sou aquele tipo que come muita besteira, o tempo todo. Meu passatempo preferido é ir no Burger King da esquina e pedir um Whooper com balde de batata, coisa que faço umas 3 vezes por semana. Já que eu posso, tenho que aproveitar né?
@@ -47,12 +43,13 @@ Vinte minutos depois, meu celular apita e  a mensagem: “Seu pedido está pront
 
 Achei muito interessante toda a experiência, principalmente pelo fato de que não tive de enfrentar nenhuma fila. Só cheguei, sentei, pedi, paguei, comi e fui embora. Achei uma iniciativa muito legal, pois meu conforto foi praticamente maximizado, em comparação com todas as outras vezes que fui em uma praça de alimentação, o que foi bem legal. E eu só percebi isso depois de terminar de comer, quando me levantei, olhei ao meu redor e vi que nenhuma lanchonete tinha uma fila no caixa, apesar da praça estar lotada.
 
+| **-** | **Storytelling** |
+|--|--|
+| **Versão** | Atual: 1.0 (22/08/19) <br> Anterior: - |
+| **Descrição** | Storytelling  |
+| **Autor** | [Matheus Blanco](https://github.com/MatheusBlanco) e Revisão de [Saleh Kader](https://github.com/devsalula) |
 
 ## Storytelling 2 - Visão de Vendedor
-
-**Autor: Matheus Salles Blanco**
-
-**Revisão: Saleh Kader**
 
 Tecnologia é uma coisa que, ao mesmo tempo, pode ser muito boa é muito estranha. A influência que ela consegue exercer em cima das coisas do dia-a-dia é algo que impressiona. Coisas tão básicas e essenciais sofrem com um processo de criação e inovação tão forte que acaba por mudar toda a nossa experiência com a determinada tarefa. Parece que a tecnologia está mesmo chegando para ficar, e para alterar completamente nossas vidas.
 
@@ -85,6 +82,11 @@ São informações bem básicas, o que significa que nós basicamente tivemos qu
 
 Alguns meses se passaram e o shopping finalmente inaugurou e, com ele, o novo site de pedidos. Devo dizer que os resultados até o momento têm sido ótimos.
 
+| **-** | **Storytelling 2** |
+|--|--|
+| **Versão** | Atual: 1.0 (22/08/19) <br> Anterior: - |
+| **Descrição** | Storytelling 2 |
+| **Autor** | [Matheus Blanco](https://github.com/MatheusBlanco) e Revisão de [Saleh Kader](https://github.com/devsalula) |
 
 ## Referências
 
