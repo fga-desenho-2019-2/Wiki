@@ -56,32 +56,32 @@ Sass é uma extensão de CSS que permite o uso de variáveis, regras de alinhame
 
 #### Django REST
 
-O **framework** Django REST é um conjunto de ferramentas otimizada para a construção de Web APIs em Python.
+O **framework** Django REST é um conjunto de ferramentas otimizada para a construção de Web APIs em Python. O framework foi escolhido mediante votação pelos membros, visto que a maioria possuia conhecimento desta tecnologia. 
 
 #### Flask
 
-Flask pe um micro-framework em Python que provê um modelo simples para desenvolvimento web.
+Flask é um micro-framework em Python que provê um modelo simples para desenvolvimento web. Como estamos lidando com uma arquitetura de microsserviços, que são indenpendentes entre si, foi possível utilizar este framework pela facilidade de manuseio e desenvolvimento.
 
 #### Microserviços
 
 A arquitetura de microserviços é uma solução arquitetural distribuída que desmembra o sistema da aplicação em pequenos blocos independentes, chamados de serviços. Cada um possuíndo seus próprios processos e banco de dados e se comunicam entre si através de requiisções HTTP.
 Os serviços utilizados na aplicação serão:
 
-- **Restaurante**, serviço responsável por conter as informações a respeito do shopping, restaurantes e cardápios. Desenvolvido utilizando Django REST
-- **Pedidos**, serviço responsável por tratar toda a lógica que envolve um pedido, desde quando pe feito até ser concluído. Desenvolvido utilizando Django REST
-- **Usuário**, serviço responsável por conter as lógicas de autenticação e armazenar as informações dos usuários e seus cartões. Desenvolvido utilizando Django REST
-- **Gateway**, serviço responsável por intermediar a comunicação entre os demais serviços. Desenvolvido utilizando Flask
-- **Frontend**, serviço responsável por ser a interface entre o sistema e o usuário. Desenvolvido em Vue
+- **Restaurante**, serviço responsável por conter as informações a respeito do shopping, restaurantes e cardápios. Desenvolvido utilizando Django REST.
+- **Pedidos**, serviço responsável por tratar toda a lógica que envolve um pedido, desde quando é produzido até ser concluído. Desenvolvido utilizando Django REST.
+- **Usuário**, serviço responsável por conter as lógicas de autenticação e armazenar as informações dos usuários e seus cartões. Desenvolvido utilizando Django REST.
+- **Gateway**, serviço responsável por intermediar a comunicação entre os demais serviços. Desenvolvido utilizando Flask.
+- **Frontend**, serviço responsável por ser a interface entre o sistema e o usuário. Desenvolvido em Vue.js.
 
 #### Comunicação entre serviços
 
-A comunicação entre os serviços será realizada através da API Gateway, responsável por utilizar o protocolo HTTP para intermediar a comunicação.
+A comunicação entre os serviços será realizada através da API Gateway, responsável por utilizar o protocolo HTTP para intermediar a comunicação, cada um com seu banco de dados, exceto o Gateway.
 
 ### 2.2 Diagrama de Arquitetura
 
 ![representacao-arquitetural](../images/doc-arquitetura/arquitetura.jpg)
 
-**Obs.**: Foi realizada uma mudança na arquitetura original do projeto, sendo removidas o Frontend de interação com o restaurante, sendo substituído por um acesso especializado ao backend do sistema, para que o QRComer possa ser facilmente integrado à sistemas já existentes. Além disso foi removido o serviço de pagamento, tendo em vista que para o escopo da disciplina o serviço se mostrou muito complexo.
+**Obs.**: Foi realizada uma mudança na arquitetura original do projeto, sendo removidas o Frontend de interação com o restaurante, sendo substituído por um acesso especializado ao backend do sistema, para que o QRComer possa ser facilmente integrado à sistemas já existentes. Além disso foi removido o serviço de pagamento, tendo em vista que para o escopo da disciplina o serviço mostrou-se inviável.
 
 ## 3 Requisitos e Restrições Arquiteturais
 
@@ -241,7 +241,7 @@ tentar explicar a estrutura do projeto de uma forma lógica
 
 ### 6.1 Processo de cadastro de usuário:
 
-![cadastro de usuário](/images/diagramas-uml/Sequencia_cadastrar_usuário_v1.png)
+![cadastro de usuário](../images/diagramas-uml/Sequencia_cadastrar_usuário_v1.png)
 
 | **DS02**      | **Diagrama de sequência de cadastro de usuário**                                  |
 | ------------- | --------------------------------------------------------------------------------- |
@@ -259,7 +259,7 @@ tentar explicar a estrutura do projeto de uma forma lógica
 
 ### 6.2 Processo de login de usuário:
 
-![login de usuário](/images/diagramas-uml/Sequencia_login_usuario_v1.png)
+![login de usuário](../images/diagramas-uml/Sequencia_login_usuario_v1.png)
 
 | **DS02**      | **Diagrama de sequência de login de usuário**  |
 | ------------- | ---------------------------------------------- |
@@ -299,7 +299,7 @@ tentar explicar a estrutura do projeto de uma forma lógica
 
 ### 6.4 Processo de cadastro de cartão
 
-![cadastro de cartão](/images/diagramas-uml/Sequencia_cadastrar_cartao_v1.png)
+![cadastro de cartão](../images/diagramas-uml/Sequencia_cadastrar_cartao_v1.png)
 
 | **DS02**      | **Diagrama de sequência de cadastro de cartão** |
 | ------------- | ----------------------------------------------- |
@@ -372,9 +372,9 @@ tentar explicar a estrutura do projeto de uma forma lógica
 
 ## 7 Visão da Implantação
 
-A implantação do sistema será realizada a partir do seguimento das seguintes etapas. Ela terá como objetivo garantir que as funcionalidades entregues para o produto sejam da melhor possível qualidade.
+A implantação do sistema será realizada a partir do seguimento das seguintes etapas. Ela terá como objetivo garantir que as funcionalidades entregues para o produto possua a melhor qualidade possível.
 
-![implantação](/images/doc-arquitetura/implantacao-1.png)
+![implantação](../images/doc-arquitetura/implantacao-1.png)
 
 | **DIA01**      | **Diagrama de implantação**                                                  |
 | ------------- | -------------------------------------------------------------------------------------------------------- |
@@ -387,7 +387,7 @@ A implantação do sistema será realizada a partir do seguimento das seguintes 
 
 A implementação do sistema é composto de 6 componentes externos, sendo eles servidores e o smartphone do usuário.
 Cada um dos microserviços apresenta um servidor próprio, onde se encontra sua rest API e seu banco de dados. Enquanto isso o servidor do frontend apresenta apenas um componente, sendo ele o próprio frontend em Vue, já que não necessita de um banco de dados.
-Toda comunicação entre servidores é feita através protocolo http, enquanto a comunicação entre api e banco de dados é realizada via tcp/ip.
+Toda comunicação entre servidores é feita através protocolo HTTP, enquanto a comunicação entre a API e banco de dados é realizada via TCP/IP.
 
 ![diagrama-implementacao](../assets/images/../../images/doc-arquitetura/implementacao.png)
 
@@ -423,7 +423,7 @@ O **usuário** possui como atributos cpf como chave primária, e-mail, nome e se
 
 O microsserviço de restaurante faz uso de uma série de entidades e relacionamentos, pelo fato de necessitar de uma quantidade maior de dados para que seu funcionamento seja otimizado. A entidade **restaurante** possui **horários de funcionamento**, **categorias** e **cardápios**, além de estar inserida dentro de um **shopping**. Ela recebe a chave primária CNPJ do **shopping** para utilizar como identificador, além de ter seu próprio CNPJ, que transmite para outras entidades. As entidades **horário de funcionamento**, **categoria** e **cardápio** possuem seus identificadores próprios, além de **nome/descrição/horaFinal** e **horaInicial** para utilização nos modelos de dados. 
 
-A entidade **cardápio** possui dentro de sim uma série de **itens**, que possuem seus próprios atributos de identificação. Diferentemente das outras entidades, **itens** também possui o atributo valor, o qual irá definir os preços dos **itens** específicos. **Itens** pode ser classificado, ainda, em **categorias de itens**, as quais irão filtrar ainda mais a entidade.
+A entidade **cardápio** possui dentro de si uma série de **itens**, que possuem seus próprios atributos de identificação. Diferentemente das outras entidades, **itens** também possui o atributo valor, o qual irá definir os preços dos **itens** específicos. **Itens** pode ser classificado, ainda, em **categorias de itens**, as quais irão filtrar ainda mais a entidade.
 
 Em relação a funcionamento, **shopping** possui **restaurantes** cadastrados em seu banco de dados, o qual tem **horarios de funcionamento** e é filtrado por **categorias**. O **restaurante** possui um **cardápio** de **itens**, cada qual contendo sua própria **categoria**, valores, descrição e tempo de preparo. O usuário é capaz de interagir com a plataforma graças a este banco de dados, em sua maior parte. O fluxo de interação com o serviço de restaurante se inicia após o login/cadastro, quando o usuário consegue acessar o shopping e seus respectivos restaurantes. Quando em um restaurante, o usuário escolhe um item e o adiciona à sacola de pedidos.
 
@@ -459,6 +459,7 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 
 #### Diagrama Entidade Relacionamento
 
+#### Versão 1.0
 ![DER](https://i.imgur.com/30hWV8J.png)
 
 | **DER03** | **DER**  |
@@ -466,6 +467,16 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 | **Versão**| Atual: 1.0 (16/09) <br> Anterior: - | 
 | **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
 |**Autor**| [Alan Lima](https://github.com/alanrslima) | 
+
+#### Versão 2.0
+![DER](/images/modelagem-dados/conceitual_order-2.png)
+
+| **DER03** | **DER**  |
+|--|--|
+| **Versão**| Atual: 2.0 (16/09) <br> Anterior: [1.0](https://i.imgur.com/30hWV8J.png) | 
+| **Descrição** | Diagrama Entidade Relacionamento para o microserviço de pedidos | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima), [Matheus Blanco](https://github.com/MatheusBlanco) | 
+
 
 ### 9.2 Diagrama geral
 
@@ -502,6 +513,8 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 
 #### 9.2.2 Diagrama Entidade Relacionamento
 
+#### Versão 1.0
+
 ![DER](https://i.imgur.com/t8GjGTu.png)
 
 | **DER01** | **DER**  |
@@ -510,7 +523,15 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 | **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
 |**Autor**| [Alan Lima](https://github.com/alanrslima) | 
 
+#### Versão 2.0
 
+![DER](/images/modelagem-dados/Conceitual-2.png)
+
+| **DER01** | **DER**  |
+|--|--|
+| **Versão**| Atual: 2.0 (26/08) <br> Anterior: [1.0](https://i.imgur.com/t8GjGTu.png) | 
+| **Descrição** | Diagrama Entidade Relacionamento para a aplicação | 
+|**Autor**| [Alan Lima](https://github.com/alanrslima), [Matheus Blanco](https://github.com/MatheusBlanco)| 
 
 ### 9.3 Dicionário de dados
 
@@ -562,14 +583,13 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 |id|chave estrangeira obrigatória|bigint|16|Identificação do pedido|
 
 
-#### 9.3.5 Entidade: StatusPedido
+#### 9.3.5 Entidade: Senha
 
-**Descrição**: Status de um pedido
+**Descrição**: Senha de um pedido
 
 |Atributo|Propriedades do Atributo| Tipo de dado|Tamanho|Descrição|
 |-|-|-|-|-|
-|id|chave primária obrigatória|int|3|Identificação do status do pedido|
-|descricao|obrigatória|varchar|200|Descrição do status|
+|id|chave primária obrigatória|int|3|Identificação da senha do pedido|
 
 #### 9.3.6 Relacionamento: possui
 
@@ -799,9 +819,14 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 |longitude|chave estrangeira obrigatória|bigint|16|Longitude da localização do endereço|
 |bairro|obrigatória|varchar|20|Bairro onde o shopping se localiza|
 
+
 ## 10 Qualidade
 
-No padrão de qualidade da arquitetura, o modelo arquitetural escolhido para o projeto facilita na escalabilidade da aplicação. A arquitetura de microsserviços por atuar de forma desacoplada ela distribui as responsabilidades da aplicação em pequenos serviços, descomplicando o desenvolvimento. O desacoplamento também contribui para a manutenabilidade da aplicação. Por fim, o padrão de microsserviços possui uma boa Reliabilidade, por permitir que caso um dos pequenos serviços que esteja atuando sofra algum problema, ele não prejudica todo o resto da aplicação, permitindo que outros microsserviços funcionem de maneira independente. 
+No padrão de qualidade da arquitetura, o modelo arquitetural escolhido para o projeto facilita na escalabilidade da aplicação. A arquitetura de microsserviços por atuar de forma desacoplada distribui as responsabilidades da aplicação em pequenos serviços, descomplicando o desenvolvimento. 
+
+O desacoplamento também contribui para a manutenabilidade da aplicação. Por fim, o padrão de microsserviços possui uma boa Reliabilidade, por permitir que caso um dos pequenos serviços que esteja atuando sofra algum problema, ele não prejudica todo o resto da aplicação, permitindo que outros microsserviços funcionem de maneira independente. 
+
+Além disso, os testes unitários e de requisição também mostraram-se importantes e essenciais para a garantia de qualidade de requisições. Foram realizados testes nos microsserviços, utilizando a biblioteca Pytest. Os critérios de qualidade para os testes são definidos com uma cobertura de 80%. Já no frontend, devido à delimitação do escopo que a disciplina demanda, os testes em Vue.js não serão realizados. 
 
 <!-- Mostrar formas de medir qualidade do código e do produto, cobertura de testes por exemplo -->
 
@@ -819,7 +844,7 @@ Sendo assim, o mesmo não ocupa espaço físico nos aparelhos dos usuários, res
 
 A arquitetura escolhida pelo grupo foi a arquitetura de microsserviços. Com essa arquitetura, a aplicação do QrComer foi desmembrada em pequenos componentes responsáveis por executar uma função diferente da aplicação. Os microsserviços podem criados e implantados de maneira independentes, assim caso um dos microsserviços seja comprometido, os microsserviços remanescentes continuarão funcionando normalmente e a aplicação não ficará tão prejudicada.
 
-O grupo escolheu a arquitetura de microsserviços pela facilidade de desenvolvimento. Além disso, essa arquitetura permite que o desenvolvimento possa ser simultâneo, diminuindo o tempo de entrega e tornando a aplicação facilmente escalável.
+O grupo escolheu a arquitetura de microsserviços pela facilidade de desenvolvimento e experiência dos desenvolvedores. Além disso, essa arquitetura permite que o desenvolvimento possa ser simultâneo, diminuindo o tempo de entrega e tornando a aplicação facilmente escalável.
 
 ### Padrão Arquitetural no Back
 
