@@ -7,8 +7,8 @@
 |20/08/2019|0.3| Revisão de objetivos, adição de  critérios de sucesso | Matheus Blanco |
 |20/08/2019|0.4| Adição dos Custo de Mão de Obra, Logística e Aquisições | Saleh Kader |
 |20/08/2019|0.5| Adição Infraestrutura | Guilherme Marques |
-|21/08/2019|0.6| Refatorando Referências, Refatorando Estimativa de Custo, Adição Custos Totais, Adição Critérios de Pronto para o Projeto | Saleh Kader
-|22/08/2019|0.7| Refatorando Referências, Refatorando Estimativa de Custo, Adição Custos Totais, Adição Critérios de Pronto para o Projeto | Saleh Kader
+|21/08/2019|0.6| Refatorando Referências, Refatorando Estimativa de Custo, Adição Custos Totais, Adição Critérios de Pronto para o Projeto | Saleh Kader |
+|22/08/2019|0.7| Refatorando Referências, Refatorando Estimativa de Custo, Adição Custos Totais, Adição Critérios de Pronto para o Projeto | Saleh Kader |
 
 ## Stakeholders
 
@@ -56,7 +56,7 @@ Na tabela abaixo estão listados os objetivos com seus respectivos critérios de
 
 A solução, em alto nível, deverá seguir as seguintes diretrizes:
 
-* Deverá estar disponível de forma responsiva para plataforma _Web_ e ser acessível a partir da leitura do QR _code_ em um dos estabelecimentos;
+* Deverá estar disponível de forma responsiva para plataforma _Web_ e ser acessível a partir da leitura do QR _code_ em um shopping;
 
 * Deverá ter um _design_ simples, que seja objetivo para que o usuário consiga realizar com rapidez o que deseja e que ainda trasmita segurança e conforto para o mesmo;
 
@@ -140,7 +140,7 @@ Fazendo as somas de todos os tipos de custos, chegamos aos custos de todo o proj
 
 ## Critérios de Pronto para o Projeto
 
-A finalização do projeto do **QR Comer** será alcançado quando todo o software estiver desenvolvido e todos os testes e documentação técnica do projeto estiver implementado dentro dos limites de prazo e custos estabelecidos nesse documento. 
+A finalização do projeto do **QR Comer** será alcançado quando todo o software estiver desenvolvido e todos os testes e documentação técnica do projeto estiver implementado dentro dos limites de prazo e custos estabelecidos neste documento. 
 
 ## Referências
 
@@ -157,5 +157,3 @@ A finalização do projeto do **QR Comer** será alcançado quando todo o softwa
 >BSB Coworking. Página Sala de Reunião. Disponível em: <https://bsbcoworking.com.br/produto/sala-de-reuniao-1-hora/>. Acesso em 20 de Agosto de 2019.
 
 >Digital Ocean. Página Pricing. Disponível em: <https://www.digitalocean.com/pricing/>. Acesso em 20 de Agosto de 2019.
-
->GoDaddy. Página Domain Search. Disponível em: <https://br.godaddy.com/domainsearch/find?isc=gt02br20&checkAvail=1&tmskey=1dom_03_godaddyb&domainToCheck=qrcomer.com>. Acesso em 21 de Agosto de 2019.

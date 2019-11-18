@@ -19,4 +19,4 @@ Com base nos requisitos não-funcionais que são padronizados e priorizado para 
 
 ## 3. Referências
 
-RE-Tools, acessado: em Agosto de 2019 - [RE-Tools: A Multi-notational Requirements Modeling Toolkit](https://personal.utdallas.edu/~supakkul/tools/RE-Tools/quantitative-reasoning.html)
+RE-Tools. [RE-Tools: A Multi-notational Requirements Modeling Toolkit](https://personal.utdallas.edu/~supakkul/tools/RE-Tools/quantitative-reasoning.html). Acesso em: 08/2019.
