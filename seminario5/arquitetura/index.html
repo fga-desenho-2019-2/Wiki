@@ -1,0 +1,4907 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Repositório da disciplina de QR Comer">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Documento de Arquitetura - QR Comer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../assets/css/landing-page.css">
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#historico-de-revisao" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="QR Comer" class="md-header-nav__button md-logo">
+          
+            <img src="../../assets/img/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                QR Comer
+              </span>
+              <span class="md-header-nav__topic">
+                Documento de Arquitetura
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/fga-desenho-2019-2/Wiki/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="QR Comer" class="md-nav__button md-logo">
+      
+        <img src="../../assets/img/logo.png" width="48" height="48">
+      
+    </a>
+    QR Comer
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/fga-desenho-2019-2/Wiki/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Dinâmica e Seminário I
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Dinâmica e Seminário I
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario1/tap/" title="Termo de abertura de projeto" class="md-nav__link">
+      Termo de abertura de projeto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario1/design_sprint/" title="Design Sprint" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Dinâmica e Seminário II
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Dinâmica e Seminário II
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario2/metodologia/" title="Metodologia" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario2/metodologia-elicitacao/" title="Metodologia - Elicitação de Requisitos" class="md-nav__link">
+      Metodologia - Elicitação de Requisitos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario2/padroes_processos/" title="Padronizações e Processos" class="md-nav__link">
+      Padronizações e Processos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario2/diagramas/" title="Diagramas" class="md-nav__link">
+      Diagramas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario2/arquitetura/" title="Arquitetura" class="md-nav__link">
+      Arquitetura
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Dinâmica e Seminário III
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Dinâmica e Seminário III
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario3/diagramas_estaticos/" title="Diagramas estáticos" class="md-nav__link">
+      Diagramas estáticos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario3/diagramas_dinamicos/" title="Diagramas dinâmicos" class="md-nav__link">
+      Diagramas dinâmicos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dinâmica e Seminário IV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Dinâmica e Seminário IV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      GoF's
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        GoF's
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario4/criacionais/" title="Criacionais" class="md-nav__link">
+      Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario4/estruturais/" title="Estruturais" class="md-nav__link">
+      Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario4/comportamentais/" title="Comportamentais" class="md-nav__link">
+      Comportamentais
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../seminario4/emergentes/" title="Emergentes & Consumidos" class="md-nav__link">
+      Emergentes & Consumidos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Seminário V
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Seminário V
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Documento de Arquitetura
+      </label>
+    
+    <a href="./" title="Documento de Arquitetura" class="md-nav__link md-nav__link--active">
+      Documento de Arquitetura
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisao" title="Histórico de Revisão" class="md-nav__link">
+    Histórico de Revisão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" title="1 Introdução" class="md-nav__link">
+    1 Introdução
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-finalidade" title="1.1 Finalidade" class="md-nav__link">
+    1.1 Finalidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" title="1.2 Escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" title="1.3 Definições, Acrônimos e Abreviações" class="md-nav__link">
+    1.3 Definições, Acrônimos e Abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" title="1.4 Referências" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-da-arquitetura" title="2 Representação da Arquitetura" class="md-nav__link">
+    2 Representação da Arquitetura
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-componentes-importantes" title="2.1 Componentes Importantes" class="md-nav__link">
+    2.1 Componentes Importantes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vue" title="Vue" class="md-nav__link">
+    Vue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sass" title="Sass" class="md-nav__link">
+    Sass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#django-rest" title="Django REST" class="md-nav__link">
+    Django REST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask" title="Flask" class="md-nav__link">
+    Flask
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microservicos" title="Microserviços" class="md-nav__link">
+    Microserviços
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comunicacao-entre-servicos" title="Comunicação entre serviços" class="md-nav__link">
+    Comunicação entre serviços
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-diagrama-de-arquitetura" title="2.2 Diagrama de Arquitetura" class="md-nav__link">
+    2.2 Diagrama de Arquitetura
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-requisitos-e-restricoes-arquiteturais" title="3 Requisitos e Restrições Arquiteturais" class="md-nav__link">
+    3 Requisitos e Restrições Arquiteturais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-de-caso-de-uso" title="4 Visão de Caso de Uso" class="md-nav__link">
+    4 Visão de Caso de Uso
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-caso-de-uso-da-aplicacao-com-requisitos-de-priorizacao-must-have" title="4.1 Caso de Uso da aplicação com requisitos de priorização Must have" class="md-nav__link">
+    4.1 Caso de Uso da aplicação com requisitos de priorização Must have
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-atores" title="4.1.1 Atores" class="md-nav__link">
+    4.1.1 Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-descricao-dos-casos-de-uso" title="4.1.2 Descrição dos Casos de Uso" class="md-nav__link">
+    4.1.2 Descrição dos Casos de Uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visao-logica" title="5 Visão Lógica" class="md-nav__link">
+    5 Visão Lógica
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-diagramas-de-pacotes" title="5.1 Diagramas de Pacotes" class="md-nav__link">
+    5.1 Diagramas de Pacotes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-back-end" title="5.1.1 Back-End" class="md-nav__link">
+    5.1.1 Back-End
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-front-end" title="5.1.2 Front-end" class="md-nav__link">
+    5.1.2 Front-end
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-diagrama-de-classes-e-microservicos" title="5.2 Diagrama de classes e microserviços" class="md-nav__link">
+    5.2 Diagrama de classes e microserviços
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-diagrama-de-classes-do-microsservico-de-usuario" title="5.2.1 Diagrama de classes do microsserviço de usuário" class="md-nav__link">
+    5.2.1 Diagrama de classes do microsserviço de usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-diagrama-de-classes-do-microsservico-de-restaurante" title="5.2.2 Diagrama de classes do microsserviço de Restaurante" class="md-nav__link">
+    5.2.2 Diagrama de classes do microsserviço de Restaurante
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-diagrama-de-classes-do-microsservico-de-pedidos" title="5.2.3 Diagrama de classes do microsserviço de Pedidos" class="md-nav__link">
+    5.2.3 Diagrama de classes do microsserviço de Pedidos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visao-de-processo" title="6 Visão de Processo" class="md-nav__link">
+    6 Visão de Processo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-processo-de-cadastro-de-usuario" title="6.1 Processo de cadastro de usuário:" class="md-nav__link">
+    6.1 Processo de cadastro de usuário:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-processo-de-login-de-usuario" title="6.2 Processo de login de usuário:" class="md-nav__link">
+    6.2 Processo de login de usuário:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-processo-de-realizacao-de-pedido" title="6.3 Processo de realização de pedido" class="md-nav__link">
+    6.3 Processo de realização de pedido
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-processo-de-cadastro-de-cartao" title="6.4 Processo de cadastro de cartão" class="md-nav__link">
+    6.4 Processo de cadastro de cartão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-processo-de-cadastro-de-restaurante-no-back-end" title="6.5 Processo de cadastro de restaurante no back-end" class="md-nav__link">
+    6.5 Processo de cadastro de restaurante no back-end
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-processo-de-checagem-de-pedidos-antigos" title="6.6 Processo de checagem de pedidos antigos" class="md-nav__link">
+    6.6 Processo de checagem de pedidos antigos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-processo-de-checagem-de-pedidos-ativos" title="6.7 Processo de checagem de pedidos ativos" class="md-nav__link">
+    6.7 Processo de checagem de pedidos ativos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visao-da-implantacao" title="7 Visão da Implantação" class="md-nav__link">
+    7 Visão da Implantação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-visao-da-implementacao" title="8 Visão da Implementação" class="md-nav__link">
+    8 Visão da Implementação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-visao-de-dados" title="9 Visão de Dados" class="md-nav__link">
+    9 Visão de Dados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-diagramas" title="9.1 Diagramas" class="md-nav__link">
+    9.1 Diagramas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#911-costumer-service" title="9.1.1 Costumer Service" class="md-nav__link">
+    9.1.1 Costumer Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-entidade-relacionamento" title="Diagrama Entidade Relacionamento" class="md-nav__link">
+    Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#912-restaurant-service" title="9.1.2 Restaurant Service" class="md-nav__link">
+    9.1.2 Restaurant Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-entidade-relacionamento_1" title="Diagrama Entidade Relacionamento" class="md-nav__link">
+    Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-10" title="Versão 1.0" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20" title="Versão 2.0" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#913-order-service" title="9.1.3 Order Service" class="md-nav__link">
+    9.1.3 Order Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-entidade-relacionamento_2" title="Diagrama Entidade Relacionamento" class="md-nav__link">
+    Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-10_1" title="Versão 1.0" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20_1" title="Versão 2.0" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-diagrama-geral" title="9.2 Diagrama geral" class="md-nav__link">
+    9.2 Diagrama geral
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#921-modelo-entidade-relacionamento" title="9.2.1 Modelo Entidade Relacionamento" class="md-nav__link">
+    9.2.1 Modelo Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#922-diagrama-entidade-relacionamento" title="9.2.2 Diagrama Entidade Relacionamento" class="md-nav__link">
+    9.2.2 Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-10_2" title="Versão 1.0" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20_2" title="Versão 2.0" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-dicionario-de-dados" title="9.3 Dicionário de dados" class="md-nav__link">
+    9.3 Dicionário de dados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#931-entidade-cartao" title="9.3.1 Entidade: Cartão" class="md-nav__link">
+    9.3.1 Entidade: Cartão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#932-entidade-usuario" title="9.3.2 Entidade: Usuário" class="md-nav__link">
+    9.3.2 Entidade: Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#933-entidade-avaliacao_pedido" title="9.3.3 Entidade: Avaliação_Pedido" class="md-nav__link">
+    9.3.3 Entidade: Avaliação_Pedido
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#934-relacionamento-possui" title="9.3.4 Relacionamento: possui" class="md-nav__link">
+    9.3.4 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#935-entidade-senha" title="9.3.5 Entidade: Senha" class="md-nav__link">
+    9.3.5 Entidade: Senha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#936-relacionamento-possui" title="9.3.6 Relacionamento: possui" class="md-nav__link">
+    9.3.6 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#937-entidade-itemcardapio" title="9.3.7 Entidade: ItemCardapio" class="md-nav__link">
+    9.3.7 Entidade: ItemCardapio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#938-relacionamento-possui" title="9.3.8 Relacionamento: possui" class="md-nav__link">
+    9.3.8 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#939-entidade-categoriacardapio" title="9.3.9 Entidade: CategoriaCardapio" class="md-nav__link">
+    9.3.9 Entidade: CategoriaCardapio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9310-relacionamento-possui" title="9.3.10 Relacionamento: possui" class="md-nav__link">
+    9.3.10 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9311-entidade-cardapio" title="9.3.11 Entidade: Cardapio" class="md-nav__link">
+    9.3.11 Entidade: Cardapio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9312-relacionamento-possui" title="9.3.12 Relacionamento: possui" class="md-nav__link">
+    9.3.12 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9313-entidade-estabelecimento" title="9.3.13 Entidade: Estabelecimento" class="md-nav__link">
+    9.3.13 Entidade: Estabelecimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9314-relacionamento-possui" title="9.3.14 Relacionamento: possui" class="md-nav__link">
+    9.3.14 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9315-entidade-categoriaestabelecimento" title="9.3.15 Entidade: CategoriaEstabelecimento" class="md-nav__link">
+    9.3.15 Entidade: CategoriaEstabelecimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9316-relacionamento-realiza" title="9.3.16 Relacionamento: realiza" class="md-nav__link">
+    9.3.16 Relacionamento: realiza
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9317-relacionamento-em" title="9.3.17 Relacionamento: em" class="md-nav__link">
+    9.3.17 Relacionamento: em
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9318-relacionamento-possui" title="9.3.18 Relacionamento: possui" class="md-nav__link">
+    9.3.18 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9319-entidade-categoriaitem" title="9.3.19 Entidade: CategoriaItem" class="md-nav__link">
+    9.3.19 Entidade: CategoriaItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9320-relacionamento-tem" title="9.3.20 Relacionamento: tem" class="md-nav__link">
+    9.3.20 Relacionamento: tem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9321-entidade-itemcategoria" title="9.3.21 Entidade: ItemCategoria" class="md-nav__link">
+    9.3.21 Entidade: ItemCategoria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9322-relacionamento-possui" title="9.3.22 Relacionamento: possui" class="md-nav__link">
+    9.3.22 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9323-entidade-horariofuncionamento" title="9.3.23 Entidade: HorarioFuncionamento" class="md-nav__link">
+    9.3.23 Entidade: HorarioFuncionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9324-relacionamento-possui" title="9.3.24 Relacionamento: possui" class="md-nav__link">
+    9.3.24 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9325-entidade-shopping" title="9.3.25 Entidade: Shopping" class="md-nav__link">
+    9.3.25 Entidade: Shopping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9326-entidade-telefone" title="9.3.26 Entidade: telefone" class="md-nav__link">
+    9.3.26 Entidade: telefone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9327-relacionamento-possui" title="9.3.27 Relacionamento: possui" class="md-nav__link">
+    9.3.27 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9328-entidade-endereco" title="9.3.28 Entidade: Endereço" class="md-nav__link">
+    9.3.28 Entidade: Endereço
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-qualidade" title="10 Qualidade" class="md-nav__link">
+    10 Qualidade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-tamanho-e-desempenho" title="11 Tamanho e Desempenho" class="md-nav__link">
+    11 Tamanho e Desempenho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-modelospadroes-arquiteturais" title="12 Modelos/Padrões Arquiteturais" class="md-nav__link">
+    12 Modelos/Padrões Arquiteturais
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsservicos" title="Microsserviços" class="md-nav__link">
+    Microsserviços
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padrao-arquitetural-no-backend" title="Padrão Arquitetural no Backend" class="md-nav__link">
+    Padrão Arquitetural no Backend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padrao-arquitetural-no-frontend" title="Padrão Arquitetural no Frontend" class="md-nav__link">
+    Padrão Arquitetural no Frontend
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../checklist/" title="Verificação de Requisitos" class="md-nav__link">
+      Verificação de Requisitos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Iniciativas Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Iniciativas Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/pesquisa_de_mercado/" title="Materiais complementares" class="md-nav__link">
+      Materiais complementares
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/identidade_visual/" title="Identidade Visual" class="md-nav__link">
+      Identidade Visual
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/prototipo/" title="Protótipo de Alta Fidelidade" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+    
+    <label class="md-nav__link" for="nav-7-4">
+      Testes de Usabilidade
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        Testes de Usabilidade
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4-1" type="checkbox" id="nav-7-4-1">
+    
+    <label class="md-nav__link" for="nav-7-4-1">
+      V1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-7-4-1">
+        V1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/testes_de_usabilidade/v1/roteiro/" title="Roteiro" class="md-nav__link">
+      Roteiro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/testes_de_usabilidade/v1/analise/" title="Análise" class="md-nav__link">
+      Análise
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4-2" type="checkbox" id="nav-7-4-2">
+    
+    <label class="md-nav__link" for="nav-7-4-2">
+      V2
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-7-4-2">
+        V2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/testes_de_usabilidade/v2/roteiro/" title="Roteiro" class="md-nav__link">
+      Roteiro
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-5" type="checkbox" id="nav-7-5">
+    
+    <label class="md-nav__link" for="nav-7-5">
+      Elicitação de requisitos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-5">
+        Elicitação de requisitos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/elicitacao_de_requisitos/elicitacao_de_requisitos/" title="Síntese dos requisitos selecionados" class="md-nav__link">
+      Síntese dos requisitos selecionados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/elicitacao_de_requisitos/req_questionario/" title="Questionário" class="md-nav__link">
+      Questionário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/elicitacao_de_requisitos/req_entrevista/" title="Entrevistas" class="md-nav__link">
+      Entrevistas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/elicitacao_de_requisitos/req_storytelling/" title="Storytelling" class="md-nav__link">
+      Storytelling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/elicitacao_de_requisitos/req_benchmark/" title="Benchmarking" class="md-nav__link">
+      Benchmarking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/elicitacao_de_requisitos/req_brainstorm/" title="Brainstorming" class="md-nav__link">
+      Brainstorming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/elicitacao_de_requisitos/req_prototipo/" title="Protótipo" class="md-nav__link">
+      Protótipo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-6" type="checkbox" id="nav-7-6">
+    
+    <label class="md-nav__link" for="nav-7-6">
+      Kanban
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-6">
+        Kanban
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/kanban/5w2h/" title="5W2H Kanban" class="md-nav__link">
+      5W2H Kanban
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/kanban/estudo_de_casos/" title="Empresas que usam Kaban" class="md-nav__link">
+      Empresas que usam Kaban
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/kanban/comparativo/" title="Comparativo entre ferramentas" class="md-nav__link">
+      Comparativo entre ferramentas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/kanban/melhorias/" title="Melhorias" class="md-nav__link">
+      Melhorias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/kanban/apresentacao/" title="Apresentação" class="md-nav__link">
+      Apresentação
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/modelo_dados/" title="Modelo de dados" class="md-nav__link">
+      Modelo de dados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/backlog/" title="Backlog" class="md-nav__link">
+      Backlog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-9" type="checkbox" id="nav-7-9">
+    
+    <label class="md-nav__link" for="nav-7-9">
+      Padrões
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-9">
+        Padrões
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/padroes/proxy/" title="Proxy" class="md-nav__link">
+      Proxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../iniciativas_extras/padroes/facade/" title="Facade" class="md-nav__link">
+      Facade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Gerência
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Gerência
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gerencia/sprint0/" title="Sprint 0" class="md-nav__link">
+      Sprint 0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gerencia/sprint1/" title="Sprint 1" class="md-nav__link">
+      Sprint 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gerencia/sprint2/" title="Sprint 2" class="md-nav__link">
+      Sprint 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gerencia/sprint3/" title="Sprint 3" class="md-nav__link">
+      Sprint 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gerencia/sprint4/" title="Sprint 4" class="md-nav__link">
+      Sprint 4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gerencia/sprint6/" title="Sprint 6" class="md-nav__link">
+      Sprint 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gerencia/sprint7/" title="Sprint 7" class="md-nav__link">
+      Sprint 7
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contribuicao/contribuicao/" title="Contribuição" class="md-nav__link">
+      Contribuição
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisao" title="Histórico de Revisão" class="md-nav__link">
+    Histórico de Revisão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" title="1 Introdução" class="md-nav__link">
+    1 Introdução
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-finalidade" title="1.1 Finalidade" class="md-nav__link">
+    1.1 Finalidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" title="1.2 Escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" title="1.3 Definições, Acrônimos e Abreviações" class="md-nav__link">
+    1.3 Definições, Acrônimos e Abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" title="1.4 Referências" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-da-arquitetura" title="2 Representação da Arquitetura" class="md-nav__link">
+    2 Representação da Arquitetura
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-componentes-importantes" title="2.1 Componentes Importantes" class="md-nav__link">
+    2.1 Componentes Importantes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vue" title="Vue" class="md-nav__link">
+    Vue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sass" title="Sass" class="md-nav__link">
+    Sass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#django-rest" title="Django REST" class="md-nav__link">
+    Django REST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask" title="Flask" class="md-nav__link">
+    Flask
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microservicos" title="Microserviços" class="md-nav__link">
+    Microserviços
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comunicacao-entre-servicos" title="Comunicação entre serviços" class="md-nav__link">
+    Comunicação entre serviços
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-diagrama-de-arquitetura" title="2.2 Diagrama de Arquitetura" class="md-nav__link">
+    2.2 Diagrama de Arquitetura
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-requisitos-e-restricoes-arquiteturais" title="3 Requisitos e Restrições Arquiteturais" class="md-nav__link">
+    3 Requisitos e Restrições Arquiteturais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-de-caso-de-uso" title="4 Visão de Caso de Uso" class="md-nav__link">
+    4 Visão de Caso de Uso
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-caso-de-uso-da-aplicacao-com-requisitos-de-priorizacao-must-have" title="4.1 Caso de Uso da aplicação com requisitos de priorização Must have" class="md-nav__link">
+    4.1 Caso de Uso da aplicação com requisitos de priorização Must have
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-atores" title="4.1.1 Atores" class="md-nav__link">
+    4.1.1 Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-descricao-dos-casos-de-uso" title="4.1.2 Descrição dos Casos de Uso" class="md-nav__link">
+    4.1.2 Descrição dos Casos de Uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visao-logica" title="5 Visão Lógica" class="md-nav__link">
+    5 Visão Lógica
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-diagramas-de-pacotes" title="5.1 Diagramas de Pacotes" class="md-nav__link">
+    5.1 Diagramas de Pacotes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-back-end" title="5.1.1 Back-End" class="md-nav__link">
+    5.1.1 Back-End
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-front-end" title="5.1.2 Front-end" class="md-nav__link">
+    5.1.2 Front-end
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-diagrama-de-classes-e-microservicos" title="5.2 Diagrama de classes e microserviços" class="md-nav__link">
+    5.2 Diagrama de classes e microserviços
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-diagrama-de-classes-do-microsservico-de-usuario" title="5.2.1 Diagrama de classes do microsserviço de usuário" class="md-nav__link">
+    5.2.1 Diagrama de classes do microsserviço de usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-diagrama-de-classes-do-microsservico-de-restaurante" title="5.2.2 Diagrama de classes do microsserviço de Restaurante" class="md-nav__link">
+    5.2.2 Diagrama de classes do microsserviço de Restaurante
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-diagrama-de-classes-do-microsservico-de-pedidos" title="5.2.3 Diagrama de classes do microsserviço de Pedidos" class="md-nav__link">
+    5.2.3 Diagrama de classes do microsserviço de Pedidos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visao-de-processo" title="6 Visão de Processo" class="md-nav__link">
+    6 Visão de Processo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-processo-de-cadastro-de-usuario" title="6.1 Processo de cadastro de usuário:" class="md-nav__link">
+    6.1 Processo de cadastro de usuário:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-processo-de-login-de-usuario" title="6.2 Processo de login de usuário:" class="md-nav__link">
+    6.2 Processo de login de usuário:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-processo-de-realizacao-de-pedido" title="6.3 Processo de realização de pedido" class="md-nav__link">
+    6.3 Processo de realização de pedido
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-processo-de-cadastro-de-cartao" title="6.4 Processo de cadastro de cartão" class="md-nav__link">
+    6.4 Processo de cadastro de cartão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-processo-de-cadastro-de-restaurante-no-back-end" title="6.5 Processo de cadastro de restaurante no back-end" class="md-nav__link">
+    6.5 Processo de cadastro de restaurante no back-end
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-processo-de-checagem-de-pedidos-antigos" title="6.6 Processo de checagem de pedidos antigos" class="md-nav__link">
+    6.6 Processo de checagem de pedidos antigos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-processo-de-checagem-de-pedidos-ativos" title="6.7 Processo de checagem de pedidos ativos" class="md-nav__link">
+    6.7 Processo de checagem de pedidos ativos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visao-da-implantacao" title="7 Visão da Implantação" class="md-nav__link">
+    7 Visão da Implantação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-visao-da-implementacao" title="8 Visão da Implementação" class="md-nav__link">
+    8 Visão da Implementação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-visao-de-dados" title="9 Visão de Dados" class="md-nav__link">
+    9 Visão de Dados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-diagramas" title="9.1 Diagramas" class="md-nav__link">
+    9.1 Diagramas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#911-costumer-service" title="9.1.1 Costumer Service" class="md-nav__link">
+    9.1.1 Costumer Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-entidade-relacionamento" title="Diagrama Entidade Relacionamento" class="md-nav__link">
+    Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#912-restaurant-service" title="9.1.2 Restaurant Service" class="md-nav__link">
+    9.1.2 Restaurant Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-entidade-relacionamento_1" title="Diagrama Entidade Relacionamento" class="md-nav__link">
+    Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-10" title="Versão 1.0" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20" title="Versão 2.0" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#913-order-service" title="9.1.3 Order Service" class="md-nav__link">
+    9.1.3 Order Service
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-entidade-relacionamento_2" title="Diagrama Entidade Relacionamento" class="md-nav__link">
+    Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-10_1" title="Versão 1.0" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20_1" title="Versão 2.0" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-diagrama-geral" title="9.2 Diagrama geral" class="md-nav__link">
+    9.2 Diagrama geral
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#921-modelo-entidade-relacionamento" title="9.2.1 Modelo Entidade Relacionamento" class="md-nav__link">
+    9.2.1 Modelo Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#922-diagrama-entidade-relacionamento" title="9.2.2 Diagrama Entidade Relacionamento" class="md-nav__link">
+    9.2.2 Diagrama Entidade Relacionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-10_2" title="Versão 1.0" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20_2" title="Versão 2.0" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-dicionario-de-dados" title="9.3 Dicionário de dados" class="md-nav__link">
+    9.3 Dicionário de dados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#931-entidade-cartao" title="9.3.1 Entidade: Cartão" class="md-nav__link">
+    9.3.1 Entidade: Cartão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#932-entidade-usuario" title="9.3.2 Entidade: Usuário" class="md-nav__link">
+    9.3.2 Entidade: Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#933-entidade-avaliacao_pedido" title="9.3.3 Entidade: Avaliação_Pedido" class="md-nav__link">
+    9.3.3 Entidade: Avaliação_Pedido
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#934-relacionamento-possui" title="9.3.4 Relacionamento: possui" class="md-nav__link">
+    9.3.4 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#935-entidade-senha" title="9.3.5 Entidade: Senha" class="md-nav__link">
+    9.3.5 Entidade: Senha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#936-relacionamento-possui" title="9.3.6 Relacionamento: possui" class="md-nav__link">
+    9.3.6 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#937-entidade-itemcardapio" title="9.3.7 Entidade: ItemCardapio" class="md-nav__link">
+    9.3.7 Entidade: ItemCardapio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#938-relacionamento-possui" title="9.3.8 Relacionamento: possui" class="md-nav__link">
+    9.3.8 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#939-entidade-categoriacardapio" title="9.3.9 Entidade: CategoriaCardapio" class="md-nav__link">
+    9.3.9 Entidade: CategoriaCardapio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9310-relacionamento-possui" title="9.3.10 Relacionamento: possui" class="md-nav__link">
+    9.3.10 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9311-entidade-cardapio" title="9.3.11 Entidade: Cardapio" class="md-nav__link">
+    9.3.11 Entidade: Cardapio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9312-relacionamento-possui" title="9.3.12 Relacionamento: possui" class="md-nav__link">
+    9.3.12 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9313-entidade-estabelecimento" title="9.3.13 Entidade: Estabelecimento" class="md-nav__link">
+    9.3.13 Entidade: Estabelecimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9314-relacionamento-possui" title="9.3.14 Relacionamento: possui" class="md-nav__link">
+    9.3.14 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9315-entidade-categoriaestabelecimento" title="9.3.15 Entidade: CategoriaEstabelecimento" class="md-nav__link">
+    9.3.15 Entidade: CategoriaEstabelecimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9316-relacionamento-realiza" title="9.3.16 Relacionamento: realiza" class="md-nav__link">
+    9.3.16 Relacionamento: realiza
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9317-relacionamento-em" title="9.3.17 Relacionamento: em" class="md-nav__link">
+    9.3.17 Relacionamento: em
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9318-relacionamento-possui" title="9.3.18 Relacionamento: possui" class="md-nav__link">
+    9.3.18 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9319-entidade-categoriaitem" title="9.3.19 Entidade: CategoriaItem" class="md-nav__link">
+    9.3.19 Entidade: CategoriaItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9320-relacionamento-tem" title="9.3.20 Relacionamento: tem" class="md-nav__link">
+    9.3.20 Relacionamento: tem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9321-entidade-itemcategoria" title="9.3.21 Entidade: ItemCategoria" class="md-nav__link">
+    9.3.21 Entidade: ItemCategoria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9322-relacionamento-possui" title="9.3.22 Relacionamento: possui" class="md-nav__link">
+    9.3.22 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9323-entidade-horariofuncionamento" title="9.3.23 Entidade: HorarioFuncionamento" class="md-nav__link">
+    9.3.23 Entidade: HorarioFuncionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9324-relacionamento-possui" title="9.3.24 Relacionamento: possui" class="md-nav__link">
+    9.3.24 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9325-entidade-shopping" title="9.3.25 Entidade: Shopping" class="md-nav__link">
+    9.3.25 Entidade: Shopping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9326-entidade-telefone" title="9.3.26 Entidade: telefone" class="md-nav__link">
+    9.3.26 Entidade: telefone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9327-relacionamento-possui" title="9.3.27 Relacionamento: possui" class="md-nav__link">
+    9.3.27 Relacionamento: possui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9328-entidade-endereco" title="9.3.28 Entidade: Endereço" class="md-nav__link">
+    9.3.28 Entidade: Endereço
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-qualidade" title="10 Qualidade" class="md-nav__link">
+    10 Qualidade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-tamanho-e-desempenho" title="11 Tamanho e Desempenho" class="md-nav__link">
+    11 Tamanho e Desempenho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-modelospadroes-arquiteturais" title="12 Modelos/Padrões Arquiteturais" class="md-nav__link">
+    12 Modelos/Padrões Arquiteturais
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsservicos" title="Microsserviços" class="md-nav__link">
+    Microsserviços
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padrao-arquitetural-no-backend" title="Padrão Arquitetural no Backend" class="md-nav__link">
+    Padrão Arquitetural no Backend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padrao-arquitetural-no-frontend" title="Padrão Arquitetural no Frontend" class="md-nav__link">
+    Padrão Arquitetural no Frontend
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/fga-desenho-2019-2/Wiki/edit/master/docs/seminario5/arquitetura.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Documento de Arquitetura</h1>
+                
+                <h2 id="historico-de-revisao">Histórico de Revisão</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13/11/2019</td>
+<td>0.1</td>
+<td>Estrutura do Documento, Introdução e Representação Arquitetural</td>
+<td><a href="https://github.com/phe0">Pedro Féo</a></td>
+</tr>
+<tr>
+<td>14/11/2019</td>
+<td>0.2</td>
+<td>Casos de uso, visão de processo e visão de tamanho e desempenho</td>
+<td><a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+<tr>
+<td>15/11/2019</td>
+<td>0.3</td>
+<td>Refatorando diagramas e adicionando mais visões de processo</td>
+<td><a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+<tr>
+<td>15/11/2019</td>
+<td>0.4</td>
+<td>Requisitos e restrições arquiteturais, visão geral de classes e pacotes</td>
+<td><a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+<tr>
+<td>16/11/2019</td>
+<td>0.5</td>
+<td>Modelos/Padrões Arquiteturais</td>
+<td><a href="https://github.com/devsalula">Saleh Kader</a></td>
+</tr>
+<tr>
+<td>17/11/2019</td>
+<td>0.6</td>
+<td>Visão de dados</td>
+<td><a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+<tr>
+<td>17/11/2019</td>
+<td>0.7</td>
+<td>Visão de implementação</td>
+<td><a href="https://github.com/phe0">Pedro Féo</a></td>
+</tr>
+<tr>
+<td>17/11/2019</td>
+<td>0.8</td>
+<td>Qualidade</td>
+<td><a href="https://github.com/devsalula">Saleh Kader</a></td>
+</tr>
+<tr>
+<td>17/11/2019</td>
+<td>0.9</td>
+<td>Visão de Implantação</td>
+<td><a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+<tr>
+<td>17/11/2019</td>
+<td>1.0</td>
+<td>Complementação do tópico de qualidade</td>
+<td><a href="https://github.com/shayanealcantara">Shayane Alcântara</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-introducao">1 Introdução</h2>
+<h3 id="11-finalidade">1.1 Finalidade</h3>
+<p>A intenção desse documento é documentar e transmitir informações relevantes ao QRComer do ponto de vista arquitetural. Facilitando a visualização e entendimento da estrutura do projeto.</p>
+<h3 id="12-escopo">1.2 Escopo</h3>
+<p>Este Documento de Arquitetura de Software se aplica ao Sistema QRComer. Desenvolvido na disciplina de Arquitetura e Desenho de Software da Universidade de Brasília.</p>
+<h3 id="13-definicoes-acronimos-e-abreviacoes">1.3 Definições, Acrônimos e Abreviações</h3>
+<ul>
+<li>UnB - Universidade de Brasília</li>
+<li>FGA - Faculdade do Gama</li>
+<li>QRComer - Sistema web com a intenção de reduzir filas em praças de alimentação</li>
+<li>Backend - Parte do sistema responsável por prover e organizar recursos para a interfáce do sistema</li>
+<li>Frontend - Parte do sistema responsável por ser a interfáce entre o sistema e o usuário</li>
+<li>HTTP - <strong>Hypertext Transfer Protocol</strong></li>
+<li>API: <strong>Application Programming Interface</strong></li>
+</ul>
+<h3 id="14-referencias">1.4 Referências</h3>
+<ul>
+<li><a href="https://translate-me.github.io/docs/documentos/projeto/doc_de_arquitetura/">Translate-me</a></li>
+<li><a href="https://ads-unigrade-2019-1.github.io/Wiki/dinamica06/DAS/#522-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura">Unigrade</a></li>
+<li><a href="https://fga-eps-mds.github.io/2018.2-Kalkuli/docs/docArquitetura">Kalkuli</a></li>
+<li><a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm">https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm</a></li>
+<li><a href="https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm">https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm</a></li>
+<li><a href="https://www.redhat.com/pt-br/topics/microservices/what-are-microservices">Redhat</a></li>
+<li><a href="https://movile.blog/large-scale-javascript-arquitetura-de-componentes/">Movile</a></li>
+</ul>
+<h2 id="2-representacao-da-arquitetura">2 Representação da Arquitetura</h2>
+<h3 id="21-componentes-importantes">2.1 Componentes Importantes</h3>
+<h4 id="vue">Vue</h4>
+<p>Vue é um <strong>framework progressivo</strong> para a construção de interfaces para o usuário. O <strong>framework</strong> apresenta uma arquitetura baseada em componentes, permitindo a criação de telas completas e também pedaços de código isolados.</p>
+<h4 id="sass">Sass</h4>
+<p>Sass é uma extensão de CSS que permite o uso de variáveis, regras de alinhamento, mixins e importações de outros arquivos. O Sass facilita a organização das folhas de estilo além de acelerar sua execução.</p>
+<h4 id="django-rest">Django REST</h4>
+<p>O <strong>framework</strong> Django REST é um conjunto de ferramentas otimizada para a construção de Web APIs em Python. O framework foi escolhido mediante votação pelos membros, visto que a maioria possuia conhecimento desta tecnologia. </p>
+<h4 id="flask">Flask</h4>
+<p>Flask é um micro-framework em Python que provê um modelo simples para desenvolvimento web. Como estamos lidando com uma arquitetura de microsserviços, que são indenpendentes entre si, foi possível utilizar este framework pela facilidade de manuseio e desenvolvimento.</p>
+<h4 id="microservicos">Microserviços</h4>
+<p>A arquitetura de microserviços é uma solução arquitetural distribuída que desmembra o sistema da aplicação em pequenos blocos independentes, chamados de serviços. Cada um possuíndo seus próprios processos e banco de dados e se comunicam entre si através de requiisções HTTP.
+Os serviços utilizados na aplicação serão:</p>
+<ul>
+<li><strong>Restaurante</strong>, serviço responsável por conter as informações a respeito do shopping, restaurantes e cardápios. Desenvolvido utilizando Django REST.</li>
+<li><strong>Pedidos</strong>, serviço responsável por tratar toda a lógica que envolve um pedido, desde quando é produzido até ser concluído. Desenvolvido utilizando Django REST.</li>
+<li><strong>Usuário</strong>, serviço responsável por conter as lógicas de autenticação e armazenar as informações dos usuários e seus cartões. Desenvolvido utilizando Django REST.</li>
+<li><strong>Gateway</strong>, serviço responsável por intermediar a comunicação entre os demais serviços. Desenvolvido utilizando Flask.</li>
+<li><strong>Frontend</strong>, serviço responsável por ser a interface entre o sistema e o usuário. Desenvolvido em Vue.js.</li>
+</ul>
+<h4 id="comunicacao-entre-servicos">Comunicação entre serviços</h4>
+<p>A comunicação entre os serviços será realizada através da API Gateway, responsável por utilizar o protocolo HTTP para intermediar a comunicação, cada um com seu banco de dados, exceto o Gateway.</p>
+<h3 id="22-diagrama-de-arquitetura">2.2 Diagrama de Arquitetura</h3>
+<p><img alt="representacao-arquitetural" src="../../images/doc-arquitetura/arquitetura.jpg" /></p>
+<p><strong>Obs.</strong>: Foi realizada uma mudança na arquitetura original do projeto, sendo removidas o Frontend de interação com o restaurante, sendo substituído por um acesso especializado ao backend do sistema, para que o QRComer possa ser facilmente integrado à sistemas já existentes. Além disso foi removido o serviço de pagamento, tendo em vista que para o escopo da disciplina o serviço mostrou-se inviável.</p>
+<h2 id="3-requisitos-e-restricoes-arquiteturais">3 Requisitos e Restrições Arquiteturais</h2>
+<table>
+<thead>
+<tr>
+<th>Requisito</th>
+<th>Solução</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linguagem</td>
+<td>O front-end será feito em <em>JavaScript</em>, e o back-end em <em>Python</em></td>
+</tr>
+<tr>
+<td>Plataforma</td>
+<td>O front-end será feito na plataforma <em>VueJS</em> e o back-end será feito na plataforma <em>DjangoREST</em></td>
+</tr>
+<tr>
+<td>Segurança</td>
+<td>Será implementado um sistema de token para que os dados sensíveis do usuário, shopping e restaurantes posssam permanecer seguros.</td>
+</tr>
+<tr>
+<td>Persistência</td>
+<td>O sistema funcionará a partir de uma grande quantidade de transações entre o back-end e o front-end, onde dados de shoppings, restaurantes e pedidos serão a todo momento manipulados. Com foco nos dados relativos a pedidos, os quais serão continuamente criados ou deletados. Sendo assim, será utilizado um banco de dados relacional <em>PostgreSQL</em>, além de dados temporários <em>localstorage</em> dos navegadores, para permitir uma utilização mais fluida e persistente</td>
+</tr>
+<tr>
+<td>Arquitetura</td>
+<td>Será implementada uma arquitetura e microsserviços, para que os serviços separados possam se comunicar um com o outro de maneira simples e sem demanda de várias quantidades de memória e processamento, graças à sua natureza desacoplada.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-visao-de-caso-de-uso">4 Visão de Caso de Uso</h2>
+<h3 id="41-caso-de-uso-da-aplicacao-com-requisitos-de-priorizacao-must-have">4.1 Caso de Uso da aplicação com requisitos de priorização Must have</h3>
+<p>Provindo da documentação referente ao <a href="/../Wiki/docs/seminario3/diagramas_estaticos.md">seminário 3</a>, este diagrama de caso de uso procura demonstrar o funcionamento geral da aplicação <strong>QRComer</strong>.</p>
+<p><img alt="caso-de-uso-aplicacao" src="../../images/diagramas-uml/caso_de_uso_aplicacao_3.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>UC01</strong></th>
+<th><strong>Caso de Uso dos Requisitos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.2 (14/11) <br> Anterior: <a href="#/seminario3/diagramas_estaticos/">1.1</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Caso de uso dos requisitos.</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/shayanealcantara">Shayane Alcântara</a>, <a href="">Elias Bernardo</a>, <a href="">Leonardo</a>, <a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="411-atores">4.1.1 Atores</h4>
+<table>
+<thead>
+<tr>
+<th>Atores</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usuário</td>
+<td>Utilizador da plataforma, consumidor de produtos alimentícios presentes em <em>shoppings</em> e praças de alimentação</td>
+</tr>
+<tr>
+<td>Gerador de QR-Code</td>
+<td>Funcionalidade geradora do QR-Code que permite o acesso à aplicação</td>
+</tr>
+<tr>
+<td>Serviço de pagamento</td>
+<td>Funcionalidade que simula um serviço real de pagamento</td>
+</tr>
+<tr>
+<td>Restaurante</td>
+<td>Utilizador do cadastro de informações, comerciante que pretende utilizar a aplicação para vender seus produtos alimentícios</td>
+</tr>
+</tbody>
+</table>
+<h4 id="412-descricao-dos-casos-de-uso">4.1.2 Descrição dos Casos de Uso</h4>
+<table>
+<thead>
+<tr>
+<th>Casos de Uso</th>
+<th>Descrição dos Casos de Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UC01 - Cadastrar</td>
+<td>O usuário realiza o cadastro na aplicação</td>
+</tr>
+<tr>
+<td>UC02 - Preencher Formulário</td>
+<td>O usuário insere as informações necessárias</td>
+</tr>
+<tr>
+<td>UC03 - Fazer Login</td>
+<td>O usuário acessa a aplicação</td>
+</tr>
+<tr>
+<td>UC04 - Alterar senha</td>
+<td>O usuário requisita uma alteração de senha</td>
+</tr>
+<tr>
+<td>UC05 - Gerar QR-Code</td>
+<td>O gerador de QR-Code cria um link de acesso para o shopping</td>
+</tr>
+<tr>
+<td>UC06 - Ler QR Code no shopping</td>
+<td>O usuário acessa o shopping a partir do link contido no QR-Code</td>
+</tr>
+<tr>
+<td>UC07 - Acessar a aplicação web</td>
+<td>O gerador de QR-Code acessa a aplicação a partir da identificação do shopping</td>
+</tr>
+<tr>
+<td>UC08 - Identificar shopping pelo QR-Code</td>
+<td>O gerador de QR-Code gera um código diferente para cada shopping, tornando o link seu identificador</td>
+</tr>
+<tr>
+<td>UC09 - Ver lista de restaurantes</td>
+<td>O usuário vê, na página do shopping, todos os restaurantes existentes no mesmo</td>
+</tr>
+<tr>
+<td>UC10 - Selecionar restaurante</td>
+<td>O usuário escolhe e abre um restaurante a partir da lista</td>
+</tr>
+<tr>
+<td>UC11 - Selecionar produto</td>
+<td>O usuário escolhe e seleciona o produto na página de restaurante</td>
+</tr>
+<tr>
+<td>UC12 - Adicionar produto à sacola</td>
+<td>O usuário confirma a seleção do produto e o mesmo é adicionado à sacola de pedidos</td>
+</tr>
+<tr>
+<td>UC13 - Editar produtos da sacola</td>
+<td>O usuário regula a quantidade de produtos na sacola</td>
+</tr>
+<tr>
+<td>UC14 - Visualizar itens da sacola</td>
+<td>O usuário pode ver, na sacola, todos os itens escolhidos</td>
+</tr>
+<tr>
+<td>UC15 - Finalizar pedido</td>
+<td>O usuário confirma os itens na sacola e finaliza o pedido</td>
+</tr>
+<tr>
+<td>UC16 - Inserir forma de pagamento e adicionar CPF</td>
+<td>O usuário escolhe o cartão que deseja usar e adiciona o CPF para nota fiscal, na sacola</td>
+</tr>
+<tr>
+<td>UC17 - Cadastrar cartões</td>
+<td>O usuário cadastra os seus cartões de crédito na conta da aplicação</td>
+</tr>
+<tr>
+<td>UC18 - Visualizar cartões cadastrados</td>
+<td>O usuário pode visualizar todos os cartões cadastrados em sua conta</td>
+</tr>
+<tr>
+<td>UC19 - Remover cartões cadastrados</td>
+<td>O usuário pode remover todos os cartões cadastrados em sua conta</td>
+</tr>
+<tr>
+<td>UC20 - Visualizar cartões cadastrados</td>
+<td>O usuário pode visualizar todos os cartões cadastrados em sua conta</td>
+</tr>
+<tr>
+<td>UC21 - Efetuar pagamento</td>
+<td>O usuário confirma o pedido e o serviço de pagamento debita o valor de seu cartão escolhido</td>
+</tr>
+<tr>
+<td>UC22 - Cancelar produto</td>
+<td>O usuário deleta um ou todos os itens da sacola</td>
+</tr>
+<tr>
+<td>UC23 - Integrar com API de pagamento</td>
+<td>O serviço de pagamento simula uma API real de pagamento</td>
+</tr>
+<tr>
+<td>UC24 - Acessar o back-end para cadastro de dados</td>
+<td>O restaurante acessa o serviço de cadastro de informações do back-end</td>
+</tr>
+<tr>
+<td>UC25 - Cadastrar restaurante</td>
+<td>O restaurante adiciona as informações jurídicas necessárias para cadastrar o restaurante</td>
+</tr>
+<tr>
+<td>UC26 - Adicionar cardápio do estabelecimento</td>
+<td>O restaurante adiciona os itens ao seu cardápio, com valores, descrição e imagens</td>
+</tr>
+<tr>
+<td>UC27 - Receber pedido</td>
+<td>O restaurante recebe o pedido criado pelo usuário, para preparação do alimento</td>
+</tr>
+<tr>
+<td>UC28 - Gerar senha</td>
+<td>O usuário e o restaurante recebem uma senha gerada pela aplicação</td>
+</tr>
+<tr>
+<td>UC29 - Receber senha para retirada do pedido</td>
+<td>O usuário e o restaurante recebem uma senha gerada pela aplicação</td>
+</tr>
+<tr>
+<td>UC30 - Receber feedback da compra</td>
+<td>O usuário deixa um feedback do produto para o restaurante</td>
+</tr>
+<tr>
+<td>UC31 - Receber feedback positivo</td>
+<td>O restaurante recebe um feedback positivo</td>
+</tr>
+<tr>
+<td>UC32 - Receber feedback negativo</td>
+<td>O restaurante recebe um feedback negativo</td>
+</tr>
+<tr>
+<td>UC33 - Visualizar mensagem de erro e retornar à sacola</td>
+<td>O restaurante envia uma mensagem de erro caso o pedido não possa ser completado</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-visao-logica">5 Visão Lógica</h2>
+<p>Modelagens em padrão UML, que representam os aspectos arquiteturais do sistema.</p>
+<h3 id="51-diagramas-de-pacotes">5.1 Diagramas de Pacotes</h3>
+<h4 id="511-back-end">5.1.1 <em>Back-End</em></h4>
+<p><img alt="diagrama-pacotes-back" src="../../images/diagramas-uml/package_diagram_backend_v3.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DP01</strong></th>
+<th><strong>Diagrama de pacotes do Back End</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (19/09) <br> Anterior: <a href="#dp01-diagrama-de-pacotes-back-end">1.1</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama de Pacotes para os Microserviços do Back End</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/shayanealcantara">Shayane Alcântara</a> e <a href="https://github.com/devsalula">Saleh Kader</a></td>
+</tr>
+</tbody>
+</table>
+<p>A API é dividida nas seguintes implementações:</p>
+<ul>
+<li>Models, que contém as declarações dos dados a serem utilizados;</li>
+<li>Serializer, que receberá os dados das models e permitirá a sua gravação nos bancos de dados;</li>
+<li>Views, que receberá dos serializers a lógica de gravação e permitirá a implementação de lógicas complementares de dados, além de definir quais ações <em>POST</em>, <em>GET</em>, <em>DELETE</em> e <em>PATCH</em> serão utilizadas;</li>
+<li>Urls, que irá declarar as rotas a serem acessadas tanto pelo microsserviço quanto pelo <em>front-end</em>;</li>
+<li>Test, onde se encontram os testes unitários das models e das views;</li>
+<li>Settings, que define a criação da aplicação, <em>hosts</em> e outras dependências.</li>
+</ul>
+<h4 id="512-front-end">5.1.2 <em>Front-end</em></h4>
+<p><img alt="diagrama-pacotes-front" src="../../images/diagramas-uml/package_diagram_front_v4.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DP02</strong></th>
+<th><strong>Diagrama de pacotes do Front End</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 3.0 (19/09) <br> Anterior: <a href="../../images/diagramas-uml/package_diagram_front_v3.png">2.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama de Pacotes para o Front End</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/shayanealcantara">Shayane Alcântara</a> e <a href="https://github.com/devsalula">Saleh Kader</a></td>
+</tr>
+</tbody>
+</table>
+<p>A pasta principal <em>src</em> contém as subpastas:</p>
+<ul>
+<li>assets, que contem imagens e css adicionados para ajustar a estética da User Interface para os padrões do protótipo;</li>
+<li>services, onde estão contidos alguns arquivos <em>.js</em> que realizam certas funções e trabalhos repetitivos;</li>
+<li>utils, onde está contida a lógica de autenticação de usuário;</li>
+<li>screens, onde estão contidos:</li>
+<li>os componentes principais, a serem reutilizados pelas várias telas do projeto;</li>
+<li>as views, onde se encontram as implementações das telas, as quais fazem uso dos componentes;</li>
+<li>o router, onde se encontram todas as rotas para as telas existentes.</li>
+</ul>
+<h3 id="52-diagrama-de-classes-e-microservicos">5.2 Diagrama de classes e microserviços</h3>
+<h4 id="521-diagrama-de-classes-do-microsservico-de-usuario">5.2.1 Diagrama de classes do microsserviço de usuário</h4>
+<p><img alt="classes-usuario" src="../../images/diagramas-uml/class_diagram_user_v2.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DC01</strong></th>
+<th><strong>Diagrama de classes de usuário</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (18/09) <br> Anterior: <a href="#dc01-diagrama-de-classes-de-usuario">1.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML das classes do microserviço de usuário</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/silvasara">Sara Silva</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="522-diagrama-de-classes-do-microsservico-de-restaurante">5.2.2 Diagrama de classes do microsserviço de Restaurante</h4>
+<p><img alt="classes-restaurante" src="../../images/diagramas-uml/class_diagram_restaurant_v2.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DC02</strong></th>
+<th><strong>Diagrama de classes de restaurante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (19/09) <br> Anterior: <a href="#dc02-diagrama-de-classes-de-restaurante">1.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML das classes do microserviço de restaurante</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/ebmm01">Elias Bernardo</a> e <a href="https://github.com/leossb36">Leonardo Barreiros</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="523-diagrama-de-classes-do-microsservico-de-pedidos">5.2.3 Diagrama de classes do microsserviço de Pedidos</h3>
+<p>O diagrama a seguir usa a notação UML para descrever as classes do microserviço de restaurante.</p>
+<p><img alt="classes-pedidos" src="../../images/diagramas-uml/class_diagram_order_v2.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DC03</strong></th>
+<th><strong>Diagrama de classes de pedidos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (13/09) <br> Anterior: <a href="#dc03-diagrama-de-classes-de-pedidos">1.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML das classes do microserviço de pedidos</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<p>diagramas de classe, diagramas de pacote, diagramas de de colaboração</p>
+<p>tentar explicar a estrutura do projeto de uma forma lógica</p>
+<h2 id="6-visao-de-processo">6 Visão de Processo</h2>
+<h3 id="61-processo-de-cadastro-de-usuario">6.1 Processo de cadastro de usuário:</h3>
+<p><img alt="cadastro de usuário" src="../../images/diagramas-uml/Sequencia_cadastrar_usuário_v1.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DS02</strong></th>
+<th><strong>Diagrama de sequência de cadastro de usuário</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (19/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML da sequência do cadastro de usuários</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Feo</a>, <a href="https://github.com/devsalula">Saleh Kader</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>O usuário acessa a plataforma;</li>
+<li>O usuário abre a página de cadastro;</li>
+<li>O usuário insere as informações de cadastro;</li>
+<li>O microsserviço de usuários realiza um POST para guardar as informações no banco;</li>
+<li>O microsserviço de usuários valida as informações com o banco de dados;</li>
+<li>O microsserviço de usuários cria o usuário com as informações salvas no banco;</li>
+<li>O usuário é redirecionado à página principal.</li>
+</ul>
+<h3 id="62-processo-de-login-de-usuario">6.2 Processo de login de usuário:</h3>
+<p><img alt="login de usuário" src="../../images/diagramas-uml/Sequencia_login_usuario_v1.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DS02</strong></th>
+<th><strong>Diagrama de sequência de login de usuário</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (19/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML da sequência de login de usuários</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/devsalula">Saleh Kader</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>O usuário acessa a plataforma;</li>
+<li>O usuário abre a página de login;</li>
+<li>O usuário insere o e-mail e senha e aperta o botão de login;</li>
+<li>O microsserviço de usuário realiza um POST para verificar a existência do usuário no banco de dados;</li>
+<li>Se:</li>
+<li>O usuário existir, com e-mail e senha corretos, o login é realizado;</li>
+<li>O usuário não existir, ou e-mail ou senha errados, o login não é realizado;</li>
+<li>O usuário é redirecionado à página principal.</li>
+</ul>
+<h3 id="63-processo-de-realizacao-de-pedido">6.3 Processo de realização de pedido</h3>
+<p><img alt="microsserviço de pedido" src="../../images/diagramas-uml/diagrama_sequencia_pedidos-2.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DS01</strong></th>
+<th><strong>Diagrama de sequência de realização de pedidos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (19/09) <br> Anterior: <a href="../../images/diagramas-uml/diagrama_sequencia_pedidos.png">1.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML da sequência do microsserviço de pedidos</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Feo</a>, <a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>O usuário acessa a plataforma;</li>
+<li>O usuário abre a página de login;</li>
+<li>O usuário realiza o login e é redirecionado à página principal;</li>
+<li>O usuário acessa a página de shopping;</li>
+<li>O usuário seleciona um restaurante e abre sua página;</li>
+<li>O usuário escolhe e seleciona um item dentro do restaurante;</li>
+<li>O usuário adiciona o item escolhido à sua sacola;</li>
+<li>O usuário confirma o pedido e o mesmo é criado no microsserviço de pedidos;</li>
+<li>A aplicação chama o serviço de pagamento simulado;</li>
+<li>O serviço de pagamento simula um pagamento real, a partir dos dados.</li>
+</ul>
+<h3 id="64-processo-de-cadastro-de-cartao">6.4 Processo de cadastro de cartão</h3>
+<p><img alt="cadastro de cartão" src="../../images/diagramas-uml/Sequencia_cadastrar_cartao_v1.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DS02</strong></th>
+<th><strong>Diagrama de sequência de cadastro de cartão</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (19/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML da sequência do cadastro de cartão</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Feo</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>O usuário acessa a plataforma;</li>
+<li>O usuário abre a página de login;</li>
+<li>O usuário realiza o login e é redirecionado à página principal;</li>
+<li>O usuário acessa a página de cartão;</li>
+<li>O usuário clica no botão de adicionar cartão;</li>
+<li>O usuário insere as informações do cartão;</li>
+<li>O microsserviço de usuário realiza um POST para salvar os dados no banco de dados;</li>
+<li>O banco de dados cria um cartão a partir dos dados salvos.</li>
+</ul>
+<h3 id="65-processo-de-cadastro-de-restaurante-no-back-end">6.5 Processo de cadastro de restaurante no back-end</h3>
+<p><img alt="colaboracao-restaurant" src="../../images/diagramas-uml/colaboracao_restaurant_actions.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DC02</strong></th>
+<th><strong>Diagrama de colaboração do microsserviço de Restaurante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (19/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML de colaboração do microsserviço de restaurante</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/pedro-prp">Pedro Rodrigues</a>, <a href="https://github.com/silvasara">Sara Silva</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>O restaurante deve acessar o serviço back-end de CRUD de restaurante;</li>
+<li>O restaurante cria um texto em JSON com as informações do restaurante, incluindo informações jurídicas e nome fantasia;</li>
+<li>O restaurante então cria um texto em JSON para cadastrar uma categoria;</li>
+<li>O restaurante então cria um texto em JSON para cadastrar um item de seu menu;</li>
+<li>O restaurante repete as duas últimas ações para criar a quantidade necessária de categorias e de itens do menu.</li>
+</ul>
+<h3 id="66-processo-de-checagem-de-pedidos-antigos">6.6 Processo de checagem de pedidos antigos</h3>
+<p><img alt="sequencia_checar_pedidos_antigos" src="../../images/diagramas-uml/diagrama_sequencia_pedidos_antigos-2.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DS01</strong></th>
+<th><strong>Diagrama de sequência de checagem de pedidos antigos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (17/09) <br> Anterior: <a href="../../images/diagramas-uml/diagrama_sequencia_pedidos_antigos.png">1.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML da sequência do microsserviço de checagem de pedidos antigos</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Feo</a>, <a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>O usuário acessa a plataforma;</li>
+<li>O usuário abre a página de login;</li>
+<li>O usuário realiza o login e é redirecionado à página principal;</li>
+<li>O usuário acessa a página de histórico de pedidos;</li>
+<li>O front-end realiza uma requisição ao serviço de pedidos;</li>
+<li>O serviço de pedidos busca no banco de dados os pedidos anteriormente realizados;</li>
+<li>Os pedidos são enviados e renderizados no front-end;</li>
+<li>O front-end mostra para o usuário os pedidos anteriormente realizados.</li>
+</ul>
+<h3 id="67-processo-de-checagem-de-pedidos-ativos">6.7 Processo de checagem de pedidos ativos</h3>
+<p><img alt="sequencia_checar_pedidos_ativos" src="../../images/diagramas-uml/diagrama_sequencia_pedidos_ativos-3.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DS01</strong></th>
+<th><strong>Diagrama de sequência de checagem de pedidos ativos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 3.0 (15/11) <br> Anterior: <a href="../../images/diagramas-uml/diagrama_sequencia_pedidos_ativos-2.png">2.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML da sequência do microsserviço de checagem de pedidos ativos</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Feo</a>, <a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>O usuário acessa a plataforma;</li>
+<li>O usuário abre a página de login;</li>
+<li>O usuário realiza o login e é redirecionado à página principal;</li>
+<li>O usuário acessa a página de histórico de pedidos;</li>
+<li>O front-end realiza uma requisição ao serviço de pedidos;</li>
+<li>O serviço de pedidos busca no banco de dados os pedidos que estão ativos;</li>
+<li>Os pedidos são enviados e renderizados no front-end;</li>
+<li>O front-end mostra para o usuário os pedidos ativos.</li>
+</ul>
+<h2 id="7-visao-da-implantacao">7 Visão da Implantação</h2>
+<p>A implantação do sistema será realizada a partir do seguimento das seguintes etapas. Ela terá como objetivo garantir que as funcionalidades entregues para o produto possua a melhor qualidade possível.</p>
+<p><img alt="implantação" src="../../images/doc-arquitetura/implantacao-1.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DIA01</strong></th>
+<th><strong>Diagrama de implantação</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (17/11)</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama representando as fases de implantação do sistema</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-visao-da-implementacao">8 Visão da Implementação</h2>
+<p>A implementação do sistema é composto de 6 componentes externos, sendo eles servidores e o smartphone do usuário.
+Cada um dos microserviços apresenta um servidor próprio, onde se encontra sua rest API e seu banco de dados. Enquanto isso o servidor do frontend apresenta apenas um componente, sendo ele o próprio frontend em Vue, já que não necessita de um banco de dados.
+Toda comunicação entre servidores é feita através protocolo HTTP, enquanto a comunicação entre a API e banco de dados é realizada via TCP/IP.</p>
+<p><img alt="diagrama-implementacao" src="../../images/doc-arquitetura/implementacao.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DI01</strong></th>
+<th><strong>Diagrama de implementação</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (17/11)</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama UML representando os componentes do sistema e sua comunicação</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/Phe0">Pedro Feo</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-visao-de-dados">9 Visão de Dados</h2>
+<h3 id="91-diagramas">9.1 Diagramas</h3>
+<h3 id="911-costumer-service">9.1.1 Costumer Service</h3>
+<p>Diagrama que representa o microsserviço de usuário, suas entidades, <strong>usuário</strong> e <strong>cartão</strong>, e seu respectivo relacionamento. No caso, um <strong>usuário</strong> pode conter um ou mais cartões, sendo que um cartão só póde ser utilizado por um usuário. O <strong>cartão</strong> recebe do <strong>usuário</strong> a chave primária CPF, a qual restringe e identifica o <strong>usuário</strong> cadastrado na aplicação, e os cartões que o mesmo possui.</p>
+<p>O <strong>usuário</strong> possui como atributos cpf como chave primária, e-mail, nome e senha, sendo que estes últimos são necessários para a realização do cadastro na aplicação e todos, menos e-mail e cpf, podem ser alterados.</p>
+<h4 id="diagrama-entidade-relacionamento">Diagrama Entidade Relacionamento</h4>
+<p><img alt="DER" src="https://i.imgur.com/pHCnCJ3.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DER01</strong></th>
+<th><strong>DER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (16/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama Entidade Relacionamento para o microserviço de usuário</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/alanrslima">Alan Lima</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="912-restaurant-service">9.1.2 Restaurant Service</h3>
+<p>O microsserviço de restaurante faz uso de uma série de entidades e relacionamentos, pelo fato de necessitar de uma quantidade maior de dados para que seu funcionamento seja otimizado. A entidade <strong>restaurante</strong> possui <strong>horários de funcionamento</strong>, <strong>categorias</strong> e <strong>cardápios</strong>, além de estar inserida dentro de um <strong>shopping</strong>. Ela recebe a chave primária CNPJ do <strong>shopping</strong> para utilizar como identificador, além de ter seu próprio CNPJ, que transmite para outras entidades. As entidades <strong>horário de funcionamento</strong>, <strong>categoria</strong> e <strong>cardápio</strong> possuem seus identificadores próprios, além de <strong>nome/descrição/horaFinal</strong> e <strong>horaInicial</strong> para utilização nos modelos de dados. </p>
+<p>A entidade <strong>cardápio</strong> possui dentro de si uma série de <strong>itens</strong>, que possuem seus próprios atributos de identificação. Diferentemente das outras entidades, <strong>itens</strong> também possui o atributo valor, o qual irá definir os preços dos <strong>itens</strong> específicos. <strong>Itens</strong> pode ser classificado, ainda, em <strong>categorias de itens</strong>, as quais irão filtrar ainda mais a entidade.</p>
+<p>Em relação a funcionamento, <strong>shopping</strong> possui <strong>restaurantes</strong> cadastrados em seu banco de dados, o qual tem <strong>horarios de funcionamento</strong> e é filtrado por <strong>categorias</strong>. O <strong>restaurante</strong> possui um <strong>cardápio</strong> de <strong>itens</strong>, cada qual contendo sua própria <strong>categoria</strong>, valores, descrição e tempo de preparo. O usuário é capaz de interagir com a plataforma graças a este banco de dados, em sua maior parte. O fluxo de interação com o serviço de restaurante se inicia após o login/cadastro, quando o usuário consegue acessar o shopping e seus respectivos restaurantes. Quando em um restaurante, o usuário escolhe um item e o adiciona à sacola de pedidos.</p>
+<h4 id="diagrama-entidade-relacionamento_1">Diagrama Entidade Relacionamento</h4>
+<h4 id="versao-10">Versão 1.0</h4>
+<p><img alt="DER" src="https://i.imgur.com/7G1Ac9T.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DER02</strong></th>
+<th><strong>DER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (17/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama Entidade Relacionamento para o microserviço de restaurante</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/alanrslima">Alan Lima</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="versao-20">Versão 2.0</h4>
+<p><img alt="DER" src="https://i.imgur.com/KN39OdO.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DER02</strong></th>
+<th><strong>DER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (16/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama Entidade Relacionamento para o microserviço de restaurante</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/alanrslima">Alan Lima</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="913-order-service">9.1.3 Order Service</h3>
+<p>O microsserviço de pedidos é o microsserviço que compôe a interação final do usuário com a aplicação. O modelo de dados do mesmo gira em torno da entidade <strong>pedidos</strong>, a qual possui identificador, hora da realização, cnpj do restaurante, cpf do comprador, preço entre outros. Um <strong>pedido</strong> possui os seus <strong>itens</strong> que o compôem, e os mesmos são derivados dos itens existentes no cardápio do restaurante. Um <strong>pedido</strong> também possuirá uma <strong>senha</strong>, a qual é responsável por identificar se o pedido está sendo preparado, foi entregue e demais ações que dependem da interação entre o usuário e o restaurante.</p>
+<p>Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma todos os itens que deseja comprar. Ele também é capaz de escolher o cartão de crédito que será utilizado no pagamento do mesmo, além de poder adicionar um CPF na nota. Ao confirmar o pedido, o banco de dados o microsserviço receberá uma nova tupla com as informações a serem passadas para o restaurante em questão. Posteriormente, o pedido e o restaurante poderão ser avaliados pelo comprador.</p>
+<h4 id="diagrama-entidade-relacionamento_2">Diagrama Entidade Relacionamento</h4>
+<h4 id="versao-10_1">Versão 1.0</h4>
+<p><img alt="DER" src="https://i.imgur.com/30hWV8J.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DER03</strong></th>
+<th><strong>DER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (16/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama Entidade Relacionamento para o microserviço de pedidos</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/alanrslima">Alan Lima</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="versao-20_1">Versão 2.0</h4>
+<p><img alt="DER" src="../../images/modelagem-dados/conceitual_order-2.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DER03</strong></th>
+<th><strong>DER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (16/09) <br> Anterior: <a href="https://i.imgur.com/30hWV8J.png">1.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama Entidade Relacionamento para o microserviço de pedidos</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/alanrslima">Alan Lima</a>, <a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="92-diagrama-geral">9.2 Diagrama geral</h3>
+<h4 id="921-modelo-entidade-relacionamento">9.2.1 Modelo Entidade Relacionamento</h4>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Entidade</strong></th>
+<th align="center"><strong>Atributo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SHOPPING</td>
+<td align="center"><u>cnpj</u><br>nomeShopping<br>telefone(multivalorado)<br>endereco(composto)</td>
+</tr>
+<tr>
+<td align="center">CATEGORIARESTAURANTE</td>
+<td align="center"><u>idCategoria</u><br>nomeCategoria<br>descricao</td>
+</tr>
+<tr>
+<td align="center">RESTAURANTE</td>
+<td align="center"><u>cnpjRestaurante</u><br>nomeRestaurante<br>numero<br>bloco<br>descricao<br>idCategoria</td>
+</tr>
+<tr>
+<td align="center">USUARIO</td>
+<td align="center"><u>cpf</u><br>nomeUsuario<br>email<br>senha</td>
+</tr>
+<tr>
+<td align="center">CARDAPIO</td>
+<td align="center"><u>idCardapio</u><br>nomeCardapio<br>descricao<br>cnpjRestaurante</td>
+</tr>
+<tr>
+<td align="center">CARTAO</td>
+<td align="center"><u>numero</u><br>nomeTitular<br>validade<br>cvv</td>
+</tr>
+<tr>
+<td align="center">CATEGORIAITEM</td>
+<td align="center"><u>idCategoriaItem</u><br>nomeCategoriaItem<br>descricao</td>
+</tr>
+<tr>
+<td align="center">ITEM</td>
+<td align="center"><u>idItem</u><br>nomeItem<br>descricao<br>valorUnitario<br>quantidade<br>idCategoriaItem<br>cnpjRestaurante<br>idCardapio</td>
+</tr>
+<tr>
+<td align="center">PEDIDO</td>
+<td align="center"><u>codigo</u><br>dataHoraRealizado<br>valorTotal<br>statusPedido<br>cpf<br>cnpjShopping<br>cnpjRestaurante</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Entidade</strong></th>
+<th align="center"><strong>relação</strong></th>
+<th align="center"><strong>Entidade</strong></th>
+<th align="center"><strong>Descrição</strong></th>
+<th align="center"><strong>Cardinalidade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>SHOPPING</strong></td>
+<td align="center">possui</td>
+<td align="center"><strong>RESTAURANTE</strong></td>
+<td align="center">Um shopping possui um ou mais restaurantes cadastrados. Um restaurante pode estar associado a um ou mais shoppings</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>RESTAURANTE</strong></td>
+<td align="center">possui</td>
+<td align="center"><strong>CATEGORIARESTAURANTE</strong></td>
+<td align="center">Um restaurante possui uma ou mais categorias. Uma categoria pode estar associada a um ou mais restaurantes.</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>RESTAURANTE</strong></td>
+<td align="center">possui</td>
+<td align="center"><strong>CARDAPIO</strong></td>
+<td align="center">Um restaurante possui um ou mais cardapios. Um cardapio pode estar associada a um ou mais restaurante.</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>RESTAURANTE</strong></td>
+<td align="center">possui</td>
+<td align="center"><strong>ITEM</strong></td>
+<td align="center">Um restaurante possui um ou mais itens. Um item pode estar associada a um ou mais restaurantes.</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>CARDAPIO</strong></td>
+<td align="center">possui</td>
+<td align="center"><strong>ITEM</strong></td>
+<td align="center">Um cardapio possui um ou mais itens. Um item pode estar associada a um ou mais cardapios.</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>ITEM</strong></td>
+<td align="center">possui</td>
+<td align="center"><strong>CATEGORIAITEM</strong></td>
+<td align="center">Um item possui um ou mais categorias. Uma categoria pode estar associada a um ou mais itens.</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>USUARIO</strong></td>
+<td align="center">realiza</td>
+<td align="center"><strong>PEDIDO</strong></td>
+<td align="center">Um usuario realiza um ou mais pedidos. Um pedido pode estar associada a um ou mais usuarios.</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>PEDIDO</strong></td>
+<td align="center">possui</td>
+<td align="center"><strong>ITEM</strong></td>
+<td align="center">Um pedido possui um ou mais itens. Um item pode estar associado a um ou mais pedidos.</td>
+<td align="center"><strong>N:M</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>MER01</strong></th>
+<th><strong>MER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (16/09) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Modelo Entidade Relacionamento</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/leossb36">Leonardo Barreiros</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="922-diagrama-entidade-relacionamento">9.2.2 Diagrama Entidade Relacionamento</h4>
+<h4 id="versao-10_2">Versão 1.0</h4>
+<p><img alt="DER" src="https://i.imgur.com/t8GjGTu.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DER01</strong></th>
+<th><strong>DER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 1.0 (26/08) <br> Anterior: -</td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama Entidade Relacionamento para a aplicação</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/alanrslima">Alan Lima</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="versao-20_2">Versão 2.0</h4>
+<p><img alt="DER" src="../../images/modelagem-dados/Conceitual-2.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>DER01</strong></th>
+<th><strong>DER</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Versão</strong></td>
+<td>Atual: 2.0 (26/08) <br> Anterior: <a href="https://i.imgur.com/t8GjGTu.png">1.0</a></td>
+</tr>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Diagrama Entidade Relacionamento para a aplicação</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td><a href="https://github.com/alanrslima">Alan Lima</a>, <a href="https://github.com/MatheusBlanco">Matheus Blanco</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="93-dicionario-de-dados">9.3 Dicionário de dados</h3>
+<h4 id="931-entidade-cartao">9.3.1 Entidade: Cartão</h4>
+<p><strong>Descrição</strong>: Modo de pagamento utilizado pelo cliente</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numero</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Número da frente do cartão</td>
+</tr>
+<tr>
+<td>cpfcnpj</td>
+<td>obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>Dados jurídicos do dono</td>
+</tr>
+<tr>
+<td>validade</td>
+<td>obrigatória</td>
+<td>date</td>
+<td></td>
+<td>Validade do cartão</td>
+</tr>
+<tr>
+<td>cvv</td>
+<td>obrigatória</td>
+<td>int</td>
+<td></td>
+<td>Código de segurança</td>
+</tr>
+<tr>
+<td>nomeTitular</td>
+<td>obrigatória</td>
+<td></td>
+<td>varchar</td>
+<td>50</td>
+</tr>
+<tr>
+<td>email</td>
+<td>chave estrangeira obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>E-mail do usuário</td>
+</tr>
+</tbody>
+</table>
+<h4 id="932-entidade-usuario">9.3.2 Entidade: Usuário</h4>
+<p><strong>Descrição</strong>: Usuário da aplicação, público-alvo</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nome</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>Nome do Usuário</td>
+</tr>
+<tr>
+<td>email</td>
+<td>chave primária obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>E-mail do Usuário</td>
+</tr>
+<tr>
+<td>senha</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>20</td>
+<td>Senha do Usuário na aplicação</td>
+</tr>
+</tbody>
+</table>
+<h4 id="933-entidade-avaliacao_pedido">9.3.3 Entidade: Avaliação_Pedido</h4>
+<p><strong>Descrição</strong>: Momento de visualização do pedido pelo restaurante</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do pedido</td>
+</tr>
+<tr>
+<td>nota</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Nota fiscal</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição do pedido</td>
+</tr>
+<tr>
+<td>dataHora</td>
+<td>obrigatória</td>
+<td>date time</td>
+<td></td>
+<td>Hora e dia do registro do pedido</td>
+</tr>
+<tr>
+<td>numero</td>
+<td>obrigatória</td>
+<td>int</td>
+<td></td>
+<td>Número do pedido a ser chamado</td>
+</tr>
+<tr>
+<td>horaRealizado</td>
+<td>obrigatória</td>
+<td>time</td>
+<td></td>
+<td>Hora da montagem do pedido</td>
+</tr>
+<tr>
+<td>formaPagamento</td>
+<td>obrigatória</td>
+<td>enum('Debito', 'Credito', 'Dinheiro')</td>
+<td></td>
+<td>Forma na qual o pedido foi pago</td>
+</tr>
+<tr>
+<td>email</td>
+<td>chave estrangeira obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>E-mail do usuário</td>
+</tr>
+</tbody>
+</table>
+<h4 id="934-relacionamento-possui">9.3.4 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de status de pedido</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>int</td>
+<td>3</td>
+<td>Identificação do status do pedido</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do pedido</td>
+</tr>
+</tbody>
+</table>
+<h4 id="935-entidade-senha">9.3.5 Entidade: Senha</h4>
+<p><strong>Descrição</strong>: Senha de um pedido</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>int</td>
+<td>3</td>
+<td>Identificação da senha do pedido</td>
+</tr>
+</tbody>
+</table>
+<h4 id="936-relacionamento-possui">9.3.6 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de item no cardápio referente ao pedido</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do item no cardápio</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do pedido</td>
+</tr>
+</tbody>
+</table>
+<h4 id="937-entidade-itemcardapio">9.3.7 Entidade: ItemCardapio</h4>
+<p><strong>Descrição</strong>: Representa um item contido no cardápio</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do item no cardápio</td>
+</tr>
+<tr>
+<td>nome</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>Nome do item</td>
+</tr>
+<tr>
+<td>valor</td>
+<td>obrigatória</td>
+<td>float</td>
+<td></td>
+<td>Preço do item</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição do item</td>
+</tr>
+<tr>
+<td>observação</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Observação em referência ao item pedido</td>
+</tr>
+</tbody>
+</table>
+<h4 id="938-relacionamento-possui">9.3.8 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de categoria referente a cardápios</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do item no cardápio</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria de cardápio</td>
+</tr>
+</tbody>
+</table>
+<h4 id="939-entidade-categoriacardapio">9.3.9 Entidade: CategoriaCardapio</h4>
+<p><strong>Descrição</strong>: Representa uma categoria que identifica o cardápio</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria de cardápio</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição da categoria do cardápio</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9310-relacionamento-possui">9.3.10 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de cardápios referente a categorias</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do cardápio em questão</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria de cardápio</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9311-entidade-cardapio">9.3.11 Entidade: Cardapio</h4>
+<p><strong>Descrição</strong>: Representa um cardápio de determinado restaurante</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numero</td>
+<td>obrigatória</td>
+<td>int</td>
+<td></td>
+<td>Número id do restaurante</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição do cardápio e seus itens</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do cardápio em questão</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9312-relacionamento-possui">9.3.12 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de cardápios referente a estabelecimentos</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cnpj</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do estabelecimento</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do cardápio em questão</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9313-entidade-estabelecimento">9.3.13 Entidade: Estabelecimento</h4>
+<p><strong>Descrição</strong>: Representa um estabelecimento restaurante</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cnpj</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do estabelecimento</td>
+</tr>
+<tr>
+<td>nome</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>Nome do estabelecimento</td>
+</tr>
+<tr>
+<td>numero</td>
+<td>obrigatória</td>
+<td>int</td>
+<td></td>
+<td>Número da loja, em questão de endereço</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição do estabelecimento e seus alimentos</td>
+</tr>
+<tr>
+<td>tempoPreparo</td>
+<td>obrigatória</td>
+<td>time</td>
+<td></td>
+<td>Tempo necessário para se preparar um alimento</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9314-relacionamento-possui">9.3.14 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de estabelecimentos em relação a categorias</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cnpj</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do estabelecimento</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9315-entidade-categoriaestabelecimento">9.3.15 Entidade: CategoriaEstabelecimento</h4>
+<p><strong>Descrição</strong>: Representa a categoria de um estabelecimento</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição da categoria do estabelecimento</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9316-relacionamento-realiza">9.3.16 Relacionamento: realiza</h4>
+<p><strong>Descrição</strong>: Realização de pedidos</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>chave estrangeira obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>E-mail do Usuário</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do pedido</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9317-relacionamento-em">9.3.17 Relacionamento: em</h4>
+<p><strong>Descrição</strong>: Possessão de local de realização de pedidos</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cnpj</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do estabelecimento</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do pedido</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9318-relacionamento-possui">9.3.18 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de categoria de itens</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do item no cardápio</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria do item</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9319-entidade-categoriaitem">9.3.19 Entidade: CategoriaItem</h4>
+<p><strong>Descrição</strong>: Representa a categoria de um item</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>titulo</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>Título da categoria do item</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição da categoria do item</td>
+</tr>
+<tr>
+<td>statusObrigatório</td>
+<td>obrigatória</td>
+<td>enum('S','N')</td>
+<td></td>
+<td>?</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria do item</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9320-relacionamento-tem">9.3.20 Relacionamento: tem</h4>
+<p><strong>Descrição</strong>: Possessão de item por categoria</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação da categoria do item</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do item da categoria</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9321-entidade-itemcategoria">9.3.21 Entidade: ItemCategoria</h4>
+<p><strong>Descrição</strong>: Representa o item de uma categoria</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>titulo</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>Título do item da categoria</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>200</td>
+<td>Descrição do item da categoria</td>
+</tr>
+<tr>
+<td>valor</td>
+<td>obrigatória</td>
+<td>float</td>
+<td></td>
+<td>Preço do item da categoria</td>
+</tr>
+<tr>
+<td>id</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Identificação do item da categoria</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9322-relacionamento-possui">9.3.22 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de horários</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diaSemana</td>
+<td>chave estrangeira obrigatória</td>
+<td>varchar</td>
+<td>16</td>
+<td>Dias da semana que o estabelecimento funciona</td>
+</tr>
+<tr>
+<td>cnpj</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do estabelecimento</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9323-entidade-horariofuncionamento">9.3.23 Entidade: HorarioFuncionamento</h4>
+<p><strong>Descrição</strong>: Representa o horário de funcionamento de um estabelecimento</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diaSemana</td>
+<td>chave primária obrigatória</td>
+<td>varchar</td>
+<td>16</td>
+<td>Dias da semana que o estabelecimento funciona</td>
+</tr>
+<tr>
+<td>horaInicial</td>
+<td>obrigatória</td>
+<td>time</td>
+<td></td>
+<td>Hora de abertura</td>
+</tr>
+<tr>
+<td>horaFinal</td>
+<td>obrigatória</td>
+<td>time</td>
+<td></td>
+<td>Hora de fechamento</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9324-relacionamento-possui">9.3.24 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de horários por parte do Shopping</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diaSemana</td>
+<td>chave estrangeira obrigatória</td>
+<td>varchar</td>
+<td>16</td>
+<td>Dias da semana que o Shopping funciona</td>
+</tr>
+<tr>
+<td>cnpj</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do Shopping</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9325-entidade-shopping">9.3.25 Entidade: Shopping</h4>
+<p><strong>Descrição</strong>: Representa o shopping que abriga um estabelecimento</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nome</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>50</td>
+<td>Nome do shopping</td>
+</tr>
+<tr>
+<td>cnpj</td>
+<td>chave primária obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do Shopping</td>
+</tr>
+<tr>
+<td>telefone</td>
+<td>chave estrangeira obrigatória</td>
+<td>varchar</td>
+<td>30</td>
+<td>Identificação do telefone do shopping</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9326-entidade-telefone">9.3.26 Entidade: telefone</h4>
+<p><strong>Descrição</strong>: Representa o telefone de um shopping</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>telefone</td>
+<td>chave primária obrigatória</td>
+<td>varchar</td>
+<td>30</td>
+<td>Identificação do telefone do shopping</td>
+</tr>
+<tr>
+<td>telefone</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>30</td>
+<td>Identificação do telefone do shopping</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9327-relacionamento-possui">9.3.27 Relacionamento: possui</h4>
+<p><strong>Descrição</strong>: Possessão de endereço por parte do Shopping</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cnpj</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>20</td>
+<td>CNPJ do Shopping</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Latitude da localização do endereço</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Longitude da localização do endereço</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9328-entidade-endereco">9.3.28 Entidade: Endereço</h4>
+<p><strong>Descrição</strong>: Representa o endereço de um shopping</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Propriedades do Atributo</th>
+<th>Tipo de dado</th>
+<th>Tamanho</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rua</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>20</td>
+<td>Rua do shopping</td>
+</tr>
+<tr>
+<td>numero</td>
+<td>obrigatória</td>
+<td>int</td>
+<td></td>
+<td>Número do shopping</td>
+</tr>
+<tr>
+<td>logradouro</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>20</td>
+<td>Logradouro do shopping</td>
+</tr>
+<tr>
+<td>cidade</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>20</td>
+<td>Cidade onde o shopping se localiza</td>
+</tr>
+<tr>
+<td>estado</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>20</td>
+<td>Estado onde o shopping se localiza</td>
+</tr>
+<tr>
+<td>pais</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>20</td>
+<td>Pais onde o shopping se localiza</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Latitude da localização do endereço</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>chave estrangeira obrigatória</td>
+<td>bigint</td>
+<td>16</td>
+<td>Longitude da localização do endereço</td>
+</tr>
+<tr>
+<td>bairro</td>
+<td>obrigatória</td>
+<td>varchar</td>
+<td>20</td>
+<td>Bairro onde o shopping se localiza</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-qualidade">10 Qualidade</h2>
+<p>No padrão de qualidade da arquitetura, o modelo arquitetural escolhido para o projeto facilita na escalabilidade da aplicação. A arquitetura de microsserviços por atuar de forma desacoplada distribui as responsabilidades da aplicação em pequenos serviços, descomplicando o desenvolvimento. </p>
+<p>O desacoplamento também contribui para a manutenabilidade da aplicação. Por fim, o padrão de microsserviços possui uma boa Reliabilidade, por permitir que caso um dos pequenos serviços que esteja atuando sofra algum problema, ele não prejudica todo o resto da aplicação, permitindo que outros microsserviços funcionem de maneira independente. </p>
+<p>Além disso, os testes unitários e de requisição também mostraram-se importantes e essenciais para a garantia de qualidade de requisições. Foram realizados testes nos microsserviços, utilizando a biblioteca Pytest. Os critérios de qualidade para os testes são definidos com uma cobertura de 80%. Já no frontend, devido à delimitação do escopo que a disciplina demanda, os testes em Vue.js não serão realizados. Para planos futuros, é proposto testes com o usuário para feebacks e planos de melhoria, seja de funcionalidade, usabilidade ou outros fatores de qualidade.</p>
+<!-- Mostrar formas de medir qualidade do código e do produto, cobertura de testes por exemplo -->
+
+<h2 id="11-tamanho-e-desempenho">11 Tamanho e Desempenho</h2>
+<p>O WebApp QRComer possui um tamanho médio de 200MB. O mesmo foi desenvolvido para funcionar em navegadores tanto em formato desktop quanto formato mobile, com foco maior em mobile. Pelo fato de ser um site acessível a partir de navegadores, não existe a necessidade de instalação de nenhum serviço, sejam eles o front-end ou as APIs dos microsserviços.</p>
+<p>Sendo assim, o mesmo não ocupa espaço físico nos aparelhos dos usuários, restringindo-se apenas a memória temporária e CACHE. O sistema funciona a partir de requisições feitas entre as APIS e o front-end, todas realizadas pela internet. Sendo assim, espera-se que o tamanho físico do projeto não seja um diferencial significativo nos aparelhos de seus consumidores, nem que o desempenho seja comprometido por questões parecidas.</p>
+<!-- Mostrar volume de dados do sistema, tamanho do projeto, explicar e determinar normas de desempenho -->
+
+<h2 id="12-modelospadroes-arquiteturais">12 Modelos/Padrões Arquiteturais</h2>
+<h3 id="microsservicos">Microsserviços</h3>
+<p>A arquitetura escolhida pelo grupo foi a arquitetura de microsserviços. Com essa arquitetura, a aplicação do QrComer foi desmembrada em pequenos componentes responsáveis por executar uma função diferente da aplicação. Os microsserviços podem criados e implantados de maneira independentes, assim caso um dos microsserviços seja comprometido, os microsserviços remanescentes continuarão funcionando normalmente e a aplicação não ficará tão prejudicada.</p>
+<p>O grupo escolheu a arquitetura de microsserviços pela facilidade de desenvolvimento e experiência dos desenvolvedores. Além disso, essa arquitetura permite que o desenvolvimento possa ser simultâneo, diminuindo o tempo de entrega e tornando a aplicação facilmente escalável.</p>
+<h3 id="padrao-arquitetural-no-backend">Padrão Arquitetural no Backend</h3>
+<p>A tecnologia utilizada na construção dos microsserviços foi o Django Rest Framework, que é um framework Python, muito utilizado para criar Rest APIS de maneira rápida e prática. O Django Rest é orientado a MVT (Model, View, Template), padrão semelhante ao MVC (Model, View, Controller). No caso de nossa utilização, foi removido o Template do padrão, por ser justamente, uma camada de visualização o que não será necessário, já que o framework está sendo utilizado no backend.</p>
+<p>Além do Django Rest, o grupo optou por utilizar do Flask, outro framework Python, para a construção do Gateway. O Gateway é responsável por atuar como um ponto de comunicação do back com o front, gerenciando as requisições da aplicação por meio de métodos do protocolo HTTP. A opção pelo Flask, foi feito por ser um microframework, diminuindo a necessidade de realizar tanta configurações que muitas vezes não serão utilizadas.</p>
+<h3 id="padrao-arquitetural-no-frontend">Padrão Arquitetural no Frontend</h3>
+<p>No front a opção foi feita pelo VueJS, framework javascript, com uma arquitetura orientada a componentes. A Arquitetura de Componentes está baseada em pequenos objetos da interface, que são reutilizáveis e independentes, otimizando o processo de desenvolvimento da aplicação.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../seminario4/emergentes/" title="Emergentes & Consumidos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Emergentes & Consumidos
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../checklist/" title="Verificação de Requisitos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Verificação de Requisitos
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019, <a href="https://github.com/fga-desenho-2019-2/Wiki/">QR Comer</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/fga-desenho-2019-2/Wiki" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/js/jquery.min.js"></script>
+      
+        <script src="../../assets/js/jquery.zoom.min.js"></script>
+      
+        <script src="../../assets/js/extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
