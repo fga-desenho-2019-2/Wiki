@@ -32,7 +32,7 @@ Para que uma entrevista seja realizada de maneira efetiva, é necessário a cria
 
 **8 - Você se sentiria confortável realizando o pedido sem a presença de um garçom?**
 
-**9 - E em relação à entrega do pedido? Se sentiria confortável em ir buscar o pedido quando estivesse pronto ou preferiria que um garçom o levasse até você?*
+**9 - E em relação à entrega do pedido? Se sentiria confortável em ir buscar o pedido quando estivesse pronto ou preferiria que um garçom o levasse até você?**
 
 **10 - Você preferiria fazer todo o processo de pedido por um aplicativo, incluindo o pagamento, ou acha mais seguro fazer o pagamento no caixa?**
 
@@ -138,4 +138,4 @@ Para que uma entrevista seja realizada de maneira efetiva, é necessário a cria
 
 ## Referências
 
->Técnicas para levantamento de Requisitos. Disponível em: <https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151>. Acesso em 21 de Agosto de 2019.
+DevMedia. Técnicas para levantamento de Requisitos. Disponível em: <https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151>. Acesso em 21 de Agosto de 2019.

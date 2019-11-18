@@ -4,8 +4,9 @@
 | ---------- | ------ | ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | 23/10/2019 | 0.1    | Criação do documento                     | [Elias Bernardo](https://github.com/ebmm01)                                                           |
 | 24/10/2019 | 0.2    | Adição do Strategy                       | [Guilherme Marques](https://github.com/guilhesme23) [Saleh Kader](https://github.com/devsalula)       |
-| 24/10/2019 | 0.3    | Adição do padrão de Factory Method       | [Shayane Alcantara](https://github.com/shayanealcantara) e [Sara Silva](https://github.com/sarasilva) |
+| 24/10/2019 | 0.3    | Adição do padrão de Factory Method       | [Shayane Alcantara](https://github.com/shayanealcantara) e [Sara Silva](https://github.com/silvasara) |
 | 25/10/2019 | 0.4    | Adição do padrão Chain of Responsibility | [Matheus Blanco](https://github.com/MatheusBlanco)                                                    |
+| 17/11/2019 | 0.5    |  Revisão e atualização do documento      | [Sara Silva](https://github.com/silvasara) |
 
 ## Introdução
 
@@ -25,7 +26,7 @@ A partir da existência de um sistema de autênticação e login, foi possível 
 
 ### Objetivo & problema sanado
 
-A implementação ainda não foi possível de ser realizada, embora esteja nos planos realizar a codificação completa da mesma. Entretanto, apesar da falta de uma implementação direta, pode-se notar que o objetivo principal do padrão foi atingido, a partir do restringimento da realização do pedido por parte de um usuário não cadastrado.
+A implementação não foi possível de ser realizada, embora esteja nos planos realizar a codificação completa da mesma. Pode-se notar que o objetivo principal do padrão foi atingido, a partir do restringimento da realização do pedido por parte de um usuário não cadastrado, porém a implementação não pôde ser realizada em sua completude pelo fato da mesma necessitar de uma quantidade considerável de componentes realizando a mesma ou parecidas atividades/funções.
 
 ## Observer
 
@@ -49,6 +50,8 @@ O Strategy é um padrão de projeto **comportamental** onde permite introduzir u
 
 O Padrão tem como plano a utilização de diferentes classes para diferentes comportamentos dentro do código. O intuito é que se utilize de uma classe Pai, para servir de base para construção das classes filhas. Nesse caso, foi pensado a implementação dentro do serviço de pagamentos do QRComer. A inteção era que as classes filhas descrevessem diferentes formas de pagamento utilizando a interface da classe pai. As classes filhas, seriam uma de pagamento por Boleto e outra de pagamento por Cartão de Crédito.
 
+![](../../images/patterns/strategyPayment.png)
+
 ### Objetivo & problema sanado
 
 A implementação não deu certo, por conta do objetivo do produto. O QRComer, leva em conta que o usuário pague por imediato a sua refeição, o que inviabilizaria a implementação de um tipo de pagamento como o de Boleto, onde o usuário só conseguiria receber a sua refeição após a confirmação desse pagamento, que normalmente demora bastante.
@@ -59,19 +62,70 @@ Template Method é um padrão de design **comportamental** que define o "esquele
 
 ### Como foi utilizado no projeto
 
-O padrão foi selecionado para auxiliar no aproveitamento de linhas de código, por tratar-se de dados semelhantes nas classes definidas, podendo ser reaproveitado quando e o que for necessário. Ou seja, ele permite a delimitação de passos na ordem a serem executados e de que forma eles serão executados a depender da condição.
+O padrão foi selecionado para auxiliar no aproveitamento de linhas de código e no tratamento semelhante de dados nas classes de *views* no serviço de restaurante. O template pode ser reaproveitado quando e o que for necessário. Ele permite a delimitação de passos nos tratamentos das requisições do serviço: a ordem em que os passos serão executados e de que forma eles serão executados, a depender da condição.
 
-![](https://raw.githubusercontent.com/fga-desenho-2019-2/Wiki/develop/docs/images/diagramas-uml/class_diagram_restaurant_v2.jpg)
+Abaixo há algumas imagens da implementação do Template Method usado nas views do serviço de restaurante.
 
-### Objetivo & problema sanado
-
-O principal problema observado no código implementado foi a duplicação de diversas linhas de código. Com a adaptação do padrão, foi possível reduzir esse fator e assim, permitir uma melhor legibilidade do código em questão. A seguir segue a adaptação da implementação de uma parte das regras de serviço.
+Os códigos na íntegra, podem ser visualizados nos seguintes links: [Views](https://github.com/fga-desenho-2019-2/restaurant-service/blob/develop/restaurant_service/api/views.py) e [Image Views](https://github.com/fga-desenho-2019-2/restaurant-service/blob/develop/restaurant_service/api/image_views.py)
 
 ![restaurant_1](../images/patterns/restaurante_1.png)
 
 ![restaurant_2](../images/patterns/restaurant_2.png)
 
 ![restaurant_3](../images/patterns/restaurant_3.png)
+
+### Objetivo & problema sanado
+
+O principal problema observado no código implementado foi a repetição de diversas linhas de código. Com o uso do padrão, foi possível reduzir esse fator e assim, permitir uma melhor legibilidade do código em questão e evitar divergências entre tratamento de requisições, já que agora os tratamentos para todas as requisições seguem um template de passos. 
+
+
+## Command
+
+O padrão de projeto comportamental Command é um padrão focado na transformação de um request em um objeto por si só, podendo facilitar a reutilização de funções sem a duplicação de código, além de limpar um determinado arquivo ao desacoplar as funções existentes num componente.
+
+### Como foi utilizado no projeto
+
+O padrão Command foi utilizado a partir da criação do arquivo **_Context.js_**, o qual tem como único objetivo importar e exportar todas as funções que sofreram alterações do padrão Command.
+
+![Context](../images/patterns/Context.png)
+
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/context.js)
+
+As funções importadas no _**Context.js**_ se encontram separadas em arquivos JavaScript's, funcionais.
+
+![Command](../images/patterns/handleAmmountCommand.png)
+
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleAmmount.js)
+
+![Command](../images/patterns/handleQtdCommand.png)
+
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/handleQtd.js)
+
+![Command](../images/patterns/loginCommand.png)
+
+O código na íntegra pode de visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/login.js)
+
+![Command](../images/patterns/loginUserComnand.png)
+
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/loginUser.js)
+
+![Command](../images/patterns/RegisterUserCommand.png)
+
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/registerUser.js)
+
+![Command](../images/patterns/routeToCommand.png)
+
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/services/Commands/routeTo.js)
+
+A partir disso, nos arquivos **_.vue_** que receberiam as funções definidas no **_Context.js_**, o único arquivo poderia ser importado e as funções declaradas e utilizadas, sem a necessidade de passar qualquer parâmetro ou valor, como mostrado no exemplo abaixo, no arquivo Vue de autenticação de usuário.
+
+![ExCommand](../images/patterns/commandVueEx.png)
+
+O código na íntegra pode ser visualizado [aqui](https://github.com/fga-desenho-2019-2/qrcomer-front/blob/develop/src/views/Authentication/Auth.vue)
+
+### Objetivos e problemas sanados
+
+O objetivo da utilização do padrão Command, a partir do desacoplamento de funções, permite a reutilização da mesma função em uma quantidade de botões ou componentes clicáveis, sem a necessidade de duplicação de código, o que permitiu a diminuição da complexidade dos componentes e páginas criadas para o projeto. Além disso, o Command também permite que se diminua as chances de sobrescrição ou confusão na chamada de funções, devido ao código duplicado.
 
 ## Referências
 
