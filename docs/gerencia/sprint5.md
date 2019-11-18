@@ -1,4 +1,4 @@
-# Planejamento da Sprint 4
+# Planejamento da Sprint 5
 
 | Membros presentes no planejamento da Sprint  |
 |---------------------|
