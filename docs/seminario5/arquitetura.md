@@ -10,7 +10,8 @@
 | 17/11/2019 | 0.6    | Visão de dados                                                          | [Matheus Blanco](https://github.com/MatheusBlanco) |
 | 17/11/2019 | 0.7    | Visão de implementação                                                  | [Pedro Féo](https://github.com/phe0)               |
 | 17/11/2019 | 0.8    | Qualidade                                                               | [Saleh Kader](https://github.com/devsalula)        |
-|17/11/2019|0.9|Visão de Implantação|[Matheus Blanco](https://github.com/MatheusBlanco)
+|17/11/2019|0.9|Visão de Implantação|[Matheus Blanco](https://github.com/MatheusBlanco) |
+| 17/11/2019 | 1.0 | Complementação do tópico de qualidade | [Shayane Alcântara](https://github.com/shayanealcantara)
 
 ## 1 Introdução
 
@@ -469,7 +470,7 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 |**Autor**| [Alan Lima](https://github.com/alanrslima) | 
 
 #### Versão 2.0
-![DER](/images/modelagem-dados/conceitual_order-2.png)
+![DER](../images/modelagem-dados/conceitual_order-2.png)
 
 | **DER03** | **DER**  |
 |--|--|
@@ -525,7 +526,7 @@ Em relação a funcionamento, um usuário, em sua sacola de pedidos, confirma to
 
 #### Versão 2.0
 
-![DER](/images/modelagem-dados/Conceitual-2.png)
+![DER](../images/modelagem-dados/Conceitual-2.png)
 
 | **DER01** | **DER**  |
 |--|--|
@@ -826,7 +827,7 @@ No padrão de qualidade da arquitetura, o modelo arquitetural escolhido para o p
 
 O desacoplamento também contribui para a manutenabilidade da aplicação. Por fim, o padrão de microsserviços possui uma boa Reliabilidade, por permitir que caso um dos pequenos serviços que esteja atuando sofra algum problema, ele não prejudica todo o resto da aplicação, permitindo que outros microsserviços funcionem de maneira independente. 
 
-Além disso, os testes unitários e de requisição também mostraram-se importantes e essenciais para a garantia de qualidade de requisições. Foram realizados testes nos microsserviços, utilizando a biblioteca Pytest. Os critérios de qualidade para os testes são definidos com uma cobertura de 80%. Já no frontend, devido à delimitação do escopo que a disciplina demanda, os testes em Vue.js não serão realizados. 
+Além disso, os testes unitários e de requisição também mostraram-se importantes e essenciais para a garantia de qualidade de requisições. Foram realizados testes nos microsserviços, utilizando a biblioteca Pytest. Os critérios de qualidade para os testes são definidos com uma cobertura de 80%. Já no frontend, devido à delimitação do escopo que a disciplina demanda, os testes em Vue.js não serão realizados. Para planos futuros, é proposto testes com o usuário para feebacks e planos de melhoria, seja de funcionalidade, usabilidade ou outros fatores de qualidade.
 
 <!-- Mostrar formas de medir qualidade do código e do produto, cobertura de testes por exemplo -->
 
@@ -846,12 +847,12 @@ A arquitetura escolhida pelo grupo foi a arquitetura de microsserviços. Com ess
 
 O grupo escolheu a arquitetura de microsserviços pela facilidade de desenvolvimento e experiência dos desenvolvedores. Além disso, essa arquitetura permite que o desenvolvimento possa ser simultâneo, diminuindo o tempo de entrega e tornando a aplicação facilmente escalável.
 
-### Padrão Arquitetural no Back
+### Padrão Arquitetural no Backend
 
 A tecnologia utilizada na construção dos microsserviços foi o Django Rest Framework, que é um framework Python, muito utilizado para criar Rest APIS de maneira rápida e prática. O Django Rest é orientado a MVT (Model, View, Template), padrão semelhante ao MVC (Model, View, Controller). No caso de nossa utilização, foi removido o Template do padrão, por ser justamente, uma camada de visualização o que não será necessário, já que o framework está sendo utilizado no backend.
 
 Além do Django Rest, o grupo optou por utilizar do Flask, outro framework Python, para a construção do Gateway. O Gateway é responsável por atuar como um ponto de comunicação do back com o front, gerenciando as requisições da aplicação por meio de métodos do protocolo HTTP. A opção pelo Flask, foi feito por ser um microframework, diminuindo a necessidade de realizar tanta configurações que muitas vezes não serão utilizadas.
 
-### Padrão Arquitetural no Front
+### Padrão Arquitetural no Frontend
 
 No front a opção foi feita pelo VueJS, framework javascript, com uma arquitetura orientada a componentes. A Arquitetura de Componentes está baseada em pequenos objetos da interface, que são reutilizáveis e independentes, otimizando o processo de desenvolvimento da aplicação.
